@@ -1,6 +1,8 @@
 ---
 name: web3-methodology-research
 description: External research synthesis from Trail of Bits, SlowMist, ConsenSys, Immunefi, and Cyfrin. Use this for advanced audit methodology, Echidna/Medusa fuzzing setup, Slither custom detector writing, attack pattern deep dives, or the 4-phase learning roadmap.
+version: 1.0.0
+license: MIT
 ---
 
 # METHODOLOGY & RESEARCH SYNTHESIS

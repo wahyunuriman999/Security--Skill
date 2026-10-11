@@ -13,6 +13,7 @@ Usage:
   python rat_oob.py wait <tag> [secs]     # block until a callback with tag arrives
 """
 import httpx
+import os
 import secrets
 import sys
 import time

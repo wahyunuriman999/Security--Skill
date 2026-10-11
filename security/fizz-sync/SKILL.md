@@ -1,6 +1,8 @@
 ---
 name: fizz-sync
 description: Reconcile an existing Fizz harness with a changed source tree. Detects added/removed/changed contract functions, quarantines stale properties, regenerates drifted handler stubs, and refreshes the snapshot. Trigger on "fizz-sync", "resync fuzzing", "sync fuzz harness", "refresh fuzzing properties", "fuzzing drift check".
+version: 1.0.0
+license: MIT
 ---
 
 # Fizz Sync Skill — fizz-sync

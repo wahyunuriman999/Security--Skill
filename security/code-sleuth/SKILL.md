@@ -1,6 +1,8 @@
 ---
 name: code-sleuth
 description: Analyze EVM smart contracts for storage-safety vulnerabilities that can cause persistent state updates to be lost, overwritten, misdirected, or to collide across proxy or upgrade boundaries.
+version: 1.0.0
+license: MIT
 ---
 
 # Code Sleuth — Storage Safety

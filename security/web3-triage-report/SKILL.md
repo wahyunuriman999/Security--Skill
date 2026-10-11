@@ -1,6 +1,8 @@
 ---
 name: web3-triage-report
 description: Bug triage validation system, Immunefi report format, and 20 real paid bounty examples dissected. Use this when validating a finding before submitting, writing an Immunefi report, checking if a bug is actually valid, or studying real examples of paid vulnerabilities.
+version: 1.0.0
+license: MIT
 ---
 
 # TRIAGE, REPORT WRITING & REAL EXAMPLES

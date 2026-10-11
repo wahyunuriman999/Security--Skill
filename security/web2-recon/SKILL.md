@@ -1,6 +1,8 @@
 ---
 name: web2-recon
 description: Web2 recon pipeline — subdomain enum, URL crawling, JS analysis, temp emails, directory fuzzing. Trust-first asset discovery.
+version: 1.0.0
+license: MIT
 ---
 
 # WEB2 RECON — Trust-First Asset Discovery

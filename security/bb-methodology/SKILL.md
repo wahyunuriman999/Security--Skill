@@ -1,6 +1,8 @@
 ---
 name: bb-methodology
 description: The "3rd eye" for pentesting — reminds agent to understand before assuming, validate before reporting.
+version: 1.0.0
+license: MIT
 ---
 
 # 3rd Eye — Pentesting Reminder

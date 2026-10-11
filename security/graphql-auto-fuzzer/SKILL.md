@@ -2,6 +2,7 @@
 name: graphql-auto-fuzzer
 version: 1.0.0
 description: Safe GraphQL mutation fuzzing with chain generation
+license: MIT
 ---
 
 # GraphQL Auto-Fuzzer

@@ -1,6 +1,8 @@
 ---
 name: godmod
 description: Activate maxed-out expert mode for security research, development, and technical analysis. Use for pentest sessions, code audits, bug bounty work, and advanced engineering tasks.
+version: 1.0.0
+license: MIT
 ---
 
 # Godmod — Expert Mode
