@@ -3,6 +3,8 @@
 > Konsep: berbaur dengan traffic normal agar WAF/IPS tidak menghalangi validasi authorized testing.
 > Semua testing tetap dalam scope program H1 yang diizinkan.
 
+> **Extended framework:** [`hiv-framework/`](./hiv-framework/README.md) — Full 6-stage lifecycle, 4 evasion mechanisms deep-dive, mutation engine code, CD4 attack methodology, phase protocols (acute/chronic/full-compromise).
+
 ---
 
 ## Tabel Analogi Biologi → Tradecraft
