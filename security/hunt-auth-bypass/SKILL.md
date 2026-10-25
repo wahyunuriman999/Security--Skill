@@ -442,6 +442,43 @@ app.post('/api/admin/delete', deleteUser);         // no server-side check
 
 ---
 
+## Step-Up / Re-Authentication Gates (`escalation_required`)
+
+Modern SaaS gates destructive account actions behind a second proof of presence — password, MFA, or a time-boxed "escalated" session. The gated action answers a distinctive error (e.g. `403 {"code":"escalation_required"}`) while the same session works everywhere else. **That error is the entry point, not a wall.** This is the highest-yield authz surface on a mature product because the gate is bolted on per-endpoint and the boundary is always uneven.
+
+**Procedure**
+
+1. **Confirm the gate is real and scoped.** Replay a harmless sibling request with the same session. If it 200s, you are authenticated and only this action is gated. Write down *every* endpoint answering `escalation_required` — that list is the privilege boundary.
+2. **Find the escalation endpoint in the client bundle. Do not guess the path.**
+   ```bash
+   grep -oE '"[^"]*escalat[^"]*"' *.js | sort -u          # path
+   grep -oE '\.(post|put|patch)\("[^"]*escalat[^"]*"' *.js  # verb + call site
+   ```
+   Then read the call site for the request body shape and for any **implicit scope header** the client attaches to every request — the escalate call inherits it.
+3. **Derive the full ambient header set before judging a rejection.** A `401`/`403` whose message names a header or an account id is not evidence the endpoint is protected; it means you replayed the call without the browser's context. Re-read the bundle's request wrapper and re-send with each candidate header, validating against an endpoint you know returns `200`.
+4. **Persist the rotated session cookie — this is the step that fools people.** A successful escalate typically answers `204` with a **new session cookie in `Set-Cookie`**. If your scripted client does not merge it back into the jar, the very next privileged call still returns `escalation_required` and you will wrongly conclude the gate is sound. Merge, then assert the gate actually opened:
+   ```python
+   r = post("/…/session/escalate", {"password": PW}, headers={"X-Account-Id": ACC})   # 204
+   jar["session"] = re.search(r'session=([^;]+)', r.headers["Set-Cookie"]).group(1)
+   assert post("/privileged/action", {}).status != 403        # gate must be OPEN now
+   ```
+5. **Test whether the scope header is authoritative — this is the whole bug or the whole non-bug.** Send a synthetic, non-existent id with *your own* password, then resolve identity with **no** header using the returned cookie:
+   ```python
+   post("/…/session/escalate", {"password": MY_PW}, headers={"X-Account-Id": "aaaaaaaaaaaaaaaaaaaaaaaa"})
+   get("/account").json["_id"] == MY_ACCOUNT_ID    # header cosmetic -> NO finding
+   ```
+   If the rotated cookie resolves to the header's account instead of yours → cross-tenant privilege escalation, Critical. If it resolves to your own account, the header is cosmetic — say so and move on rather than dressing it up.
+6. **Confirm the password is genuinely verified.** A wrong password must return a credential error (e.g. `401 Invalid password`). A wrong password accepted is, by itself, the bug.
+
+**Pitfalls**
+
+- Do not cache one escalated cookie across a long test run — escalation is time-boxed and session-bound. Re-escalate before each verification round.
+- Enumerate the siblings: gated-ness is uneven by accident. If `mfa/disable` demands escalation but `revoke-sessions` returns `204` on a plain session, that asymmetry is a real (if low-severity) finding, and it marks the pattern to keep hunting.
+- Escalating and destructive session endpoints can kill your own session. Re-login and re-harvest cookies after each such round instead of debugging mystery `401`s — and be aware self-revocation is a normal outcome, not a target-side bug.
+- Provisioning a low-privilege test account is what turns this class from "no finding" into P1. If the invite/provisioning API refuses you, note it as a blocker and move on; do not report the gate as sound just because you could not obtain a lesser role.
+
+---
+
 ## Related Skills & Chains
 
 - **`hunt-idor`** — Auth bypass without object-level access is half a finding; pair them. Chain primitive: legacy `/v1/users/{id}` route missing both auth middleware AND ownership check = unauthenticated cross-tenant data read via direct ID substitution → full PII dump from "I am nobody" starting position.

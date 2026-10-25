@@ -1,8 +1,6 @@
 ---
 name: hunt-oauth
 description: Hunting skill for oauth vulnerabilities. Built from 19 public bug bounty reports. Use when hunting oauth on any target.
-version: 1.0.0
-license: MIT
 sources: github, hackerone_public, salt_labs, descope, detectify_labs, harel_research
 report_count: 22
 ---
@@ -86,6 +84,14 @@ intent://
    - Capture the authorization request: note `client_id`, `redirect_uri`, `state`, `nonce`, `response_type`
    - Capture the callback: note where tokens/codes land, what validates state/nonce
 
+2b. **Elicit the server-generated `state` + PKCE pair from the app's OWN authorize-initiation endpoint before probing the IdP.**
+   Strict authorization servers (Spring Authorization Server, Hydra, Keycloak) reject any authorize request whose `state`/`nonce`/`code_challenge` were not minted by an in-flight session. Probe them blind and *every* variant returns the same uniform `400` or login redirect — which reads as "hardened" when you have only tested the front door and learned nothing about `redirect_uri` matching.
+   - Find the initiation hop. Apps commonly proxy it at `/frontend/oauth2/authorization/<client>` or `/login/oauth2/authorization/<client>`; capture the `302 Location` **and** `Set-Cookie`.
+   - Parse `state`, `nonce`, `code_challenge`, `code_challenge_method`, `client_id`, `redirect_uri` out of that `Location`, then replay `/oauth2/authorize` with the legitimate values while mutating ONE parameter at a time.
+   - Send the cookie too: without the session the AS has no challenge to bind, so a rejection proves nothing.
+   - Test the initiation endpoint's own redirect parameter (`?redirect=`, `?returnTo=`, `?url=`) **separately** from the IdP's `redirect_uri` — different allowlist, different host, different bug class (open redirect on the app, not a flaw in the AS).
+   - An authorize request that merely proceeds to the login page without `state` is **not** a CSRF finding. PKCE plus session binding normally closes it; report only a completed login-CSRF chain.
+
 3. **Test `redirect_uri` validation (highest yield)**
    - Try exact host bypass: `redirect_uri=https://legit.com.evil.com`
    - Try path traversal: `redirect_uri=https://legit.com/callback/../../../evil`
@@ -97,6 +103,30 @@ intent://
    - Remove `state` entirely — does the flow complete?
    - Reuse a fixed `state` value across sessions
    - Check if `state` is validated server-side or only client-side
+   - **Persistence check (often missed, high value):** request the authorize URL with a
+     marker `state`, then grep the returned login-page HTML for it. If the marker appears
+     inside a hidden field (e.g. `fromURI`), the attacker-chosen state survives the ENTIRE
+     login journey and reaches the callback — this upgrades "state reuse" into a credible
+     login-CSRF chain, because the victim's completed authentication carries the attacker's
+     state to the code issuance.
+
+4b. **Check PKCE enforcement (severity driver)**
+   - Send `response_type=code` with NO `code_challenge` — if the flow proceeds (login page
+     renders, no error), PKCE is not enforced for that client, so any observable code can be
+     exchanged. Advertised support in the discovery doc (`code_challenge_methods_supported`)
+     says nothing about enforcement — always probe, never read.
+   - Also fetch `/.well-known/openid-configuration` and note `grant_types_supported`: an
+     employee-facing IdP advertising `password` or other broad grants is attack-surface
+     narrative even when not directly a bug.
+
+4c. **Probe the callback application differentially (no account needed)**
+   - Send the callback with a FAKE `code` + attacker `state`, and compare against the same
+     request with empty/missing `state` (e.g. `?code=X&state=Y` vs `?code=X&state=`).
+     Divergent behavior (full error page vs empty body, different content-length) proves the
+     app parses the (code, state) pair and reaches session-creation logic — useful evidence
+     when you cannot complete a real login.
+   - When `redirect_uri` is strict-whitelisted (every bypass variant 400s), stop forcing OOB
+     exfil and re-aim the report at the CSRF chain + PKCE gap as the severity drivers.
 
 5. **Test `nonce` parameter (replay/bypass)**
    - Capture a nonce from one flow, attempt to replay it in another

@@ -1,8 +1,6 @@
 ---
 name: hunt-websocket
 description: "Hunt WebSocket vulnerabilities — Cross-Site WebSocket Hijacking (CSWSH), missing/weak Origin validation on the WS handshake, no per-message authentication, message tampering, socket.io namespace/room authorization bypass, and handshake-layer Upgrade smuggling. Use when target has WebSocket endpoints (ws:// or wss://), socket.io / SignalR / Phoenix Channels, real-time features, chat, live dashboards, notifications, or trading platforms."
-version: 1.0.0
-license: MIT
 sources: hackerone_public, portswigger_research, cve
 report_count: 11
 ---
@@ -196,6 +194,24 @@ wscat -c "wss://$TARGET/socket.io/?EIO=4&transport=websocket" \
 
 ---
 
+## Phase 5b — Channel-name identity binding (custom protocols)
+
+Exchanges, dashboards and multi-tenant apps commonly name subscription channels after the resource owner: `private-user_balances-{ACCOUNT_ID}`, `user-{USER_ID}-orders`, `tenant-{TENANT_ID}/events`. Authentication is a separate handshake credential (HMAC tuple, bearer, cookie). The two are frequently never cross-checked, so an authenticated principal can subscribe to a channel named after a different one.
+
+**Why this is the highest-yield WS test on such a target:** the public sibling channel (`trades-BTC_EUR`, `ticker`, `feed`) works with no credential at all. That proves the server authorizes the *handshake* and never the *channel* — so channel identity is just a client-supplied string riding an already-authorized socket.
+
+Test (needs two accounts on the target):
+1. Open the socket as principal A, authenticated with A's own credential tuple.
+2. Subscribe to `...-{B_ID}` using B's id (harvest ids from any endpoint that leaks them, or increment).
+3. The finding is **B's data arriving on A's socket** — balances, orders, PII. An ack with no data is not proof.
+
+Rules:
+- Read the naming scheme out of the bundle's subscription call site. Never guess the id position or separator — implementations vary (`-`, `_`, `:`, path-style).
+- Prove the id is a *foreign* principal: subscribe to B's id **and** to a random nonexistent id. Empty for both = the server already filters by principal. Data for B and empty for random = the bug.
+- Without a second account this stays a hypothesis. Do not report the naming convention alone, and never report "missing channel authorization" without a cross-principal frame captured.
+
+---
+
 ## Phase 6 — Handshake-Layer Upgrade Smuggling (NOT frame smuggling)
 
 Important: once a WebSocket is established, your payloads are wrapped in WS frames and are **never re-parsed as HTTP** by the proxy. Typing `GET /admin HTTP/1.1` into an open `wscat` session does nothing. WebSocket-related smuggling lives at the **handshake**, before any frames exist.
@@ -267,6 +283,7 @@ brew install websocat                # alt client; supports text/binary + autore
 | Message tampering | Modify price/amount/userId, confirm server-side | Financial fraud (Critical) |
 | Namespace/room authz bypass | Join other tenant's room, read `42` events | Cross-tenant exfil (High) |
 | Handshake Upgrade smuggling | Tunnel HTTP past WAF/authz, OAST-confirmed | Smuggling → SSRF/cache poison (High–Critical) |
+| Channel name embeds a foreign principal id, auth only at handshake | Subscribe to `...-{other_acct_id}`, receive that account's stream | Cross-account real-time data exposure (High–Critical) |
 
 ---
 
@@ -276,6 +293,7 @@ brew install websocat                # alt client; supports text/binary + autore
 - ✅ **No per-message auth:** privileged frame produces a **verifiable server-side effect** (state change confirmed via a second channel / REST API), not merely "accepted".
 - ✅ **Message tampering:** tampered value **persists server-side** (confirmed via order/balance API), not just echoed in the UI.
 - ✅ **Namespace/room bypass:** received **`42` event frames with another user's data**, not just a `40` namespace ack.
+- ✅ **Channel-name binding:** a second principal's channel subscribed from the first principal's authenticated socket, with that principal's data received (and an empty result for a random nonexistent id as the control).
 - ✅ **Upgrade smuggling:** desync proven by timing/differential probe **and** real-world impact, **OAST-confirmed**. No single-response guesses.
 - ❌ Reject: a 101 alone, an accepted-but-ignored frame, a self-echoed message, a connected-but-empty namespace, or any "confirmed" claim lacking out-of-band/cross-account proof.
 

@@ -1,8 +1,6 @@
 ---
 name: solidity-auditor
 description: Security audit of Solidity code while you develop. Trigger on "audit", "check this contract", "review for security". Modes - default (full repo) or a specific filename.
-version: 1.0.0
-license: MIT
 ---
 
 # Smart Contract Security Audit

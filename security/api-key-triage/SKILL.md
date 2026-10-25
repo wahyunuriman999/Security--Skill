@@ -59,6 +59,13 @@ are, and what route to use.
    AI gateways are the billing mechanism itself; the "free" surface is the
    $0-priced catalogue plus unauthenticated tool endpoints. Say so plainly
    instead of hunting for a workaround when the key is dead.
+9. **No balance endpoint means no balance API.** If `/key`, `/auth/key`,
+   `/credits`, `/balance`, `/user`, `/account`, and `/me` all return `404`
+   for every key (live and dead alike), the gateway simply does not expose
+   balance inspection. Do not keep probing variants or guess at hidden paths.
+   Quota exhaustion shows up only as `429` on chat/payload endpoints, with the
+   gateway's own message in the body. Report that as the credit signal and stop.
+   Renumbering is automatic — do not leave a gap.
 9. **Follow docs for alternate hostnames.** Providers alias API hosts
    (`api.x.so` vs `www.x.so`); docs code samples often reveal the host whose
    key-inspection and chat routes actually answer. Probe both before concluding.

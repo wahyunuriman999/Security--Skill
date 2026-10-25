@@ -26,3 +26,8 @@ Format: `- [KELAS] trigger → lesson → fix konkret`
 - [WAF] Shopify infra (okta + shopifycloud.com) tidak block probe anon sama sekali — tidak perlu HIV-mode untuk target ini; glycan shield cukup
 - [REJECT] redirect_uri strict whitelist (400 semua) = jangan paksakan exfil OOB; fokus ke chain CSRF + PKCE-gap sebagai severity driver
 - [TECHNIQUE] callback differential (code+state=halaman error penuh vs state kosong=body kosong) = sinyal parser behavior tanpa perlu akun
+
+## Differential & Cache Skills (2026-10-14)
+- [TECHNIQUE] Method-differential 7 verbs × 1 route bisa jalan standalone (tanpa plugin proxy Caido/Burp) dan tetap menemukan satu-satunya method-inconsistency target tanpa kredensial test → bangun mesin deteksi sendiri kalau dependency ekstensi tidak tersedia, jangan skip kelas bug ini
+- [REJECT] Divergensi status code saja (GET 200 vs HEAD/OPTIONS 401) dengan body kecil dan non-sensitif = observasi, bukan vulnerability → syarat submit: nilai yang bocor, aksi write 2xx, chain ke state change, atau inkonsistensi terhadap sibling route; selain itu turunkan ke catatan
+- [TECHNIQUE] Detektor yang menandai SETIAP 200 tampak sehat padahal noise → wajib pasang negative control (fixture routine 200 harus bersih) sebelum mengklaim alat jalan; tanpa itu false-positive rate tak terukur

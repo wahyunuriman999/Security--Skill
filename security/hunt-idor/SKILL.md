@@ -1,8 +1,6 @@
 ---
 name: hunt-idor
 description: Hunting skill for idor vulnerabilities. Built from 26 public bug bounty reports. Use when hunting idor on any target.
-version: 1.0.0
-license: MIT
 sources: github, hackerone_public
 report_count: 39
 ---
@@ -53,6 +51,12 @@ report_count: 39
 - `Content-Type: application/json` on endpoints accepting raw IDs
 - No `X-Frame-Options` or CORS misconfigs paired with ID params
 - `Authorization: Bearer` tokens that are user-scoped but hit org-level resources
+
+**Unauthenticated rotating IDOR (no session at all):**
+- An endpoint returns a *different* foreign record on every call with **zero** authentication — commonly a balance/usage/quota/stats or "me"-style route (e.g. `GET /v1/quota`, `GET /api/me`, `GET /api/stats`).
+- Recognise it: call it 10–20× and count distinct resource IDs returned. ~100% distinct means it round-robins (or randomly picks) over the whole table — this is *mass* enumeration, not a single-record IDOR.
+- Confirm there is no rate limit (burst 50–80 requests) before rating severity; no limit pushes it toward High/Critical.
+- Impact framing: mass customer/tenant data disclosure (CWE-639 unauthorized data access via user-controlled key, or CWE-284 improper access control) — report the enumeration rate and the full leaked field set, but keep the PoC to a handful of sampled records (data-minimization boundary, `redteam-mindset`).
 
 **JavaScript source patterns:**
 ```javascript

@@ -1,8 +1,6 @@
 ---
 name: hunt-subdomain
 description: Hunting skill for subdomain takeover vulnerabilities. Includes modern provider fingerprints — Microsoft Azure DevOps `cloudapp.azure.com` regional-pool re-issue (1-click OAuth ATO via wildcard `reply_to`, Binary Security), Zendesk help-desk takeover → email interception → password reset chain (0xprial writeup), Vercel `cname.vercel-dns.com` deleted-project takeover, plus general Fastly CDN service re-attach and S3 dangling-bucket cookie-scope techniques. Use when hunting subdomain takeover — emphasis on ATO-chain primitives (OAuth `redirect_uri`, cookie-domain, email DNS).
-version: 1.0.0
-license: MIT
 sources: github, hackerone_public, binarysecurity_research, can-i-take-over-xyz_research
 report_count: 3
 ---
@@ -205,6 +203,8 @@ dig CNAME sub.target.com
 
 1. **What can the attacker DO right now?**
    Can you register the unclaimed resource (GitHub repo, S3 bucket, Heroku app, UserVoice account) and serve arbitrary content — including phishing pages, credential harvesters, or malicious scripts — under the target's trusted domain name?
+
+**Broken-but-not-claimable routing.** If the answer is NO but the host still answers — Cloudflare `530` / `Origin DNS error` on every ordinary path while its documented API routes still `401` — that is not this class. Route it to `hunt-tls-network` Phase 6.6 as an origin-DNS / availability defect; filing it here gets it relabelled and downgraded.
 
 2. **What does the victim LOSE?**
    Users lose trust and safety: they see a company-branded URL serving attacker content. The company loses brand integrity, potentially leaks session cookies if the subdomain is in `domain=.target.com` scope, and may have OAuth/SSO flows hijacked. Depending on CSP configuration, XSS against the main application may be possible.

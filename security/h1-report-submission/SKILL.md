@@ -75,7 +75,33 @@ reports.
 
 ---
 
-## PRE-SUBMIT REVIEW — BLOCKING ISSUES TO FIX
+## PRE-SUBMIT VERIFICATION — re-read the code before writing the report body
+
+Before writing any claim about a source-code finding:
+
+1. **Read EVERY service's setup file independently.** A monorepo with two gRPC services can
+   have different interceptor chains on each. A blanket claim "no protovalidate anywhere" or
+   "no auth interceptors" is wrong if only one service was checked. Read each service's
+   `public.go` / equivalent setup file and list the interceptors per service explicitly.
+
+2. **Distinguish dev-mode config from production config.** `ENABLE_ENCLAVE=false` (compose
+   default) makes the enclave listen on TCP; `ENABLE_ENCLAVE=true` (production Nitro) switches
+   it to VSOCK. The production TCP exposure claim is only valid when the prod config or task
+   definition confirms it. State the exact config file and env var that drives the behavior.
+
+3. **Check runtime wiring, not just declaration.** `buf.validate` annotations and a dep in
+   `go.mod` do not prove validation runs. Confirm the chain: `protovalidate.New()` in setup +
+   `protovalidatemw.UnaryServerInterceptor(validator)` registered on the gRPC server.
+   A missing interceptor registration makes all annotations inert.
+
+4. **State honest severity ceilings.** When exploitation requires network reachability of an
+   internal port, say so plainly in the Impact section. Disclose preconditions the triager
+   will immediately spot; they reward honesty over inflation. Score High, not Critical, when
+   reachability cannot be independently confirmed from outside the infrastructure.
+
+5. **File separate reports for distinct root causes.** F1 (no auth interceptor) and F2
+   (singleflight race) share the same repo but are independent root causes with independent
+   fixes. Never merge them into one report — triage splits or closes the weaker one.
 
 H1's Report Assistant often flags issues before you can submit. Common blockers
 and how to fix them:
@@ -174,8 +200,21 @@ Scope and Safety of Testing
   rejected when the endpoint's behavior has changed.
 - **Live-verify before writing the report, not after.** A state-reuse claim is
   only submittable when both requests (first use AND reuse) were re-fired
-  within hours of submission and both returned 200 — re-running the exact curl
+  within hours of submitting and both returned 200 — re-running the exact curl
   steps IS the evidence capture. Print timestamp, request, status, and key
   headers for each case, plus the rejected baseline, into one `evidence_*.txt`
   the moment the responses arrive. A report written before this transcript
   exists reads as theory and gets flagged as missing proof-of-concept.
+- **Validate report claims at the smallest unit the API validates.** For
+  GraphQL, probe each claimed field separately after a combined query fails;
+  a first invalid field aborts validation and gives no evidence about later
+  fields. Mark finite field lists as a tested subset, not a complete schema,
+  unless an actual exhaustive enumeration proves completeness.
+- **Run the exact shipped reproducer after the final edit.** Regenerate the
+  evidence file and manifest from that run, then check that every attachment
+  named in the report exists and is hashed; otherwise the report and its PoC
+  can silently describe different claims.
+- **Keep one finding and one evidence boundary per submission.** Do not mix
+  negative recon results, rate-limit blockers, or unrelated endpoint probes
+  into the primary report unless they are required to establish the reported
+  impact; unrelated research notes make a valid report look speculative.

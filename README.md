@@ -1,74 +1,49 @@
 # Security--Skill
 
-A battle-tested security skill arsenal for AI-assisted bug bounty hunting and red-team operations.
+Arsenal skill keamanan untuk AI-assisted bug bounty hunting, red-team, dan blue-team.
 
-Built and hardened through live authorized engagements (HackerOne: crypto.com, Shopify), Indonesian ISP middlebox territory, and real report-submission feedback loops.
+Dibangun dan diuji lewat engagement authorized (HackerOne: crypto.com, Shopify, eToro,
+T-Mobile), kondisi middlebox ISP Indonesia, dan loop feedback submission report nyata.
 
-## What's inside
+## Isi
 
-| Layer | Contents |
-|---|---|
-| **hunt-\* skills** (58) | Per-vulnerability-class hunting methodology: detection patterns, payload tables, bypass techniques, chain templates — each distilled from public disclosed bug bounty reports (681 total report patterns across 24 vulnerability classes) |
-| **Enterprise platform skills** (10) | Okta, M365/Entra, cloud IAM, vCenter, enterprise VPN, APK/iOS red-team pipelines |
-| **Web3 audit stack** (21) | Solidity/DeFi bug classes, Foundry PoC, fuzz harness, meme-coin audit, storage-safety analysis |
-| **Tradecraft** | HIV-principle evasion framework (glycan shield, latency, mutation, reservoir, integration), red-team mindset discipline, triage 7-Question Gate, evidence hygiene |
-| **Custom tooling** | `rat_h3.py` (QUIC/HTTP-3 client that bypasses TCP middleboxes), `rat_ghost.py` (browser-fingerprint session layer), `rat_oob.py` (OOB callback toolkit), `rat_digest.py` (HTTP digest auth attack toolkit) |
+| Folder | Skill | Cakupan |
+|---|---|---|
+| `security/` | 130 | hunt-* per kelas vuln (XSS, SQLi, SSRF, IDOR, OAuth, JWT, GraphQL, …), enterprise platform (Okta, M365/Entra, vCenter, VPN), Web3 audit, mobile pipeline, metodologi bug bounty |
+| `security-atlas/` | 870 | Atlas 870 skill mapped MITRE ATT&CK: cloud IAM, AD/ADCS, K8s, malware analysis, forensics, IR, threat intel, detection engineering, OT/ICS, zero trust, compliance |
+| `security-atlas-roadmap/` | 1 | Router 64-cluster: sinyal tugas -> nama skill. Cakupan 870/870 skill |
+| `tools/` | 10 file | HIV framework (mutator, WAF fingerprinter, beacon, CD4 flood, scoring) + rat_h3/rat_ghost/rat_oob/rat_digest |
+| `tradecraft/` | 28 file | HIV evasion framework, OPSEC protocol, anti-forensics, payload database (XSS/SQLi/SSRF), engagement timeline |
 
-**Start here:** [`INDEX.md`](../INDEX.md) — decision tree + full skill map (110 skills by category, overlap notes).
+**Mulai dari sini:** [`INDEX.md`](INDEX.md) — decision tree + peta skill lengkap.
 
-## Repo hygiene (2026-10-12)
-- 110/110 skills carry `version` + `license` frontmatter (validated).
-- `tools/tests/` — correctness test suite (8 tests, all green). Run:
-  `~/workspace/rat-tools-venv/bin/python -m unittest discover -s tests`
-  from `~/workspace/skills/_shared/tools/`. Covers: multi-value header
-  collection, gzip/brotli/deflate decompression, DoH response parsing,
-  RFC 2617 digest vectors, digest parse/crack round-trip, OOB module health.
-  `rat_ghost.py` is excluded from the harness by design (author review only).
+## Cara pakai roadmap
 
-## Skill categories
+Jangan baca 870 deskripsi skill untuk memilih. Muat `security-atlas-roadmap` —
+satu tabel 64 baris memetakan sinyal tugas ke nama skill, lalu `skill_view` yang tepat.
 
-```
-security/
-├── hunt-*.md          # 58 vuln-class hunting skills (XSS, SQLi, SSRF, IDOR, OAuth, ...)
-├── okta-attack        # Okta-as-IdP red-team chain
-├── m365-entra-attack  # Microsoft 365 / Entra ID chains
-├── web3-*.md          # Smart contract audit stack
-├── triage-validation  # 7-Question Gate — kills weak findings before submission
-├── redteam-mindset    # Operator discipline: DO NOT STOP, data-minimization
-├── engagement-learning-loop  # Post-engagement lesson ledger (LESSONS.md)
-└── ...
+```bash
+ATLAS="security-atlas"
+rg -il "<keyword>" "$ATLAS" --glob "SKILL.md"
 ```
 
-## Origin story
+## Aturan prioritas
 
-This arsenal was assembled and battle-tested during authorized bug bounty engagements:
-
-- **HackerOne crypto.com program** — CORS origin-reflection finding, GraphQL surface mapping, WAF fingerprint analysis through Indonesian ISP DNS-hijack + SNI-MITM conditions
-- **HackerOne Shopify program** — OAuth state-reuse CSRF chain on `shopify.okta.com` with PKCE-gap analysis
-- Every lesson from every engagement is captured in `engagement-learning-loop/references/LESSONS.md`
-
-## Tooling highlights
-
-### rat_h3.py — HTTP/3 direct-to-CDN-edge client
-Bypasses TCP-only national middleboxes (DNS hijack + SNI MITM) via QUIC/UDP 443 to Cloudflare edge IPs.
-v2: real edge-IP discovery via DNS-over-HTTPS (stdlib), multi-value header
-collection (no more set-cookie collapse), gzip/brotli/deflate decompression,
-persistent `H3Session` with multiplexed streams + edge-IP failover, and
-timestamped evidence transcripts (`capture_dir`).
-Requires: `~/workspace/rat-tools-venv` (aioquic, httpx, certifi, brotli).
-
-### rat_ghost.py — Glycan Shield session layer
-Full Chrome fingerprint (sec-ch-ua, sec-fetch-*), referer-chain management, cookie capture, human-timing jitter. Requests indistinguishable from real user traffic.
-
-### rat_oob.py — OOB callback toolkit
-Tag-based blind-callback polling for SSRF/blind-XSS/LLM-exfil validation. `gen` → fire payload → `wait <tag>`.
+1. **`security/hunt-*`** — prioritas untuk web/API bug bounty. Distilasi dari 681 pola
+   report disclosed di 24 kelas vuln.
+2. **`security-atlas/`** — pelengkap: cloud, AD, malware, forensics, IR, OT, detection.
+3. **`security-atlas-roadmap/`** — router, dipakai saat tugas tidak jelas masuk mana.
 
 ## License
 
-Skill content follows the upstream licenses (Claude-BugHunter: MIT/CC BY 4.0, sippts: GPL for adapted digest functions). Custom tooling: MIT.
+Konten skill mengikuti license upstream (Anthropic-Cybersecurity-Skills: MIT,
+Claude-Red: MIT, Claude-BugHunter: MIT/CC BY 4.0, sippts: GPL untuk fungsi digest).
+Custom tooling: MIT.
 
-## Credits
+## Kredit
 
-- **Claude-BugHunter** (elementalsouls) — the hunt-* skill bundle, 681 report patterns
-- **Pepelux/sippts** — digest auth parsing adapted into `rat_digest.py`
-- **Hermes Agent** skill system — the runtime this arsenal lives in
+- **Claude-BugHunter** (elementalsouls) — bundle hunt-*, 681 pola report
+- **Anthropic-Cybersecurity-Skills** (mukul975) — 818 skill mapped MITRE ATT&CK
+- **Claude-Red** (SnailSploit) — 49 skill metodologi offensive
+- **Pepelux/sippts** — parsing digest auth diadaptasi ke `rat_digest.py`
+- **Hermes Agent** — runtime tempat arsenal ini hidup

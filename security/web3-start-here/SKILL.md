@@ -1,8 +1,6 @@
 ---
 name: web3-start-here
 description: Master index for the web3 smart contract security knowledge base. Use this to navigate the skill chain. Read files in order — each ends with NEXT.
-version: 1.0.0
-license: MIT
 ---
 
 # WEB3 SKILLS — MASTER INDEX

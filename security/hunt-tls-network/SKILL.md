@@ -1,8 +1,6 @@
 ---
 name: hunt-tls-network
 description: "Hunt TLS/SSL and DNS misconfigurations — missing HSTS (downgrade attack), weak cipher suites, expired/invalid certificates, mTLS bypass, missing SPF/DKIM/DMARC (email spoofing), DNS Zone Transfer (AXFR), dangling CNAME subdomain takeover, CAA records. Most of these are Info/Low on their own — this skill is opinionated about which findings actually pay (spoofable DMARC with delivered-to-inbox proof, AXFR returning internal hosts, dangling-CNAME takeover) versus which get rejected as best-practice noise (missing CAA, missing HSTS with no MitM position). Use during recon to find infrastructure weaknesses, and to TRIAGE them honestly before reporting."
-version: 1.0.0
-license: MIT
 report_count: 6
 sources: portswigger_research, ssl_labs_research, hstspreload_org
 ---
@@ -243,6 +241,31 @@ Impact: cookie scope theft (cookies set for `.target.com`), OAuth `redirect_uri`
 
 ---
 
+## Phase 6.6 — Origin DNS Failure (Cloudflare Error 1016 / HTTP 530): the Broken-But-Not-Claimable Host
+
+`hunt-subdomain` owns the case where a dangling record lets you *claim* content. This is the inverse and it is a separate finding class: the host is **production-broken but not attacker-controllable**. Do not report it as a takeover — its Gate 0 question ("can you register the resource and serve a canary string?") is answered NO, and filing it under the takeover class gets it relabelled and downgraded.
+
+**Detection.** `530` with a body containing `Origin DNS error` (Cloudflare) means the hostname's CNAME target no longer resolves an A record — the edge still routes the hostname but the origin is gone from DNS.
+
+```bash
+curl -s -o /dev/null -w '%{http_code}\n' "https://$HOST/"
+curl -s "https://$HOST/" | grep -o 'Origin DNS error'
+```
+
+Repeat the probe across several passes before believing it — a single 530 can be a transient origin failure, and the finding only holds if it is deterministic.
+
+**The differential that makes it a finding, not noise.** A bare 530 is indistinguishable from a decommissioned host, an intentionally-dark host, or a WAF block — all noise. Prove the host is still live infrastructure by contrasting routes on the same host: **documented API routes on the host keep returning their normal unauthenticated answer (`401` + `WWW-Authenticate: Bearer`) while every other path returns 530.** That contrast proves the edge still holds the hostname's route mapping and the origin alone failed — which is exactly the failure monitoring misses, because every probe is issued against a hostname the edge still answers. Corroborate with the edge's own error body: an error page naming the exact host (`Error 1016: Origin DNS error | <host>`) is the edge confirming the hostname is configured, not random.
+
+**Lifting it above "abandoned hostname."** Establish the host is documented production, not a leftover. For any vendor publishing an OpenAPI/Swagger spec, the spec's `servers[].url` naming the host plus the spec's own operation descriptions are authoritative — an API the vendor documents as live production cannot be dismissed as decommissioned. Save the spec beside the probe evidence so triage re-derives it without a fetch.
+
+**Impact framing — honest, never attacker-controlled.** Frame it as an availability-and-compliance defect with the branch spelled out, because the victim is the vendor's customer, not a participant in your attack:
+- A consumer of the API that loses its preference source must either block all processing (product failure) or fail open (processing with no consent record). Name both branches — either is the impact, and you do not need to prove which one the customer chose.
+- For consent / preference / DSR-management hosts specifically, the fail-open branch is a regulatory exposure for every customer of the platform, and it is invisible because the hostname still resolves.
+
+**Reporting guard.** Title it as what it is (origin DNS failure / API unavailability on a documented production host), state plainly that it is not attacker-controllable, and let the differential plus the vendor spec carry severity. Attach no takeover or RCE claim you have not proven.
+
+---
+
 ## Phase 7 — CAA Records (recon signal only — NOT a reportable finding)
 
 ```bash
@@ -306,6 +329,7 @@ Severities below are calibrated to what triage actually accepts. They are delibe
 | TLS/DNS finding | Realistic standalone severity | Notes / what raises it |
 |----------------|------|------|
 | Dangling-CNAME subdomain takeover (claimed + canary served) | **High** | Critical if at OAuth `redirect_uri`/SSO or sharing `.target.com` session cookies |
+| Documented production host returning Cloudflare 1016/530 on all ordinary paths while its documented API routes still 401 | **Low–Medium, scope-dependent** | Availability/compliance defect, not attacker-controlled; the 401-vs-530 differential + vendor spec is what lifts it above "abandoned host" |
 | mTLS / client-cert bypass reaching authed functionality | **High** | Must show privileged data/action, not just a 200 |
 | AXFR returning internal hosts/IPs | **Medium** | Recon value; pairs with internal-service findings |
 | Spoofable DMARC, **delivered to a real inbox** (PoC headers) | **Medium** | Often OOS — check scope; Inbox (not Spam) + delivered required. *Reading `p=none` from `dig` alone = Info, do not file* |

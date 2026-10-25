@@ -1,8 +1,6 @@
 ---
 name: triage-validation
 description: Finding validation before writing any report — 7-Question Gate (all 7 questions), 4 pre-submission gates, always-rejected list, conditionally valid with chain table, CVSS 3.1 quick reference, severity decision guide, report title formula, 60-second pre-submit checklist. Use BEFORE writing any report. One wrong answer = kill the finding and move on. Saves N/A ratio.
-version: 1.0.0
-license: MIT
 ---
 
 # TRIAGE & VALIDATION
@@ -46,6 +44,11 @@ Common tiers:
 - **Medium**: IDOR on specific user non-critical data, XSS on sensitive page requiring click
 - **Low**: Non-sensitive info disclosure, clickjacking with PoC
 
+**AI/Agentic-specific accepted impacts (e.g., OpenAI Safety):**
+- **P1**: Cross-tenant data exfil via connector prompt injection, CoT extraction with secrets, 1000+ Sol completions bypass, agent confirmation UX bypass for high-impact actions
+- **P2**: Same-tenant data access via prompt injection, partial CoT leak, rate limit bypass <1000, agent memory poisoning within same workspace
+- **P3**: Self-exfil only, summarized reasoning only, theoretical bypasses
+
 **If your bug maps to a listed exclusion → KILL IT.**
 
 ---
@@ -56,6 +59,14 @@ Confirm:
 - Vulnerable domain is on the in-scope list (not `*.internal.target.com`)
 - It's a production asset (not staging/dev unless explicitly in scope)
 - It's not a third-party service the company just uses (not Stripe, Salesforce, Google Auth)
+
+**AI-specific scope checks:**
+- Agentic Tools (Atlas, Codex, Operator, Connectors, MCP) → IN SCOPE
+- *.openai.com (CoT extraction) → IN SCOPE  
+- openai.com (rate limit bypass) → IN SCOPE
+- Other novel abuse → IN SCOPE
+- Content Issues (model outputs) → OUT OF SCOPE
+- Third-party MCP server bugs → OUT OF SCOPE (unless OpenAI-side remediation needed)
 
 **If out-of-scope → KILL IT.**
 
@@ -291,6 +302,11 @@ Missing CSP / HSTS / security headers
 Missing SPF / DKIM / DMARC
 GraphQL introspection alone (no auth bypass, no IDOR demonstrated)
 Banner / version disclosure without working CVE exploit
+→ KILL as a vulnerability claim, but it survives as a submittable
+  misconfiguration ONLY when it clears all three bars in "Hardening
+  Version Disclosure" below. Never submit it with a CVE sentence whose
+  affected range was recalled from memory rather than read from the
+  advisory this session — a retracted report costs more than an unfiled one.
 Clickjacking on non-sensitive pages (no sensitive action PoC)
 Tabnabbing
 CSV injection (no actual code execution shown)
@@ -382,6 +398,49 @@ The goal is to QUICKLY disqualify bad leads so you hunt real bugs:
 4. **Admin bypass**: "Admin can do X" is NEVER a bug → kill it immediately
 5. **Design doc test**: If it's documented behavior → kill it immediately
 6. **Rabbit hole signal**: 30+ min on Q6 with no reproducible PoC → kill it
+
+---
+
+## HARDENING VERSION / CONFIG DISCLOSURE
+
+Version disclosure is on the NEVER SUBMIT list because it is usually filed as a
+vulnerability claim it cannot support. On a no-exploitation engagement it can
+still pass — but only after the claim is re-framed and three bars are cleared.
+State the result plainly: the finding is a misconfiguration with reconnaissance
+depth, not a compromise.
+
+### Bar 1 — the disclosure is complete and unauthenticated
+
+A single GET from an anonymous client returns the whole artifact set (index,
+configuration reference, release notes, changelog). The deeper the artifact set
+and the more precisely it fingerprints the build, the stronger the finding.
+A single banner string does not clear this bar.
+
+### Bar 2 — the CVE question is answered honestly, and usually negatively
+
+Verify every CVE against the advisory THIS session: quote the exact affected
+range, compare it to the fingerprinted version, and record the comparison in the
+report — including when it is negative. Also verify the CVE's type: rewrites and
+bypasses are routinely mis-remembered as RCE, and that mismatch is fatal.
+
+When no CVE applies, write that fact into the report and drop the claim. An
+honest negative range is what makes the remaining observation credible; an
+unverified range manufactures a finding that has to be retracted later.
+
+### Bar 3 — the negative surface is mapped
+
+Ship what was tested and found closed: the default sibling apps of the same
+product, the write methods on the disclosed paths, and the version-adjacent
+attack chains that were ruled out by range rather than by attempt. This is the
+boundary of the claim, and it pre-empts the auto-close.
+
+### Adjunct signals worth recording
+
+- An unmaintained artifact (identical stale Last-Modified across every path)
+  indicates a default application never removed from production — state it as
+  the deployment pattern, not as exploitation.
+- A changelog that enumerates its own CVEs converts a blind targeting exercise
+  into a precise one. Name that conversion; do not claim the RCE itself.
 
 ---
 

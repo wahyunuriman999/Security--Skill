@@ -1,8 +1,6 @@
 ---
 name: security-arsenal
 description: Security payloads, bypass tables, wordlists, gf pattern names, always-rejected bug list, conditionally-valid-with-chain table, temp email creation scripts, XXE/deserialization/host header injection payloads. Use when you need specific payloads for XSS/SSRF/SQLi/XXE/NoSQLi/command injection/SSTI/IDOR/path-traversal/HTTP smuggling/WebSocket/MFA bypass, bypass techniques, temp email setup for multi-account testing, or to check if a finding is submittable. Also use when asked about what NOT to submit.
-version: 1.0.0
-license: MIT
 ---
 
 # SECURITY ARSENAL
@@ -1220,6 +1218,12 @@ These are valid ONLY when combined with a chain that proves real impact:
 | Self-XSS | + CSRF to trigger it on victim | Medium |
 | Subdomain takeover | + OAuth redirect_uri registered at that subdomain | Critical |
 | GraphQL introspection | + auth bypass mutation or IDOR on node() | High |
+| **Prompt injection → tool-use exfiltration (markdown image / fetch_url OOB)** | **+ proven cross-tenant data access OR destructive action** | **High–Critical** |
+| **CoT / reasoning trace extraction** | **+ verbatim reproducibility (run-twice) + anchor leakage (secrets/internal URLs)** | **High–Critical** |
+| **Cross-tenant data access via AI connector** | **+ verifiable victim artifact from different tenant** | **High–Critical** |
+| **Agent confirmation UX bypass** | **+ high-impact action executed without consent (export/delete/send/create-account)** | **High–Critical** |
+| **Rate limit bypass on LLM API** | **+ 1000+ completions on latest model / 24h / ≤5 accounts demonstrated** | **High–Critical** |
+| **Agent memory poisoning / cross-session leakage** | **+ second clean session inherits payload via semantic retrieval** | **High–Critical** |
 
 **Rule:** Build the chain first, confirm it works end-to-end, THEN report. Never report A and say "could chain with B" — prove it.
 

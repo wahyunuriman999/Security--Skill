@@ -1,8 +1,6 @@
 ---
 name: hunt-source-leak
 description: Hunt source code and build artifact leakage — JavaScript source maps (.js.map) reconstructing TypeScript/ES6 source, Swagger/OpenAPI JSON endpoint discovery, .env/.git exposure, webpack chunks with hardcoded secrets, robots.txt/security.txt recon, build-info files, asset-manifest.json API route discovery, .DS_Store file listing. Use at the START of every recon session — these findings often unlock the entire attack surface.
-version: 1.0.0
-license: MIT
 sources: hackerone_public, offensive_research
 report_count: 7
 ---

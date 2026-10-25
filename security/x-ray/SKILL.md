@@ -1,8 +1,6 @@
 ---
 name: x-ray
 description: "Generates an x-ray.md pre-audit report covering overview, enhanced threat model (protocol-type profiling, git-weighted attack surfaces, temporal risk analysis, composability dependency mapping), invariants, integrations, docs quality, test analysis, and developer/git history. Triggers on 'x-ray', 'audit readiness', 'readiness report', 'pre-audit report', 'prep this protocol', 'protocol prep', 'summarize this protocol'."
-version: 1.0.0
-license: MIT
 ---
 
 # X-Ray — Pre-Audit Report

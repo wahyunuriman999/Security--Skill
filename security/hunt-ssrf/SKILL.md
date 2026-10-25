@@ -109,6 +109,52 @@ to a non-internet-routable address, which a status code alone otherwise cannot.
 
 ---
 
+## Locating the Readback Field (do this before declaring "blind")
+
+Most SSRF sinks sit behind an integration / "test connection" UI. That UI has to show the customer *something* about the upstream response, so the client bundle almost always names the field that carries it. Read the bundle before concluding a sink is blind — it tells you which integration kind returns the body and which returns only a status.
+
+```bash
+grep -oE '"[^"]*(responseBody|response_body|upstreamBody|rawResponse|_status)[^"]*"' *.js | sort -u
+# then read the reducer / call site:  {statusCode, responseBody, timestamp}  -> body IS captured
+```
+
+Reading that call site also reveals the **truncation length** the client applies (e.g. `slice(0,120)`), which caps what a readback can prove.
+
+**A status code oracle is not a finding.** When `errors[].statusCode` populates but `responseBody` stays empty you have reachability only — `200`/`405` proves a live HTTP listener, `0`/timeout proves refused or filtered:
+```
+public host        -> 405   (reached; method not allowed)
+127.0.0.1:80       -> 0     (nothing listening / filtered)
+169.254.169.254    -> 0
+```
+Use it to map egress. Never score it, and never present a link-local `0` as if it were the security control working.
+
+**Separate "the sink fetches" from "the sink reaches metadata".** Egress is often internet-only by design (NAT / proxy allowlist). A sink that fetches `https://example.com` but cannot reach `169.254.169.254` is still a genuine SSRF — it simply is not credential-bearing, so it is not Critical and usually not reportable standalone. Report the two facts separately and name which half failed: *arbitrary outbound request proven; internal/link-local reach not proven.* Merging them into "SSRF, limited impact" hides the only distinction triage cares about.
+
+**The sink's HTTP method and header control decide metadata reach before you test a single payload.** Read the integration manifest / request template and record `method` plus which headers are attacker-controlled; that pair is the whole reachability answer:
+
+| Provider | Needs | POST-only sink outcome |
+|---|---|---|
+| AWS IMDSv1 | `GET` | cannot read credentials |
+| AWS IMDSv2 | `PUT /latest/api/token` then GET | cannot even mint the token |
+| GCP | `Metadata-Flavor: Google` header | fails unless the template lets you set headers |
+| Azure | `Metadata: true` header | fails unless the template lets you set headers |
+
+So a POST-only webhook/export sink is a credential-dead end regardless of egress: score it as blind external SSRF and stop. Attacker-controlled headers recover GCP/Azure; `{{baseURL}}`-style templates with a `GET` recover IMDSv1. Check the template before burning requests on metadata payloads that physics says cannot work.
+
+**A 5xx from the fetch endpoint is not evidence the fetch happened.** Handlers commonly fail *before* the outbound call (config not resolved into the environment, tenant mismatch, missing prerequisite). Count actual requests in the receiver's request log instead of trusting the status code:
+
+```
+GET https://<receiver>/token/<uuid>/requests?sorting=newest
+# 50 captured requests, all POST /<index>/_doc  ->  only your known-good sink fired
+# zero requests with the path the failing handler would have sent
+#   => the 500 preceded any outbound call; this path is not an SSRF, it is a broken handler
+```
+Record the server's User-Agent from that log too (`LD-Integrations/1.0`-style) — it is the cleanest attribution that the request came from the target and not from your own egress. Zero captured requests retires the claim; a captured request with the expected path and UA certifies it.
+
+**Check feature gating on the readback-capable kind.** Integrations are enabled per plan or per tenant. `403 Destination kind <x> is unavailable` for every URL-bearing kind, while key-based kinds (`segment`, `mparticle`) still create, means the readback path is closed *on this tenant* — not that the endpoint is safe. Enumerate every kind and record which ones accept a user-controlled URL before moving on.
+
+---
+
 ## Attack Surface Signals
 
 ### URL Patterns to Hunt

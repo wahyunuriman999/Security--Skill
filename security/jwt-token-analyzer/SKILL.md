@@ -2,7 +2,6 @@
 name: jwt-token-analyzer
 version: 1.0.0
 description: JWT analyzer for cross-tenant testing
-license: MIT
 ---
 
 # JWT Token Analyzer

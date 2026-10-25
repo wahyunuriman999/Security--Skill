@@ -1,8 +1,6 @@
 ---
 name: okta-attack
-description: Okta-as-IdP red-team attack chain — tenant discovery, user enumeration (multiple vectors), authentication flow analysis (factors enumeration, push-notification fatigue, SMS bypass), password spray with lockout discipline, Okta-specific phishing primitives (kits, FastPass abuse, OIDC redirect_uri tampering), MFA enumeration, post-compromise admin API surface. Many enterprise orgs use Okta instead of (or alongside) Entra ID. Distinct endpoints, distinct rate-limiting, distinct factor flows. Use when recon shows `<tenant>.okta.com`, `<tenant>.okta-emea.com`, `<tenant>.oktapreview.com`, or autodiscover-style records pointing at Okta IdP.
-version: 1.0.0
-license: MIT
+description: Okta-as-IdP red-team attack chain — tenant discovery, user enumeration (multiple vectors), authentication flow analysis (factors enumeration, push-notification fatigue, SMS bypass), password spray with lockout discipline, Okta-specific phishing primitives (kits, FastPass abuse, OIDC redirect_uri tampering), MFA enumeration, post-compromise admin API surface. Also covers the Okta Bugcrowd program's in/out-of-scope boundary and the Advanced Server Access (ScaleFT) web/API surface with its public validation-endpoint enumeration oracles. Many enterprise orgs use Okta instead of (or alongside) Entra ID. Distinct endpoints, distinct rate-limiting, distinct factor flows. Use when recon shows `<tenant>.okta.com`, `<tenant>.okta-emea.com`, `<tenant>.oktapreview.com`, `app.scaleft.com`, or autodiscover-style records pointing at Okta IdP, or when working the Bugcrowd Okta engagement.
 sources: public-okta-docs, idp-redteam-knowledge, disclosed-incidents
 report_count: 8
 ---
@@ -285,9 +283,85 @@ Okta FastPass is push-based + device-bound. Bypasses:
 
 ---
 
+## Bugcrowd Okta program — verified scope boundaries
+
+Okta runs a public Bugcrowd program (`engagements/okta`, pay_for_success, scope rank 4). Read the in/out-of-scope lists from the engagement page before touching anything — they are load-bearing:
+
+- **In scope (P1 band, up to $75,000):** Advanced Server Access / ScaleFT (`app.scaleft.com`, `app.trex.scaleft.io`), Okta Verify (iOS/Android/macOS/Windows) + FastPass, Desktop MFA (Win/macOS), Password Sync (macOS), Okta Browser Plugin, On-Prem Agents (AD/LDAP/RDP/IWA), AtSpoke / Okta Access Requests (`*.at.oktapreview.com`), Okta Workflows (`*.workflows.oktapreview.com`).
+- **Out of scope:** `*.okta.com` (the entire production tenant estate, including `login.okta.com`), `developer.okta.com`, `trust.okta.com`, `pages.okta.com`, `www.okta.com`, `*.trexcloud.com`, `scaleft.com` marketing site, `app.scaleft.com/p/signup`, `github.com/oktadev`, backend non-app infrastructure, network layer, **automated scanning**, **DoS**. **Okta Classic has been out of scope since mid-2024 — only OIE (Okta Identity Engine) targets count.**
+
+Two consequences that shape the whole engagement:
+
+1. **Every `<tenant>.okta.com` finding is out of scope.** The tenancy-attack techniques in this skill stay valuable for the *other* IdP targets and for chained scenarios, but do not spend the Okta engagement on them.
+2. **The in-scope OIE / AtSpoke / Workflows hosts all require a registered researcher tenant**, so the highest-reward Okta attack surface is effectively gated behind Bugcrowd login. Budget effort accordingly — the ASA web/API surface is the accessible part.
+
+---
+
+## Public validation-endpoint enumeration oracles
+
+Pre-registration / validation endpoints ("is this name taken?", "check availability") are a recurring unauthenticated disclosure source that sits *above* the auth boundary and is easy to miss because it never appears in the API tree reconstructed from the authenticated app.
+
+Attack pattern — treat any public validation endpoint as a **namespace oracle**:
+
+1. Find it in the signup/login JS bundle — look for a POST body carrying a single name/username/tenant/team field.
+2. Send the same request with names from three classes: **known-real brand/organization names**, **infrastructure subdomain words** (`admin`, `api`, `app`, `login`, `support`, `status`, `www`), and **random controls** that must be unclaimed.
+3. Classify by the **response body text, not the status code** — the status is usually 400 for every rejection, and the discriminating detail lives in the validation message (`existing` vs `reserved` vs character-class errors vs empty 200 = available).
+4. Repeat one input 3–5× to prove the classification is deterministic rather than incidental.
+5. Compare against a **sibling environment** (a second hostname serving the same app) — a tenant reported EXISTS on one and AVAILABLE on the other leaks the tenant→environment mapping.
+
+Two disclosure classes come out of this and they belong in separate paragraphs of a report:
+
+- **Existing-name disclosure** — which organization/tenant slugs are registered, converting blind targeting into named targeting.
+- **Reserved-name disclosure** — the platform's internal blocklist, revealing which hostnames are operationally meaningful to the operator. This is usually the half that carries the higher severity, because it is information obtainable nowhere else.
+
+**Severity gate:** an enumeration oracle is *disclosure*, not compromise. File it in the information-disclosure band unless you can chain it — the test is whether the leaked name moves a downstream decision (a login flow that narrows to that tenant, a client/agent that uses the slug for host verification). If you cannot show the downstream decision, say so explicitly in the report rather than implying it.
+
+### Reading a Bugcrowd engagement scope without login
+
+Engagement pages are client-rendered, but the rails app still emits the header props server-side:
+
+```bash
+# 1. engagement page → data-props blob on the brief component
+curl -s https://bugcrowd.com/engagements/<handle> | grep -o 'data-props="[^"]*"' | head -1
+# decode the HTML entities, then read: code, state, rewardAllocation, startsAt, scopeRank, description
+
+# 2. public JSON endpoints that need no auth
+/engagements/<handle>/statistics        # rewardedVulnerabilities, averagePayout, validationWithin
+/engagements/<handle>/scope_ranks       # {"scopeRank":N}
+/engagements/<handle>/announcements     # large HTML, sometimes embeds target lists
+```
+
+The full in/out-of-scope target list usually is **not** in that payload (it renders after login). Read it from the vendor's own security page — `https://bugcrowd.com/<handle>` is linked directly from Okta's `/security` page and returns the same 200, sometimes with targets inline — or from public mirrors such as `bug-bounties.as93.net/<program>`, which republishes scope lists verbatim. Always confirm a mirror's boundary against the live engagement before relying on it.
+
+---
+
+## Advanced Server Access (ScaleFT) — reconstructed endpoint map
+
+`app.scaleft.com` serves a React SPA against an envoy API backend; route names live in `assets.scaleft.com/js/dashboard.*.js` and the webpack `496.*` chunk. Reconstructed unauthenticated behavior:
+
+| Endpoint | Unauth result | Note |
+|---|---|---|
+| `POST /v1/teamname-validate` | **200 / 400, no auth** | the enumeration oracle described above |
+| `GET /v1/info` | 401 `Missing Authorization header` | first call the client makes after session establishment |
+| `GET /v1/servers` | 401 `Missing Authorization header` | auth-gated resource |
+| `POST /v1/teams/{team}/sessions` | 400 schema validation | **identical for existing and non-existing teams** — no tenant oracle here |
+| `GET /v1/oauth/client_applications/{id}` | 401 | auth required |
+| `GET /v1/teams/{team}/oauth/client_applications/{id}` | 404 | requires a valid team first |
+
+Negative results worth recording so they are not re-attempted:
+
+- **Bearer parsing is not bypassable by JWT confusion.** `alg:none`, empty signature, HS256-shaped, RS256-empty-sig, and long garbage tokens all return `Invalid authentication token`. No signature confusion found.
+- **Method and content-type confusion closed.** PUT/PATCH/DELETE/OPTIONS → 404, TRACE → 405, every non-JSON content type → 415.
+- **Schema error verbosity is real but low value** (`json: cannot unmarshal, not an object`) — parser internals on a pre-auth validation endpoint, with no tenant or user state disclosed.
+- `/l/{team}/login/*` shells return the same SPA shell for existing and non-existing teams — no tenant differential.
+- `dev.sudo.wtf` appears in the ASA bundle's hostname map and may resolve to `127.0.0.1` on a test host — a dev-local artifact, not an attack target.
+
+---
+
 ## Tooling
 
 - **`OktaTerrify`** (github.com/silverhack/OktaTerrify) — post-compromise Okta device-trust / FastPass enumeration. The only verifiable public Okta-specific offensive tool; no other named, maintained "okta-attacker"/"okta-toolkit" utility is verifiable — build engagement-specific scripts against `/api/v1/*` instead of citing unverified tool names.
+- **`references/scaleft-asa-surface.md`** — bundle-mining recipe, the full enumeration-oracle classification table, the cross-environment mapping technique, and the ruled-out attack list for the ASA (ScaleFT) surface.
 
 ---
 
@@ -297,6 +371,9 @@ Okta FastPass is push-based + device-bound. Bypasses:
 - **DO NOT skip factor enumeration** — knowing the factor list before attempting spray informs the realistic threat model
 - **DO NOT assume MFA-fatigue is in scope** — it's social engineering; explicit OK required
 - **DO NOT confuse `*.oktapreview.com` with production** — preview is a non-prod tenant, findings have different severity
+- **DO NOT treat `*.okta.com` production tenants as in-scope on the Bugcrowd Okta program** — the whole estate is explicitly OOS; spend the engagement on ASA / Verify / AtSpoke
+- **DO NOT conflate an enumeration oracle with account takeover** — disclosure-only findings are filed at disclosure severity, and the report must state the missing link explicitly rather than implying the chain
+- **DO NOT trust a scope mirror over the live engagement page** — republishers lag program changes by months; re-verify every boundary you act on
 
 ---
 
