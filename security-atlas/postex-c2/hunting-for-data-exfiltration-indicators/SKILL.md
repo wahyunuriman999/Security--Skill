@@ -1,6 +1,6 @@
 ---
 name: hunting-for-data-exfiltration-indicators
-description: "Hunt data exfiltration analyzing Zeek Suricata network."
+description: "Hunt for data exfiltration by analyzing Zeek and Suricata network telemetry for unusual data flows, DNS tunneling via large/frequent TXT queries, uploads to personal cloud storage, and encrypted-channel abuse, correlated against threat intel on destination domains. Use when hunting for data theft in a compromised environment, investigating unusual outbound data volumes, or determining what data was stolen during incident response."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, against, analyzing, and, cloud, correlated, data, destination, dns, domains, encrypted-channel, exfiltration]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, data, exfiltration, indicators, abuse, against, analyzing, and, cloud, correlated, destination, dns, domains, encrypted-channel]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-data-exfiltration-indicators -->

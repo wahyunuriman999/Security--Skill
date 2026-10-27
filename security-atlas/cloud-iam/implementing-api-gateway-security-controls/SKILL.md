@@ -1,6 +1,6 @@
 ---
 name: implementing-api-gateway-security-controls
-description: "Configures API gateways Kong AWS API Gateway Azure APIM."
+description: "'Configures API gateways such as Kong, AWS API Gateway, Azure APIM,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, apim, aws, azure, configures, gateway, gateways, implementing-api-gateway-security-controls, kong, such]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, gateway, security, controls, apim, aws, azure, configures, gateways, kong, such]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-gateway-security-controls -->

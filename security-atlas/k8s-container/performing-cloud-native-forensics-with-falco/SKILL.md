@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-native-forensics-with-falco
-description: "Uses Falco YAML rules runtime threat detection containers."
+description: "'Uses Falco YAML rules for runtime threat detection in containers and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, containers, detection, falco, for, performing-cloud-native-forensics-with-falco, rules, runtime, threat, uses, yaml]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, native, forensics, with, falco, and, containers, detection, for, rules, runtime, threat, uses, yaml]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-native-forensics-with-falco -->

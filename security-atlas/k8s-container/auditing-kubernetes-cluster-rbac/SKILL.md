@@ -1,6 +1,6 @@
 ---
 name: auditing-kubernetes-cluster-rbac
-description: "Auditing Kubernetes cluster RBAC configurations identify."
+description: "'Auditing Kubernetes cluster RBAC configurations to identify overly permissive"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [auditing, auditing-kubernetes-cluster-rbac, cluster, configurations, identify, kubernetes, overly, permissive, rbac]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, kubernetes, cluster, rbac, configurations, identify, overly, permissive]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-kubernetes-cluster-rbac -->

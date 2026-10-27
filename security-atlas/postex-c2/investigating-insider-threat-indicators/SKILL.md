@@ -1,6 +1,6 @@
 ---
 name: investigating-insider-threat-indicators
-description: "Investigates insider threat indicators including data."
+description: "'Investigates insider threat indicators including data exfiltration attempts,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attempts, data, exfiltration, including, indicators, insider, investigates, investigating-insider-threat-indicators, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [investigating, insider, threat, indicators, attempts, data, exfiltration, including, investigates]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / investigating-insider-threat-indicators -->

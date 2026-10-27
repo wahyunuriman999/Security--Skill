@@ -3,6 +3,7 @@ name: hackenproof-triage-marketplace
 description: HackenProof bug bounty triage workflow for Claude Code plugin marketplace operations. Use when analyzing security reports, validating scope and exploitability, assigning severity, detecting duplicates, setting report state, adding labels/comments, and preparing consistent triage decisions for HackenProof programs.
 version: 1.0.0
 license: MIT
+triggers: [hackenproof, triage, marketplace]
 ---
 
 # HackenProof Triage Marketplace

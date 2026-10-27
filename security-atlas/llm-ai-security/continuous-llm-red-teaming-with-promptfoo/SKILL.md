@@ -1,6 +1,6 @@
 ---
 name: continuous-llm-red-teaming-with-promptfoo
-description: "Wires Promptfoo DeepTeam CI/CD automated repeatable."
+description: "Wires Promptfoo and DeepTeam into CI/CD for automated, repeatable red-teaming of LLM apps against OWASP LLM Top 10, OWASP Agentic, and MITRE ATLAS presets, failing the build when jailbreak or injection vulnerabilities regress. Use for continuous adversarial testing in CI/CD, a merge-blocking security gate, or comparing model/prompt versions for compliance reporting."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversarial, against, agentic, and, apps, atlas, automated, build, continuous, continuous-llm-red-teaming-with-promptfoo, deepteam, failing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [continuous, llm, red, teaming, with, promptfoo, adversarial, against, agentic, and, apps, atlas, automated, build, deepteam, failing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / continuous-llm-red-teaming-with-promptfoo -->

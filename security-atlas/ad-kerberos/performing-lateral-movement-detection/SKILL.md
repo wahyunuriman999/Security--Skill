@@ -1,6 +1,6 @@
 ---
 name: performing-lateral-movement-detection
-description: "Detects lateral movement techniques including."
+description: "'Detects lateral movement techniques including Pass-the-Hash, PsExec,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detects, including, lateral, movement, pass-the-hash, performing-lateral-movement-detection, psexec, techniques]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, lateral, movement, detection, detects, including, pass-the-hash, psexec, techniques]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-lateral-movement-detection -->

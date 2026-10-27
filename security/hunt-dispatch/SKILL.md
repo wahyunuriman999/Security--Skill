@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: community
 report_count: 0
+triggers: [hunt, dispatch]
 ---
 
 # hunt-dispatch

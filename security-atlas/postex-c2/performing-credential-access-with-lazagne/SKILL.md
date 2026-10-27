@@ -1,6 +1,6 @@
 ---
 name: performing-credential-access-with-lazagne
-description: "Extract stored credentials compromised endpoints LaZagne."
+description: "Extract stored credentials from compromised endpoints using the LaZagne"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [compromised, credentials, endpoints, extract, from, lazagne, performing-credential-access-with-lazagne, stored, the, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, credential, access, with, lazagne, compromised, credentials, endpoints, extract, from, stored, the, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-credential-access-with-lazagne -->

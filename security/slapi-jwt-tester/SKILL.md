@@ -2,6 +2,8 @@
 name: slapi-jwt-tester
 version: 1.0.0
 description: slapi JWT tester for cross-tenant testing
+license: MIT
+triggers: [slapi, jwt, tester]
 ---
 
 # slapi JWT Tester

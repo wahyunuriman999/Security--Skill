@@ -1,6 +1,6 @@
 ---
 name: investigating-phishing-email-incident
-description: "Investigates phishing email incidents initial user report."
+description: "'Investigates phishing email incidents from initial user report through"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [email, from, incidents, initial, investigates, investigating-phishing-email-incident, phishing, report, through, user]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [investigating, phishing, email, incident, from, incidents, initial, investigates, report, through, user]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / investigating-phishing-email-incident -->

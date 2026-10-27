@@ -1,6 +1,6 @@
 ---
 name: detecting-rdp-brute-force-attacks
-description: "Detect RDP brute force attacks parsing Windows Security."
+description: "Detect RDP brute force attacks by parsing Windows Security Event Logs"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attacks, brute, detect, detecting-rdp-brute-force-attacks, event, force, logs, parsing, rdp, security, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, rdp, brute, force, attacks, detect, event, logs, parsing, security, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-rdp-brute-force-attacks -->

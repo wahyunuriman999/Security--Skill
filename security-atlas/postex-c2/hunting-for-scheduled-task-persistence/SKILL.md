@@ -1,6 +1,6 @@
 ---
 name: hunting-for-scheduled-task-persistence
-description: "Runs hypothesis-driven threat hunt Windows Scheduled Task."
+description: "Runs a hypothesis-driven threat hunt for Windows Scheduled Task persistence (T1053), guiding SIEM/EDR queries against task creation events (e.g. Event ID 4698), suspicious task actions, and unusual scheduling patterns. Use when hunting for scheduled-task persistence, after threat intel flags related campaigns, during incident response, or when alerts fire on schtasks/at.exe activity."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [4698, actions, after, against, and, creation, edr, event, events, flags, for, guiding]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, scheduled, task, persistence, 4698, actions, after, against, and, creation, edr, event, events, flags, guiding]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-scheduled-task-persistence -->

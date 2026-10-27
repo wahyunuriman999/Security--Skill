@@ -1,6 +1,6 @@
 ---
 name: analyzing-api-gateway-access-logs
-description: "Parses API Gateway access logs AWS API Gateway Kong Nginx."
+description: "'Parses API Gateway access logs (AWS API Gateway, Kong, Nginx) to detect"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, analyzing-api-gateway-access-logs, api, aws, detect, gateway, kong, logs, nginx, parses]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, api, gateway, access, logs, aws, detect, kong, nginx, parses]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-api-gateway-access-logs -->

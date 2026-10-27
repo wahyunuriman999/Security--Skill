@@ -1,6 +1,6 @@
 ---
 name: detecting-ai-model-prompt-injection-attacks
-description: "Detects prompt injection regex signature matching."
+description: "Detects prompt injection using regex signature matching, heuristic scoring for structural anomalies, and DeBERTa-based transformer classification, flagging direct injections (system-prompt overrides, role-play escapes) and indirect injections (encoded payloads, obfuscation) per OWASP LLM Top 10 (LLM01:2025). Use for input validation layers in chatbots/agents/RAG pipelines, or for retrospectively classifying injection attempts in logs or incident investigations."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, anomalies, classification, deberta-based, detecting-ai-model-prompt-injection-attacks, detects, direct, encoded, escapes, flagging, for, heuristic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, model, prompt, injection, attacks, and, anomalies, classification, deberta-based, detects, direct, encoded, escapes, flagging, for, heuristic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-ai-model-prompt-injection-attacks -->

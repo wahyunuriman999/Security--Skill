@@ -1,6 +1,6 @@
 ---
 name: mid-engagement-ir-detection
-description: "Methodology detecting client SOC patches attacker."
+description: "Methodology for detecting client SOC patches, attacker activity, and security-state changes that occur DURING a red-team engagement — and converting those observations into deliverable findings. Built from authorized red-team work where the client patched a confirmed SQLi within 30 minutes of detection AND an external attacker locked multiple new accounts during a single test session. Use when (a) running ANY active engagement against a monitored target, (b) a previously-confirmed finding stops reproducing, (c) baseline timing shifts unexpectedly, or (d) you notice response patterns changing d"
 version: 1.0.0
 author: Claude-BugHunter (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, and, attacker, authorized, built, changes, client, confirmed, converting, deliverable, detect, detecting]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [mid, engagement, detection, activity, and, attacker, authorized, built, changes, client, confirmed, converting, deliverable, detect, detecting]
 ---
 
 <!-- upstream: Claude-BugHunter / mid-engagement-ir-detection -->

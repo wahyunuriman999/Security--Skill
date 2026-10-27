@@ -1,6 +1,6 @@
 ---
 name: reverse-engineering-ios-app-with-frida
-description: "Reverse engineers iOS applications Frida dynamic."
+description: "'Reverse engineers iOS applications using Frida dynamic instrumentation"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [applications, dynamic, engineers, frida, instrumentation, ios, reverse, reverse-engineering-ios-app-with-frida, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [reverse, engineering, ios, app, with, frida, applications, dynamic, engineers, instrumentation, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / reverse-engineering-ios-app-with-frida -->

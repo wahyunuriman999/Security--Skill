@@ -1,6 +1,6 @@
 ---
 name: detecting-pass-the-hash-attacks
-description: "Detect Pass-the-Hash T1550.002 attacks analyzing NTLM."
+description: "Detect Pass-the-Hash (T1550.002) attacks by analyzing NTLM authentication patterns, flagging Type 3 logons using NTLM where Kerberos would be expected, and correlating with credential-dumping indicators. Use when threat hunting for lateral movement via stolen NTLM hashes, triaging EDR/SIEM alerts on suspicious NTLM logons, scoping compromise during incident response, or validating detection coverage in a purple team exercise."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [002, alerts, analyzing, and, attacks, authentication, correlating, credential-dumping, detect, detecting-pass-the-hash-attacks, edr, expected]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, pass, the, hash, attacks, 002, alerts, analyzing, and, authentication, correlating, credential-dumping, detect, edr, expected]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-pass-the-hash-attacks -->

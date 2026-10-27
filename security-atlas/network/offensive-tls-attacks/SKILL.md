@@ -1,6 +1,6 @@
 ---
 name: offensive-tls-attacks
-description: "Comprehensive methodology auditing exploiting TLS/SSL."
+description: "Comprehensive methodology for auditing and exploiting TLS/SSL implementations and misconfigurations across network services and mobile applications. Covers protocol downgrade attacks including POODLE (CVE-2014-3566) against SSLv3 CBC padding, DROWN (CVE-2016-0800) cross-protocol attack leveraging SSLv2 export ciphers to decrypt TLS sessions, and FREAK (CVE-2015-0204) forcing RSA export-grade key exchange. Addresses BEAST (CVE-2011-3389) exploiting CBC IV predictability in TLS 1.0, CRIME (CVE-2012-4929) and BREACH targeting TLS-level and HTTP-level compression oracles respectively, and Heartble"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, against, and, applications, attack, attacks, auditing, cbc, comprehensive, covers, cross-protocol, cve-2014-3566]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, tls, attacks, across, against, and, applications, attack, auditing, cbc, comprehensive, covers, cross-protocol, cve-2014-3566]
 ---
 
 <!-- upstream: Claude-Red / offensive-tls-attacks -->

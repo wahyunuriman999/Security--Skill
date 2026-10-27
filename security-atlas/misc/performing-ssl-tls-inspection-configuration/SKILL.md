@@ -1,6 +1,6 @@
 ---
 name: performing-ssl-tls-inspection-configuration
-description: "Performing ssl tls inspection configuration."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-ssl-tls-inspection-configuration]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ssl, tls, inspection, configuration]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ssl-tls-inspection-configuration -->

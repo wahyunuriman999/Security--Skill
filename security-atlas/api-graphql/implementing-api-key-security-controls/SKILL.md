@@ -1,6 +1,6 @@
 ---
 name: implementing-api-key-security-controls
-description: "Implements secure API key generation sufficient entropy."
+description: "'Implements secure API key generation with sufficient entropy, server-side"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, entropy, generation, implementing-api-key-security-controls, implements, key, secure, server-side, sufficient, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, key, security, controls, entropy, generation, implements, secure, server-side, sufficient, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-key-security-controls -->

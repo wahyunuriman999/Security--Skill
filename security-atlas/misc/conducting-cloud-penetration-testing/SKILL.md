@@ -1,6 +1,6 @@
 ---
 name: conducting-cloud-penetration-testing
-description: "Skill outlines methodologies performing authorized."
+description: "'This skill outlines methodologies for performing authorized penetration"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authorized, conducting-cloud-penetration-testing, for, methodologies, outlines, penetration, performing, skill, this]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, cloud, penetration, testing, authorized, for, methodologies, outlines, performing, skill, this]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-cloud-penetration-testing -->

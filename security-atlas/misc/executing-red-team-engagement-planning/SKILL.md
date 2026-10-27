@@ -1,6 +1,6 @@
 ---
 name: executing-red-team-engagement-planning
-description: "Build foundational red team engagement plan - scope."
+description: "Build the foundational red team engagement plan - scope definition, Rules"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [build, definition, engagement, executing-red-team-engagement-planning, foundational, plan, red, rules, scope, team, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [executing, red, team, engagement, planning, build, definition, foundational, plan, rules, scope, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / executing-red-team-engagement-planning -->

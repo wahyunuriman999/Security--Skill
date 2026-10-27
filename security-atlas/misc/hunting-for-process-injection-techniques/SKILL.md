@@ -1,6 +1,6 @@
 ---
 name: hunting-for-process-injection-techniques
-description: "Detects process injection techniques MITRE T1055."
+description: "Detects process injection techniques (MITRE T1055) — including"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detects, hunting-for-process-injection-techniques, including, injection, mitre, process, t1055, techniques]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, process, injection, techniques, detects, including, mitre, t1055]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-process-injection-techniques -->

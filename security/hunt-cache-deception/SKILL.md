@@ -6,6 +6,7 @@ license: MIT
 report_count: 0
 sources: user_engagement
 tool: _shared/tools/rat_diff.py
+triggers: [hunt, cache, deception]
 ---
 
 # HUNT-CACHE-DECEPTION — the header is the lead, not the verdict

@@ -1,6 +1,6 @@
 ---
 name: performing-sca-dependency-scanning-with-snyk
-description: "Skill covers implementing Software Composition Analysis."
+description: "'This skill covers implementing Software Composition Analysis (SCA) using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, composition, covers, implementing, performing-sca-dependency-scanning-with-snyk, sca, skill, software, this, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, sca, dependency, scanning, with, snyk, analysis, composition, covers, implementing, skill, software, this, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-sca-dependency-scanning-with-snyk -->

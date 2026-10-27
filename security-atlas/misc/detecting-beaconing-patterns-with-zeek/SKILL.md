@@ -1,6 +1,6 @@
 ---
 name: detecting-beaconing-patterns-with-zeek
-description: "Performs statistical analysis Zeek conn.log connection."
+description: "'Performs statistical analysis of Zeek conn.log connection intervals"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, conn, connection, detecting-beaconing-patterns-with-zeek, intervals, log, performs, statistical, zeek]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, beaconing, patterns, with, zeek, analysis, conn, connection, intervals, log, performs, statistical]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-beaconing-patterns-with-zeek -->

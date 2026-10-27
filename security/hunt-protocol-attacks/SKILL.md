@@ -2,6 +2,9 @@
 name: hunt-protocol-attacks
 description: Advanced protocol-level attacks — DNS rebinding, HTTP/2 rapid reset (CVE-2023-44487), HPACK bomb, gRPC-Web specific, WebRTC IP leak exploitation, server-sent events abuse, HTTP/3 QUIC fingerprinting bypass, TCP/TLS downgrade. Use on hardened targets where application-layer attacks are blocked and protocol-level bypasses are needed.
 tags: [protocol, dns-rebinding, http2, rapid-reset, hpack, grpc-web, webrtc, sse, quic, http3, tls-downgrade]
+version: 1.0.0
+license: MIT
+triggers: [hunt, protocol, attacks, dns-rebinding, http2, rapid-reset, hpack, grpc-web, webrtc, sse, quic, http3, tls-downgrade]
 ---
 
 # Protocol-Level Attacks — Advanced Bug Bounty

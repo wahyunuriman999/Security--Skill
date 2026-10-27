@@ -1,6 +1,6 @@
 ---
 name: offensive-bluetooth-ble
-description: "Bluetooth Low Energy BLE attack methodology GATT."
+description: "Bluetooth Low Energy (BLE) attack methodology — GATT enumeration, characteristic read/write without auth, pairing downgrade (Just Works forced), LE Secure Connections bypass, MITM via active relay, sniffing with Sniffle (TI CC1352) / Ubertooth / Frontline, encryption key extraction (LE Legacy Pairing crackable, LE Secure Connections strong), proximity authentication abuse (cars, locks), and companion-app trust analysis. Use for IoT BLE devices, smart locks, fitness trackers, medical devices, BLE beacons, or any device pairing over BLE."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, attack, auth, ble, bluetooth, bypass, cc1352, characteristic, connections, downgrade, encryption, energy]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, bluetooth, ble, active, attack, auth, bypass, cc1352, characteristic, connections, downgrade, encryption, energy]
 ---
 
 <!-- upstream: Claude-Red / offensive-bluetooth-ble -->

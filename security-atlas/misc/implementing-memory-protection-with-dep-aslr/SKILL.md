@@ -1,6 +1,6 @@
 ---
 name: implementing-memory-protection-with-dep-aslr
-description: "Implements memory protection mechanisms including DEP."
+description: "'Implements memory protection mechanisms including DEP (Data Execution"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [data, dep, execution, implementing-memory-protection-with-dep-aslr, implements, including, mechanisms, memory, protection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, memory, protection, with, dep, aslr, data, execution, implements, including, mechanisms]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-memory-protection-with-dep-aslr -->

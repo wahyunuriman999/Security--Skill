@@ -1,6 +1,6 @@
 ---
 name: implementing-gcp-vpc-firewall-rules
-description: "Implements audits GCP VPC firewall rules gcloud covering."
+description: "Implements and audits GCP VPC firewall rules using gcloud, covering auditing overly permissive rules, creating restrictive ingress/egress rules, hierarchical firewall policies, and monitoring rule effectiveness with VPC Flow Logs. Use when deploying GCP workloads needing network access controls, auditing firewall configs, or responding to Security Command Center findings; not for Cloud Armor or DNS-based filtering."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, aud, auditing, audits, controls, covering, creating, deploying, effectiveness, egress, firewall]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, gcp, vpc, firewall, rules, access, and, aud, auditing, audits, controls, covering, creating, deploying, effectiveness, egress]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-gcp-vpc-firewall-rules -->

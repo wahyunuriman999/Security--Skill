@@ -1,6 +1,6 @@
 ---
 name: implementing-network-deception-with-honeypots
-description: "Deploy manage network honeypots OpenCanary T-Pot Cowrie."
+description: "Deploy and manage network honeypots using OpenCanary, T-Pot, or Cowrie"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cowrie, deploy, honeypots, implementing-network-deception-with-honeypots, manage, network, opencanary, t-pot, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, deception, with, honeypots, and, cowrie, deploy, manage, opencanary, t-pot, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-deception-with-honeypots -->

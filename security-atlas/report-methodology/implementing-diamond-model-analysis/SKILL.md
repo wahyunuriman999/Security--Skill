@@ -1,6 +1,6 @@
 ---
 name: implementing-diamond-model-analysis
-description: "Diamond Model Intrusion Analysis provides structured."
+description: "The Diamond Model of Intrusion Analysis provides a structured framework"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, diamond, framework, implementing-diamond-model-analysis, intrusion, model, provides, structured, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, diamond, model, analysis, framework, intrusion, provides, structured, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-diamond-model-analysis -->

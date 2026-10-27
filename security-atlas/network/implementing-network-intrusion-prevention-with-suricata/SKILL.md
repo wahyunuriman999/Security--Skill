@@ -1,6 +1,6 @@
 ---
 name: implementing-network-intrusion-prevention-with-suricata
-description: "Deploys configures Suricata inline network intrusion."
+description: "Deploys and configures Suricata as an inline network intrusion prevention system,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, configures, deploys, implementing-network-intrusion-prevention-with-suricata, inline, intrusion, network, prevention, suricata, system]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, intrusion, prevention, with, suricata, and, configures, deploys, inline, system]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-intrusion-prevention-with-suricata -->

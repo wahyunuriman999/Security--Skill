@@ -1,6 +1,6 @@
 ---
 name: analyzing-kubernetes-audit-logs
-description: "Analyzing kubernetes audit logs."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-kubernetes-audit-logs]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, kubernetes, audit, logs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-kubernetes-audit-logs -->

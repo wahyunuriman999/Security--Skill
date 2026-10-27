@@ -1,6 +1,6 @@
 ---
 name: verifying-build-provenance-with-slsa-sigstore
-description: "Verifies artifact signatures SLSA provenance Sigstore s."
+description: "Verifies artifact signatures and SLSA provenance using Sigstore's"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, artifact, provenance, signatures, sigstore, slsa, using, verifies, verifying-build-provenance-with-slsa-sigstore]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [verifying, build, provenance, with, slsa, sigstore, and, artifact, signatures, using, verifies]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / verifying-build-provenance-with-slsa-sigstore -->

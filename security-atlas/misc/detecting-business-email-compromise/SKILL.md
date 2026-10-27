@@ -1,6 +1,6 @@
 ---
 name: detecting-business-email-compromise
-description: "Detect Business Email Compromise BEC fraud where."
+description: "Detect Business Email Compromise (BEC) fraud, where attackers impersonate"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attackers, bec, business, compromise, detect, detecting-business-email-compromise, email, fraud, impersonate, where]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, business, email, compromise, attackers, bec, detect, fraud, impersonate, where]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-business-email-compromise -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-modbus-protocol-anomalies
-description: "Detect anomalies Modbus/TCP Modbus RTU industrial traffic."
+description: "Detect anomalies in Modbus/TCP and Modbus RTU industrial traffic via function code monitoring, register range validation, timing analysis, and deep packet inspection, using Zeek's Modbus analyzer, Suricata IDS with OT rules, and Python Markov chain models of normal transaction sequences. Use for deploying Modbus IDS in OT environments, baselining polling patterns, investigating suspicious Modbus traffic, or building function code allowlists."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, analyzer, and, anomalies, chain, code, deep, dep, detect, detecting-modbus-protocol-anomalies, for, function]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, modbus, protocol, anomalies, analysis, analyzer, and, chain, code, deep, dep, detect, for, function]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-modbus-protocol-anomalies -->

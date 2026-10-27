@@ -1,6 +1,6 @@
 ---
 name: detecting-modbus-command-injection-attacks
-description: "Detect command injection against Modbus TCP/RTU ICS/SCADA."
+description: "Detect command injection against Modbus TCP/RTU in ICS/SCADA environments by monitoring unauthorized writes, anomalous function codes, malformed frames, and deviations from communication baselines using ICS-aware IDS and deep packet inspection. Use when deploying IDS for Modbus OT networks, investigating unauthorized PLC register/coil changes, or responding to FrostyGoop-style Modbus attacks."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, anomalous, baselines, codes, command, communication, deep, deploying, detect, detecting-modbus-command-injection-attacks, deviations]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, modbus, command, injection, attacks, against, and, anomalous, baselines, codes, communication, deep, deploying, detect, deviations]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-modbus-command-injection-attacks -->

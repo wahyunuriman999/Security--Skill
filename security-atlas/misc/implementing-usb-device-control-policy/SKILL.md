@@ -1,6 +1,6 @@
 ---
 name: implementing-usb-device-control-policy
-description: "Implements USB device control policies restrict."
+description: "'Implements USB device control policies to restrict unauthorized removable"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [control, device, implementing-usb-device-control-policy, implements, policies, removable, restrict, unauthorized, usb]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, usb, device, control, policy, implements, policies, removable, restrict, unauthorized]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-usb-device-control-policy -->

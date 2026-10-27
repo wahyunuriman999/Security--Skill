@@ -1,6 +1,6 @@
 ---
 name: hunting-for-supply-chain-compromise
-description: "Runs hypothesis-driven threat hunt supply-chain."
+description: "Runs a hypothesis-driven threat hunt for supply-chain compromise (T1195) by querying SIEM/EDR logs for trojanized software updates, compromised dependencies, unauthorized code modifications, and tampered build artifacts. Use when hunting after threat intel flags a compromised vendor/dependency, scoping a build-pipeline compromise, or reviewing update/build integrity."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [after, and, artifacts, build, code, compromise, compromised, dependencies, dependency, edr, flags, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, supply, chain, compromise, after, and, artifacts, build, code, compromised, dependencies, dependency, edr, flags]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-supply-chain-compromise -->

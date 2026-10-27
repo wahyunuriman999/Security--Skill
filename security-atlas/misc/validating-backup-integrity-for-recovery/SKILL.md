@@ -1,6 +1,6 @@
 ---
 name: validating-backup-integrity-for-recovery
-description: "Validates backup integrity through cryptographic hash."
+description: "Validates backup integrity through cryptographic hash verification,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [backup, cryptographic, hash, integrity, through, validates, validating-backup-integrity-for-recovery, verification]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [validating, backup, integrity, for, recovery, cryptographic, hash, through, validates, verification]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / validating-backup-integrity-for-recovery -->

@@ -3,6 +3,7 @@ name: auto-cors-scanner
 version: 1.0.0
 description: Automated CORS scanner for entire *.crypto.com domain
 license: MIT
+triggers: [auto, cors, scanner]
 ---
 
 # Auto-CORS Scanner

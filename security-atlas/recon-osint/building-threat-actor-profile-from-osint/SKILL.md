@@ -1,6 +1,6 @@
 ---
 name: building-threat-actor-profile-from-osint
-description: "Build threat actor profiles collecting OSINT vendor."
+description: "Build threat actor profiles by collecting OSINT from vendor reports, paste sites, dark web forums, social media, and code repos, correlating indicators, mapping adversary infrastructure with tools like Maltego and SpiderFoot, and producing structured dossiers of motivations, capabilities, infrastructure, and TTPs. Use when performing attribution or building an adversary dossier from open-source intelligence."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [actor, adversary, and, build, building-threat-actor-profile-from-osint, capabilities, code, collecting, correlating, dark, dossiers, forums]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, threat, actor, profile, from, osint, adversary, and, build, capabilities, code, collecting, correlating, dark, dossiers, forums]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-threat-actor-profile-from-osint -->

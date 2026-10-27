@@ -1,6 +1,6 @@
 ---
 name: testing-ransomware-recovery-procedures
-description: "Tests validates ransomware recovery procedures - backup."
+description: "Tests and validates ransomware recovery procedures - backup restore operations"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, backup, operations, procedures, ransomware, recovery, restore, testing-ransomware-recovery-procedures, tests, validates]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, ransomware, recovery, procedures, and, backup, operations, restore, tests, validates]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-ransomware-recovery-procedures -->

@@ -1,6 +1,6 @@
 ---
 name: hunting-for-living-off-the-land-binaries
-description: "Proactively hunts adversary abuse legitimate signed."
+description: "Proactively hunts for adversary abuse of legitimate, signed system binaries"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, adversary, binaries, for, hunting-for-living-off-the-land-binaries, hunts, legitimate, proactively, signed, system]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, living, off, the, land, binaries, abuse, adversary, hunts, legitimate, proactively, signed, system]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-living-off-the-land-binaries -->

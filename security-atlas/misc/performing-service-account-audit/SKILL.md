@@ -1,6 +1,6 @@
 ---
 name: performing-service-account-audit
-description: "Audit service accounts enterprise infrastructure identify."
+description: "Audit service accounts across enterprise infrastructure to identify orphaned,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [accounts, across, audit, enterprise, identify, infrastructure, orphaned, performing-service-account-audit, service]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, service, account, audit, accounts, across, enterprise, identify, infrastructure, orphaned]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-service-account-audit -->

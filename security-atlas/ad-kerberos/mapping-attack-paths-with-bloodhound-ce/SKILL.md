@@ -1,6 +1,6 @@
 ---
 name: mapping-attack-paths-with-bloodhound-ce
-description: "Collect Active Directory data SharpHound Entra ID data."
+description: "Collect Active Directory data with SharpHound and Entra ID data with AzureHound, ingest into BloodHound Community Edition, and analyze on-prem, cloud, and hybrid attack paths using built-in queries and custom Cypher. Use during authorized red-team or penetration-test engagements to map privilege-escalation chains toward domain/tenant compromise."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, analyze, and, attack, authorized, azurehound, bloodhound, built-in, cloud, collect, community, custom]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [mapping, attack, paths, with, bloodhound, active, analyze, and, authorized, azurehound, built-in, cloud, collect, community, custom]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / mapping-attack-paths-with-bloodhound-ce -->

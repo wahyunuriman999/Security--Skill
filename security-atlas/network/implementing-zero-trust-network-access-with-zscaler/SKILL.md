@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-trust-network-access-with-zscaler
-description: "Configures Zero Trust Network Access Zscaler Private."
+description: "Configures Zero Trust Network Access using Zscaler Private Access (ZPA) to broker identity-based, context-aware connections between authenticated users and internal applications through the Zscaler Zero Trust Exchange, without placing users on the corporate network. Use when replacing traditional VPN architectures with ZTNA, or when brokering secure per-application access for remote and hybrid users via Zscaler."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, applications, authenticated, between, broker, configures, connections, context-aware, corporate, exchange, identity-based]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, trust, network, access, with, zscaler, and, applications, authenticated, between, broker, configures, connections, context-aware, corporate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-trust-network-access-with-zscaler -->

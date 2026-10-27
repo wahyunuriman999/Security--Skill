@@ -1,6 +1,6 @@
 ---
 name: implementing-jwt-signing-and-verification
-description: "Implementing jwt signing and verification."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-jwt-signing-and-verification]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, jwt, signing, and, verification]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-jwt-signing-and-verification -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-secrets-management-with-vault
-description: "Deploy HashiCorp Vault centralized secrets management."
+description: "'Deploy HashiCorp Vault for centralized secrets management, covering dynamic"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [centralized, covering, deploy, dynamic, for, hashicorp, implementing-secrets-management-with-vault, management, secrets, vault]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, secrets, management, with, vault, centralized, covering, deploy, dynamic, for, hashicorp]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-secrets-management-with-vault -->

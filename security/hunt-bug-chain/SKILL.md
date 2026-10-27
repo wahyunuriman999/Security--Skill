@@ -2,6 +2,9 @@
 name: hunt-bug-chain
 description: Bug chaining methodology for maximum impact — chain low/medium bugs into Critical. SSRF→Cloud metadata→IAM keys, XSS→ATO, Open Redirect→OAuth theft, IDOR→PII mass dump, CORS→CSRF→ATO, LFI→RCE, cache poison→stored XSS, race condition→priv esc. Use when individual bugs are triaged low to amplify to Critical/High.
 tags: [bug-chain, chaining, ssrf, xss, ato, oauth, idor, lfi, rce, impact-amplification, critical]
+version: 1.0.0
+license: MIT
+triggers: [hunt, bug, chain, bug-chain, chaining, ssrf, xss, ato, oauth, idor, lfi, rce, impact-amplification, critical]
 ---
 
 # Bug Chaining — Maximum Impact Methodology

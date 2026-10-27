@@ -1,6 +1,6 @@
 ---
 name: performing-web-application-penetration-test
-description: "Performs systematic security testing web applications."
+description: "'Performs systematic security testing of web applications following the"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [applications, following, performing-web-application-penetration-test, performs, security, systematic, testing, the, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, web, application, penetration, test, applications, following, performs, security, systematic, testing, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-web-application-penetration-test -->

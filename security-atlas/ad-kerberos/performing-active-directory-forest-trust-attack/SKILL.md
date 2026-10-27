@@ -1,6 +1,6 @@
 ---
 name: performing-active-directory-forest-trust-attack
-description: "Enumerate audit Active Directory forest trust."
+description: "Enumerate and audit Active Directory forest trust relationships using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, and, audit, directory, enumerate, forest, performing-active-directory-forest-trust-attack, relationships, trust, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, active, directory, forest, trust, attack, and, audit, enumerate, relationships, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-active-directory-forest-trust-attack -->

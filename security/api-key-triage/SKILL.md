@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [api-key, credentials, gateway, openai-compatible, triage, auth]
     related_skills: [blocked-page-recovery, godmod]
+triggers: [api, key, triage, api-key, credentials, gateway, openai-compatible, auth]
 ---
 
 # API Key Triage

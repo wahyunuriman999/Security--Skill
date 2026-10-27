@@ -1,6 +1,6 @@
 ---
 name: offensive-ssti
-description: "Dense description covering Server-Side Template Injection."
+description: "Dense description covering Server-Side Template Injection across Jinja2, Twig, Freemarker, Velocity, Pebble, Smarty, Mako, Handlebars, ERB, Thymeleaf, EJS, Pug. Engine fingerprinting, filter bypass, blind exploitation, WAF evasion, SSTI-to-RCE chains. Tools: tplmap. CWE-1336. MITRE T1190. Use when testing template rendering endpoints or exploiting template injection for code execution."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, blind, bypass, chains, covering, cwe-1336, dense, description, ejs, engine, erb, evasion]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, ssti, across, blind, bypass, chains, covering, cwe-1336, dense, description, ejs, engine, erb, evasion]
 ---
 
 <!-- upstream: Claude-Red / offensive-ssti -->

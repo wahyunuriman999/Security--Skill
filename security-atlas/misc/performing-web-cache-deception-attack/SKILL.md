@@ -1,6 +1,6 @@
 ---
 name: performing-web-cache-deception-attack
-description: "Executes web cache deception attacks exploiting path."
+description: "Executes web cache deception attacks by exploiting path normalization"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attacks, cache, deception, executes, exploiting, normalization, path, performing-web-cache-deception-attack, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, web, cache, deception, attack, attacks, executes, exploiting, normalization, path]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-web-cache-deception-attack -->

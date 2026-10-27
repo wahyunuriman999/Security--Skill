@@ -1,6 +1,6 @@
 ---
 name: generating-threat-intelligence-reports
-description: "Generates structured cyber threat intelligence reports."
+description: "'Generates structured cyber threat intelligence reports at strategic,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cyber, generates, generating-threat-intelligence-reports, intelligence, reports, strategic, structured, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [generating, threat, intelligence, reports, cyber, generates, strategic, structured]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / generating-threat-intelligence-reports -->

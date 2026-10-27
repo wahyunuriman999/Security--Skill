@@ -1,6 +1,6 @@
 ---
 name: triaging-security-incident
-description: "Performs initial triage security incidents NIST SP."
+description: "'Performs initial triage of security incidents using the NIST SP"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [incidents, initial, nist, performs, security, the, triage, triaging-security-incident, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [triaging, security, incident, incidents, initial, nist, performs, the, triage, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / triaging-security-incident -->

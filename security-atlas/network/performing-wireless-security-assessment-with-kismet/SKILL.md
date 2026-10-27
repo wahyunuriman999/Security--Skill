@@ -1,6 +1,6 @@
 ---
 name: performing-wireless-security-assessment-with-kismet
-description: "Conduct wireless network security assessments Kismet."
+description: "Conduct wireless network security assessments using Kismet to detect"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessments, conduct, detect, kismet, network, performing-wireless-security-assessment-with-kismet, security, using, wireless]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, wireless, security, assessment, with, kismet, assessments, conduct, detect, network, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-wireless-security-assessment-with-kismet -->

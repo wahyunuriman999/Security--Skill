@@ -1,6 +1,6 @@
 ---
 name: performing-api-security-testing-with-postman
-description: "Uses Postman build structured API security test."
+description: "'Uses Postman to build structured API security test collections covering"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, build, collections, covering, performing-api-security-testing-with-postman, postman, security, structured, test, uses]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, api, security, testing, with, postman, build, collections, covering, structured, test, uses]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-api-security-testing-with-postman -->

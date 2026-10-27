@@ -1,6 +1,6 @@
 ---
 name: implementing-runtime-application-self-protection
-description: "Deploy Runtime Application Self-Protection RASP agents."
+description: "Deploy Runtime Application Self-Protection (RASP) agents to detect and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [agents, and, application, deploy, detect, implementing-runtime-application-self-protection, rasp, runtime, self-protection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, runtime, application, self, protection, agents, and, deploy, detect, rasp, self-protection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-runtime-application-self-protection -->

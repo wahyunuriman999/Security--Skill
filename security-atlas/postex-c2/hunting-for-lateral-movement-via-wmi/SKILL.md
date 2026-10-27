@@ -1,6 +1,6 @@
 ---
 name: hunting-for-lateral-movement-via-wmi
-description: "Detects WMI-based lateral movement (e.g."
+description: "Detects WMI-based lateral movement (e.g. wmic process call create,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [call, create, detects, hunting-for-lateral-movement-via-wmi, lateral, movement, process, wmi-based, wmic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, lateral, movement, via, wmi, call, create, detects, process, wmi-based, wmic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-lateral-movement-via-wmi -->

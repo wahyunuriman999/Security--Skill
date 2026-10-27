@@ -3,6 +3,9 @@ name: hunt-http-smuggling
 description: "Hunt HTTP request smuggling (CL.TE, TE.CL, H2.CL, H2.TE). Cause: front-end proxy and back-end server disagree on where one request ends and the next begins (Content-Length vs Transfer-Encoding header parsing inconsistency). CL.TE: front-end uses CL, back uses TE → smuggle by sending TE: chunked but with body that fits CL count. TE.CL: opposite. H2.CL: HTTP/2 downgrade, smuggle CL into HTTP/1.1 back-end. Detection tools: Burp HTTP Request Smuggler extension, smuggler.py, h2csmuggler. Confirm: time-delay technique (smuggled GET with 30s timeout) — if front-end returns slow on next victim request, smuggling works. Validate: cache poisoning chain (smuggle request that gets cached for victim), credential theft (smuggle X-Forwarded-For override that captures next user's cookies), bypass auth (smuggled internal-path request). Real paid examples from major CDN deployments. Use when hunting H1 paid programs running CDN+origin stacks, when targeting load balancer / WAF bypass."
 sources: hackerone_public, cve_database, portswigger_research, public_research
 report_count: 12
+version: 1.0.0
+license: MIT
+triggers: [hunt, http, smuggling]
 ---
 
 ## 17. HTTP REQUEST SMUGGLING
@@ -41,7 +44,7 @@ The classic CL.TE / TE.CL payloads are NOT universally exploitable in 2026. Mode
 
 | Front-end | CL.TE | TE.CL | H2.CL | H2.TE | Notes |
 |---|---|---|---|---|---|
-| **Nginx ≥ 1.21** | NO | NO | partial (H2 ingress) | partial | RFC-strict; rejects CL+TE with HTTP 400. Verified locally on Nginx 1.27 — all 9 documented variants killed by front-end ([docs/verification/phase2h-smuggling-cachepoison.md](../../docs/verification/phase2h-smuggling-cachepoison.md)). |
+| **Nginx ≥ 1.21** | NO | NO | partial (H2 ingress) | partial | RFC-strict; rejects CL+TE with HTTP 400. Verified locally on Nginx 1.27 — all 9 documented variants killed by front-end (verification doc phase2h-smuggling-cachepoison (not included in this repo)). |
 | **Caddy 2.x** | NO | NO | — | — | Hardened by default |
 | **Envoy ≥ 1.20** | NO | NO | partial | partial | Hardened in most paths |
 | **HAProxy ≤ 2.4** | ✓ | ✓ | — | — | **Vulnerable**, see CVE-2021-40346 |

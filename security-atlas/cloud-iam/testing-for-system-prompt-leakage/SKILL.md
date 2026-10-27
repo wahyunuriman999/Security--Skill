@@ -1,6 +1,6 @@
 ---
 name: testing-for-system-prompt-leakage
-description: "Extracts LLM system prompts direct requests."
+description: "Extracts LLM system prompts using direct requests, jailbreak/instruction-override"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [direct, extracts, instruction-override, jailbreak, llm, prompts, requests, system, testing-for-system-prompt-leakage, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, system, prompt, leakage, direct, extracts, instruction-override, jailbreak, llm, prompts, requests, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-system-prompt-leakage -->

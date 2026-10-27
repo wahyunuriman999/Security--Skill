@@ -1,6 +1,6 @@
 ---
 name: correlating-security-events-in-qradar
-description: "Correlates security events IBM QRadar SIEM AQL Ariel."
+description: "'Correlates security events in IBM QRadar SIEM using AQL (Ariel Query"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aql, ariel, correlates, correlating-security-events-in-qradar, events, ibm, qradar, query, security, siem, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [correlating, security, events, qradar, aql, ariel, correlates, ibm, query, siem, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / correlating-security-events-in-qradar -->

@@ -1,6 +1,6 @@
 ---
 name: hunting-for-living-off-the-cloud-techniques
-description: "Hunts adversary abuse legitimate cloud services Azure AWS."
+description: "Hunts for adversary abuse of legitimate cloud services (Azure, AWS, GCP,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, adversary, aws, azure, cloud, for, gcp, hunting-for-living-off-the-cloud-techniques, hunts, legitimate, services]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, living, off, the, cloud, techniques, abuse, adversary, aws, azure, gcp, hunts, legitimate, services]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-living-off-the-cloud-techniques -->

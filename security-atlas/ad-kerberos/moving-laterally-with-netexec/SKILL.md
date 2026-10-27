@@ -1,6 +1,6 @@
 ---
 name: moving-laterally-with-netexec
-description: "NetExec nxc validate credentials enumerate SMB."
+description: "Use NetExec (nxc) to validate credentials, enumerate SMB shares/users/policy, password-spray safely across lockout thresholds, execute commands, and dump SAM/LSA/NTDS credentials across SMB, WinRM, LDAP, MSSQL, SSH, and other protocol modules. Use during authorized internal penetration tests to find lateral-movement paths after obtaining credentials or hashes, or to conduct controlled password spraying and post-exploitation on in-scope hosts."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, and, authorized, commands, credentials, dump, during, enumerate, execute, find, internal, ldap]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [moving, laterally, with, netexec, across, and, authorized, commands, credentials, dump, during, enumerate, execute, find, internal, ldap]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / moving-laterally-with-netexec -->

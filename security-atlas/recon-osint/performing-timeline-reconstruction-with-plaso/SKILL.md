@@ -1,6 +1,6 @@
 ---
 name: performing-timeline-reconstruction-with-plaso
-description: "Performing timeline reconstruction with plaso."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-timeline-reconstruction-with-plaso]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, timeline, reconstruction, with, plaso]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-timeline-reconstruction-with-plaso -->

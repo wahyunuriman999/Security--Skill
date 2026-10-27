@@ -1,6 +1,6 @@
 ---
 name: building-identity-federation-with-saml-azure-ad
-description: "Configure SAML 2.0 identity federation between."
+description: "Configure SAML 2.0 identity federation between on-premises Active Directory (via AD FS or a third-party IdP) and Microsoft Entra ID, covering federation models (AD FS, password hash sync, pass-through auth, third-party IdP) and the SAML authentication flow. Use when extending on-premises authentication authority to cloud resources or designing hybrid identity SSO architecture for Entra ID."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, and, auth, authenticat, authentication, between, building-identity-federation-with-saml-azure-ad, configure, covering, directory, entra, extending]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, identity, federation, with, saml, azure, active, and, auth, authenticat, authentication, between, configure, covering, directory, entra]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-identity-federation-with-saml-azure-ad -->

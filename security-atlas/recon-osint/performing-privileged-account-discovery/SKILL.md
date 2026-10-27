@@ -1,6 +1,6 @@
 ---
 name: performing-privileged-account-discovery
-description: "Discovers inventories privileged accounts enterprise."
+description: "Discovers and inventories privileged accounts across enterprise infrastructure,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [accounts, across, and, discovers, enterprise, infrastructure, inventories, performing-privileged-account-discovery, privileged]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, privileged, account, discovery, accounts, across, and, discovers, enterprise, infrastructure, inventories]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-privileged-account-discovery -->

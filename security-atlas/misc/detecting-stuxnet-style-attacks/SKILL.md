@@ -1,6 +1,6 @@
 ---
 name: detecting-stuxnet-style-attacks
-description: "Detects sophisticated cyber-physical attacks follow."
+description: "'Detects sophisticated cyber-physical attacks that follow the Stuxnet"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attacks, cyber-physical, detecting-stuxnet-style-attacks, detects, follow, sophisticated, stuxnet, that, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, stuxnet, style, attacks, cyber-physical, detects, follow, sophisticated, that, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-stuxnet-style-attacks -->

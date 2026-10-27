@@ -1,6 +1,6 @@
 ---
 name: implementing-aws-nitro-enclave-security
-description: "Build AWS Nitro Enclave confidential computing."
+description: "'Build AWS Nitro Enclave confidential computing environments using nitro-cli"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aws, build, computing, confidential, enclave, environments, implementing-aws-nitro-enclave-security, nitro, nitro-cli, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, aws, nitro, enclave, security, build, computing, confidential, environments, nitro-cli, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-aws-nitro-enclave-security -->

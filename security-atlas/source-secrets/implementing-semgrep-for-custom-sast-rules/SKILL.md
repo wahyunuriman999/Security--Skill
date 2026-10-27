@@ -1,6 +1,6 @@
 ---
 name: implementing-semgrep-for-custom-sast-rules
-description: "Write custom Semgrep SAST rules YAML detect."
+description: "Write custom Semgrep SAST rules in YAML to detect application-specific"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application-specific, custom, detect, implementing-semgrep-for-custom-sast-rules, rules, sast, semgrep, write, yaml]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, semgrep, for, custom, sast, rules, application-specific, detect, write, yaml]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-semgrep-for-custom-sast-rules -->

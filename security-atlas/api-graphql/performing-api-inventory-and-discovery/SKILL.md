@@ -1,6 +1,6 @@
 ---
 name: performing-api-inventory-and-discovery
-description: "Performs API inventory discovery identify API endpoints."
+description: "'Performs API inventory and discovery to identify all API endpoints in"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [all, and, api, discovery, endpoints, identify, inventory, performing-api-inventory-and-discovery, performs]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, api, inventory, and, discovery, all, endpoints, identify, performs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-api-inventory-and-discovery -->

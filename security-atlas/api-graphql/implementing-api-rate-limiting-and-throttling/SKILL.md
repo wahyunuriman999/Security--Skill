@@ -1,6 +1,6 @@
 ---
 name: implementing-api-rate-limiting-and-throttling
-description: "Implements API rate limiting throttling token bucket."
+description: "'Implements API rate limiting and throttling with token bucket, sliding"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, api, bucket, implementing-api-rate-limiting-and-throttling, implements, limiting, rate, sliding, throttling, token, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, rate, limiting, and, throttling, bucket, implements, sliding, token, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-rate-limiting-and-throttling -->

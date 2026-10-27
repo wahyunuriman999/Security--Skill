@@ -1,6 +1,6 @@
 ---
 name: offensive-network-attacks
-description: "Dense description covering ARP spoofing LLMNR/NBT-NS/mDNS."
+description: "Dense description covering ARP spoofing, LLMNR/NBT-NS/mDNS poisoning, DNS poisoning, MITM attacks, VLAN hopping, DHCP attacks, 802.1X/NAC bypass, IPv6 attacks. Tools: Bettercap, Responder, mitm6, Ettercap, Wireshark. MITRE T1557, T1040. Use when conducting internal network assessments or testing Layer 2/3 attack surface."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [802, arp, assessments, attacks, bettercap, bypass, conducting, covering, dense, description, dhcp, dns]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, network, attacks, 802, arp, assessments, bettercap, bypass, conducting, covering, dense, description, dhcp, dns]
 ---
 
 <!-- upstream: Claude-Red / offensive-network-attacks -->

@@ -1,6 +1,6 @@
 ---
 name: conducting-phishing-incident-response
-description: "Respond phishing incidents analyzing reported emails."
+description: "Respond to phishing incidents by analyzing reported emails, extracting indicators, sandboxing URLs/attachments, assessing credential compromise, quarantining malicious messages organization-wide, and remediating affected accounts. Use when investigating a reported phishing or credential-phishing email, a suspected spearphishing incident, or when a mailbox-wide purge and account remediation is needed."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [accounts, affected, analyzing, and, assessing, attachments, compromise, conducting-phishing-incident-response, credential, credential-phishing, ema, emails]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, phishing, incident, response, accounts, affected, analyzing, and, assessing, attachments, compromise, credential, credential-phishing, ema, emails]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-phishing-incident-response -->

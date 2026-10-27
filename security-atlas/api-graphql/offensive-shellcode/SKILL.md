@@ -1,6 +1,6 @@
 ---
 name: offensive-shellcode
-description: "Shellcode development reference offensive security."
+description: "Shellcode development reference for offensive security engagements. Use when writing custom x86/x64 shellcode, implementing position-independent code (PIC), building shellcode loaders, evading AV/EDR detection, or converting PE files to shellcode. Covers null byte avoidance, API hashing, encoder/decoder patterns, staged vs stageless payloads, Windows PEB traversal, and cross-platform shellcode techniques."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, avoidance, building, byte, code, converting, covers, custom, dec, detection, development, edr]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, shellcode, api, avoidance, building, byte, code, converting, covers, custom, dec, detection, development, edr]
 ---
 
 <!-- upstream: Claude-Red / offensive-shellcode -->

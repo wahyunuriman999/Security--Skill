@@ -1,6 +1,6 @@
 ---
 name: offensive-netexec
-description: "Offensive netexec."
+description: ">"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [offensive-netexec]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, netexec]
 ---
 
 <!-- upstream: Claude-Red / offensive-netexec -->

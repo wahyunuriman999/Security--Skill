@@ -1,6 +1,6 @@
 ---
 name: performing-paste-site-monitoring-for-credentials
-description: "Monitor paste sites like Pastebin GitHub Gists leaked."
+description: "Monitor paste sites like Pastebin and GitHub Gists for leaked credentials,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, credentials, for, gists, github, leaked, like, monitor, paste, pastebin, performing-paste-site-monitoring-for-credentials, sites]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, paste, site, monitoring, for, credentials, and, gists, github, leaked, like, monitor, pastebin, sites]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-paste-site-monitoring-for-credentials -->

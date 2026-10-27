@@ -1,6 +1,6 @@
 ---
 name: implementing-iso-27001-information-security-management
-description: "Implementing iso 27001 information security management."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-iso-27001-information-security-management]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, iso, 27001, information, security, management]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-iso-27001-information-security-management -->

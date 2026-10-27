@@ -1,6 +1,6 @@
 ---
 name: operating-sliver-c2
-description: "Stand Sliver C2 server mTLS listeners generate."
+description: "Stand up a Sliver C2 server and mTLS listeners, generate cross-platform implants and beacons, and run post-exploitation, pivoting, and BOF/.NET tooling via the Armory for adversary emulation. Use during authorized, rules-of-engagement-bound red-team engagements that need a full open-source C2 lifecycle spanning server setup, implant generation, and post-exploitation tradecraft."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, and, armory, authorized, beacons, bof, cross-platform, during, emulation, engagements, for, full]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [operating, sliver, adversary, and, armory, authorized, beacons, bof, cross-platform, during, emulation, engagements, for, full]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / operating-sliver-c2 -->

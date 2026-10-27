@@ -1,6 +1,6 @@
 ---
 name: collecting-threat-intelligence-with-misp
-description: "Deploy MISP configure threat feeds MISP community."
+description: "Deploy MISP, configure threat feeds (MISP community, freetext, TAXII, CSV), and use the PyMISP API to programmatically fetch, add, and search events and IOCs, building automated collection pipelines that aggregate indicators from community and commercial sources. Use when gathering, storing, or correlating IOCs and threat intelligence, or when scripting MISP ingestion via PyMISP."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [add, aggregate, and, api, automated, building, collecting-threat-intelligence-with-misp, collection, commercial, community, configure, corr]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [collecting, threat, intelligence, with, misp, add, aggregate, and, api, automated, building, collection, commercial, community, configure, corr]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / collecting-threat-intelligence-with-misp -->

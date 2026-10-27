@@ -1,6 +1,9 @@
 ---
 name: subsystem-audit-discipline
 description: Use when auditing a subsystem of a repo for bugs.
+version: 1.0.0
+license: MIT
+triggers: [subsystem, audit, discipline]
 ---
 
 # Subsystem bug-bounty audits

@@ -1,6 +1,6 @@
 ---
 name: detecting-shadow-api-endpoints
-description: "Discover inventory shadow API endpoints operate outside."
+description: "Discover and inventory shadow API endpoints that operate outside"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, api, detecting-shadow-api-endpoints, discover, endpoints, inventory, operate, outside, shadow, that]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, shadow, api, endpoints, and, discover, inventory, operate, outside, that]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-shadow-api-endpoints -->

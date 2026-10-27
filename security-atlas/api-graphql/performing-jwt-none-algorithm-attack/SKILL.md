@@ -1,6 +1,6 @@
 ---
 name: performing-jwt-none-algorithm-attack
-description: "Execute test JWT none algorithm attack crafting tokens."
+description: "Execute and test the JWT none algorithm attack, crafting tokens with"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [algorithm, and, attack, crafting, execute, jwt, none, performing-jwt-none-algorithm-attack, test, the, tokens, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, jwt, none, algorithm, attack, and, crafting, execute, test, the, tokens, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-jwt-none-algorithm-attack -->

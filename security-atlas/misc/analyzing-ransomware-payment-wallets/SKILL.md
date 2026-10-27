@@ -1,6 +1,6 @@
 ---
 name: analyzing-ransomware-payment-wallets
-description: "Traces ransomware cryptocurrency payment flows blockchain."
+description: "'Traces ransomware cryptocurrency payment flows using blockchain analysis tools such as Chainalysis Reactor, WalletExplorer, and blockchain.com APIs, identifying wallet clusters and tracking fund movement through mixers and exchanges to support law enforcement attribution. Use when tracing ransomware bitcoin payments, performing cryptocurrency wallet forensics, or gathering blockchain threat intelligence on extortion payments."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, analyzing-ransomware-payment-wallets, and, apis, attribution, blockchain, chainalysis, clusters, com, cryptocurrency, enforcement, exchanges]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, ransomware, payment, wallets, analysis, and, apis, attribution, blockchain, chainalysis, clusters, com, cryptocurrency, enforcement, exchanges]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-ransomware-payment-wallets -->

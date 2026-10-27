@@ -1,6 +1,6 @@
 ---
 name: analyzing-ransomware-leak-site-intelligence
-description: "Safely monitor ransomware group Tor-hosted data leak."
+description: "Safely monitor ransomware group Tor-hosted data leak sites (DLS) to collect and extract structured victim posting data, track group activity trends over time, and produce sector- and geography-specific ransomware risk assessments. Use when performing threat intelligence gathering on active ransomware groups or building proactive defense reporting from double-extortion leak-site activity."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, activity, analyzing-ransomware-leak-site-intelligence, and, assessments, collect, data, dls, extract, gathering, geography-specific, group]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, ransomware, leak, site, intelligence, active, activity, and, assessments, collect, data, dls, extract, gathering, geography-specific, group]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-ransomware-leak-site-intelligence -->

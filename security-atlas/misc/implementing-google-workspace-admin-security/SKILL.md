@@ -1,6 +1,6 @@
 ---
 name: implementing-google-workspace-admin-security
-description: "Hardens Google Workspace tenant Admin Console."
+description: "'Hardens a Google Workspace tenant via Admin Console configuration:"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [admin, configuration, console, google, hardens, implementing-google-workspace-admin-security, tenant, via, workspace]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, google, workspace, admin, security, configuration, console, hardens, tenant, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-google-workspace-admin-security -->

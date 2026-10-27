@@ -1,6 +1,6 @@
 ---
 name: testing-cors-misconfiguration
-description: "Identifying exploiting Cross-Origin Resource Sharing."
+description: "Identifying and exploiting Cross-Origin Resource Sharing misconfigurations"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cross-origin, exploiting, identifying, misconfigurations, resource, sharing, testing-cors-misconfiguration]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, cors, misconfiguration, and, cross-origin, exploiting, identifying, misconfigurations, resource, sharing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-cors-misconfiguration -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-api-enumeration-attacks
-description: "Detect API enumeration attacks BOLA/IDOR OWASP API1 2023."
+description: "Detect API enumeration attacks (BOLA/IDOR, OWASP API1:2023) by writing SIEM"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [2023, api, api1, attacks, bola, detect, detecting-api-enumeration-attacks, enumeration, idor, owasp, siem, writing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, api, enumeration, attacks, 2023, api1, bola, detect, idor, owasp, siem, writing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-api-enumeration-attacks -->

@@ -1,6 +1,6 @@
 ---
 name: configuring-zscaler-private-access-for-ztna
-description: "Configures Zscaler Private Access ZPA replace traditional."
+description: "'Configures Zscaler Private Access (ZPA) to replace traditional VPN"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, configures, configuring-zscaler-private-access-for-ztna, private, replace, traditional, vpn, zpa, zscaler]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, zscaler, private, access, for, ztna, configures, replace, traditional, vpn, zpa]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-zscaler-private-access-for-ztna -->

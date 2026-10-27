@@ -1,6 +1,6 @@
 ---
 name: detecting-dcsync-attack-in-active-directory
-description: "Detect DCSync attacks MITRE T1003.006 where adversaries."
+description: "Detect DCSync attacks (MITRE T1003.006) where adversaries abuse Active Directory replication privileges to extract password hashes, by auditing Event ID 4662 for the DS-Replication-Get-Changes GUIDs and flagging non-domain-controller accounts issuing DsGetNCChanges RPC calls. Use when hunting for credential theft via Mimikatz lsadump::dcsync or Impacket secretsdump, investigating lateral movement with domain admin credentials, or auditing AD replication permissions."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [006, 4662, abuse, accounts, active, adversaries, and, attacks, auditing, calls, dcsync, detect]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, dcsync, attack, active, directory, 006, 4662, abuse, accounts, adversaries, and, attacks, auditing, calls, detect]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-dcsync-attack-in-active-directory -->

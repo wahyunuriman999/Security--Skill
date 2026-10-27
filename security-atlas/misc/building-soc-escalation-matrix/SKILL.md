@@ -1,6 +1,6 @@
 ---
 name: building-soc-escalation-matrix
-description: "Build structured SOC escalation matrix defining severity."
+description: "Build a structured SOC escalation matrix defining severity tiers, response"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [build, building-soc-escalation-matrix, defining, escalation, matrix, response, severity, soc, structured, tiers]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, soc, escalation, matrix, build, defining, response, severity, structured, tiers]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-soc-escalation-matrix -->

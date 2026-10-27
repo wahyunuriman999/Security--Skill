@@ -1,6 +1,6 @@
 ---
 name: detecting-container-escape-with-falco-rules
-description: "Detecting container escape with falco rules."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detecting-container-escape-with-falco-rules]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, container, escape, with, falco, rules]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-container-escape-with-falco-rules -->

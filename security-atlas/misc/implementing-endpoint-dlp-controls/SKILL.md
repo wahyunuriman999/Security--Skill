@@ -1,6 +1,6 @@
 ---
 name: implementing-endpoint-dlp-controls
-description: "Implements endpoint Data Loss Prevention DLP controls."
+description: "'Implements endpoint Data Loss Prevention (DLP) controls to detect and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, controls, data, detect, dlp, endpoint, implementing-endpoint-dlp-controls, implements, loss, prevention]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, endpoint, dlp, controls, and, data, detect, implements, loss, prevention]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-endpoint-dlp-controls -->

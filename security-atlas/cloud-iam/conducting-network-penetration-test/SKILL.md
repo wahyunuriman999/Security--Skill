@@ -1,6 +1,6 @@
 ---
 name: conducting-network-penetration-test
-description: "Conducts comprehensive network penetration tests against."
+description: "'Conducts comprehensive network penetration tests against authorized"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, authorized, comprehensive, conducting-network-penetration-test, conducts, network, penetration, tests]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, network, penetration, test, against, authorized, comprehensive, conducts, tests]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-network-penetration-test -->

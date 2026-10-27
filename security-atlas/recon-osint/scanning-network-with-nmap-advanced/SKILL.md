@@ -1,6 +1,6 @@
 ---
 name: scanning-network-with-nmap-advanced
-description: "Performs advanced network recon Nmap s Scripting Engine."
+description: "'Performs advanced network recon using Nmap''s Scripting Engine (NSE),"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [advanced, engine, network, nmap, nse, performs, recon, scanning-network-with-nmap-advanced, scripting, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [scanning, network, with, nmap, advanced, engine, nse, performs, recon, scripting, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / scanning-network-with-nmap-advanced -->

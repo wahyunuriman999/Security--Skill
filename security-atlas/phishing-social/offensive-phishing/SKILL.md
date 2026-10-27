@@ -1,6 +1,6 @@
 ---
 name: offensive-phishing
-description: "Phishing campaign execution methodology authorized red."
+description: "Phishing campaign execution methodology for authorized red team engagements. Covers end-to-end campaign lifecycle: infrastructure provisioning (GoPhish, SMTP relay configuration, domain acquisition and aging, SPF/DKIM/DMARC alignment), payload delivery vectors (Office macro weaponization, HTA droppers, ISO/IMG container abuse, LNK shortcut hijacking, OneNote embedded payloads, HTML smuggling), email authentication bypass techniques (SPF softfail exploitation, DKIM replay attacks, display name spoofing, homoglyph and cousin domain registration), credential harvesting with MFA bypass (EvilGinx2"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [acquisition, aging, alignment, and, authorized, campaign, configuration, covers, delivery, dkim, dmarc, domain]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, phishing, acquisition, aging, alignment, and, authorized, campaign, configuration, covers, delivery, dkim, dmarc, domain]
 ---
 
 <!-- upstream: Claude-Red / offensive-phishing -->

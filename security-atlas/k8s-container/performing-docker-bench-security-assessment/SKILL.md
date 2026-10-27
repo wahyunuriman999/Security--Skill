@@ -1,6 +1,6 @@
 ---
 name: performing-docker-bench-security-assessment
-description: "Performing docker bench security assessment."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-docker-bench-security-assessment]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, docker, bench, security, assessment]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-docker-bench-security-assessment -->

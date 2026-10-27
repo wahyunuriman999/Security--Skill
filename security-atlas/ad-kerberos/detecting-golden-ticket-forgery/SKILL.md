@@ -1,6 +1,6 @@
 ---
 name: detecting-golden-ticket-forgery
-description: "Detect Kerberos Golden Ticket forgery (e.g."
+description: "Detect Kerberos Golden Ticket forgery (e.g. Mimikatz-forged tickets) by analyzing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, detect, detecting-golden-ticket-forgery, forgery, golden, kerberos, mimikatz-forged, ticket, tickets]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, golden, ticket, forgery, analyzing, detect, kerberos, mimikatz-forged, tickets]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-golden-ticket-forgery -->

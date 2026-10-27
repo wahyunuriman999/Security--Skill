@@ -1,6 +1,6 @@
 ---
 name: implementing-cloud-workload-protection
-description: "Implements cloud workload protection boto3 google-cloud."
+description: "'Implements cloud workload protection using boto3 and google-cloud APIs"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, apis, boto3, cloud, google-cloud, implementing-cloud-workload-protection, implements, protection, using, workload]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, cloud, workload, protection, and, apis, boto3, google-cloud, implements, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-cloud-workload-protection -->

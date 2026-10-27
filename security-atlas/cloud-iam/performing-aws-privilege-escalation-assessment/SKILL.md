@@ -1,6 +1,6 @@
 ---
 name: performing-aws-privilege-escalation-assessment
-description: "Performing authorized privilege escalation assessments."
+description: "'Performing authorized privilege escalation assessments in AWS environments"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessments, authorized, aws, environments, escalation, performing, performing-aws-privilege-escalation-assessment, privilege]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, aws, privilege, escalation, assessment, assessments, authorized, environments]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-aws-privilege-escalation-assessment -->

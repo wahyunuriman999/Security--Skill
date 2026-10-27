@@ -1,6 +1,6 @@
 ---
 name: configuring-tls-1-3-for-secure-communications
-description: "Configures TLS 1.3 RFC 8446 servers covering cipher suite."
+description: "Configures TLS 1.3 (RFC 8446) on servers, covering cipher suite and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [8446, and, cipher, configures, configuring-tls-1-3-for-secure-communications, covering, rfc, servers, suite, tls]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, tls, for, secure, communications, 8446, and, cipher, configures, covering, rfc, servers, suite]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-tls-1-3-for-secure-communications -->

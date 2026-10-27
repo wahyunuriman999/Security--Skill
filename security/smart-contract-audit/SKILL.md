@@ -1,6 +1,9 @@
 ---
 name: smart-contract-audit
 description: Comprehensive smart contract security audit framework with multi-expert analysis. Use for full audits of Ethereum / EVM Solidity and Vyper, Solana / SVM Anchor Rust, TON / FunC / Tact, or Sui / Move projects.
+version: 1.0.0
+license: MIT
+triggers: [smart, contract, audit]
 ---
 
 # Smart Contract Security Audit Framework

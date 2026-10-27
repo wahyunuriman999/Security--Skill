@@ -1,6 +1,6 @@
 ---
 name: testing-websocket-api-security
-description: "Tests WebSocket API implementations missing."
+description: "Tests WebSocket API implementations for missing upgrade-handshake authentication,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, authentication, for, implementations, missing, testing-websocket-api-security, tests, upgrade-handshake, websocket]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, websocket, api, security, authentication, for, implementations, missing, tests, upgrade-handshake]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-websocket-api-security -->

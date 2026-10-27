@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: github, hackerone_public, portswigger_research, omergil_research, youstin_research
 report_count: 8
+triggers: [hunt, cache, poison]
 ---
 
 ## Crown Jewel Targets

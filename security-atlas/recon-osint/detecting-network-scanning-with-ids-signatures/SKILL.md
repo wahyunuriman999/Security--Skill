@@ -1,6 +1,6 @@
 ---
 name: detecting-network-scanning-with-ids-signatures
-description: "Detect network reconnaissance port scanning Suricata."
+description: "Detect network reconnaissance and port scanning using Suricata and Snort"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, detect, detecting-network-scanning-with-ids-signatures, network, port, reconnaissance, scanning, snort, suricata, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, network, scanning, with, ids, signatures, and, detect, port, reconnaissance, snort, suricata, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-network-scanning-with-ids-signatures -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-hardware-security-key-authentication
-description: "Builds FIDO2/WebAuthn relying party server python-fido2."
+description: "'Builds a FIDO2/WebAuthn relying party server with the python-fido2"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [builds, fido2, implementing-hardware-security-key-authentication, party, python-fido2, relying, server, the, webauthn, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, hardware, security, key, authentication, builds, fido2, party, python-fido2, relying, server, the, webauthn, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-hardware-security-key-authentication -->

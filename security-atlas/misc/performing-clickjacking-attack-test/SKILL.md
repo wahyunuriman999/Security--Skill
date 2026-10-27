@@ -1,6 +1,6 @@
 ---
 name: performing-clickjacking-attack-test
-description: "Testing web applications clickjacking vulnerabilities."
+description: "Testing web applications for clickjacking vulnerabilities by assessing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [applications, assessing, clickjacking, for, performing-clickjacking-attack-test, testing, vulnerabilities, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, clickjacking, attack, test, applications, assessing, for, testing, vulnerabilities, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-clickjacking-attack-test -->

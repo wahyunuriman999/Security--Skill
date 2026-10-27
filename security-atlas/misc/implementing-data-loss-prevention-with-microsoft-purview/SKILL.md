@@ -1,6 +1,6 @@
 ---
 name: implementing-data-loss-prevention-with-microsoft-purview
-description: "Implements DLP policies Microsoft Purview PowerShell."
+description: "'Implements DLP policies using Microsoft Purview PowerShell cmdlets and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cmdlets, dlp, implementing-data-loss-prevention-with-microsoft-purview, implements, microsoft, policies, powershell, purview, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, data, loss, prevention, with, microsoft, purview, and, cmdlets, dlp, implements, policies, powershell, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-data-loss-prevention-with-microsoft-purview -->

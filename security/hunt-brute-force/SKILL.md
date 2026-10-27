@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: public_research
 report_count: 6
+triggers: [hunt, brute, force]
 ---
 
 # HUNT-BRUTE-FORCE — Rate Limiting / Brute Force / Enumeration

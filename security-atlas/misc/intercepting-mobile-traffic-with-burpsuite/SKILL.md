@@ -1,6 +1,6 @@
 ---
 name: intercepting-mobile-traffic-with-burpsuite
-description: "Intercepts analyzes HTTP/HTTPS traffic mobile."
+description: "'Intercepts and analyzes HTTP/HTTPS traffic from mobile applications"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, and, applications, from, http, https, intercepting-mobile-traffic-with-burpsuite, intercepts, mobile, traffic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [intercepting, mobile, traffic, with, burpsuite, analyzes, and, applications, from, http, https, intercepts]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / intercepting-mobile-traffic-with-burpsuite -->

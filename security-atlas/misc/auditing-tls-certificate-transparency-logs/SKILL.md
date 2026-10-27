@@ -1,6 +1,6 @@
 ---
 name: auditing-tls-certificate-transparency-logs
-description: "Monitors Certificate Transparency CT logs detect."
+description: "'Monitors Certificate Transparency (CT) logs to detect unauthorized certificate"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [auditing-tls-certificate-transparency-logs, certificate, detect, logs, monitors, transparency, unauthorized]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, tls, certificate, transparency, logs, detect, monitors, unauthorized]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-tls-certificate-transparency-logs -->

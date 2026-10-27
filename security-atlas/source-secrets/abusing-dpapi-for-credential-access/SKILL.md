@@ -1,6 +1,6 @@
 ---
 name: abusing-dpapi-for-credential-access
-description: "Extract decrypt Windows DPAPI-protected secrets."
+description: "Extract and decrypt Windows DPAPI-protected secrets (Credential Manager, browser logins/cookies, Wi-Fi credentials, KeePass keys) online or offline using SharpDPAPI, SharpChrome, Mimikatz, or Impacket's dpapi.py, including domain-wide decryption via the DPAPI backup key. Use during authorized red-team credential-access engagements after gaining a foothold or when triaging DPAPI blobs pulled from a host."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abusing-dpapi-for-credential-access, and, authorized, backup, browser, cookies, credential, credentials, decrypt, decryption, domain-wide, dpapi]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [abusing, dpapi, for, credential, access, and, authorized, backup, browser, cookies, credentials, decrypt, decryption, domain-wide]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / abusing-dpapi-for-credential-access -->

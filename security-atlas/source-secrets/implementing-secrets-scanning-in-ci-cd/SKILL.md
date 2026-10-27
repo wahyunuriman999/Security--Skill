@@ -1,6 +1,6 @@
 ---
 name: implementing-secrets-scanning-in-ci-cd
-description: "Integrate gitleaks trufflehog CI/CD pipelines detect."
+description: "Integrate gitleaks and trufflehog into CI/CD pipelines to detect leaked"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, detect, gitleaks, implementing-secrets-scanning-in-ci-cd, integrate, into, leaked, pipelines, trufflehog]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, secrets, scanning, and, detect, gitleaks, integrate, into, leaked, pipelines, trufflehog]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-secrets-scanning-in-ci-cd -->

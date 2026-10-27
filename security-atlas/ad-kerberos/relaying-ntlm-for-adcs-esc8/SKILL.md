@@ -1,6 +1,6 @@
 ---
 name: relaying-ntlm-for-adcs-esc8
-description: "Uses Impacket s ntlmrelayx.py coercion tool PetitPotam."
+description: "Uses Impacket's ntlmrelayx.py with a coercion tool (PetitPotam, Coercer,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [coercer, coercion, impacket, ntlmrelayx, petitpotam, relaying-ntlm-for-adcs-esc8, tool, uses, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [relaying, ntlm, for, adcs, esc8, coercer, coercion, impacket, ntlmrelayx, petitpotam, tool, uses, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / relaying-ntlm-for-adcs-esc8 -->

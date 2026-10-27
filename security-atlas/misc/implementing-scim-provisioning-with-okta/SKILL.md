@@ -1,6 +1,6 @@
 ---
 name: implementing-scim-provisioning-with-okta
-description: "Implement automated user lifecycle provisioning."
+description: "Implement automated user lifecycle provisioning and deprovisioning using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, automated, deprovisioning, implement, implementing-scim-provisioning-with-okta, lifecycle, provisioning, user, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, scim, provisioning, with, okta, and, automated, deprovisioning, implement, lifecycle, user, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-scim-provisioning-with-okta -->

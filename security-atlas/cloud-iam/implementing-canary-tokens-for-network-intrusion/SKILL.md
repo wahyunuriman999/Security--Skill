@@ -1,6 +1,6 @@
 ---
 name: implementing-canary-tokens-for-network-intrusion
-description: "Deploys DNS HTTP AWS API key canary tokens network."
+description: "'Deploys DNS, HTTP, and AWS API key canary tokens across network infrastructure"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, and, api, aws, canary, deploys, dns, http, implementing-canary-tokens-for-network-intrusion, infrastructure, key, network]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, canary, tokens, for, network, intrusion, across, and, api, aws, deploys, dns, http, infrastructure, key]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-canary-tokens-for-network-intrusion -->

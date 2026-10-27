@@ -1,6 +1,6 @@
 ---
 name: offensive-wpa-enterprise
-description: "WPA/WPA2/WPA3-Enterprise 802.1X / EAP attack methodology."
+description: "WPA/WPA2/WPA3-Enterprise (802.1X / EAP) attack methodology — EAP method identification (PEAP-MSCHAPv2, EAP-TTLS, EAP-TLS, EAP-GTC, EAP-PWD, EAP-FAST), evil-twin RADIUS attacks with eaphammer for credential capture, MSCHAPv2 challenge-response cracking, EAP-TLS client certificate theft paths (DPAPI, NDES, AD CS auto-enrollment), supplicant validation bypass (missing server cert validation, missing CN pinning, BYOD misconfigurations), and post-capture pivots into AD via cracked domain credentials. Use for corporate Wi-Fi engagements where the network is 802.1X authenticated."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [802, attack, attacks, capture, certificate, challenge-response, client, cracking, credential, dpapi, eap, eap-fast]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, wpa, enterprise, 802, attack, attacks, capture, certificate, challenge-response, client, cracking, credential, dpapi, eap, eap-fast]
 ---
 
 <!-- upstream: Claude-Red / offensive-wpa-enterprise -->

@@ -1,6 +1,6 @@
 ---
 name: performing-mobile-app-certificate-pinning-bypass
-description: "Bypasses SSL/TLS certificate pinning implementations."
+description: "'Bypasses SSL/TLS certificate pinning implementations in Android and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, android, bypasses, certificate, implementations, performing-mobile-app-certificate-pinning-bypass, pinning, ssl, tls]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, mobile, app, certificate, pinning, bypass, and, android, bypasses, implementations, ssl, tls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-mobile-app-certificate-pinning-bypass -->

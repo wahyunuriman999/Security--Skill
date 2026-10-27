@@ -1,6 +1,6 @@
 ---
 name: offensive-bluetooth-classic
-description: "Bluetooth Classic BR/EDR attack methodology device."
+description: "Bluetooth Classic (BR/EDR) attack methodology — device discovery, service enumeration via SDP, LMP/L2CAP layer attacks, legacy PIN cracking (BlueBorne / KNOB), Bluetooth file-transfer abuse (BlueSnarfing legacy), unauthenticated profile abuse (HSP, HFP, OPP), and modern relevance against older industrial / automotive / accessory targets. Use when in-scope devices use Bluetooth Classic (Bluetooth ≤ 4.0 BR/EDR) — common in legacy car kits, industrial sensors, older medical devices, and audio accessories."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, against, and, attack, attacks, blueborne, bluesnarfing, bluetooth, classic, cracking, device, discovery]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, bluetooth, classic, abuse, against, and, attack, attacks, blueborne, bluesnarfing, cracking, device, discovery]
 ---
 
 <!-- upstream: Claude-Red / offensive-bluetooth-classic -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-web-application-logging-with-modsecurity
-description: "Configure ModSecurity WAF OWASP Core Rule Set CRS web."
+description: "Configure ModSecurity WAF with the OWASP Core Rule Set (CRS) for web"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configure, core, crs, for, implementing-web-application-logging-with-modsecurity, modsecurity, owasp, rule, set, the, waf, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, web, application, logging, with, modsecurity, configure, core, crs, for, owasp, rule, set, the, waf]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-web-application-logging-with-modsecurity -->

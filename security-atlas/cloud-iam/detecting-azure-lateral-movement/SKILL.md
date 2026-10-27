@@ -1,6 +1,6 @@
 ---
 name: detecting-azure-lateral-movement
-description: "Detect lateral movement Azure AD/Entra ID environments."
+description: "Detect lateral movement in Azure AD/Entra ID environments using Microsoft"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [azure, detect, detecting-azure-lateral-movement, entra, environments, lateral, microsoft, movement, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, azure, lateral, movement, detect, entra, environments, microsoft, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-azure-lateral-movement -->

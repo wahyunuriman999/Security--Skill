@@ -1,6 +1,6 @@
 ---
 name: detecting-dnp3-protocol-anomalies
-description: "Detect anomalies DNP3 communications used SCADA/ICS."
+description: "Detect anomalies in DNP3 communications used in SCADA/ICS systems by monitoring unauthorized control commands, firmware update attempts, protocol violations, and deviations from baseline traffic using deep packet inspection and machine learning approaches. Use when securing energy-sector or other OT/ICS networks, investigating suspicious DNP3 master/outstation activity, or building an anomaly-based IDS for industrial control traffic."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, anomalies, approaches, attempts, baseline, commands, communications, control, deep, detect, detecting-dnp3-protocol-anomalies, deviations]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, dnp3, protocol, anomalies, and, approaches, attempts, baseline, commands, communications, control, deep, detect, deviations]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-dnp3-protocol-anomalies -->

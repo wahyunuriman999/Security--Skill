@@ -1,6 +1,6 @@
 ---
 name: implementing-mitre-attack-coverage-mapping
-description: "Implement MITRE ATT CK coverage mapping identify."
+description: "Implement MITRE ATT&CK coverage mapping to identify detection gaps, prioritize"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [att, coverage, detection, gaps, identify, implement, implementing-mitre-attack-coverage-mapping, mapping, mitre, prioritize]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, mitre, attack, coverage, mapping, att, detection, gaps, identify, implement, prioritize]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-mitre-attack-coverage-mapping -->

@@ -1,6 +1,6 @@
 ---
 name: offensive-cicd-secrets
-description: "Comprehensive secrets extraction methodology targeting."
+description: "Comprehensive secrets extraction methodology targeting CI/CD environments across all major platforms. Covers environment variable extraction from build contexts, exploitation of vault and secrets-manager misconfigurations (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, GCP Secret Manager), runner and agent token abuse for lateral movement, OIDC federation attacks exploiting trust relationships between CI/CD providers and cloud platforms, build log leakage analysis for inadvertently exposed credentials, cache poisoning techniques for credential exfiltration, platform-specific credential"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, all, and, aws, azure, build, comprehensive, contexts, covers, environment, environments, exploitation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, cicd, secrets, across, all, and, aws, azure, build, comprehensive, contexts, covers, environment, environments, exploitation]
 ---
 
 <!-- upstream: Claude-Red / offensive-cicd-secrets -->

@@ -1,6 +1,6 @@
 ---
 name: offensive-advanced-redteam
-description: "Comprehensive red team operations methodology covering."
+description: "Comprehensive red team operations methodology covering full engagement lifecycle from planning through reporting. Addresses engagement scoping and rules of engagement negotiation, multi-tier C2 infrastructure design with redirectors and domain fronting, malleable traffic profiles and beacon tradecraft, OPSEC discipline including attribution avoidance and indicator management, EDR and AMSI evasion techniques using direct syscalls and unhooking, data collection with chain-of-custody controls, and structured reporting with purple team debrief workflows. Covers assumed-breach, external-to-internal"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [addresses, and, beacon, comprehensive, covering, design, domain, engagement, from, fronting, full, infrastructure]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, advanced, redteam, addresses, and, beacon, comprehensive, covering, design, domain, engagement, from, fronting, full, infrastructure]
 ---
 
 <!-- upstream: Claude-Red / offensive-advanced-redteam -->

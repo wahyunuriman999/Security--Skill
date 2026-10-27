@@ -1,6 +1,6 @@
 ---
 name: performing-wifi-password-cracking-with-aircrack
-description: "Captures WPA/WPA2 handshakes performs offline password."
+description: "'Captures WPA/WPA2 handshakes and performs offline password cracking"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, captures, cracking, handshakes, offline, password, performing-wifi-password-cracking-with-aircrack, performs, wpa, wpa2]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, wifi, password, cracking, with, aircrack, and, captures, handshakes, offline, performs, wpa, wpa2]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-wifi-password-cracking-with-aircrack -->

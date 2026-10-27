@@ -1,6 +1,6 @@
 ---
 name: performing-physical-intrusion-assessment
-description: "Conduct authorized physical penetration testing against."
+description: "Conduct authorized physical penetration testing against facilities, server rooms, and restricted areas using tailgating, RFID badge cloning, lock bypassing, rogue network device deployment, and security-guard procedure testing. Use as part of a full-scope red team engagement to evaluate physical security controls and their path to network access, always under signed client authorization."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, areas, authorized, badge, bypassing, cloning, conduct, deployment, device, engagement, evaluate]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, physical, intrusion, assessment, against, and, areas, authorized, badge, bypassing, cloning, conduct, deployment, device, engagement, evaluate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-physical-intrusion-assessment -->

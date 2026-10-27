@@ -1,6 +1,6 @@
 ---
 name: detecting-suspicious-oauth-application-consent
-description: "Detect risky OAuth application consent grants Azure AD /."
+description: "Detect risky OAuth application consent grants in Azure AD / Microsoft"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, azure, consent, detect, detecting-suspicious-oauth-application-consent, grants, microsoft, oauth, risky]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, suspicious, oauth, application, consent, azure, detect, grants, microsoft, risky]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-suspicious-oauth-application-consent -->

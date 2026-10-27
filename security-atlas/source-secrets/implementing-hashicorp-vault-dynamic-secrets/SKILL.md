@@ -1,6 +1,6 @@
 ---
 name: implementing-hashicorp-vault-dynamic-secrets
-description: "Configures HashiCorp Vault dynamic secrets engines."
+description: "'Configures HashiCorp Vault dynamic secrets engines for database credentials,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configures, credentials, database, dynamic, engines, for, hashicorp, implementing-hashicorp-vault-dynamic-secrets, secrets, vault]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, hashicorp, vault, dynamic, secrets, configures, credentials, database, engines, for]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-hashicorp-vault-dynamic-secrets -->

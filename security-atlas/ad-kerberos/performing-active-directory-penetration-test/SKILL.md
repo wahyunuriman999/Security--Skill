@@ -1,6 +1,6 @@
 ---
 name: performing-active-directory-penetration-test
-description: "Conduct focused Active Directory penetration test."
+description: "Conduct a focused Active Directory penetration test using BloodHound,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, bloodhound, conduct, directory, focused, penetration, performing-active-directory-penetration-test, test, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, active, directory, penetration, test, bloodhound, conduct, focused, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-active-directory-penetration-test -->

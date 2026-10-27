@@ -1,6 +1,6 @@
 ---
 name: detecting-cryptomining-in-cloud
-description: "Skill teaches security teams detect respond unauthorized."
+description: "'This skill teaches security teams how to detect and respond to unauthorized"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, detect, detecting-cryptomining-in-cloud, how, respond, security, skill, teaches, teams, this, unauthorized]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, cryptomining, cloud, and, detect, how, respond, security, skill, teaches, teams, this, unauthorized]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-cryptomining-in-cloud -->

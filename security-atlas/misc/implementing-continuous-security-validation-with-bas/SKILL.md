@@ -1,6 +1,6 @@
 ---
 name: implementing-continuous-security-validation-with-bas
-description: "Deploys Breach Attack Simulation BAS platforms SafeBreach."
+description: "Deploys Breach and Attack Simulation (BAS) platforms such as SafeBreach,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attack, bas, breach, deploys, implementing-continuous-security-validation-with-bas, platforms, safebreach, simulation, such]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, continuous, security, validation, with, bas, and, attack, breach, deploys, platforms, safebreach, simulation, such]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-continuous-security-validation-with-bas -->

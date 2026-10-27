@@ -1,6 +1,6 @@
 ---
 name: testing-for-email-header-injection
-description: "Tests web application email functionality contact forms."
+description: "Tests web application email functionality (contact forms, password reset,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, contact, email, forms, functionality, password, reset, testing-for-email-header-injection, tests, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, email, header, injection, application, contact, forms, functionality, password, reset, tests, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-email-header-injection -->

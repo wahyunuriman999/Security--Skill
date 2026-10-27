@@ -2,6 +2,9 @@
 name: hunt-tenant-isolation
 description: Multi-tenant isolation bypass and microservices trust boundary exploitation — horizontal tenant escape, internal service-to-service trust abuse, JWT tenant claim manipulation, namespace escape in shared infrastructure, API gateway bypass via internal routing. Use on SaaS/multi-tenant targets and microservices architectures.
 tags: [tenant, isolation, multi-tenant, microservices, saas, trust-boundary, namespace, jwt-tenant, internal-api]
+version: 1.0.0
+license: MIT
+triggers: [hunt, tenant, isolation, multi-tenant, microservices, saas, trust-boundary, namespace, jwt-tenant, internal-api]
 ---
 
 # Tenant Isolation Bypass & Microservices Trust Exploitation

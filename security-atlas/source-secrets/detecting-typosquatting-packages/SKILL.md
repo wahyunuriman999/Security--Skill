@@ -1,6 +1,6 @@
 ---
 name: detecting-typosquatting-packages
-description: "Flag misspelled brandjacked typosquatted package names."
+description: "Flag misspelled, brandjacked, and typosquatted package names across npm, PyPI, and crates.io before installation, using edit-distance, keyboard-proximity, and known-target corpus matching with typomania, Microsoft OSSGadget's oss-find-squats, and pypi-scan. Use before adding a new dependency, as a CI/CD gate on pull requests, when reviewing an AI-generated ("slopsquatting") dependency list, or when auditing a lockfile diff for a swapped package."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, adding, and, before, brandjacked, corpus, crates, dependency, detecting-typosquatting-packages, edit-distance, flag, installation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, typosquatting, packages, across, adding, and, before, brandjacked, corpus, crates, dependency, edit-distance, flag, installation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-typosquatting-packages -->

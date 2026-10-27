@@ -1,6 +1,6 @@
 ---
 name: performing-subdomain-enumeration-with-subfinder
-description: "Enumerate subdomains target domains ProjectDiscovery s."
+description: "Enumerate subdomains of target domains using ProjectDiscovery's Subfinder"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [domains, enumerate, performing-subdomain-enumeration-with-subfinder, projectdiscovery, subdomains, subfinder, target, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, subdomain, enumeration, with, subfinder, domains, enumerate, projectdiscovery, subdomains, target, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-subdomain-enumeration-with-subfinder -->

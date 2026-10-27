@@ -1,6 +1,6 @@
 ---
 name: implementing-next-generation-firewall-with-palo-alto
-description: "Configures deploys Palo Alto Networks next-generation."
+description: "Configures and deploys Palo Alto Networks next-generation firewalls end-to-end,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alto, and, configures, deploys, end-to-end, firewalls, implementing-next-generation-firewall-with-palo-alto, networks, next-generation, palo]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, next, generation, firewall, with, palo, alto, and, configures, deploys, end-to-end, firewalls, networks, next-generation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-next-generation-firewall-with-palo-alto -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-command-and-control-over-dns
-description: "Detect command-and-control C2 traffic tunneled DNS tools."
+description: "'Detect command-and-control (C2) traffic tunneled over DNS from tools like"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [command-and-control, detect, detecting-command-and-control-over-dns, dns, from, like, over, tools, traffic, tunneled]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, command, and, control, over, dns, command-and-control, detect, from, like, tools, traffic, tunneled]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-command-and-control-over-dns -->

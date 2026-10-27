@@ -1,6 +1,6 @@
 ---
 name: detecting-anomalous-authentication-patterns
-description: "Detects anomalous authentication patterns UEBA analytics."
+description: "'Detects anomalous authentication patterns using UEBA analytics, statistical"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analytics, anomalous, authentication, detecting-anomalous-authentication-patterns, detects, patterns, statistical, ueba, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, anomalous, authentication, patterns, analytics, detects, statistical, ueba, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-anomalous-authentication-patterns -->

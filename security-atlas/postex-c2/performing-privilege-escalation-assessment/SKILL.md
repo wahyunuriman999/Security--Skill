@@ -1,6 +1,6 @@
 ---
 name: performing-privilege-escalation-assessment
-description: "Performs privilege escalation assessments compromised."
+description: "'Performs privilege escalation assessments on compromised Linux and Windows"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, assessments, compromised, escalation, linux, performing-privilege-escalation-assessment, performs, privilege, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, privilege, escalation, assessment, and, assessments, compromised, linux, performs, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-privilege-escalation-assessment -->

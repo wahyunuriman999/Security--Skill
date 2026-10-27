@@ -1,6 +1,6 @@
 ---
 name: implementing-image-provenance-verification-with-cosign
-description: "Implementing image provenance verification with cosign."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-image-provenance-verification-with-cosign]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, image, provenance, verification, with, cosign]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-image-provenance-verification-with-cosign -->

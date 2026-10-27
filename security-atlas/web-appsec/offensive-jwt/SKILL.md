@@ -1,6 +1,6 @@
 ---
 name: offensive-jwt
-description: "JWT attack methodology for penetration testers."
+description: "JWT attack methodology for penetration testers. Covers algorithm confusion (alg:none, RS256→HS256), weak HMAC secret brute force, kid parameter injection (SQLi, path traversal), jku/x5u/jwk header injection, JWKS cache poisoning, JWS/JWE confusion, timing attacks, and mobile JWT storage extraction. Use when testing JWT-based authentication, hunting auth bypass via token manipulation, or evaluating JWT implementation security in web or mobile apps."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alg, algorithm, and, attack, attacks, brute, cache, confusion, covers, extraction, for, force]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, jwt, alg, algorithm, and, attack, attacks, brute, cache, confusion, covers, extraction, for, force]
 ---
 
 <!-- upstream: Claude-Red / offensive-jwt -->

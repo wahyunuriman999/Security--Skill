@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: hackerone_public, public_research
 report_count: 6
+triggers: [hunt, cloud, misconfig]
 ---
 
 ## 16. CLOUD / INFRA MISCONFIGS

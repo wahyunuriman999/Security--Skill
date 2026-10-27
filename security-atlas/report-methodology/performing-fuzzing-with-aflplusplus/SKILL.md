@@ -1,6 +1,6 @@
 ---
 name: performing-fuzzing-with-aflplusplus
-description: "Performs coverage-guided fuzzing compiled binaries AFL++."
+description: "'Performs coverage-guided fuzzing of compiled binaries with AFL++, instrumenting"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [afl, binaries, compiled, coverage-guided, fuzzing, instrumenting, performing-fuzzing-with-aflplusplus, performs, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, fuzzing, with, aflplusplus, afl, binaries, compiled, coverage-guided, instrumenting, performs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-fuzzing-with-aflplusplus -->

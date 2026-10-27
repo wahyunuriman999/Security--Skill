@@ -1,6 +1,6 @@
 ---
 name: analyzing-linux-system-artifacts
-description: "Examine Linux system artifacts auth logs cron/systemd."
+description: "Examine Linux system artifacts (auth logs, cron/systemd persistence,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-linux-system-artifacts, artifacts, auth, cron, examine, linux, logs, persistence, system, systemd]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, linux, system, artifacts, auth, cron, examine, logs, persistence, systemd]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-linux-system-artifacts -->

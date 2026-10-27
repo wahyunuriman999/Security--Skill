@@ -1,6 +1,6 @@
 ---
 name: executing-active-directory-attack-simulation
-description: "Executes authorized attack simulations against Active."
+description: "'Executes authorized attack simulations against Active Directory environments"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, against, attack, authorized, directory, environments, executes, executing-active-directory-attack-simulation, simulations]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [executing, active, directory, attack, simulation, against, authorized, environments, executes, simulations]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / executing-active-directory-attack-simulation -->

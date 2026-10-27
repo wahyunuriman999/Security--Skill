@@ -1,6 +1,6 @@
 ---
 name: hunting-for-dns-tunneling-with-zeek
-description: "Detects DNS tunneling covert-channel data exfiltration."
+description: "Detects DNS tunneling and covert-channel data exfiltration by analyzing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, and, covert-channel, data, detects, dns, exfiltration, hunting-for-dns-tunneling-with-zeek, tunneling]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, dns, tunneling, with, zeek, analyzing, and, covert-channel, data, detects, exfiltration]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-dns-tunneling-with-zeek -->

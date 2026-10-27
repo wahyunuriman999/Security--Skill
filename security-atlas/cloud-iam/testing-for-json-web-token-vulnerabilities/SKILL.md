@@ -1,6 +1,6 @@
 ---
 name: testing-for-json-web-token-vulnerabilities
-description: "Tests JWT implementations algorithm confusion none."
+description: "Tests JWT implementations for algorithm confusion, "none" algorithm bypass,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [algorithm, bypass, confusion, for, implementations, jwt, none, testing-for-json-web-token-vulnerabilities, tests]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, json, web, token, vulnerabilities, algorithm, bypass, confusion, implementations, jwt, none, tests]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-json-web-token-vulnerabilities -->

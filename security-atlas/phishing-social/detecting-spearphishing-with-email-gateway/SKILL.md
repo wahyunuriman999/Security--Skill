@@ -1,6 +1,6 @@
 ---
 name: detecting-spearphishing-with-email-gateway
-description: "Detect block spearphishing emails personalized researched."
+description: "Detect and block spearphishing emails that use personalized, researched"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, block, detect, detecting-spearphishing-with-email-gateway, emails, personalized, researched, spearphishing, that, use]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, spearphishing, with, email, gateway, and, block, detect, emails, personalized, researched, that, use]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-spearphishing-with-email-gateway -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-pod-security-admission-controller
-description: "Implementing pod security admission controller."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-pod-security-admission-controller]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, pod, security, admission, controller]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-pod-security-admission-controller -->

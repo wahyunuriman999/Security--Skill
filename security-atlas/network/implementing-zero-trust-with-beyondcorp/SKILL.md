@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-trust-with-beyondcorp
-description: "Configures Google BeyondCorp Enterprise Identity-Aware."
+description: "Configures Google BeyondCorp Enterprise Identity-Aware Proxy (IAP) as the access enforcement point for web applications, defining Access Context Manager access levels from device trust and network attributes, and auditing the resulting policies for compliance. Use when eliminating perimeter/VPN trust for GCP resources or internal apps, or when setting up identity- and device-posture-based access controls on Google Cloud."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, applications, attributes, auditing, beyondcorp, compliance, configures, context, defining, device, eliminating]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, trust, with, beyondcorp, access, and, applications, attributes, auditing, compliance, configures, context, defining, device, eliminating]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-trust-with-beyondcorp -->

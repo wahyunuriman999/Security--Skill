@@ -1,6 +1,6 @@
 ---
 name: implementing-honeypot-for-ransomware-detection
-description: "Deploys canary files honeypot shares decoy systems detect."
+description: "'Deploys canary files, honeypot shares, and decoy systems to detect ransomware"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, canary, decoy, deploys, detect, files, honeypot, implementing-honeypot-for-ransomware-detection, ransomware, shares, systems]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, honeypot, for, ransomware, detection, and, canary, decoy, deploys, detect, files, shares, systems]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-honeypot-for-ransomware-detection -->

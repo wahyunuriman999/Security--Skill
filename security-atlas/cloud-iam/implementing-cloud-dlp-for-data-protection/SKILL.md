@@ -1,6 +1,6 @@
 ---
 name: implementing-cloud-dlp-for-data-protection
-description: "Implement cloud DLP Amazon Macie Google Cloud DLP API."
+description: "'Implement cloud DLP using Amazon Macie, Google Cloud DLP API, Microsoft"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [amazon, api, cloud, dlp, google, implement, implementing-cloud-dlp-for-data-protection, macie, microsoft, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, cloud, dlp, for, data, protection, amazon, api, google, implement, macie, microsoft, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-cloud-dlp-for-data-protection -->

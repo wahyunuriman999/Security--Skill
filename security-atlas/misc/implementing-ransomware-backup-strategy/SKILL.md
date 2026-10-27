@@ -1,6 +1,6 @@
 ---
 name: implementing-ransomware-backup-strategy
-description: "Designs ransomware-resilient backup strategy 3-2-1-1-0."
+description: "'Designs a ransomware-resilient backup strategy using the 3-2-1-1-0"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [3-2-1-1-0, backup, designs, implementing-ransomware-backup-strategy, ransomware-resilient, strategy, the, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, ransomware, backup, strategy, 3-2-1-1-0, designs, ransomware-resilient, the, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-ransomware-backup-strategy -->

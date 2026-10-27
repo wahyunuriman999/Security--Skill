@@ -1,6 +1,6 @@
 ---
 name: redteam-report-template
-description: "Client-facing red-team deliverable format codifies."
+description: "Client-facing red-team deliverable format — codifies the Subject / Observations / Description / Impact / Recommendation / PoC structure used for external red-team engagements (not bug-bounty platform reports). Different audience, different tone, different cadence. Built from an authorized engagement deliverable where 14 findings were packaged into a 52KB MD + 2.2MB DOCX with 16 embedded screenshots. Use when the engagement is "external red team for an enterprise client" (not H1/Bugcrowd/Intigriti), when generating the final report, when the client has specified a custom report format, or when"
 version: 1.0.0
 author: Claude-BugHunter (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [audience, authorized, bug-bounty, built, cadence, client-facing, codifies, deliverable, description, different, engagement, engagements]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [redteam, report, template, audience, authorized, bug-bounty, built, cadence, client-facing, codifies, deliverable, description, different, engagement, engagements]
 ---
 
 <!-- upstream: Claude-BugHunter / redteam-report-template -->

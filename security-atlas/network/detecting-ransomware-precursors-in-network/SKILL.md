@@ -1,6 +1,6 @@
 ---
 name: detecting-ransomware-precursors-in-network
-description: "Detects early-stage ransomware indicators network traffic."
+description: "'Detects early-stage ransomware indicators in network traffic before"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [before, detecting-ransomware-precursors-in-network, detects, early-stage, indicators, network, ransomware, traffic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, ransomware, precursors, network, before, detects, early-stage, indicators, traffic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-ransomware-precursors-in-network -->

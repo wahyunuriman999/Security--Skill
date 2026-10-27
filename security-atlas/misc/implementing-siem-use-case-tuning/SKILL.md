@@ -1,6 +1,6 @@
 ---
 name: implementing-siem-use-case-tuning
-description: "Tune SIEM detection rules Splunk Elastic reduce false."
+description: "Tune SIEM detection rules in Splunk and Elastic to reduce false positives"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, detection, elastic, false, implementing-siem-use-case-tuning, positives, reduce, rules, siem, splunk, tune]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, siem, use, case, tuning, and, detection, elastic, false, positives, reduce, rules, splunk, tune]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-siem-use-case-tuning -->

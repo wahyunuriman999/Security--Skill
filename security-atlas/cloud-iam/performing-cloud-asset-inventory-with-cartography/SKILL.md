@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-asset-inventory-with-cartography
-description: "Run Cartography sync AWS GCP Azure resources Neo4j graph."
+description: "Run Cartography to sync AWS, GCP, or Azure resources into a Neo4j graph database,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aws, azure, cartography, database, gcp, graph, into, neo4j, performing-cloud-asset-inventory-with-cartography, resources, run, sync]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, asset, inventory, with, cartography, aws, azure, database, gcp, graph, into, neo4j, resources, run, sync]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-asset-inventory-with-cartography -->

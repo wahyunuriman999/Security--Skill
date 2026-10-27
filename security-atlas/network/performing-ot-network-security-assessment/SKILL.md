@@ -1,6 +1,6 @@
 ---
 name: performing-ot-network-security-assessment
-description: "Skill covers conducting comprehensive security."
+description: "'This skill covers conducting comprehensive security assessments of Operational"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessments, comprehensive, conducting, covers, operational, performing-ot-network-security-assessment, security, skill, this]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, network, security, assessment, assessments, comprehensive, conducting, covers, operational, skill, this]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ot-network-security-assessment -->

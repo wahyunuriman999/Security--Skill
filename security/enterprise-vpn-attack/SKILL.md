@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: authorized-engagement, public-advisories, cisa-kev
 report_count: 1
+triggers: [enterprise, vpn, attack]
 ---
 
 ## When to use this skill

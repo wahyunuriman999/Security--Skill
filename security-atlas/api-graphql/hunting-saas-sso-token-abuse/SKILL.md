@@ -1,6 +1,6 @@
 ---
 name: hunting-saas-sso-token-abuse
-description: "Hunts stolen-session OAuth/PRT token replay T1550.001."
+description: "Hunts for stolen-session and OAuth/PRT token replay (T1550.001) by correlating Microsoft Entra ID SigninLogs SessionId/UniqueTokenIdentifier fields and Okta System Log sso/session events to spot impossible travel, refresh-token reuse, and token use from anomalous ASNs. Use when hunting MFA-bypass via stolen cookies/tokens, investigating impossible-travel alerts, or scoping SaaS lateral movement after phishing."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [001, and, anomalous, asns, correlating, entra, events, fields, for, from, hunting, hunting-saas-sso-token-abuse]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, saas, sso, token, abuse, 001, and, anomalous, asns, correlating, entra, events, fields, for, from]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-saas-sso-token-abuse -->

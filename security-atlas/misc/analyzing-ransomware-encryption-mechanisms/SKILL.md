@@ -1,6 +1,6 @@
 ---
 name: analyzing-ransomware-encryption-mechanisms
-description: "Analyzes encryption algorithms key management file."
+description: "'Analyzes encryption algorithms, key management, and file encryption"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [algorithms, analyzes, analyzing-ransomware-encryption-mechanisms, and, encryption, file, key, management]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, ransomware, encryption, mechanisms, algorithms, analyzes, and, file, key, management]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-ransomware-encryption-mechanisms -->

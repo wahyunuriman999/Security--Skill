@@ -1,6 +1,6 @@
 ---
 name: performing-android-app-static-analysis-with-mobsf
-description: "Performs automated static analysis Android applications."
+description: "'Performs automated static analysis of Android applications using Mobile"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, android, applications, automated, mobile, performing-android-app-static-analysis-with-mobsf, performs, static, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, android, app, static, analysis, with, mobsf, applications, automated, mobile, performs, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-android-app-static-analysis-with-mobsf -->

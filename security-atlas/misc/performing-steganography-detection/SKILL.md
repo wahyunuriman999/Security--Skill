@@ -1,6 +1,6 @@
 ---
 name: performing-steganography-detection
-description: "Performing steganography detection."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-steganography-detection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, steganography, detection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-steganography-detection -->

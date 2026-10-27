@@ -1,6 +1,6 @@
 ---
 name: performing-red-team-phishing-with-gophish
-description: "Automates GoPhish phishing simulation campaigns Python."
+description: "Automates GoPhish phishing simulation campaigns using the Python gophish"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automates, campaigns, gophish, performing-red-team-phishing-with-gophish, phishing, python, simulation, the, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, red, team, phishing, with, gophish, automates, campaigns, python, simulation, the, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-red-team-phishing-with-gophish -->

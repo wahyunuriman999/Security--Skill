@@ -3,6 +3,9 @@ name: hunt-ntlm-info
 description: "Hunt NTLM/Negotiate information disclosure on internet-reachable IIS/SharePoint/Exchange. Anonymous NTLM Type-2 challenge capture leaks NetBIOS domain, internal DNS forest, computer name, AD timestamp via AV_PAIRS structure. Default Windows-installer hostnames (WIN-XXXXXXXXXXX pattern) signal lazy provisioning. Use when target advertises `WWW-Authenticate: NTLM` or `Negotiate` headers anonymously."
 sources: github, authorized-engagement
 report_count: 1
+version: 1.0.0
+license: MIT
+triggers: [hunt, ntlm, info]
 ---
 
 ## Crown Jewel Targets

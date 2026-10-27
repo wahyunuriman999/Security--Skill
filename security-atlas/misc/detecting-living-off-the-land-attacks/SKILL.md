@@ -1,6 +1,6 @@
 ---
 name: detecting-living-off-the-land-attacks
-description: "Detect abuse legitimate Windows binaries LOLBins used."
+description: "'Detect abuse of legitimate Windows binaries (LOLBins) used for living"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, binaries, detect, detecting-living-off-the-land-attacks, for, legitimate, living, lolbins, used, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, living, off, the, land, attacks, abuse, binaries, detect, for, legitimate, lolbins, used, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-living-off-the-land-attacks -->

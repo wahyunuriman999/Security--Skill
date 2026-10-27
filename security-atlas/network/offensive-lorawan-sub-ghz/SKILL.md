@@ -1,6 +1,6 @@
 ---
 name: offensive-lorawan-sub-ghz
-description: "LoRaWAN sub-GHz 433 / 868 / 915 MHz attack methodology."
+description: "LoRaWAN and sub-GHz (433 / 868 / 915 MHz) attack methodology — LoRaWAN ABP/OTAA join attack, network/session key reuse, frame counter replay, downlink injection on TTN/Helium-style networks, sub-GHz protocol replay (KeeLoq garage doors, fixed-code remotes, TPMS spoofing, smart plug telemetry), HackRF / RTL-SDR / Flipper Zero workflows, signal analysis with Inspectrum / Universal Radio Hacker, and reconstruction of proprietary packet formats. Use for LoRaWAN deployments (smart cities, asset tracking, industrial telemetry), or any wireless device using the unlicensed 433/868/915 MHz bands (garag"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [433, 868, 915, abp, and, attack, counter, doors, downlink, fixed-code, frame, garage]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, lorawan, sub, ghz, 433, 868, 915, abp, and, attack, counter, doors, downlink, fixed-code, frame, garage]
 ---
 
 <!-- upstream: Claude-Red / offensive-lorawan-sub-ghz -->

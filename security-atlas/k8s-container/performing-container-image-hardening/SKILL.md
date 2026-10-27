@@ -1,6 +1,6 @@
 ---
 name: performing-container-image-hardening
-description: "Harden container images minimizing attack surface."
+description: "'Harden container images by minimizing attack surface, stripping unnecessary"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attack, container, harden, images, minimizing, performing-container-image-hardening, stripping, surface, unnecessary]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, container, image, hardening, attack, harden, images, minimizing, stripping, surface, unnecessary]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-container-image-hardening -->

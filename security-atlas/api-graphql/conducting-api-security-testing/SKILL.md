@@ -1,6 +1,6 @@
 ---
 name: conducting-api-security-testing
-description: "Conducts security testing REST GraphQL gRPC APIs identify."
+description: "'Conducts security testing of REST, GraphQL, and gRPC APIs to identify"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, apis, conducting-api-security-testing, conducts, graphql, grpc, identify, rest, security, testing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, api, security, testing, and, apis, conducts, graphql, grpc, identify, rest]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-api-security-testing -->

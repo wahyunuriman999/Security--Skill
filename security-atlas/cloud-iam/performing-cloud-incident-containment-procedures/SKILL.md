@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-incident-containment-procedures
-description: "Execute cloud-native incident containment AWS Azure GCP."
+description: "Execute cloud-native incident containment across AWS, Azure, and GCP using platform"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, and, aws, azure, cloud-native, containment, execute, gcp, incident, performing-cloud-incident-containment-procedures, platform, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, incident, containment, procedures, across, and, aws, azure, cloud-native, execute, gcp, platform, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-incident-containment-procedures -->

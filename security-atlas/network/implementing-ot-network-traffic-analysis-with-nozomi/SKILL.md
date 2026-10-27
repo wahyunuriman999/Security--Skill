@@ -1,6 +1,6 @@
 ---
 name: implementing-ot-network-traffic-analysis-with-nozomi
-description: "Deploy Nozomi Networks Guardian sensors passive OT."
+description: "'Deploy Nozomi Networks Guardian sensors for passive OT network traffic"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [deploy, for, guardian, implementing-ot-network-traffic-analysis-with-nozomi, network, networks, nozomi, passive, sensors, traffic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, traffic, analysis, with, nozomi, deploy, for, guardian, networks, passive, sensors]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-ot-network-traffic-analysis-with-nozomi -->

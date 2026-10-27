@@ -1,6 +1,6 @@
 ---
 name: configuring-network-segmentation-with-vlans
-description: "Designs implements VLAN-based 802.1Q network segmentation."
+description: "'Designs and implements VLAN-based (802.1Q) network segmentation on"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [802, and, configuring-network-segmentation-with-vlans, designs, implements, network, segmentation, vlan-based]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, network, segmentation, with, vlans, 802, and, designs, implements, vlan-based]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-network-segmentation-with-vlans -->

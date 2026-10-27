@@ -1,6 +1,6 @@
 ---
 name: implementing-api-security-testing-with-42crunch
-description: "Implements API security testing 42Crunch platform."
+description: "Implements API security testing on the 42Crunch platform, combining"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [42crunch, api, combining, implementing-api-security-testing-with-42crunch, implements, platform, security, testing, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, security, testing, with, 42crunch, combining, implements, platform, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-security-testing-with-42crunch -->

@@ -1,6 +1,6 @@
 ---
 name: hunting-for-persistence-mechanisms-in-windows
-description: "Systematically hunts adversary persistence mechanisms."
+description: "Systematically hunts for adversary persistence mechanisms across Windows"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, adversary, for, hunting-for-persistence-mechanisms-in-windows, hunts, mechanisms, persistence, systematically, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, persistence, mechanisms, windows, across, adversary, hunts, systematically]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-persistence-mechanisms-in-windows -->

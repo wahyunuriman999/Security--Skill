@@ -1,6 +1,6 @@
 ---
 name: detecting-aws-iam-privilege-escalation
-description: "Detect AWS IAM privilege escalation paths boto3."
+description: "Detect AWS IAM privilege escalation paths using boto3 and Cloudsplaining"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, aws, boto3, cloudsplaining, detect, detecting-aws-iam-privilege-escalation, escalation, iam, paths, privilege, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, aws, iam, privilege, escalation, and, boto3, cloudsplaining, detect, paths, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-aws-iam-privilege-escalation -->

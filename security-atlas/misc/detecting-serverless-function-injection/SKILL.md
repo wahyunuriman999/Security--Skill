@@ -1,6 +1,6 @@
 ---
 name: detecting-serverless-function-injection
-description: "Detects prevents code injection attacks targeting."
+description: "'Detects and prevents code injection attacks targeting serverless functions"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attacks, code, detecting-serverless-function-injection, detects, functions, injection, prevents, serverless, targeting]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, serverless, function, injection, and, attacks, code, detects, functions, prevents, targeting]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-serverless-function-injection -->

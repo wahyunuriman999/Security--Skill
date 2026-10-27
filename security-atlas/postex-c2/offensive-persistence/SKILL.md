@@ -1,6 +1,6 @@
 ---
 name: offensive-persistence
-description: "Comprehensive persistence tradecraft authorized red team."
+description: "Comprehensive persistence tradecraft for authorized red team engagements covering Windows and Linux mechanisms. Windows techniques include registry Run/RunOnce keys, scheduled tasks, WMI event subscriptions, DLL search order hijacking, COM object hijacking, Startup folder drops, service creation, Security Support Provider (SSP) DLL injection, and Active Directory persistence (AdminSDHolder abuse, DCShadow, Golden Ticket, Silver Ticket, Skeleton Key, SID History injection). Linux techniques include cron and at jobs, systemd timers and services, SSH authorized_keys injection, shell profile backd"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, authorized, com, comprehensive, covering, creation, dll, drops, engagements, event, folder, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, persistence, and, authorized, com, comprehensive, covering, creation, dll, drops, engagements, event, folder, for]
 ---
 
 <!-- upstream: Claude-Red / offensive-persistence -->

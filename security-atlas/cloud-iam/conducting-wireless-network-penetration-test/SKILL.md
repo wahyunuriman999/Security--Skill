@@ -1,6 +1,6 @@
 ---
 name: conducting-wireless-network-penetration-test
-description: "Conducts authorized wireless network penetration tests."
+description: "'Conducts authorized wireless network penetration tests to assess the"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assess, authorized, conducting-wireless-network-penetration-test, conducts, network, penetration, tests, the, wireless]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, wireless, network, penetration, test, assess, authorized, conducts, tests, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-wireless-network-penetration-test -->

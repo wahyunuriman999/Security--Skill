@@ -1,6 +1,6 @@
 ---
 name: implementing-sigstore-for-software-signing
-description: "Implements Sigstore-based software signing verification."
+description: "'Implements Sigstore-based software signing and verification using Cosign"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cosign, implementing-sigstore-for-software-signing, implements, signing, sigstore-based, software, using, verification]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, sigstore, for, software, signing, and, cosign, implements, sigstore-based, using, verification]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-sigstore-for-software-signing -->

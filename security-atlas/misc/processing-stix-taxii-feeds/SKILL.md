@@ -1,6 +1,6 @@
 ---
 name: processing-stix-taxii-feeds
-description: "Processes STIX 2.1 threat intelligence bundles delivered."
+description: "'Processes STIX 2.1 threat intelligence bundles delivered via TAXII 2.1"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [bundles, delivered, intelligence, processes, processing-stix-taxii-feeds, stix, taxii, threat, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [processing, stix, taxii, feeds, bundles, delivered, intelligence, processes, threat, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / processing-stix-taxii-feeds -->

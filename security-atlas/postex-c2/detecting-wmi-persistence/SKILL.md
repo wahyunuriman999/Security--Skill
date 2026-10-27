@@ -1,6 +1,6 @@
 ---
 name: detecting-wmi-persistence
-description: "Detect WMI event subscription persistence MITRE T1546.003."
+description: "Detect WMI event subscription persistence (MITRE T1546.003) by analyzing Sysmon"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [003, analyzing, detect, detecting-wmi-persistence, event, mitre, persistence, subscription, sysmon, t1546, wmi]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, wmi, persistence, 003, analyzing, detect, event, mitre, subscription, sysmon, t1546]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-wmi-persistence -->

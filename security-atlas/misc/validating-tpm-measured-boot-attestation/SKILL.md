@@ -1,6 +1,6 @@
 ---
 name: validating-tpm-measured-boot-attestation
-description: "Verifies TPM 2.0 measured-boot integrity remote."
+description: "Verifies TPM 2.0 measured-boot integrity and remote attestation with"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attestation, integrity, measured-boot, remote, tpm, validating-tpm-measured-boot-attestation, verifies, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [validating, tpm, measured, boot, attestation, and, integrity, measured-boot, remote, verifies, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / validating-tpm-measured-boot-attestation -->

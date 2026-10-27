@@ -1,6 +1,6 @@
 ---
 name: detecting-privilege-escalation-attempts
-description: "Detect privilege escalation attempts Windows Linux."
+description: "Detect privilege escalation attempts across Windows and Linux, including access token manipulation, UAC bypass, unquoted service path abuse, kernel exploits, and sudo/doas abuse. Use when threat hunting for T1068-style privilege escalation, triaging EDR/SIEM alerts on suspicious privilege changes, scoping compromise during incident response, or validating detection coverage in a purple team exercise."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, access, across, alerts, and, attempts, bypass, changes, detect, detecting-privilege-escalation-attempts, doas, edr]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, privilege, escalation, attempts, abuse, access, across, alerts, and, bypass, changes, detect, doas, edr]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-privilege-escalation-attempts -->

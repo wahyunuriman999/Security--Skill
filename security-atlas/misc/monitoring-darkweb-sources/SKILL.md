@@ -1,6 +1,6 @@
 ---
 name: monitoring-darkweb-sources
-description: "Monitors dark web forums marketplaces paste sites."
+description: "'Monitors dark web forums, marketplaces, paste sites, and ransomware"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, dark, forums, marketplaces, monitoring-darkweb-sources, monitors, paste, ransomware, sites, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [monitoring, darkweb, sources, and, dark, forums, marketplaces, monitors, paste, ransomware, sites, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / monitoring-darkweb-sources -->

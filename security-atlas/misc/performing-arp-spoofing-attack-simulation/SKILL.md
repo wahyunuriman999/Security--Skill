@@ -1,6 +1,6 @@
 ---
 name: performing-arp-spoofing-attack-simulation
-description: "Simulates ARP spoofing/cache-poisoning attacks authorized."
+description: "'Simulates ARP spoofing/cache-poisoning attacks in authorized lab or"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [arp, attacks, authorized, cache-poisoning, lab, performing-arp-spoofing-attack-simulation, simulates, spoofing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, arp, spoofing, attack, simulation, attacks, authorized, cache-poisoning, lab, simulates]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-arp-spoofing-attack-simulation -->

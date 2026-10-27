@@ -1,6 +1,6 @@
 ---
 name: analyzing-browser-forensics-with-hindsight
-description: "Parse Chromium-based browser databases Hindsight extract."
+description: "Parse Chromium-based browser databases with Hindsight to extract and correlate browsing history, downloads, cookies, cached content, autofill data, saved passwords, and extensions from Chrome, Edge, Brave, Opera, and Vivaldi into a unified timeline (XLSX, JSON, or SQLite output). Use during incident response, insider-threat investigations, or criminal cases when you need to reconstruct a user's web activity from a browser profile."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-browser-forensics-with-hindsight, and, autofill, brave, browser, browsing, cached, chrome, chromium-based, content, cookies, correlate]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, browser, forensics, with, hindsight, and, autofill, brave, browsing, cached, chrome, chromium-based, content, cookies, correlate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-browser-forensics-with-hindsight -->

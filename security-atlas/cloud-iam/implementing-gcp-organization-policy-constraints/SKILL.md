@@ -1,6 +1,6 @@
 ---
 name: implementing-gcp-organization-policy-constraints
-description: "Implements GCP Organization Policy constraints gcloud."
+description: "Implements GCP Organization Policy constraints via gcloud and Terraform, such as restricting external IPs, resource locations, default service accounts, and service account keys, plus dry-run testing of policy impact before enforcement. Use when enforcing security guardrails across an org's resource hierarchy, or hardening GCP config at the org, folder, or project level."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [account, accounts, across, and, before, constraints, default, dry-run, enforcement, enforcing, external, gcloud]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, gcp, organization, policy, constraints, account, accounts, across, and, before, default, dry-run, enforcement, enforcing, external, gcloud]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-gcp-organization-policy-constraints -->

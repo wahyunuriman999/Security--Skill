@@ -1,6 +1,6 @@
 ---
 name: performing-threat-landscape-assessment-for-sector
-description: "Performing threat landscape assessment for sector."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-threat-landscape-assessment-for-sector]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, threat, landscape, assessment, for, sector]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-threat-landscape-assessment-for-sector -->

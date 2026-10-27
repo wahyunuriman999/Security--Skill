@@ -1,6 +1,6 @@
 ---
 name: triaging-windows-with-kape
-description: "Runs KAPE Kroll Artifact Parser Extractor collect."
+description: "Runs KAPE (Kroll Artifact Parser and Extractor) to collect targeted"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, artifact, collect, extractor, kape, kroll, parser, runs, targeted, triaging-windows-with-kape]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [triaging, windows, with, kape, and, artifact, collect, extractor, kroll, parser, runs, targeted]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / triaging-windows-with-kape -->

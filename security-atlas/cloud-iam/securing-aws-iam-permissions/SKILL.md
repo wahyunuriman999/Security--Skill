@@ -1,6 +1,6 @@
 ---
 name: securing-aws-iam-permissions
-description: "Hardens AWS IAM configurations enforce least-privilege."
+description: "'Hardens AWS IAM configurations to enforce least-privilege access, covering"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, aws, configurations, covering, enforce, hardens, iam, least-privilege, securing-aws-iam-permissions]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, aws, iam, permissions, access, configurations, covering, enforce, hardens, least-privilege]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-aws-iam-permissions -->

@@ -1,6 +1,6 @@
 ---
 name: performing-network-forensics-with-wireshark
-description: "Capture analyze network traffic Wireshark tshark."
+description: "Capture and analyze network traffic using Wireshark and tshark to reconstruct network events from PCAP/PCAPNG files, extract transferred files and credentials, and identify command-and-control communications. Use when analyzing captured traffic from a security incident, reconstructing data exfiltration, or finding network indicators of compromise during malware analysis."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzing, and, capture, captured, command-and-control, communications, credentials, data, events, exfiltrat, extract]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, network, forensics, with, wireshark, analyze, analyzing, and, capture, captured, command-and-control, communications, credentials, data, events, exfiltrat]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-network-forensics-with-wireshark -->

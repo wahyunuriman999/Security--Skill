@@ -1,6 +1,6 @@
 ---
 name: performing-csrf-attack-simulation
-description: "Testing web applications Cross-Site Request Forgery."
+description: "Testing web applications for Cross-Site Request Forgery vulnerabilities"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [applications, cross-site, for, forgery, performing-csrf-attack-simulation, request, testing, vulnerabilities, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, csrf, attack, simulation, applications, cross-site, for, forgery, request, testing, vulnerabilities, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-csrf-attack-simulation -->

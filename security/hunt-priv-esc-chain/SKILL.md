@@ -2,6 +2,9 @@
 name: hunt-priv-esc-chain
 description: Privilege escalation chain methodology — horizontal→vertical→admin, permission creep exploitation, role confusion attacks, scope escalation patterns, JWT privilege escalation, API versioning privilege gaps, feature flag bypass, admin function discovery. Use when you have low-privilege access and want to escalate to admin/root/full-access.
 tags: [privilege-escalation, priv-esc, horizontal, vertical, admin, role-confusion, scope, feature-flag, jwt-privesc]
+version: 1.0.0
+license: MIT
+triggers: [hunt, priv, esc, chain, privilege-escalation, priv-esc, horizontal, vertical, admin, role-confusion, scope, feature-flag, jwt-privesc]
 ---
 
 # Privilege Escalation Chain Methodology

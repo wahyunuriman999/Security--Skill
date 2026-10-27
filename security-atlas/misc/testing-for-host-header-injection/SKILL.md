@@ -1,6 +1,6 @@
 ---
 name: testing-for-host-header-injection
-description: "Test web applications HTTP Host header injection."
+description: "Test web applications for HTTP Host header injection vulnerabilities"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [applications, for, header, host, http, injection, test, testing-for-host-header-injection, vulnerabilities, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, host, header, injection, applications, http, test, vulnerabilities, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-host-header-injection -->

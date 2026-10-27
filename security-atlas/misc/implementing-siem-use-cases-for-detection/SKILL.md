@@ -1,6 +1,6 @@
 ---
 name: implementing-siem-use-cases-for-detection
-description: "Implements SIEM detection cases designing correlation."
+description: "'Implements SIEM detection use cases by designing correlation rules,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cases, correlation, designing, detection, implementing-siem-use-cases-for-detection, implements, rules, siem, use]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, siem, use, cases, for, detection, correlation, designing, implements, rules]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-siem-use-cases-for-detection -->

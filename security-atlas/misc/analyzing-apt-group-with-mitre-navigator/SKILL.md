@@ -1,6 +1,6 @@
 ---
 name: analyzing-apt-group-with-mitre-navigator
-description: "Query ATT CK data attackcti mitreattack-python stix2."
+description: "Query ATT&CK data with attackcti, mitreattack-python, and stix2, then build MITRE ATT&CK Navigator layers and multi-layer heatmap overlays mapping one or more APT groups' TTPs for detection-gap analysis. Use to compare threat-actor technique coverage, find gaps in detection engineering, or produce Navigator visualizations for threat-intel reporting."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, analyzing-apt-group-with-mitre-navigator, and, apt, att, attackcti, build, compare, coverage, data, detection, detection-gap]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, apt, group, with, mitre, navigator, analysis, and, att, attackcti, build, compare, coverage, data, detection, detection-gap]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-apt-group-with-mitre-navigator -->

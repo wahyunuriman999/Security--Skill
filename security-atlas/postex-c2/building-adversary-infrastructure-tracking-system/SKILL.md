@@ -1,6 +1,6 @@
 ---
 name: building-adversary-infrastructure-tracking-system
-description: "Build automated adversary infrastructure tracking system."
+description: "Build an automated adversary infrastructure tracking system in Python (dnspython, python-whois, shodan, networkx) that pivots across passive DNS, certificate transparency logs, WHOIS records, and IP enrichment to map threat-actor C2 networks and flag newly registered domains matching known patterns. Use when pivoting from known indicators to discover related C2 infrastructure or maintaining a continuously updated map of a threat actor's network."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, adversary, and, automated, build, building-adversary-infrastructure-tracking-system, certificate, dns, dnspython, domains, enrichment, flag]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, adversary, infrastructure, tracking, system, across, and, automated, build, certificate, dns, dnspython, domains, enrichment, flag]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-adversary-infrastructure-tracking-system -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-malicious-scheduled-tasks-with-sysmon
-description: "Detect malicious scheduled task creation modification."
+description: "'Detect malicious scheduled task creation and modification using Sysmon"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, creation, detect, detecting-malicious-scheduled-tasks-with-sysmon, malicious, modification, scheduled, sysmon, task, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, malicious, scheduled, tasks, with, sysmon, and, creation, detect, modification, task, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-malicious-scheduled-tasks-with-sysmon -->

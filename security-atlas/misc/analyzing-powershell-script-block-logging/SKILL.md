@@ -1,6 +1,6 @@
 ---
 name: analyzing-powershell-script-block-logging
-description: "Parse Windows PowerShell Script Block Logs Event ID 4104."
+description: "Parse Windows PowerShell Script Block Logs (Event ID 4104) from EVTX"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [4104, analyzing-powershell-script-block-logging, block, event, evtx, from, logs, parse, powershell, script, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, powershell, script, block, logging, 4104, event, evtx, from, logs, parse, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-powershell-script-block-logging -->

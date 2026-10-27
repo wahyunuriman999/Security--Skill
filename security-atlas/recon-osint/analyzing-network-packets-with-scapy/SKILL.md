@@ -1,6 +1,6 @@
 ---
 name: analyzing-network-packets-with-scapy
-description: "Scapy craft send sniff dissect TCP/UDP/ICMP/DNS packets."
+description: "Use Scapy to craft, send, sniff, and dissect TCP/UDP/ICMP/DNS packets, analyze pcap files, implement SYN scans, and detect anomalous traffic such as fragmented or malformed packets. Use when performing authorized network reconnaissance, protocol-level forensic analysis, or building traffic anomaly detection during security testing."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, analyze, analyzing-network-packets-with-scapy, and, anomalous, anomaly, authorized, building, craft, detect, dissect, dns]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, network, packets, with, scapy, analysis, analyze, and, anomalous, anomaly, authorized, building, craft, detect, dissect, dns]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-network-packets-with-scapy -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-lateral-movement-with-splunk
-description: "Detect adversary lateral movement networks Splunk SPL."
+description: "Detect adversary lateral movement across networks using Splunk SPL queries"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, adversary, detect, detecting-lateral-movement-with-splunk, lateral, movement, networks, queries, spl, splunk, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, lateral, movement, with, splunk, across, adversary, detect, networks, queries, spl, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-lateral-movement-with-splunk -->

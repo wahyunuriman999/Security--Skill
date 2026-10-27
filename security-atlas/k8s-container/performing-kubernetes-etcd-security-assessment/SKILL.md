@@ -1,6 +1,6 @@
 ---
 name: performing-kubernetes-etcd-security-assessment
-description: "Performing kubernetes etcd security assessment."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-kubernetes-etcd-security-assessment]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, kubernetes, etcd, security, assessment]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-kubernetes-etcd-security-assessment -->

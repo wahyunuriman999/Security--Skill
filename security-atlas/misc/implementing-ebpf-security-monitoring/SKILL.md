@@ -1,6 +1,6 @@
 ---
 name: implementing-ebpf-security-monitoring
-description: "Implements eBPF-based security monitoring Cilium Tetragon."
+description: "'Implements eBPF-based security monitoring using Cilium Tetragon for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cilium, ebpf-based, for, implementing-ebpf-security-monitoring, implements, monitoring, security, tetragon, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, ebpf, security, monitoring, cilium, ebpf-based, for, implements, tetragon, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-ebpf-security-monitoring -->

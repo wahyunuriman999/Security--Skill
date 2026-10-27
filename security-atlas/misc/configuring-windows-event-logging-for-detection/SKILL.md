@@ -1,6 +1,6 @@
 ---
 name: configuring-windows-event-logging-for-detection
-description: "Configures Windows Event Logging advanced audit policies."
+description: "'Configures Windows Event Logging with advanced audit policies to generate"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [advanced, audit, configures, configuring-windows-event-logging-for-detection, event, generate, logging, policies, windows, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, windows, event, logging, for, detection, advanced, audit, configures, generate, policies, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-windows-event-logging-for-detection -->

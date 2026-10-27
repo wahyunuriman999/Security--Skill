@@ -1,6 +1,6 @@
 ---
 name: implementing-envelope-encryption-with-aws-kms
-description: "Implements envelope encryption AWS KMS encrypting data."
+description: "Implements envelope encryption with AWS KMS, encrypting data locally with a data encryption key (DEK) and protecting that DEK with a KMS-managed key (KEK), covering the encrypt/decrypt flow, KMS key types, and security validation criteria. Use when designing key management for encrypting large or numerous data objects on AWS, or when reducing direct KMS API call volume."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, aws, covering, criteria, data, decrypt, dek, designing, encrypt, encrypting, encryption, envelope]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, envelope, encryption, with, aws, kms, and, covering, criteria, data, decrypt, dek, designing, encrypt, encrypting]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-envelope-encryption-with-aws-kms -->

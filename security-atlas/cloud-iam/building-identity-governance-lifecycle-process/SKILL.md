@@ -1,6 +1,6 @@
 ---
 name: building-identity-governance-lifecycle-process
-description: "Design identity governance lifecycle IGA programs."
+description: "Design identity governance and lifecycle (IGA) programs on platforms like SailPoint, Saviynt, or Entra ID Governance, covering joiner-mover-leaver (JML) automation, role mining, access requests, periodic recertification, and orphaned-account remediation sourced from an HR feed. Use when automating cross-system JML provisioning, remediating former-employee access, or building lifecycle processes for SOX, HIPAA, or GDPR compliance."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, automating, automation, building-identity-governance-lifecycle-process, covering, design, entra, feed, from, governance, identity]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, identity, governance, lifecycle, process, access, and, automating, automation, covering, design, entra, feed, from]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-identity-governance-lifecycle-process -->

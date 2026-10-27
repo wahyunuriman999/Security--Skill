@@ -1,6 +1,6 @@
 ---
 name: implementing-deception-based-detection-with-canarytoken
-description: "Deploys monitors Canary Tokens Thinkst Canary REST API."
+description: "Deploys and monitors Canary Tokens via the Thinkst Canary REST API for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, api, canary, deploys, for, implementing-deception-based-detection-with-canarytoken, monitors, rest, the, thinkst, tokens, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, deception, based, detection, with, canarytoken, and, api, canary, deploys, for, monitors, rest, the, thinkst, tokens]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-deception-based-detection-with-canarytoken -->

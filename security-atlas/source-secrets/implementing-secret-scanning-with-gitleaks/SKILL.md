@@ -1,6 +1,6 @@
 ---
 name: implementing-secret-scanning-with-gitleaks
-description: "Skill covers implementing Gitleaks detecting preventing."
+description: "'This skill covers implementing Gitleaks for detecting and preventing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, covers, detecting, for, gitleaks, implementing, implementing-secret-scanning-with-gitleaks, preventing, skill, this]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, secret, scanning, with, gitleaks, and, covers, detecting, for, preventing, skill, this]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-secret-scanning-with-gitleaks -->

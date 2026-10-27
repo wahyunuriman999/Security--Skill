@@ -1,6 +1,6 @@
 ---
 name: performing-dns-enumeration-and-zone-transfer
-description: "Enumerates DNS records attempts zone transfers."
+description: "'Enumerates DNS records, attempts zone transfers, brute-forces subdomains,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attempts, brute-forces, dns, enumerates, performing-dns-enumeration-and-zone-transfer, records, subdomains, transfers, zone]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, dns, enumeration, and, zone, transfer, attempts, brute-forces, enumerates, records, subdomains, transfers]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-dns-enumeration-and-zone-transfer -->

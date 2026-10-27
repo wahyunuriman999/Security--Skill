@@ -1,6 +1,6 @@
 ---
 name: auditing-gcp-iam-permissions
-description: "Auditing Google Cloud Platform IAM permissions identify."
+description: "'Auditing Google Cloud Platform IAM permissions to identify overly permissive"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [auditing, auditing-gcp-iam-permissions, cloud, google, iam, identify, overly, permissions, permissive, platform]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, gcp, iam, permissions, cloud, google, identify, overly, permissive, platform]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-gcp-iam-permissions -->

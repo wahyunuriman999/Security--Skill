@@ -1,6 +1,6 @@
 ---
 name: migrating-to-post-quantum-cryptography
-description: "Build cryptographic inventory/CBOM OpenSSL 3.5+ deploy."
+description: "Build a cryptographic inventory/CBOM with OpenSSL 3.5+, deploy hybrid post-quantum key exchange (X25519MLKEM768) on TLS/VPN/SSH endpoints, generate ML-KEM/ML-DSA keys and PQC/hybrid certificates, and prioritize migration by harvest-now-decrypt-later (HNDL) exposure per NIST SP 1800-38. Use when inventorying enterprise cryptography for quantum-readiness, enabling hybrid PQC key exchange, or issuing and verifying PQC/hybrid certificates."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [1800-38, and, build, cbom, certificates, cryptographic, deploy, endpoints, exchange, exposure, generate, harvest-now-decrypt-later]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [migrating, post, quantum, cryptography, 1800-38, and, build, cbom, certificates, cryptographic, deploy, endpoints, exchange, exposure, generate, harvest-now-decrypt-later]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / migrating-to-post-quantum-cryptography -->

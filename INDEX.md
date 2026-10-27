@@ -1,5 +1,12 @@
 # INDEX — Decision Tree + Peta Skill
 
+> **Start here for instant routing:** read [`ROUTER.md`](ROUTER.md) first
+> (10-second decision tree, no need to read all 1001 files), or grep the
+> machine-readable index [`routing.json`](routing.json) by keyword.
+> This INDEX covers the 130 `security/` skills below; the 870 atlas skills
+> are covered by [`security-atlas-roadmap/SKILL.md`](security-atlas-roadmap/SKILL.md).
+> Together: 130 + 870 + 1 = **1001 skills, 1001/1001 routed**.
+
 Total: **1001 skill** di 3 folder.
 
 ## Decision Tree

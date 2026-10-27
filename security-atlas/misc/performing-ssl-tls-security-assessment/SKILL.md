@@ -1,6 +1,6 @@
 ---
 name: performing-ssl-tls-security-assessment
-description: "Performing ssl tls security assessment."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-ssl-tls-security-assessment]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ssl, tls, security, assessment]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ssl-tls-security-assessment -->

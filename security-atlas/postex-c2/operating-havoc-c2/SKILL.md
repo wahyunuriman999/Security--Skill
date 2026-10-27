@@ -1,6 +1,6 @@
 ---
 name: operating-havoc-c2
-description: "Deploy Havoc C2 team server Yaotl malleable profiles."
+description: "Deploy a Havoc C2 team server with Yaotl malleable profiles, generate evasive Demon agents using indirect syscalls and sleep obfuscation, and run post-exploitation and pivoting operations. Use during authorized, rules-of-engagement-bound red-team engagements for adversary emulation requiring a full C2 lifecycle (server setup, evasive implant generation, tasking, and lateral pivoting)."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, agents, and, authorized, demon, deploy, during, emulation, engagements, evasive, for, full]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [operating, havoc, adversary, agents, and, authorized, demon, deploy, during, emulation, engagements, evasive, for, full]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / operating-havoc-c2 -->

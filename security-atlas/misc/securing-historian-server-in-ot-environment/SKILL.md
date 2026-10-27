@@ -1,6 +1,6 @@
 ---
 name: securing-historian-server-in-ot-environment
-description: "Audits hardens process historian servers OSIsoft PI."
+description: "'Audits and hardens process historian servers (OSIsoft PI, Honeywell PHD,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, audits, hardens, historian, honeywell, osisoft, phd, process, securing-historian-server-in-ot-environment, servers]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, historian, server, environment, and, audits, hardens, honeywell, osisoft, phd, process, servers]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-historian-server-in-ot-environment -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-oauth-token-theft
-description: "Detect respond OAuth token theft replay Microsoft Entra."
+description: "Detect and respond to OAuth token theft and replay in Microsoft Entra ID (Azure AD), covering access token theft, refresh token replay, Primary Refresh Token (PRT) abuse, pass-the-cookie attacks, and Token Protection conditional access policies. Use for impossible-travel or anomalous token-usage alerts, suspected session hijacking, sign-in log analysis, or configuring token-binding defenses in Azure/M365."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, access, ale, and, anomalous, attacks, azure, conditional, covering, detect, detecting-oauth-token-theft, entra]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, oauth, token, theft, abuse, access, ale, and, anomalous, attacks, azure, conditional, covering, detect, entra]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-oauth-token-theft -->

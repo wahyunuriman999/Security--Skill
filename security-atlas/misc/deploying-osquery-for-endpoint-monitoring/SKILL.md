@@ -1,6 +1,6 @@
 ---
 name: deploying-osquery-for-endpoint-monitoring
-description: "Deploys configures osquery real-time endpoint monitoring."
+description: "'Deploys and configures osquery for real-time endpoint monitoring using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, configures, deploying-osquery-for-endpoint-monitoring, deploys, endpoint, for, monitoring, osquery, real-time, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, osquery, for, endpoint, monitoring, and, configures, deploys, real-time, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-osquery-for-endpoint-monitoring -->

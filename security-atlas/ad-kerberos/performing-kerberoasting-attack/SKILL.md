@@ -1,6 +1,6 @@
 ---
 name: performing-kerberoasting-attack
-description: "Perform Kerberoasting post-exploitation technique."
+description: "Perform Kerberoasting, a post-exploitation technique that enumerates"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [enumerates, kerberoasting, perform, performing-kerberoasting-attack, post-exploitation, technique, that]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, kerberoasting, attack, enumerates, perform, post-exploitation, technique, that]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-kerberoasting-attack -->

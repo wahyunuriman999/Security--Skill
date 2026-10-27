@@ -1,6 +1,6 @@
 ---
 name: analyzing-network-traffic-with-wireshark
-description: "Captures analyzes network packet data Wireshark tshark."
+description: "'Captures and analyzes network packet data using Wireshark and tshark"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, analyzing-network-traffic-with-wireshark, and, captures, data, network, packet, tshark, using, wireshark]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, network, traffic, with, wireshark, analyzes, and, captures, data, packet, tshark, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-network-traffic-with-wireshark -->

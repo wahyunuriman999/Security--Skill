@@ -1,6 +1,6 @@
 ---
 name: designing-adversary-engagement-with-mitre-engage
-description: "Designing adversary engagement with mitre engage."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [designing-adversary-engagement-with-mitre-engage]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [designing, adversary, engagement, with, mitre, engage]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / designing-adversary-engagement-with-mitre-engage -->

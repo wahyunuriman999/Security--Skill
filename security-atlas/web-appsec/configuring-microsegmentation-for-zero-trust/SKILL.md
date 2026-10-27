@@ -1,6 +1,6 @@
 ---
 name: configuring-microsegmentation-for-zero-trust
-description: "Configures microsegmentation policies enforce."
+description: "Configures microsegmentation policies to enforce least-privilege workload-to-workload"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configures, configuring-microsegmentation-for-zero-trust, enforce, least-privilege, microsegmentation, policies, workload-to-workload]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, microsegmentation, for, zero, trust, configures, enforce, least-privilege, policies, workload-to-workload]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-microsegmentation-for-zero-trust -->

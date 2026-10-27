@@ -1,6 +1,6 @@
 ---
 name: detecting-lateral-movement-with-zeek
-description: "Detect lateral movement network traffic Zeek formerly Bro."
+description: "'Detect lateral movement in network traffic using Zeek (formerly Bro)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [bro, detect, detecting-lateral-movement-with-zeek, formerly, lateral, movement, network, traffic, using, zeek]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, lateral, movement, with, zeek, bro, detect, formerly, network, traffic, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-lateral-movement-with-zeek -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-mimikatz-execution-patterns
-description: "Detect Mimikatz credential-dumping activity command-line."
+description: "Detect Mimikatz credential-dumping activity via command-line pattern matching, LSASS access signatures, binary/hash indicators, and in-memory detection of known Mimikatz modules. Use when threat hunting for T1003 credential access, triaging EDR/SIEM alerts on LSASS access, scoping compromise during incident response, or validating detection coverage in a purple team exercise."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, activity, alerts, and, binary, command-line, compromise, credential, credential-dumping, detect, detecting-mimikatz-execution-patterns, detection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, mimikatz, execution, patterns, access, activity, alerts, and, binary, command-line, compromise, credential, credential-dumping, detect, detection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-mimikatz-execution-patterns -->

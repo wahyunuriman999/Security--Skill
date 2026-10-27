@@ -1,6 +1,6 @@
 ---
 name: detecting-bluetooth-low-energy-attacks
-description: "Detects analyzes Bluetooth Low Energy BLE security."
+description: "'Detects and analyzes Bluetooth Low Energy (BLE) security attacks including"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, and, attacks, ble, bluetooth, detecting-bluetooth-low-energy-attacks, detects, energy, including, low, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, bluetooth, low, energy, attacks, analyzes, and, ble, detects, including, security]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-bluetooth-low-energy-attacks -->

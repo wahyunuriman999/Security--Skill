@@ -1,6 +1,6 @@
 ---
 name: detecting-shadow-it-cloud-usage
-description: "Detect unauthorized SaaS cloud service usage shadow."
+description: "Detect unauthorized SaaS and cloud service usage (shadow IT) by parsing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cloud, detect, detecting-shadow-it-cloud-usage, parsing, saas, service, shadow, unauthorized, usage]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, shadow, cloud, usage, and, detect, parsing, saas, service, unauthorized]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-shadow-it-cloud-usage -->

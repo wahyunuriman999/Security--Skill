@@ -1,6 +1,6 @@
 ---
 name: offensive-data-exfiltration
-description: "Dense methodology covering DNS exfiltration dnscat2."
+description: "Dense methodology covering DNS exfiltration (dnscat2, iodine, dns2tcp), HTTPS tunneling (domain fronting, CDN abuse, legitimate service channels), ICMP tunneling (icmpsh, ptunnel-ng), cloud storage dead drops (S3 presigned URLs, Azure Blob SAS tokens, GCS signed URLs), email-based exfil (SMTP, EWS, draft method), steganography (image, audio, document metadata), encoding/encryption (base64 chunking, XOR, AES), covert channels (custom protocol tunneling, HTTP header encoding, timing channels), and data staging (compression, splitting, encryption). Tools: dnscat2, iodine, dns2tcp, PacketWhisper,"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, azure, blob, cdn, channels, cloud, covering, dead, dense, dns, dns2tcp, dnscat2]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, data, exfiltration, abuse, azure, blob, cdn, channels, cloud, covering, dead, dense, dns, dns2tcp, dnscat2]
 ---
 
 <!-- upstream: Claude-Red / offensive-data-exfiltration -->

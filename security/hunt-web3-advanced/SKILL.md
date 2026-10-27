@@ -2,6 +2,9 @@
 name: hunt-web3-advanced
 description: Advanced Web3 / DeFi attack surface beyond basics — MEV/sandwich attacks, cross-chain bridge vulnerabilities, ZK proof system bugs, Merkle tree manipulation, ERC-4337 account abstraction attacks, governance manipulation, veTokenomics exploits, oracle TWAP manipulation, Chainlink oracle deviation attacks, NFT metadata manipulation. Use for high-value DeFi/Web3 targets with complex tokenomics.
 tags: [web3, defi, mev, bridge, zk-proof, merkle, erc4337, governance, oracle-twap, chainlink, nft, advanced]
+version: 1.0.0
+license: MIT
+triggers: [hunt, web3, advanced, defi, mev, bridge, zk-proof, merkle, erc4337, governance, oracle-twap, chainlink, nft]
 ---
 
 # Advanced Web3 / DeFi Attack Surface

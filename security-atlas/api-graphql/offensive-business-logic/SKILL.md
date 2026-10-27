@@ -1,6 +1,6 @@
 ---
 name: offensive-business-logic
-description: "Business logic vulnerability testing web/mobile/API."
+description: "Business logic vulnerability testing for web/mobile/API engagements. Covers workflow bypass, state machine violations, multi-step process abuse, price/quantity/discount manipulation, currency confusion, coupon stacking, refund/chargeback abuse, race conditions on logic boundaries, parameter tampering for hidden flows, role/tenant boundary violations, time-of-check vs use, anti-automation defeat, fraud-detection evasion, and subscription/quota abuse. Use when scoping an application after surface-level OWASP Top 10 has been covered, or when the asset is a transactional/marketplace/fintech/e-comm"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, api, boundaries, business, bypass, chargeback, conditions, confusion, coupon, covers, currency, discount]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, business, logic, abuse, api, boundaries, bypass, chargeback, conditions, confusion, coupon, covers, currency, discount]
 ---
 
 <!-- upstream: Claude-Red / offensive-business-logic -->

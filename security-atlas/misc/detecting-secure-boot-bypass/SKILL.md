@@ -1,6 +1,6 @@
 ---
 name: detecting-secure-boot-bypass
-description: "Detect UEFI Secure Boot bypasses bootkits BlackLotus."
+description: "Detect UEFI Secure Boot bypasses and bootkits such as BlackLotus and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, blacklotus, boot, bootkits, bypasses, detect, detecting-secure-boot-bypass, secure, such, uefi]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, secure, boot, bypass, and, blacklotus, bootkits, bypasses, detect, such, uefi]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-secure-boot-bypass -->

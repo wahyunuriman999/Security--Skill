@@ -1,6 +1,6 @@
 ---
 name: securing-api-gateway-with-aws-waf
-description: "Secures AWS API Gateway endpoints AWS WAF configuring."
+description: "'Secures AWS API Gateway endpoints with AWS WAF by configuring managed"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, aws, configuring, endpoints, gateway, managed, secures, securing-api-gateway-with-aws-waf, waf, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, api, gateway, with, aws, waf, configuring, endpoints, managed, secures]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-api-gateway-with-aws-waf -->

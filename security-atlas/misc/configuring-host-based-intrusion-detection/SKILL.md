@@ -1,6 +1,6 @@
 ---
 name: configuring-host-based-intrusion-detection
-description: "Configures host-based intrusion detection systems HIDS."
+description: "'Configures host-based intrusion detection systems (HIDS) to monitor"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configures, configuring-host-based-intrusion-detection, detection, hids, host-based, intrusion, monitor, systems]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, host, based, intrusion, detection, configures, hids, host-based, monitor, systems]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-host-based-intrusion-detection -->

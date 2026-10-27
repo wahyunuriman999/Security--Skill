@@ -1,6 +1,6 @@
 ---
 name: detecting-email-forwarding-rules-attack
-description: "Detect malicious inbox/mail-flow forwarding rules."
+description: "Detect malicious inbox/mail-flow forwarding rules that adversaries create to maintain"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversaries, create, detect, detecting-email-forwarding-rules-attack, forwarding, inbox, mail-flow, maintain, malicious, rules, that]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, email, forwarding, rules, attack, adversaries, create, detect, inbox, mail-flow, maintain, malicious, that]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-email-forwarding-rules-attack -->

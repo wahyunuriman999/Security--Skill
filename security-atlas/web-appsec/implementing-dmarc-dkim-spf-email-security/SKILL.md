@@ -1,6 +1,6 @@
 ---
 name: implementing-dmarc-dkim-spf-email-security
-description: "Configures SPF DKIM DMARC DNS TXT records authenticate."
+description: "Configures SPF, DKIM, and DMARC DNS TXT records to authenticate outbound email, prevent domain spoofing, and enforce a rejection/quarantine policy on unauthenticated mail, including auditing a domain's current DNS state. Use when hardening a domain's email security posture or defending against phishing and spoofing attacks."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, auditing, authenticate, configures, current, defending, dkim, dmarc, dns, domain, email]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, dmarc, dkim, spf, email, security, against, and, auditing, authenticate, configures, current, defending, dns, domain]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-dmarc-dkim-spf-email-security -->

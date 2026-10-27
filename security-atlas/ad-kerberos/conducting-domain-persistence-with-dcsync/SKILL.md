@@ -1,6 +1,6 @@
 ---
 name: conducting-domain-persistence-with-dcsync
-description: "Perform DCSync attacks abusing MS-DRSR replication rights."
+description: "Perform DCSync attacks by abusing MS-DRSR replication rights (DS-Replication-Get-Changes/-All) to impersonate a Domain Controller and extract KRBTGT, Domain Admin, and service account hashes for Golden Ticket forging, typically with Mimikatz. Use in authorized engagements after finding principals with replication rights, to establish long-term domain persistence, or to validate detections for replication abuse."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [-all, abusing, account, admin, after, and, attacks, authorized, conducting-domain-persistence-with-dcsync, controller, dcsync, domain]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, domain, persistence, with, dcsync, -all, abusing, account, admin, after, and, attacks, authorized, controller]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-domain-persistence-with-dcsync -->

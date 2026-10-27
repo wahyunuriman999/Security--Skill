@@ -1,6 +1,6 @@
 ---
 name: implementing-rsa-key-pair-management
-description: "Generates stores rotates manages RSA key pairs following."
+description: "Generates, stores, rotates, and manages RSA key pairs following NIST"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, following, generates, implementing-rsa-key-pair-management, key, manages, nist, pairs, rotates, rsa, stores]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, rsa, key, pair, management, and, following, generates, manages, nist, pairs, rotates, stores]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-rsa-key-pair-management -->

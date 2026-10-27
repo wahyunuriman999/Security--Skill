@@ -1,6 +1,6 @@
 ---
 name: analyzing-mft-for-deleted-file-recovery
-description: "Analyze NTFS Master File Table MFT MFTECmd analyzeMFT."
+description: "Analyze the NTFS Master File Table ($MFT) with MFTECmd, analyzeMFT,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzemft, analyzing-mft-for-deleted-file-recovery, file, master, mft, mftecmd, ntfs, table, the, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, mft, for, deleted, file, recovery, analyze, analyzemft, master, mftecmd, ntfs, table, the, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-mft-for-deleted-file-recovery -->

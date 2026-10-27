@@ -1,6 +1,6 @@
 ---
 name: performing-container-security-scanning-with-trivy
-description: "Performing container security scanning with trivy."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-container-security-scanning-with-trivy]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, container, security, scanning, with, trivy]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-container-security-scanning-with-trivy -->

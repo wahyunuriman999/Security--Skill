@@ -1,6 +1,6 @@
 ---
 name: performing-ics-asset-discovery-with-claroty
-description: "Performs ICS/OT asset discovery Claroty xDome combining."
+description: "'Performs ICS/OT asset discovery with Claroty xDome, combining passive"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [asset, claroty, combining, discovery, ics, passive, performing-ics-asset-discovery-with-claroty, performs, with, xdome]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ics, asset, discovery, with, claroty, combining, passive, performs, xdome]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ics-asset-discovery-with-claroty -->

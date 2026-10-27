@@ -1,6 +1,6 @@
 ---
 name: implementing-gdpr-data-subject-access-request
-description: "Automates GDPR Data Subject Access Request DSAR workflows."
+description: "'Automates GDPR Data Subject Access Request (DSAR) workflows including"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, automates, data, dsar, gdpr, implementing-gdpr-data-subject-access-request, including, request, subject, workflows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, gdpr, data, subject, access, request, automates, dsar, including, workflows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-gdpr-data-subject-access-request -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-microsegmentation-with-guardicore
-description: "Implements microsegmentation Akamai Guardicore."
+description: "'Implements microsegmentation with Akamai Guardicore Segmentation to map"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [akamai, guardicore, implementing-microsegmentation-with-guardicore, implements, map, microsegmentation, segmentation, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, microsegmentation, with, guardicore, akamai, implements, map, segmentation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-microsegmentation-with-guardicore -->

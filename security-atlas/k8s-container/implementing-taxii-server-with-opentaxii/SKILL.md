@@ -1,6 +1,6 @@
 ---
 name: implementing-taxii-server-with-opentaxii
-description: "Deploy configure TAXII 2.1 server Medallion Docker."
+description: "Deploy and configure a TAXII 2.1 server (Medallion) with Docker, publish"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, configure, deploy, docker, implementing-taxii-server-with-opentaxii, medallion, publish, server, taxii, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, taxii, server, with, opentaxii, and, configure, deploy, docker, medallion, publish]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-taxii-server-with-opentaxii -->

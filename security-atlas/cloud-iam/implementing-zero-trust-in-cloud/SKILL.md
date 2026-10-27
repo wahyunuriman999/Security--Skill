@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-trust-in-cloud
-description: "Guides zero trust implementation AWS Azure GCP NIST SP."
+description: "Guides zero trust implementation across AWS, Azure, and GCP per NIST SP 800-207 and BeyondCorp principles, covering identity-centric access, micro-segmentation, continuous verification, device trust assessment, and Identity-Aware Proxy deployment. Use when migrating from perimeter security to identity-centric access, removing VPN dependency, or designing micro-segmentation for multi-cloud workloads."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [800-207, access, across, and, assessment, aws, azure, beyondcorp, continuous, covering, deployment, device]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, trust, cloud, 800-207, access, across, and, assessment, aws, azure, beyondcorp, continuous, covering, deployment, device]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-trust-in-cloud -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-security-monitoring-with-datadog
-description: "Implements security monitoring Datadog Cloud SIEM Cloud."
+description: "'Implements security monitoring using Datadog Cloud SIEM, Cloud Security"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cloud, datadog, implementing-security-monitoring-with-datadog, implements, monitoring, security, siem, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, security, monitoring, with, datadog, cloud, implements, siem, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-security-monitoring-with-datadog -->

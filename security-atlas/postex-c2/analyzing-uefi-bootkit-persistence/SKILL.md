@@ -1,6 +1,6 @@
 ---
 name: analyzing-uefi-bootkit-persistence
-description: "Analyzes UEFI bootkit persistence SPI flash implants ESP."
+description: "'Analyzes UEFI bootkit persistence (SPI flash implants, ESP modifications,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, analyzing-uefi-bootkit-persistence, bootkit, esp, flash, implants, modifications, persistence, spi, uefi]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, uefi, bootkit, persistence, analyzes, esp, flash, implants, modifications, spi]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-uefi-bootkit-persistence -->

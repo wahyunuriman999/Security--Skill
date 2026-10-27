@@ -1,6 +1,6 @@
 ---
 name: conducting-full-scope-red-team-engagement
-description: "Plan execute comprehensive MITRE ATT CK-aligned red team."
+description: "Plan and execute a comprehensive, MITRE ATT&CK-aligned red team engagement spanning threat modeling, reconnaissance, initial access, and post-exploitation to evaluate an organization's detection, prevention, and response against APT-style behavior. Use when scoping or running a full-scope, objective-based engagement, or purple-teaming against a specific threat actor's TTPs."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, against, and, apt-style, att, behavior, ck-aligned, comprehensive, conducting-full-scope-red-team-engagement, detection, engagement, evaluate]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, full, scope, red, team, engagement, access, against, and, apt-style, att, behavior, ck-aligned, comprehensive, detection, evaluate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-full-scope-red-team-engagement -->

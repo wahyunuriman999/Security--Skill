@@ -1,6 +1,6 @@
 ---
 name: performing-dmarc-policy-enforcement-rollout
-description: "Execute phased DMARC rollout inventorying sending sources."
+description: "Execute a phased DMARC rollout by inventorying sending sources, configuring"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configuring, dmarc, execute, inventorying, performing-dmarc-policy-enforcement-rollout, phased, rollout, sending, sources]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, dmarc, policy, enforcement, rollout, configuring, execute, inventorying, phased, sending, sources]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-dmarc-policy-enforcement-rollout -->

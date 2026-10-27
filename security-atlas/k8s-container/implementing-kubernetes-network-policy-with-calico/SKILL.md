@@ -1,6 +1,6 @@
 ---
 name: implementing-kubernetes-network-policy-with-calico
-description: "Implementing kubernetes network policy with calico."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-kubernetes-network-policy-with-calico]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, kubernetes, network, policy, with, calico]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-kubernetes-network-policy-with-calico -->

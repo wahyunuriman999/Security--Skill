@@ -1,6 +1,6 @@
 ---
 name: implementing-conditional-access-policies-azure-ad
-description: "Configures Microsoft Entra ID Azure AD Conditional Access."
+description: "Configures Microsoft Entra ID (Azure AD) Conditional Access policies for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, azure, conditional, configures, entra, for, implementing-conditional-access-policies-azure-ad, microsoft, policies]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, conditional, access, policies, azure, configures, entra, for, microsoft]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-conditional-access-policies-azure-ad -->

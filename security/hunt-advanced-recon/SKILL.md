@@ -2,6 +2,9 @@
 name: hunt-advanced-recon
 description: Advanced recon for high-security targets — ASM automation, passive fingerprinting, git history secret mining, JS reverse engineering for hidden APIs, favicon hash correlation, certificate transparency mining, S3 bucket enumeration, wayback machine exploitation, leaked credentials from paste sites. Use at the START of any hunt on a hardened target.
 tags: [recon, asm, git-history, js-reverse, favicon, cert-transparency, s3, wayback, osint, passive]
+version: 1.0.0
+license: MIT
+triggers: [hunt, advanced, recon, asm, git-history, js-reverse, favicon, cert-transparency, s3, wayback, osint, passive]
 ---
 
 # Advanced Recon — High-Security Target Edition

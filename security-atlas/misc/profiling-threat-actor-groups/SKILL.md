@@ -1,6 +1,6 @@
 ---
 name: profiling-threat-actor-groups
-description: "Develops comprehensive threat actor profiles APT groups."
+description: "'Develops comprehensive threat actor profiles for APT groups, criminal"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [actor, apt, comprehensive, criminal, develops, for, groups, profiles, profiling-threat-actor-groups, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [profiling, threat, actor, groups, apt, comprehensive, criminal, develops, for, profiles]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / profiling-threat-actor-groups -->

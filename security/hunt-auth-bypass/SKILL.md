@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: github, hackerone_public, github_security_lab, projectdiscovery_research
 report_count: 12
+triggers: [hunt, auth, bypass]
 ---
 
 ## Crown Jewel Targets

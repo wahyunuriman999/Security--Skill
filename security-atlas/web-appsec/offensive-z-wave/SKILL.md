@@ -1,6 +1,6 @@
 ---
 name: offensive-z-wave
-description: "Z-Wave attack methodology sniffing Z-Force / EZ-Wave /."
+description: "Z-Wave attack methodology — sniffing with Z-Force / EZ-Wave / RTL-SDR + ZniffMobile, S0 (legacy) network-key derivation flaw and key reuse, S2 (modern) ECDH commissioning analysis, replay/injection on unauthenticated nodes, default-key brute-force on test deployments, and home-automation hub pivots. Use when targeting Z-Wave smart home devices (door locks, sensors, garage controllers) — common in mid-2010s smart home deployments still in production."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, and, attack, brute-force, commissioning, default-key, deployments, derivation, ecdh, ez-wave, flaw, home-automation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, wave, analysis, and, attack, brute-force, commissioning, default-key, deployments, derivation, ecdh, ez-wave, flaw, home-automation]
 ---
 
 <!-- upstream: Claude-Red / offensive-z-wave -->

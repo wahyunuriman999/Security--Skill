@@ -1,6 +1,6 @@
 ---
 name: implementing-anti-phishing-training-program
-description: "Guides designing deploying measuring anti-phishing."
+description: "Guides designing, deploying, and measuring an anti-phishing security awareness program - baseline phishing simulations, interactive training modules, just-in-time learning, and metric tracking - using platforms like KnowBe4, Proofpoint Security Awareness, or Cofense. Use when building or maturing a phishing awareness program, establishing training controls for compliance, or measuring phishing susceptibility and reporting rates over time."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, anti-phishing, awareness, baseline, building, cofense, deploying, designing, guides, implementing-anti-phishing-training-program, interactive, just-in-time]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, anti, phishing, training, program, and, anti-phishing, awareness, baseline, building, cofense, deploying, designing, guides, interactive, just-in-time]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-anti-phishing-training-program -->

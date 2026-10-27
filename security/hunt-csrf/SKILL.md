@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: github, hackerone_public, bugcrowd_public, github_security_advisories
 report_count: 18
+triggers: [hunt, csrf]
 ---
 
 ## Shortcut: a raw HTTP client beats a real cross-origin page for header-check CSRF

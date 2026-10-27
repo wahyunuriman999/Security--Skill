@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [bug-bounty, hackerone, recon, web2, web3, pentesting]
     related_skills: [bug-bounty, bb-methodology, triage-validation, report-writing, godmod]
+triggers: [bounty, hunt, pipeline, bug-bounty, hackerone, recon, web2, web3, pentesting]
 ---
 
 # Bounty Hunt Pipeline

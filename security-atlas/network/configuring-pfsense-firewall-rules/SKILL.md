@@ -1,6 +1,6 @@
 ---
 name: configuring-pfsense-firewall-rules
-description: "Configures pfSense firewall rules NAT policies."
+description: "'Configures pfSense firewall rules, NAT policies, IPsec/OpenVPN tunnels,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configures, configuring-pfsense-firewall-rules, firewall, ipsec, nat, openvpn, pfsense, policies, rules, tunnels]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, pfsense, firewall, rules, configures, ipsec, nat, openvpn, policies, tunnels]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-pfsense-firewall-rules -->

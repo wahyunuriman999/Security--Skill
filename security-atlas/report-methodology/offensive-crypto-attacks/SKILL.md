@@ -1,6 +1,6 @@
 ---
 name: offensive-crypto-attacks
-description: "Systematic methodology identifying exploiting."
+description: "Systematic methodology for identifying and exploiting cryptographic implementation weaknesses in real-world applications. Covers padding oracle attacks against CBC-mode ciphers with PKCS7 padding (Vaudenay's original attack through modern padbuster automation), ECB mode exploitation including block cut-and-paste and byte-at-a-time decryption, hash length extension attacks against SHA1/SHA256/MD5-based MACs using HashPump, RSA vulnerabilities including small public exponent, common modulus, Bleichenbacher PKCS1v1.5 padding oracle, and Coppersmith's method for partial key recovery. Addresses wea"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, applications, attack, attacks, automation, block, cbc-mode, ciphers, covers, cryptographic, ecb]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, crypto, attacks, against, and, applications, attack, automation, block, cbc-mode, ciphers, covers, cryptographic, ecb]
 ---
 
 <!-- upstream: Claude-Red / offensive-crypto-attacks -->

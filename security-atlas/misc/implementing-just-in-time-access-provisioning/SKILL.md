@@ -1,6 +1,6 @@
 ---
 name: implementing-just-in-time-access-provisioning
-description: "Implementing just in time access provisioning."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-just-in-time-access-provisioning]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, just, time, access, provisioning]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-just-in-time-access-provisioning -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-network-segmentation-for-ot
-description: "Implements OT network segmentation VLANs OT-aware."
+description: "'Implements OT network segmentation using VLANs, OT-aware firewalls, data diodes,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [data, diodes, firewalls, implementing-network-segmentation-for-ot, implements, network, ot-aware, segmentation, using, vlans]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, segmentation, for, data, diodes, firewalls, implements, ot-aware, using, vlans]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-segmentation-for-ot -->

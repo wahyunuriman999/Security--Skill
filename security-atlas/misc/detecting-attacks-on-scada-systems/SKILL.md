@@ -1,6 +1,6 @@
 ---
 name: detecting-attacks-on-scada-systems
-description: "Skill covers detecting cyber attacks targeting."
+description: "'This skill covers detecting cyber attacks targeting Supervisory Control"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attacks, control, covers, cyber, detecting, detecting-attacks-on-scada-systems, skill, supervisory, targeting, this]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, attacks, scada, systems, control, covers, cyber, skill, supervisory, targeting, this]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-attacks-on-scada-systems -->

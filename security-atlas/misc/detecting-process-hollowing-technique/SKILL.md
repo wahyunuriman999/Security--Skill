@@ -1,6 +1,6 @@
 ---
 name: detecting-process-hollowing-technique
-description: "Detect process hollowing MITRE T1055.012 analyzing."
+description: "Detect process hollowing (MITRE T1055.012) by analyzing memory-mapped"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [012, analyzing, detect, detecting-process-hollowing-technique, hollowing, memory-mapped, mitre, process, t1055]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, process, hollowing, technique, 012, analyzing, detect, memory-mapped, mitre, t1055]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-process-hollowing-technique -->

@@ -1,6 +1,6 @@
 ---
 name: performing-web-application-firewall-bypass
-description: "Bypasses Web Application Firewall protections encoding."
+description: "Bypasses Web Application Firewall protections using encoding tricks,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, bypasses, encoding, firewall, performing-web-application-firewall-bypass, protections, tricks, using, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, web, application, firewall, bypass, bypasses, encoding, protections, tricks, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-web-application-firewall-bypass -->

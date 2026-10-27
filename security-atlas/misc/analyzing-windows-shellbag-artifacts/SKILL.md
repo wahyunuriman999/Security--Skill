@@ -1,6 +1,6 @@
 ---
 name: analyzing-windows-shellbag-artifacts
-description: "Analyze Windows Shellbag BagMRU registry artifacts SBECmd."
+description: "Analyze Windows Shellbag (BagMRU) registry artifacts with SBECmd and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzing-windows-shellbag-artifacts, and, artifacts, bagmru, registry, sbecmd, shellbag, windows, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, windows, shellbag, artifacts, analyze, and, bagmru, registry, sbecmd, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-windows-shellbag-artifacts -->

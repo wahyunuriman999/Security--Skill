@@ -1,6 +1,6 @@
 ---
 name: hunting-for-defense-evasion-via-timestomping
-description: "Detect NTFS timestamp manipulation MITRE T1070.006."
+description: "'Detect NTFS timestamp manipulation (MITRE T1070.006) by comparing $STANDARD_INFORMATION"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [006, comparing, detect, hunting-for-defense-evasion-via-timestomping, information, manipulation, mitre, ntfs, standard, t1070, timestamp]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, defense, evasion, via, timestomping, 006, comparing, detect, information, manipulation, mitre, ntfs, standard, t1070, timestamp]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-defense-evasion-via-timestomping -->

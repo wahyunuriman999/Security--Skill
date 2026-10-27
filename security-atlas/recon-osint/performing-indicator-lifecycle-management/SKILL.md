@@ -1,6 +1,6 @@
 ---
 name: performing-indicator-lifecycle-management
-description: "Tracks IOCs through discovery enrichment/validation."
+description: "Tracks IOCs through discovery, enrichment/validation (VirusTotal, Shodan,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [discovery, enrichment, iocs, performing-indicator-lifecycle-management, shodan, through, tracks, validation, virustotal]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, indicator, lifecycle, management, discovery, enrichment, iocs, shodan, through, tracks, validation, virustotal]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-indicator-lifecycle-management -->

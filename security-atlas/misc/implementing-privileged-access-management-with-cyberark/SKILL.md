@@ -1,6 +1,6 @@
 ---
 name: implementing-privileged-access-management-with-cyberark
-description: "Deploy CyberArk Privileged Access Management discover."
+description: "Deploy CyberArk Privileged Access Management to discover, vault, rotate,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, cyberark, deploy, discover, implementing-privileged-access-management-with-cyberark, management, privileged, rotate, vault]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, privileged, access, management, with, cyberark, deploy, discover, rotate, vault]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-privileged-access-management-with-cyberark -->

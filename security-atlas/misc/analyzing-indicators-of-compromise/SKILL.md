@@ -1,6 +1,6 @@
 ---
 name: analyzing-indicators-of-compromise
-description: "Analyzes indicators compromise IOCs including IP."
+description: "'Analyzes indicators of compromise (IOCs) including IP addresses, domains,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [addresses, analyzes, analyzing-indicators-of-compromise, compromise, domains, including, indicators, iocs]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, indicators, compromise, addresses, analyzes, domains, including, iocs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-indicators-of-compromise -->

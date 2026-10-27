@@ -1,6 +1,6 @@
 ---
 name: implementing-patch-management-for-ot-systems
-description: "Implements structured patch management program OT/ICS."
+description: "'Implements a structured patch management program for OT/ICS environments"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [environments, for, ics, implementing-patch-management-for-ot-systems, implements, management, patch, program, structured]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, patch, management, for, systems, environments, ics, implements, program, structured]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-patch-management-for-ot-systems -->

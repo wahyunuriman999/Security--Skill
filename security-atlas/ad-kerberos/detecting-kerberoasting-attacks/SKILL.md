@@ -1,6 +1,6 @@
 ---
 name: detecting-kerberoasting-attacks
-description: "Detect Kerberoasting attacks monitoring anomalous."
+description: "Detect Kerberoasting attacks by monitoring for anomalous Kerberos TGS"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [anomalous, attacks, detect, detecting-kerberoasting-attacks, for, kerberoasting, kerberos, monitoring, tgs]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, kerberoasting, attacks, anomalous, detect, for, kerberos, monitoring, tgs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-kerberoasting-attacks -->

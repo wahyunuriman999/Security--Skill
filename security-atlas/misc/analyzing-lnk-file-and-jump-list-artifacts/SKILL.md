@@ -1,6 +1,6 @@
 ---
 name: analyzing-lnk-file-and-jump-list-artifacts
-description: "Analyze Windows LNK shortcut files Jump List artifacts."
+description: "Analyze Windows LNK shortcut files and Jump List artifacts with LECmd,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzing-lnk-file-and-jump-list-artifacts, and, artifacts, files, jump, lecmd, list, lnk, shortcut, windows, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, lnk, file, and, jump, list, artifacts, analyze, files, lecmd, shortcut, windows, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-lnk-file-and-jump-list-artifacts -->

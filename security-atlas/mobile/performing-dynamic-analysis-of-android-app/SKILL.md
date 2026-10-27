@@ -1,6 +1,6 @@
 ---
 name: performing-dynamic-analysis-of-android-app
-description: "Performs runtime dynamic analysis Android applications."
+description: "'Performs runtime dynamic analysis of Android applications using Frida,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, android, applications, dynamic, frida, performing-dynamic-analysis-of-android-app, performs, runtime, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, dynamic, analysis, android, app, applications, frida, performs, runtime, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-dynamic-analysis-of-android-app -->

@@ -1,6 +1,6 @@
 ---
 name: deploying-palo-alto-prisma-access-zero-trust
-description: "Deploys Palo Alto Networks Prisma Access SASE-based zero."
+description: "Deploys Palo Alto Networks Prisma Access for SASE-based zero trust network access, configuring GlobalProtect agents, ZTNA Connectors, security policy enforcement, and Strata Cloud Manager integration for unified management. Use when implementing enterprise-grade SASE with integrated ZTNA/SWG/CASB/FWaaS, replacing both VPN and branch firewalls with cloud-delivered security, or integrating ZTNA with an existing Palo Alto NGFW estate."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, agents, alto, and, casb, cloud, configuring, connectors, deploying-palo-alto-prisma-access-zero-trust, deploys, enforcement, enterprise-grade]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, palo, alto, prisma, access, zero, trust, agents, and, casb, cloud, configuring, connectors, deploys, enforcement, enterprise-grade]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-palo-alto-prisma-access-zero-trust -->

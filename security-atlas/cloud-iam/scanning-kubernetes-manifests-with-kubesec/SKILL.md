@@ -1,6 +1,6 @@
 ---
 name: scanning-kubernetes-manifests-with-kubesec
-description: "Scanning kubernetes manifests with kubesec."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [scanning-kubernetes-manifests-with-kubesec]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [scanning, kubernetes, manifests, with, kubesec]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / scanning-kubernetes-manifests-with-kubesec -->

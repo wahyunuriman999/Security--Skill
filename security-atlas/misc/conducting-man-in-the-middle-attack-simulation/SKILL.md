@@ -1,6 +1,6 @@
 ---
 name: conducting-man-in-the-middle-attack-simulation
-description: "Simulates man-in-the-middle attacks Ettercap mitmproxy."
+description: "'Simulates man-in-the-middle attacks using Ettercap, mitmproxy, and Bettercap"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attacks, bettercap, conducting-man-in-the-middle-attack-simulation, ettercap, man-in-the-middle, mitmproxy, simulates, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, man, the, middle, attack, simulation, and, attacks, bettercap, ettercap, man-in-the-middle, mitmproxy, simulates, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-man-in-the-middle-attack-simulation -->

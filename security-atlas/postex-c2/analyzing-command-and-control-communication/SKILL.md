@@ -1,6 +1,6 @@
 ---
 name: analyzing-command-and-control-communication
-description: "Analyzes malware C2 communication HTTP HTTPS DNS custom."
+description: "'Analyzes malware C2 communication over HTTP, HTTPS, DNS, and custom"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, analyzing-command-and-control-communication, and, communication, custom, dns, http, https, malware, over]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, command, and, control, communication, analyzes, custom, dns, http, https, malware, over]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-command-and-control-communication -->

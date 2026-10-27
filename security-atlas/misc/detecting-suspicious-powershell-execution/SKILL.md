@@ -1,6 +1,6 @@
 ---
 name: detecting-suspicious-powershell-execution
-description: "Hunt suspicious PowerShell execution T1059.001 encoded."
+description: "Hunt for suspicious PowerShell execution (T1059.001) such as encoded commands,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [001, commands, detecting-suspicious-powershell-execution, encoded, execution, for, hunt, powershell, such, suspicious, t1059]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, suspicious, powershell, execution, 001, commands, encoded, for, hunt, such, t1059]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-suspicious-powershell-execution -->

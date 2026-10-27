@@ -1,6 +1,6 @@
 ---
 name: offensive-zigbee-thread-matter
-description: "Zigbee Thread Matter mesh-protocol attack methodology."
+description: "Zigbee, Thread, and Matter mesh-protocol attack methodology — IEEE 802.15.4 sniffing with TI CC2531 / CC2540 / Sonoff Zigbee Dongle E, KillerBee toolkit, Touchlink commissioning abuse with the well-known transport key, replay/injection attacks, Zigbee Cluster Library command abuse for door locks and bulbs, Thread network credential theft, Matter commissioning chain analysis, and 6LoWPAN/IPv6 routing exploitation. Use when targeting smart-home or commercial mesh deployments, Zigbee-based door locks, lighting, or sensor networks."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [802, abuse, and, attack, attacks, cc2531, cc2540, cluster, command, commissioning, dongle, door]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, zigbee, thread, matter, 802, abuse, and, attack, attacks, cc2531, cc2540, cluster, command, commissioning, dongle, door]
 ---
 
 <!-- upstream: Claude-Red / offensive-zigbee-thread-matter -->

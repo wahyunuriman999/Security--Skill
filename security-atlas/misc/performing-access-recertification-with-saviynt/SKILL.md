@@ -1,6 +1,6 @@
 ---
 name: performing-access-recertification-with-saviynt
-description: "Configure execute access recertification campaigns."
+description: "Configure and execute access recertification campaigns in Saviynt Enterprise"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, campaigns, configure, enterprise, execute, performing-access-recertification-with-saviynt, recertification, saviynt]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, access, recertification, with, saviynt, and, campaigns, configure, enterprise, execute]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-access-recertification-with-saviynt -->

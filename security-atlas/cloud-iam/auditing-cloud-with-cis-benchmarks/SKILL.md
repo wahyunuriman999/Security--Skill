@@ -1,6 +1,6 @@
 ---
 name: auditing-cloud-with-cis-benchmarks
-description: "Audit AWS Azure GCP environments against CIS Foundations."
+description: "Audit AWS, Azure, and GCP environments against the CIS Foundations Benchmarks by running automated scans with tools like Prowler and ScoutSuite, interpreting failed controls, and tracking remediation for continuous compliance. Use when conducting a cloud security audit, validating CIS benchmark compliance (CIS v5 AWS, v4 Azure, v4 GCP), or setting up continuous cloud compliance monitoring."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, audit, auditing-cloud-with-cis-benchmarks, automated, aws, azure, benchmark, benchmarks, cis, cloud, comp]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, cloud, with, cis, benchmarks, against, and, audit, automated, aws, azure, benchmark, comp]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-cloud-with-cis-benchmarks -->

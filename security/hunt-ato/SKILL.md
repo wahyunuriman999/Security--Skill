@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: hackerone_public, public_research
 report_count: 7
+triggers: [hunt, ato]
 ---
 
 ## 13. ATO — ACCOUNT TAKEOVER TAXONOMY

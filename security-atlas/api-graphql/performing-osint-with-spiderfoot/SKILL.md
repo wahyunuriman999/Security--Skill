@@ -1,6 +1,6 @@
 ---
 name: performing-osint-with-spiderfoot
-description: "Automate OSINT collection SpiderFoot REST API CLI."
+description: "Automate OSINT collection with the SpiderFoot REST API and CLI (sf.py/spiderfoot-cli) across 200+ modules, selecting scan modes (footprint, investigate, passive) and parsing results for domains, IPs, emails, leaked credentials, and DNS records into a target intelligence profile. Use when mapping an organization's attack surface or profiling a target for threat intelligence."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [200, across, and, api, automate, cli, collection, credentials, dns, domains, emails, footprint]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, osint, with, spiderfoot, 200, across, and, api, automate, cli, collection, credentials, dns, domains, emails, footprint]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-osint-with-spiderfoot -->

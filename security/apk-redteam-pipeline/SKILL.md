@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: authorized-engagement
 report_count: 1
+triggers: [apk, redteam, pipeline]
 ---
 
 ## When to use this skill

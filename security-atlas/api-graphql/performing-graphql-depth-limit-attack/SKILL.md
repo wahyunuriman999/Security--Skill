@@ -1,6 +1,6 @@
 ---
 name: performing-graphql-depth-limit-attack
-description: "Execute test GraphQL depth limit attacks deeply nested."
+description: "Execute and test GraphQL depth limit attacks using deeply nested recursive"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attacks, deeply, depth, execute, graphql, limit, nested, performing-graphql-depth-limit-attack, recursive, test, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, graphql, depth, limit, attack, and, attacks, deeply, execute, nested, recursive, test, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-graphql-depth-limit-attack -->

@@ -1,6 +1,6 @@
 ---
 name: analyzing-cyber-kill-chain
-description: "Analyzes intrusion activity against Lockheed Martin Cyber."
+description: "'Analyzes intrusion activity against the Lockheed Martin Cyber Kill Chain"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, against, analyzes, analyzing-cyber-kill-chain, chain, cyber, intrusion, kill, lockheed, martin, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, cyber, kill, chain, activity, against, analyzes, intrusion, lockheed, martin, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-cyber-kill-chain -->

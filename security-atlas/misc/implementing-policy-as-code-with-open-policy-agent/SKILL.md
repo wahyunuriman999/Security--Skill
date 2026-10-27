@@ -1,6 +1,6 @@
 ---
 name: implementing-policy-as-code-with-open-policy-agent
-description: "Implements policy-as-code enforcement Open Policy Agent."
+description: "'Implements policy-as-code enforcement with Open Policy Agent (OPA)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [agent, enforcement, implementing-policy-as-code-with-open-policy-agent, implements, opa, open, policy, policy-as-code, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, policy, code, with, open, agent, enforcement, implements, opa, policy-as-code]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-policy-as-code-with-open-policy-agent -->

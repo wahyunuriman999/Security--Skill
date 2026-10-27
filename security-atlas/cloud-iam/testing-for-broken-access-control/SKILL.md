@@ -1,6 +1,6 @@
 ---
 name: testing-for-broken-access-control
-description: "Systematically tests web applications APIs broken access."
+description: "Systematically tests web applications and APIs for broken access control"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, apis, applications, broken, control, for, systematically, testing-for-broken-access-control, tests, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, broken, access, control, and, apis, applications, systematically, tests, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-broken-access-control -->

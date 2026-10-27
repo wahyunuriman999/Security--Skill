@@ -1,6 +1,6 @@
 ---
 name: performing-http-parameter-pollution-attack
-description: "Executes HTTP Parameter Pollution attacks inject."
+description: "Executes HTTP Parameter Pollution attacks that inject duplicate request"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attacks, duplicate, executes, http, inject, parameter, performing-http-parameter-pollution-attack, pollution, request, that]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, http, parameter, pollution, attack, attacks, duplicate, executes, inject, request, that]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-http-parameter-pollution-attack -->

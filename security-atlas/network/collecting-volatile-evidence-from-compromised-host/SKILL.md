@@ -1,6 +1,6 @@
 ---
 name: collecting-volatile-evidence-from-compromised-host
-description: "Collect volatile forensic evidence compromised host."
+description: "Collect volatile forensic evidence from a compromised host by following the order of volatility, preserving memory, network connections, running processes, and system state with documented chain of custody before they are lost. Use before isolating, shutting down, or remediating a compromised host, especially when fileless or memory-resident malware is suspected, root cause analysis is needed, or the evidence must hold up in legal proceedings."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, are, before, chain, collect, collecting-volatile-evidence-from-compromised-host, compromised, connections, custody, documented, down, evidence]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [collecting, volatile, evidence, from, compromised, host, and, are, before, chain, collect, connections, custody, documented, down]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / collecting-volatile-evidence-from-compromised-host -->

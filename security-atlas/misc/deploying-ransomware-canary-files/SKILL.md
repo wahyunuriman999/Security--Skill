@@ -1,6 +1,6 @@
 ---
 name: deploying-ransomware-canary-files
-description: "Deploys monitors ransomware canary files Python s."
+description: "Deploys and monitors ransomware canary files using Python's watchdog library, placing decoy files mimicking high-value targets (financial records, credentials, database exports) where ransomware enumerates first, and alerting via email, Slack, or syslog on any read/modify/rename/delete. Use for early-warning ransomware detection on file servers, NAS, or endpoints, or to supplement EDR where agents can't be deployed."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alerting, and, any, canary, credentials, database, decoy, delete, deploying-ransomware-canary-files, deploys, earl, email]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, ransomware, canary, files, alerting, and, any, credentials, database, decoy, delete, deploys, earl, email]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-ransomware-canary-files -->

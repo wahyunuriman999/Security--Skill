@@ -1,6 +1,6 @@
 ---
 name: configuring-certificate-authority-with-openssl
-description: "Build two-tier PKI Certificate Authority hierarchy."
+description: "Build a two-tier PKI Certificate Authority hierarchy (offline Root CA"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authority, build, certificate, configuring-certificate-authority-with-openssl, hierarchy, offline, pki, root, two-tier]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, certificate, authority, with, openssl, build, hierarchy, offline, pki, root, two-tier]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-certificate-authority-with-openssl -->

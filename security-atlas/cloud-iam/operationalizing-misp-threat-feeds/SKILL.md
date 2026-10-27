@@ -1,6 +1,6 @@
 ---
 name: operationalizing-misp-threat-feeds
-description: "Stand MISP enable cache curated threat feeds CIRCL."
+description: "Stand up MISP, enable and cache curated threat feeds (CIRCL, abuse.ch, Feodo Tracker), apply warninglists to suppress false positives, query indicators with PyMISP, and export attributes as auto-generated Suricata/Sigma/Wazuh detection rules. Use when maturing a MISP instance to actively drive detection, curating threat feeds with quality controls, or automating IOC-to-detection pipelines for the SIEM/IDS."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, actively, and, apply, attributes, auto-generated, cache, circl, curated, detec, detection, drive]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [operationalizing, misp, threat, feeds, abuse, actively, and, apply, attributes, auto-generated, cache, circl, curated, detec, detection, drive]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / operationalizing-misp-threat-feeds -->

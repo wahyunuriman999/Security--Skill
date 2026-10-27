@@ -1,6 +1,6 @@
 ---
 name: implementing-digital-signatures-with-ed25519
-description: "Implements digital signatures Ed25519 algorithm."
+description: "Implements digital signatures using the Ed25519 algorithm (Curve25519), covering key-pair generation, signing, signature verification, and security tradeoffs versus RSA and ECDSA. Use when adding message or artifact signing and authentication-integrity checks to a system, or when advising on Ed25519 key properties and validation criteria."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adding, advising, algorithm, and, artifact, authentication-integrity, checks, covering, curve25519, digital, ecdsa, ed25519]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, digital, signatures, with, ed25519, adding, advising, algorithm, and, artifact, authentication-integrity, checks, covering, curve25519, ecdsa]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-digital-signatures-with-ed25519 -->

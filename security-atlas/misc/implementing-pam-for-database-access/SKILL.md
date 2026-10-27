@@ -1,6 +1,6 @@
 ---
 name: implementing-pam-for-database-access
-description: "Deploy privileged access management database systems."
+description: "Deploy privileged access management for database systems including Oracle,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, database, deploy, for, implementing-pam-for-database-access, including, management, oracle, privileged, systems]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, pam, for, database, access, deploy, including, management, oracle, privileged, systems]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-pam-for-database-access -->

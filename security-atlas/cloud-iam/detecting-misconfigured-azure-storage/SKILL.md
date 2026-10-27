@@ -1,6 +1,6 @@
 ---
 name: detecting-misconfigured-azure-storage
-description: "Audit Azure Storage accounts public blob containers."
+description: "Audit Azure Storage accounts for public blob containers, missing encryption, overly permissive SAS tokens, disabled logging, and network access violations using Azure CLI, PowerShell, and Microsoft Defender for Storage. Use for storage security audits across subscriptions, responding to Defender for Storage anonymous-access alerts, verifying compliance controls, or setting security baselines when onboarding a subscription."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, accounts, across, and, audit, audits, azure, blob, cli, containers, defender, detecting-misconfigured-azure-storage]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, misconfigured, azure, storage, access, accounts, across, and, audit, audits, blob, cli, containers, defender]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-misconfigured-azure-storage -->

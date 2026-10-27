@@ -1,6 +1,6 @@
 ---
 name: performing-serverless-function-security-review
-description: "Performing security reviews serverless functions AWS."
+description: "'Performing security reviews of serverless functions across AWS Lambda,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, aws, functions, lambda, performing, performing-serverless-function-security-review, reviews, security, serverless]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, serverless, function, security, review, across, aws, functions, lambda, reviews]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-serverless-function-security-review -->

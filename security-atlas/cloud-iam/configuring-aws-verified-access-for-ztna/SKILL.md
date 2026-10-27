@@ -1,6 +1,6 @@
 ---
 name: configuring-aws-verified-access-for-ztna
-description: "Configure AWS Verified Access provide VPN-less zero trust."
+description: "Configure AWS Verified Access to provide VPN-less zero trust network"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, aws, configure, configuring-aws-verified-access-for-ztna, network, provide, trust, verified, vpn-less, zero]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, aws, verified, access, for, ztna, configure, network, provide, trust, vpn-less, zero]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-aws-verified-access-for-ztna -->

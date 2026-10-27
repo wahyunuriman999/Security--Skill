@@ -1,6 +1,6 @@
 ---
 name: implementing-api-abuse-detection-with-rate-limiting
-description: "Implements API abuse detection token bucket sliding."
+description: "Implements API abuse detection using token bucket, sliding window, and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, and, api, bucket, detection, implementing-api-abuse-detection-with-rate-limiting, implements, sliding, token, using, window]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, abuse, detection, with, rate, limiting, and, bucket, implements, sliding, token, using, window]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-abuse-detection-with-rate-limiting -->

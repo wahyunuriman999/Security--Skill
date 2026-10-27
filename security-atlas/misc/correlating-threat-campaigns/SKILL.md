@@ -1,6 +1,6 @@
 ---
 name: correlating-threat-campaigns
-description: "Correlates disparate security incidents IOCs adversary."
+description: "'Correlates disparate security incidents, IOCs, and adversary behaviors"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, and, behaviors, correlates, correlating-threat-campaigns, disparate, incidents, iocs, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [correlating, threat, campaigns, adversary, and, behaviors, correlates, disparate, incidents, iocs, security]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / correlating-threat-campaigns -->

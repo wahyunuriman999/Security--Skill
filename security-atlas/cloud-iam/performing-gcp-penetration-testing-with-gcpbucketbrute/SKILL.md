@@ -1,6 +1,6 @@
 ---
 name: performing-gcp-penetration-testing-with-gcpbucketbrute
-description: "Performs authorized GCP security testing GCPBucketBrute."
+description: "Performs authorized GCP security testing using GCPBucketBrute to enumerate"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authorized, enumerate, gcp, gcpbucketbrute, performing-gcp-penetration-testing-with-gcpbucketbrute, performs, security, testing, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, gcp, penetration, testing, with, gcpbucketbrute, authorized, enumerate, performs, security, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-gcp-penetration-testing-with-gcpbucketbrute -->

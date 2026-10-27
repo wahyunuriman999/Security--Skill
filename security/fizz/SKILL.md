@@ -3,6 +3,7 @@ name: fizz
 description: Generate Echidna/Medusa-compatible Solidity fuzz suites from Foundry or Hardhat projects. Trigger on "fizz", "generate fuzz suite", "build fuzz harness", "stateful fuzzing", "fuzzing harness", "property testing", and "invariant suite".
 version: 1.0.0
 license: MIT
+triggers: [fizz]
 ---
 
 # Fizz — Fuzz Suite Generator

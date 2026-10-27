@@ -1,6 +1,6 @@
 ---
 name: configuring-ldap-security-hardening
-description: "Hardens LDAP directory services against credential."
+description: "Hardens LDAP directory services against credential harvesting, LDAP"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, configuring-ldap-security-hardening, credential, directory, hardens, harvesting, ldap, services]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, ldap, security, hardening, against, credential, directory, hardens, harvesting, services]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-ldap-security-hardening -->

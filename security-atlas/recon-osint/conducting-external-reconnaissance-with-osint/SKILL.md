@@ -1,6 +1,6 @@
 ---
 name: conducting-external-reconnaissance-with-osint
-description: "Conduct external recon OSINT techniques map organization."
+description: "Conduct external recon using OSINT techniques to map an organization's external attack surface without touching target systems, gathering DNS records, certificate transparency logs, search results, social media, code repositories, and breach databases into a target profile. Use for the passive info-gathering phase of a pentest, external footprinting, or collecting employee/email intel for a social engineering campaign."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attack, breach, certificate, code, conduct, conducting-external-reconnaissance-with-osint, databases, dns, external, for, gathering]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, external, reconnaissance, with, osint, and, attack, breach, certificate, code, conduct, databases, dns, for, gathering]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-external-reconnaissance-with-osint -->

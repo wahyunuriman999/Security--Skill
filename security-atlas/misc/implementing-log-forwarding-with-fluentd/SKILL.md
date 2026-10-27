@@ -1,6 +1,6 @@
 ---
 name: implementing-log-forwarding-with-fluentd
-description: "Implementing log forwarding with fluentd."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-log-forwarding-with-fluentd]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, log, forwarding, with, fluentd]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-log-forwarding-with-fluentd -->

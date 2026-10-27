@@ -1,6 +1,6 @@
 ---
 name: implementing-mimecast-targeted-attack-protection
-description: "Implementing mimecast targeted attack protection."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-mimecast-targeted-attack-protection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, mimecast, targeted, attack, protection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-mimecast-targeted-attack-protection -->

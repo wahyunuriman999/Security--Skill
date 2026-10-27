@@ -1,6 +1,6 @@
 ---
 name: conducting-pass-the-ticket-attack
-description: "Perform Pass-the-Ticket PtT lateral movement extracting."
+description: "Perform Pass-the-Ticket (PtT) lateral movement by extracting Kerberos TGT/TGS tickets from LSASS memory on a compromised host and injecting them into another session to impersonate the ticket owner without knowing their password. Use during authorized post-exploitation to move laterally or escalate access via stolen Kerberos tickets, or to validate detections for Kerberos ticket theft and reuse."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, another, authorized, compromised, conducting-pass-the-ticket-attack, during, escalate, extracting, from, host, impersonate, injecting]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, pass, the, ticket, attack, and, another, authorized, compromised, during, escalate, extracting, from, host, impersonate, injecting]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-pass-the-ticket-attack -->

@@ -1,6 +1,6 @@
 ---
 name: performing-plc-firmware-security-analysis
-description: "Skill covers analyzing Programmable Logic Controller PLC."
+description: "'This skill covers analyzing Programmable Logic Controller (PLC) firmware"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, controller, covers, firmware, logic, performing-plc-firmware-security-analysis, plc, programmable, skill, this]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, plc, firmware, security, analysis, analyzing, controller, covers, logic, programmable, skill, this]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-plc-firmware-security-analysis -->

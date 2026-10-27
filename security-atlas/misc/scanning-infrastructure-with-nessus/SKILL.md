@@ -1,6 +1,6 @@
 ---
 name: scanning-infrastructure-with-nessus
-description: "Tenable Nessus industry-leading vulnerability scanner."
+description: "Tenable Nessus is the industry-leading vulnerability scanner used to"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [industry-leading, nessus, scanner, scanning-infrastructure-with-nessus, tenable, the, used, vulnerability]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [scanning, infrastructure, with, nessus, industry-leading, scanner, tenable, the, used, vulnerability]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / scanning-infrastructure-with-nessus -->

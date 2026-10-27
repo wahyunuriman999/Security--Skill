@@ -1,6 +1,6 @@
 ---
 name: offensive-windows-privesc
-description: "Comprehensive Windows privilege escalation methodology."
+description: "Comprehensive Windows privilege escalation methodology for offensive security engagements. Covers the full attack surface from a standard user shell to NT AUTHORITY\SYSTEM: token impersonation via SeImpersonate and SeAssignPrimaryToken privileges using JuicyPotato, PrintSpoofer, GodPotato, SweetPotato, and RoguePotato; service misconfigurations including unquoted service paths, weak service DACLs, writable service binaries, and insecure service creation permissions; AlwaysInstallElevated MSI exploitation; DLL hijacking through search order abuse, phantom DLL loading, and writable PATH directo"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attack, authority, comprehensive, covers, engagements, escalation, for, from, full, godpotato, impersonation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, windows, privesc, and, attack, authority, comprehensive, covers, engagements, escalation, for, from, full, godpotato, impersonation]
 ---
 
 <!-- upstream: Claude-Red / offensive-windows-privesc -->

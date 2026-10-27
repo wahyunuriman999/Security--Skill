@@ -1,6 +1,6 @@
 ---
 name: performing-security-headers-audit
-description: "Auditing HTTP security headers including CSP HSTS."
+description: "Auditing HTTP security headers including CSP, HSTS, X-Frame-Options,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [auditing, csp, headers, hsts, http, including, performing-security-headers-audit, security, x-frame-options]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, security, headers, audit, auditing, csp, hsts, http, including, x-frame-options]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-security-headers-audit -->

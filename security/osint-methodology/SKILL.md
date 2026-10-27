@@ -61,6 +61,7 @@ triggers:
   - recon methodology
   - threat actor investigation
   - attribution
+license: MIT
 ---
 
 # OSINT Methodology — External Red-Team Edition

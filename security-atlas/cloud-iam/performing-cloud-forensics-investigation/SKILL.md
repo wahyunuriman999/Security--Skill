@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-forensics-investigation
-description: "Collect analyze cloud forensic evidence AWS CLI Azure CLI."
+description: "Collect and analyze cloud forensic evidence using AWS CLI, Azure CLI, or gcloud"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, and, aws, azure, cli, cloud, collect, evidence, forensic, gcloud, performing-cloud-forensics-investigation, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, forensics, investigation, analyze, and, aws, azure, cli, collect, evidence, forensic, gcloud, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-forensics-investigation -->

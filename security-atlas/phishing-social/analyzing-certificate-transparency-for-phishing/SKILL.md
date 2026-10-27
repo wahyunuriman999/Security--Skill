@@ -1,6 +1,6 @@
 ---
 name: analyzing-certificate-transparency-for-phishing
-description: "Monitor Certificate Transparency logs crt.sh Certstream."
+description: "Monitor Certificate Transparency logs using crt.sh and Certstream to"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-certificate-transparency-for-phishing, and, certificate, certstream, crt, logs, monitor, transparency, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, certificate, transparency, for, phishing, and, certstream, crt, logs, monitor, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-certificate-transparency-for-phishing -->

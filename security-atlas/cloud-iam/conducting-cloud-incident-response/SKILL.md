@@ -1,6 +1,6 @@
 ---
 name: conducting-cloud-incident-response
-description: "Respond security incidents AWS Azure GCP identity-based."
+description: "Respond to security incidents in AWS, Azure, and GCP via identity-based containment, cloud-native log analysis (CloudTrail, Azure Activity Logs, GCP Audit Logs), resource isolation, and forensic evidence acquisition adapted for ephemeral cloud infrastructure. Use when CSPM alerts or audit logs show compromised cloud credentials, unauthorized IAM changes, or a breach spanning cloud services."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [acquisition, activity, adapted, alerts, analysis, and, audit, aws, azure, cloud, cloud-native, cloudtrail]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, cloud, incident, response, acquisition, activity, adapted, alerts, analysis, and, audit, aws, azure, cloud-native, cloudtrail]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-cloud-incident-response -->

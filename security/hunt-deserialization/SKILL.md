@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: hackerone_public
 report_count: 22
+triggers: [hunt, deserialization]
 ---
 
 # HUNT-DESERIALIZATION — Insecure Deserialization

@@ -1,6 +1,6 @@
 ---
 name: building-threat-intelligence-feed-integration
-description: "Builds automated threat intelligence feed integration."
+description: "'Builds automated threat intelligence feed integration pipelines connecting"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automated, building-threat-intelligence-feed-integration, builds, connecting, feed, integration, intelligence, pipelines, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, threat, intelligence, feed, integration, automated, builds, connecting, pipelines]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-threat-intelligence-feed-integration -->

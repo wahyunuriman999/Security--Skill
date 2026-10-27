@@ -1,6 +1,6 @@
 ---
 name: performing-authenticated-scan-with-openvas
-description: "Configure execute authenticated credentialed."
+description: "Configure and execute authenticated (credentialed) vulnerability scans using OpenVAS/Greenbone"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, authenticated, configure, credentialed, execute, greenbone, openvas, performing-authenticated-scan-with-openvas, scans, using, vulnerability]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, authenticated, scan, with, openvas, and, configure, credentialed, execute, greenbone, scans, using, vulnerability]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-authenticated-scan-with-openvas -->

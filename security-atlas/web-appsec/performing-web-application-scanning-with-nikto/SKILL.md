@@ -1,6 +1,6 @@
 ---
 name: performing-web-application-scanning-with-nikto
-description: "Runs Nikto open-source web server web application scanner."
+description: "Runs Nikto, an open-source web server and web application scanner,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, application, nikto, open-source, performing-web-application-scanning-with-nikto, runs, scanner, server, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, web, application, scanning, with, nikto, and, open-source, runs, scanner, server]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-web-application-scanning-with-nikto -->

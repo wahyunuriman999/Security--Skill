@@ -1,6 +1,6 @@
 ---
 name: extracting-browser-history-artifacts
-description: "Extracts analyzes browser history cookies cache downloads."
+description: "Extracts and analyzes browser history, cookies, cache, downloads, and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, and, browser, cache, cookies, downloads, extracting-browser-history-artifacts, extracts, history]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [extracting, browser, history, artifacts, analyzes, and, cache, cookies, downloads, extracts]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / extracting-browser-history-artifacts -->

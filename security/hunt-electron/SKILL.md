@@ -2,6 +2,9 @@
 name: hunt-electron
 description: Electron / desktop app security testing — Node.js integration abuse, contextIsolation bypass, preload script attacks, IPC injection, protocol handler hijacking, webview XSS→RCE, unsafe eval, remote module exploitation, asar archive extraction, autoupdate hijacking. Use on targets with desktop clients (Slack, Discord, VS Code style apps).
 tags: [electron, desktop, nodejs, rce, ipc, contextIsolation, preload, xss-rce, protocol-handler, asar]
+version: 1.0.0
+license: MIT
+triggers: [hunt, electron, desktop, nodejs, rce, ipc, contextIsolation, preload, xss-rce, protocol-handler, asar]
 ---
 
 # Electron App Security Testing — Desktop Bug Bounty

@@ -1,6 +1,6 @@
 ---
 name: analyzing-usb-device-connection-history
-description: "Correlate Windows registry keys USBSTOR MountedDevices."
+description: "Correlate Windows registry keys (USBSTOR, MountedDevices), Event Logs,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-usb-device-connection-history, correlate, event, keys, logs, mounteddevices, registry, usbstor, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, usb, device, connection, history, correlate, event, keys, logs, mounteddevices, registry, usbstor, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-usb-device-connection-history -->

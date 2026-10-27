@@ -1,6 +1,6 @@
 ---
 name: defending-llms-with-guardrails
-description: "Deploys Llama Guard 3 safety classification NeMo."
+description: "Deploys Llama Guard 3 safety classification, NeMo Guardrails programmable dialogue rails, and LLM Guard input/output scanner pipelines as complementary runtime defenses that inspect and constrain LLM prompts and responses. Use when adding a production runtime safety layer to an LLM, RAG, or agent application to block jailbreaks, prompt injection (OWASP LLM01), toxic content, or sensitive-data leakage before it reaches or leaves the model."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adding, agent, and, classification, complementary, constrain, defending-llms-with-guardrails, defenses, deploys, dialogue, guard, guardrails]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [defending, llms, with, guardrails, adding, agent, and, classification, complementary, constrain, defenses, deploys, dialogue, guard]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / defending-llms-with-guardrails -->

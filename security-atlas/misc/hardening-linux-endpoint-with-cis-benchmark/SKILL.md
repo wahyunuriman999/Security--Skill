@@ -1,6 +1,6 @@
 ---
 name: hardening-linux-endpoint-with-cis-benchmark
-description: "Hardens Linux endpoints CIS Benchmark recommendations."
+description: "'Hardens Linux endpoints using CIS Benchmark recommendations for Ubuntu,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [benchmark, cis, endpoints, for, hardening-linux-endpoint-with-cis-benchmark, hardens, linux, recommendations, ubuntu, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hardening, linux, endpoint, with, cis, benchmark, endpoints, for, hardens, recommendations, ubuntu, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hardening-linux-endpoint-with-cis-benchmark -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-syslog-centralization-with-rsyslog
-description: "Configure rsyslog centralized log collection TLS."
+description: "Configure rsyslog for centralized log collection with TLS encryption,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [centralized, collection, configure, encryption, for, implementing-syslog-centralization-with-rsyslog, log, rsyslog, tls, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, syslog, centralization, with, rsyslog, centralized, collection, configure, encryption, for, log, tls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-syslog-centralization-with-rsyslog -->

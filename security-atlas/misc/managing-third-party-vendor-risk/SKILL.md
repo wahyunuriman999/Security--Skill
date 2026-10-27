@@ -1,6 +1,6 @@
 ---
 name: managing-third-party-vendor-risk
-description: "Managing third party vendor risk."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [managing-third-party-vendor-risk]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [managing, third, party, vendor, risk]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / managing-third-party-vendor-risk -->

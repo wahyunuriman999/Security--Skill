@@ -1,6 +1,6 @@
 ---
 name: implementing-endpoint-detection-with-wazuh
-description: "Deploys configures Wazuh SIEM/XDR endpoint detection."
+description: "Deploys and configures Wazuh SIEM/XDR for endpoint detection, covering agent authentication and management, custom decoder and rule XML creation, alert querying via the Wazuh REST API, rule testing with wazuh-logtest, and automated active-response actions. Use when setting up endpoint detection and response, writing or testing custom Wazuh rules, or querying and triaging Wazuh alerts."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [actions, active-response, agent, alert, and, api, authentication, automated, configures, covering, creation, custom]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, endpoint, detection, with, wazuh, actions, active-response, agent, alert, and, api, authentication, automated, configures, covering, creation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-endpoint-detection-with-wazuh -->

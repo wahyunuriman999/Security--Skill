@@ -1,6 +1,6 @@
 ---
 name: configuring-identity-aware-proxy-with-google-iap
-description: "Configures Google Cloud Identity-Aware Proxy IAP gcloud."
+description: "'Configures Google Cloud Identity-Aware Proxy (IAP) via gcloud to enforce"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cloud, configures, configuring-identity-aware-proxy-with-google-iap, enforce, gcloud, google, iap, identity-aware, proxy, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, identity, aware, proxy, with, google, iap, cloud, configures, enforce, gcloud, identity-aware, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-identity-aware-proxy-with-google-iap -->

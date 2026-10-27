@@ -1,6 +1,6 @@
 ---
 name: implementing-aws-macie-for-data-classification
-description: "Enable configure Amazon Macie AWS CLI/Terraform discover."
+description: "Enable and configure Amazon Macie via AWS CLI/Terraform to discover, classify, and protect sensitive data (PII, financial data, credentials) in S3 using ML and pattern matching, including discovery jobs, custom data identifiers, allow lists, and EventBridge-based remediation. Use when setting up S3 data classification, cloud DLP, or auditing S3 for unprotected sensitive data."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [allow, amazon, and, aws, classify, cli, configure, credentials, custom, data, discover, discovery]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, aws, macie, for, data, classification, allow, amazon, and, classify, cli, configure, credentials, custom, discover, discovery]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-aws-macie-for-data-classification -->

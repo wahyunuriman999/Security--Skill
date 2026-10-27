@@ -1,6 +1,6 @@
 ---
 name: testing-api-for-broken-object-level-authorization
-description: "Tests REST GraphQL APIs Broken Object Level Authorization."
+description: "'Tests REST and GraphQL APIs for Broken Object Level Authorization (BOLA/IDOR,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, apis, authorization, bola, broken, for, graphql, idor, level, object, rest, testing-api-for-broken-object-level-authorization]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, api, for, broken, object, level, authorization, and, apis, bola, graphql, idor, rest]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-api-for-broken-object-level-authorization -->

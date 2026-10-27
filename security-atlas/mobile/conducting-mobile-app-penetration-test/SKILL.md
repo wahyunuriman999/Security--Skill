@@ -1,6 +1,6 @@
 ---
 name: conducting-mobile-app-penetration-test
-description: "Conducts penetration testing iOS Android mobile."
+description: "'Conducts penetration testing of iOS and Android mobile applications"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, android, applications, conducting-mobile-app-penetration-test, conducts, ios, mobile, penetration, testing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, mobile, app, penetration, test, and, android, applications, conducts, ios, testing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-mobile-app-penetration-test -->

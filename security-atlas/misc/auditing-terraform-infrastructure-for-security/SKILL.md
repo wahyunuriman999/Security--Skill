@@ -1,6 +1,6 @@
 ---
 name: auditing-terraform-infrastructure-for-security
-description: "Auditing Terraform infrastructure-as-code security."
+description: "'Auditing Terraform infrastructure-as-code for security misconfigurations"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [auditing, auditing-terraform-infrastructure-for-security, for, infrastructure-as-code, misconfigurations, security, terraform]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, terraform, infrastructure, for, security, infrastructure-as-code, misconfigurations]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-terraform-infrastructure-for-security -->

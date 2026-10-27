@@ -1,6 +1,6 @@
 ---
 name: offensive-reporting
-description: "Penetration test and red team report writing methodology."
+description: "Penetration test and red team report writing methodology. Covers executive summary structuring (risk-led narrative for non-technical readers), technical finding format (title, severity, affected scope, narrative, reproduction steps, impact, remediation, references), CVSS v3.1 / v4.0 scoring with vector justification, OWASP risk rating, evidence hygiene (redacting credentials, hashing client data, time-stamping every action), screenshot and PoC artifact management, finding chain narratives, scope/limitations/assumptions documentation, retest evidence and remediation tracking, deliverable format"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [affected, and, covers, cvss, executive, finding, for, format, impact, methodology, narrative, non-technical]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, reporting, affected, and, covers, cvss, executive, finding, for, format, impact, methodology, narrative, non-technical]
 ---
 
 <!-- upstream: Claude-Red / offensive-reporting -->

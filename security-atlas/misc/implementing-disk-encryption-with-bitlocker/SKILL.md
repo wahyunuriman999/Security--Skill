@@ -1,6 +1,6 @@
 ---
 name: implementing-disk-encryption-with-bitlocker
-description: "Implements full disk encryption Microsoft BitLocker."
+description: "'Implements full disk encryption using Microsoft BitLocker on Windows"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [bitlocker, disk, encryption, full, implementing-disk-encryption-with-bitlocker, implements, microsoft, using, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, disk, encryption, with, bitlocker, full, implements, microsoft, using, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-disk-encryption-with-bitlocker -->

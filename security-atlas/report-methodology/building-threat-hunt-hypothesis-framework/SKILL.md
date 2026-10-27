@@ -1,6 +1,6 @@
 ---
 name: building-threat-hunt-hypothesis-framework
-description: "Build systematic threat-hunt workflow turns threat."
+description: "Build a systematic threat-hunt workflow that turns threat intelligence and ATT&CK gap analysis into testable hypotheses, then executes and validates them via EDR/SIEM queries (CrowdStrike, Defender, Splunk, Elastic, Sysmon, Velociraptor, Sigma) and documents findings in a standardized hunt report. Use when planning or running a proactive threat hunt or scoping compromise from an intel- or anomaly-driven lead."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, and, att, build, building-threat-hunt-hypothesis-framework, crowdstrike, defender, documents, edr, elastic, executes, findings]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, threat, hunt, hypothesis, framework, analysis, and, att, build, crowdstrike, defender, documents, edr, elastic, executes, findings]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-threat-hunt-hypothesis-framework -->

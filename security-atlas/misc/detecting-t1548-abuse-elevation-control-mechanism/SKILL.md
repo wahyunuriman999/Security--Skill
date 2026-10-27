@@ -1,6 +1,6 @@
 ---
 name: detecting-t1548-abuse-elevation-control-mechanism
-description: "Detect abuse elevation control mechanisms T1548 including."
+description: "Detect abuse of elevation control mechanisms (T1548), including Windows UAC"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, control, detect, detecting-t1548-abuse-elevation-control-mechanism, elevation, including, mechanisms, t1548, uac, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, t1548, abuse, elevation, control, mechanism, detect, including, mechanisms, uac, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-t1548-abuse-elevation-control-mechanism -->

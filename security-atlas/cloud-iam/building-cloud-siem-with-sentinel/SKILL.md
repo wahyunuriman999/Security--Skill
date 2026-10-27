@@ -1,6 +1,6 @@
 ---
 name: building-cloud-siem-with-sentinel
-description: "Deploy Microsoft Sentinel cloud-native SIEM/SOAR."
+description: "Deploy Microsoft Sentinel as a cloud-native SIEM/SOAR by configuring multi-cloud data connectors (AWS, Azure, GCP), writing KQL detection and hunting queries, and building automated Logic Apps response playbooks. Use when establishing a centralized SOC for multi-cloud environments, migrating from a legacy SIEM, or performing petabyte-scale threat hunting; not for AWS-only setups where Security Hub/GuardDuty suffice or for endpoint EDR needs."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, apps, automated, aws, azure, building, building-cloud-siem-with-sentinel, centralized, cloud-native, configuring, connectors, data]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, cloud, siem, with, sentinel, and, apps, automated, aws, azure, centralized, cloud-native, configuring, connectors, data]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-cloud-siem-with-sentinel -->

@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: hackerone_public, github
 report_count: 25
+triggers: [hunt, business, logic]
 ---
 
 ## Crown Jewel Targets

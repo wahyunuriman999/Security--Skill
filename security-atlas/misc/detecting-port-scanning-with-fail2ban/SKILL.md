@@ -1,6 +1,6 @@
 ---
 name: detecting-port-scanning-with-fail2ban
-description: "Configures Fail2ban custom filters actions detect port."
+description: "'Configures Fail2ban with custom filters and actions to detect port scanning"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [actions, and, configures, custom, detect, detecting-port-scanning-with-fail2ban, fail2ban, filters, port, scanning, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, port, scanning, with, fail2ban, actions, and, configures, custom, detect, filters]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-port-scanning-with-fail2ban -->

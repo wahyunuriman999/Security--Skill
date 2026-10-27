@@ -1,6 +1,6 @@
 ---
 name: evaluating-threat-intelligence-platforms
-description: "Evaluates selects Threat Intelligence Platform TIP."
+description: "'Evaluates and selects Threat Intelligence Platform (TIP) products based"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, based, evaluates, evaluating-threat-intelligence-platforms, intelligence, platform, products, selects, threat, tip]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [evaluating, threat, intelligence, platforms, and, based, evaluates, platform, products, selects, tip]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / evaluating-threat-intelligence-platforms -->

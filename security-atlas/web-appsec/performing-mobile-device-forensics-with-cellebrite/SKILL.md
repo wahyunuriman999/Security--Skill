@@ -1,6 +1,6 @@
 ---
 name: performing-mobile-device-forensics-with-cellebrite
-description: "Acquire analyze mobile device data Cellebrite UFED."
+description: "Acquire and analyze mobile device data using Cellebrite UFED Touch/4PC, UFED Physical Analyzer, and open-source alternatives (ALEAPP, iLEAPP, MEAT, libimobiledevice) to extract communications, call logs, location data, and application artifacts. Use when extracting or recovering deleted evidence from smartphones or tablets during criminal, corporate, or employee-misuse investigations."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [4pc, acquire, aleapp, alternatives, analyze, analyzer, and, application, artifacts, call, cellebrite, communications]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, mobile, device, forensics, with, cellebrite, 4pc, acquire, aleapp, alternatives, analyze, analyzer, and, application, artifacts, call]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-mobile-device-forensics-with-cellebrite -->

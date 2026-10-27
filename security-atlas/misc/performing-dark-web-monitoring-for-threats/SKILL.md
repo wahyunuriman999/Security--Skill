@@ -1,6 +1,6 @@
 ---
 name: performing-dark-web-monitoring-for-threats
-description: "Dark web monitoring involves systematically scanning Tor."
+description: "Dark web monitoring involves systematically scanning Tor hidden services,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [dark, hidden, involves, monitoring, performing-dark-web-monitoring-for-threats, scanning, services, systematically, tor, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, dark, web, monitoring, for, threats, hidden, involves, scanning, services, systematically, tor]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-dark-web-monitoring-for-threats -->

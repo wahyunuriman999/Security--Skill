@@ -1,6 +1,6 @@
 ---
 name: analyzing-malicious-url-with-urlscan
-description: "URLScan.io free service scanning analyzing suspicious."
+description: "URLScan.io is a free service for scanning and analyzing suspicious URLs."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, analyzing-malicious-url-with-urlscan, and, for, free, scanning, service, suspicious, urls, urlscan]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, malicious, url, with, urlscan, and, for, free, scanning, service, suspicious, urls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-malicious-url-with-urlscan -->

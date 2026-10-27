@@ -1,6 +1,6 @@
 ---
 name: offensive-k8s-attacks
-description: "Kubernetes cluster attack techniques covering full attack."
+description: "Kubernetes cluster attack techniques covering the full attack lifecycle from initial foothold in a pod to cluster-wide compromise. Covers service account token theft and impersonation, RBAC misconfiguration exploitation including wildcard permissions and privilege escalation via role binding, direct etcd access for secret extraction, kubelet API abuse on port 10250 and read-only port 10255, pod escape via hostPID hostNetwork and hostPath volume mounts, Kubernetes secrets enumeration and decoding, admission controller bypass techniques, network policy bypass and lateral movement, cloud metadata"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [account, and, attack, binding, cluster, cluster-wide, compromise, covering, covers, direct, escalation, exploitation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, k8s, attacks, account, and, attack, binding, cluster, cluster-wide, compromise, covering, covers, direct, escalation, exploitation]
 ---
 
 <!-- upstream: Claude-Red / offensive-k8s-attacks -->

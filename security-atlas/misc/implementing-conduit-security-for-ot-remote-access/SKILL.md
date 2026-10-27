@@ -1,6 +1,6 @@
 ---
 name: implementing-conduit-security-for-ot-remote-access
-description: "Implements secure conduit architecture OT remote access."
+description: "'Implements secure conduit architecture for OT remote access under the"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, architecture, conduit, for, implementing-conduit-security-for-ot-remote-access, implements, remote, secure, the, under]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, conduit, security, for, remote, access, architecture, implements, secure, the, under]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-conduit-security-for-ot-remote-access -->

@@ -1,6 +1,6 @@
 ---
 name: performing-firmware-extraction-with-binwalk
-description: "Performs firmware image extraction analysis binwalk."
+description: "'Performs firmware image extraction and analysis using binwalk to identify"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, and, binwalk, extraction, firmware, identify, image, performing-firmware-extraction-with-binwalk, performs, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, firmware, extraction, with, binwalk, analysis, and, identify, image, performs, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-firmware-extraction-with-binwalk -->

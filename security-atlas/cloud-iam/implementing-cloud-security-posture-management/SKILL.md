@@ -1,6 +1,6 @@
 ---
 name: implementing-cloud-security-posture-management
-description: "Continuously monitor multi-cloud environments AWS Azure."
+description: "'Continuously monitor multi-cloud environments (AWS, Azure, GCP) for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aws, azure, continuously, environments, for, gcp, implementing-cloud-security-posture-management, monitor, multi-cloud]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, cloud, security, posture, management, aws, azure, continuously, environments, for, gcp, monitor, multi-cloud]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-cloud-security-posture-management -->

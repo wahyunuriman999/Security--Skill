@@ -1,6 +1,6 @@
 ---
 name: offensive-krack-fragattacks
-description: "KRACK CVE-2017-13077..082 FragAttacks CVE-2020-24586..588."
+description: "KRACK (CVE-2017-13077..082) and FragAttacks (CVE-2020-24586..588 + 26139-26147) — key reinstallation, fragmentation, and aggregation attacks against WPA2 supplicants. Covers Vanhoef's test scripts, viability against modern patched stacks (mostly mitigated post-2021), residual unpatched embedded devices and IoT vendors, and the practical limitations of these attacks in modern engagements. Use when assessing legacy supplicants, embedded clients, or vendors with poor patch cadence."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [082, 26139-26147, 588, against, aggregation, and, attacks, covers, cve-2017-13077, cve-2020-24586, devi, embedded]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, krack, fragattacks, 082, 26139-26147, 588, against, aggregation, and, attacks, covers, cve-2017-13077, cve-2020-24586, devi, embedded]
 ---
 
 <!-- upstream: Claude-Red / offensive-krack-fragattacks -->

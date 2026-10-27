@@ -1,6 +1,6 @@
 ---
 name: implementing-application-whitelisting-with-applocker
-description: "Implements application whitelisting Windows AppLocker."
+description: "'Implements application whitelisting using Windows AppLocker to restrict"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, applocker, implementing-application-whitelisting-with-applocker, implements, restrict, using, whitelisting, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, application, whitelisting, with, applocker, implements, restrict, using, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-application-whitelisting-with-applocker -->

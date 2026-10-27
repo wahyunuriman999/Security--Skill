@@ -1,6 +1,6 @@
 ---
 name: performing-privacy-impact-assessment
-description: "Automates Privacy Impact Assessment PIA workflow."
+description: "'Automates the Privacy Impact Assessment (PIA) workflow including data"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessment, automates, data, impact, including, performing-privacy-impact-assessment, pia, privacy, the, workflow]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, privacy, impact, assessment, automates, data, including, pia, the, workflow]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-privacy-impact-assessment -->

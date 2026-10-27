@@ -1,6 +1,6 @@
 ---
 name: implementing-hipaa-security-rule-safeguards
-description: "Implementing hipaa security rule safeguards."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-hipaa-security-rule-safeguards]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, hipaa, security, rule, safeguards]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-hipaa-security-rule-safeguards -->

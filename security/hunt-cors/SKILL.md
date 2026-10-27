@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 report_count: 19
 sources: hackerone_public
+triggers: [hunt, cors]
 ---
 
 # HUNT-CORS — Cross-Origin Resource Sharing Misconfiguration

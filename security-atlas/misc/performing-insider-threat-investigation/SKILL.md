@@ -1,6 +1,6 @@
 ---
 name: performing-insider-threat-investigation
-description: "Investigates insider threat incidents involving employees."
+description: "'Investigates insider threat incidents involving employees, contractors,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [contractors, employees, incidents, insider, investigates, involving, performing-insider-threat-investigation, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, insider, threat, investigation, contractors, employees, incidents, investigates, involving]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-insider-threat-investigation -->

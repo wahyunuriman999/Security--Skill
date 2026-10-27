@@ -1,6 +1,6 @@
 ---
 name: auditing-mcp-servers-for-tool-poisoning
-description: "Audit MCP servers tool poisoning tool shadowing rug pulls."
+description: "Audit MCP servers for tool poisoning, tool shadowing, rug pulls, SSRF, and unauthenticated exposure using Invariant Labs' mcp-scan for static/runtime scanning plus manual SSRF/auth checks and description pinning. Use before adding a new MCP server to an agent stack, when reviewing an internal MCP server, detecting rug pulls, or investigating an agent's unexpected tool-driven behavior."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adding, agent, and, audit, auditing-mcp-servers-for-tool-poisoning, auth, before, checks, description, exposure, for, internal]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, mcp, servers, for, tool, poisoning, adding, agent, and, audit, auth, before, checks, description, exposure, internal]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-mcp-servers-for-tool-poisoning -->

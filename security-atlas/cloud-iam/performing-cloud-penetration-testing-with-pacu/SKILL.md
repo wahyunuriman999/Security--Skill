@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-penetration-testing-with-pacu
-description: "Run authorized AWS penetration tests Pacu open-source AWS."
+description: "'Run authorized AWS penetration tests with Pacu, the open-source AWS exploitation"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authorized, aws, exploitation, open-source, pacu, penetration, performing-cloud-penetration-testing-with-pacu, run, tests, the, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, penetration, testing, with, pacu, authorized, aws, exploitation, open-source, run, tests, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-penetration-testing-with-pacu -->

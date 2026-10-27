@@ -1,6 +1,6 @@
 ---
 name: implementing-privileged-session-monitoring
-description: "Implements privileged session monitoring recording PAM."
+description: "'Implements privileged session monitoring and recording using PAM"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, implementing-privileged-session-monitoring, implements, monitoring, pam, privileged, recording, session, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, privileged, session, monitoring, and, implements, pam, recording, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-privileged-session-monitoring -->

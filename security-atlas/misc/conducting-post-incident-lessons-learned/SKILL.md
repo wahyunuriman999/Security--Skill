@@ -1,6 +1,6 @@
 ---
 name: conducting-post-incident-lessons-learned
-description: "Facilitate structured post-incident reviews identify root."
+description: "Facilitate structured post-incident reviews to identify root causes,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [causes, conducting-post-incident-lessons-learned, facilitate, identify, post-incident, reviews, root, structured]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, post, incident, lessons, learned, causes, facilitate, identify, post-incident, reviews, root, structured]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-post-incident-lessons-learned -->

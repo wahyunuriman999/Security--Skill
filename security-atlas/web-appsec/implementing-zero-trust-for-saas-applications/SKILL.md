@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-trust-for-saas-applications
-description: "Secures SaaS apps Microsoft 365 Google Workspace."
+description: "Secures SaaS apps (Microsoft 365, Google Workspace, Salesforce, Slack) via CASB/SSPM deployment, conditional access policies, OAuth app governance, and session-level DLP controls enforcing identity verification and device compliance. Use when adding MFA/device-compliance conditional access, discovering shadow IT, governing OAuth consent grants, or applying session controls to sensitive SaaS data."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [365, access, adding, and, app, apps, casb, compliance, conditional, controls, deployment, device]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, trust, for, saas, applications, 365, access, adding, and, app, apps, casb, compliance, conditional, controls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-trust-for-saas-applications -->

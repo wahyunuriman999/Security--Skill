@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: hackerone_public, owasp_api_top10_2023, public_research
 report_count: 0
+triggers: [hunt, api, misconfig]
 ---
 
 ## 12. API SECURITY MISCONFIGURATION

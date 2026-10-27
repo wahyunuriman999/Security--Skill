@@ -1,6 +1,6 @@
 ---
 name: testing-for-xml-injection-vulnerabilities
-description: "Test web applications XML injection vulnerabilities."
+description: "Test web applications for XML injection vulnerabilities including XXE,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [applications, for, including, injection, test, testing-for-xml-injection-vulnerabilities, vulnerabilities, web, xml, xxe]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, xml, injection, vulnerabilities, applications, including, test, web, xxe]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-xml-injection-vulnerabilities -->

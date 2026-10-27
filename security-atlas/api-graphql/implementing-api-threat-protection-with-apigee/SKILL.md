@@ -1,6 +1,6 @@
 ---
 name: implementing-api-threat-protection-with-apigee
-description: "Implements API threat protection Google Apigee."
+description: "Implements API threat protection using Google Apigee reverse-proxy"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, apigee, google, implementing-api-threat-protection-with-apigee, implements, protection, reverse-proxy, threat, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, threat, protection, with, apigee, google, implements, reverse-proxy, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-threat-protection-with-apigee -->

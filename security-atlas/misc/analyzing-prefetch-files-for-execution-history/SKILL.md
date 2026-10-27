@@ -1,6 +1,6 @@
 ---
 name: analyzing-prefetch-files-for-execution-history
-description: "Parse Windows Prefetch files versions 17 23 26 30 tools."
+description: "Parse Windows Prefetch files (versions 17, 23, 26, 30) with tools like PECmd, WinPrefetchView, or python-prefetch to determine program execution history, including run counts, execution timestamps, and referenced files/DLLs. Use when building a timeline of program execution on a Windows system, confirming whether a suspicious binary ran, or correlating execution evidence with other forensic artifacts during an investigation."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-prefetch-files-for-execution-history, and, building, conf, counts, determine, dlls, execution, files, history, including, like]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, prefetch, files, for, execution, history, and, building, conf, counts, determine, dlls, including, like]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-prefetch-files-for-execution-history -->

@@ -1,6 +1,6 @@
 ---
 name: securing-serverless-functions
-description: "Hardens serverless compute platforms AWS Lambda Azure."
+description: "'Hardens serverless compute platforms (AWS Lambda, Azure Functions, Google"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aws, azure, compute, functions, google, hardens, lambda, platforms, securing-serverless-functions, serverless]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, serverless, functions, aws, azure, compute, google, hardens, lambda, platforms]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-serverless-functions -->

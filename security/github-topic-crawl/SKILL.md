@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [github, search-api, crawling, pagination, rate-limit, data-collection]
     related_skills: [pentest-ref-corpus, osint-methodology, offensive-osint]
+triggers: [github, topic, crawl, search-api, crawling, pagination, rate-limit, data-collection]
 ---
 
 # GitHub Topic / Search Crawl Beyond the 1,000 Cap

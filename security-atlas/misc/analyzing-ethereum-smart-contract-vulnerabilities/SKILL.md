@@ -1,6 +1,6 @@
 ---
 name: analyzing-ethereum-smart-contract-vulnerabilities
-description: "Perform static symbolic analysis Solidity smart contracts."
+description: "Perform static and symbolic analysis of Solidity smart contracts using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, analyzing-ethereum-smart-contract-vulnerabilities, and, contracts, perform, smart, solidity, static, symbolic, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, ethereum, smart, contract, vulnerabilities, analysis, and, contracts, perform, solidity, static, symbolic, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-ethereum-smart-contract-vulnerabilities -->

@@ -1,6 +1,6 @@
 ---
 name: conducting-internal-reconnaissance-with-bloodhound-ce
-description: "Conduct internal Active Directory reconnaissance."
+description: "Conduct internal Active Directory reconnaissance using BloodHound Community Edition's graph database with the SharpHound (AD) and AzureHound (Entra ID) collectors, mapping ACLs, sessions, and group memberships into attack paths from a low-privileged foothold to Domain Admin. Use after an initial AD foothold to identify privilege escalation chains, or to validate that AD hardening closed known attack paths."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [acls, active, admin, after, and, attack, azurehound, bloodhound, collectors, community, conduct, conducting-internal-reconnaissance-with-bloodhound-ce]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, internal, reconnaissance, with, bloodhound, acls, active, admin, after, and, attack, azurehound, collectors, community, conduct]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-internal-reconnaissance-with-bloodhound-ce -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-t1003-credential-dumping-with-edr
-description: "Detect OS credential dumping MITRE T1003 targeting LSASS."
+description: "Detect OS credential dumping (MITRE T1003) targeting LSASS memory, the SAM"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [credential, detect, detecting-t1003-credential-dumping-with-edr, dumping, lsass, memory, mitre, sam, t1003, targeting, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, t1003, credential, dumping, with, edr, detect, lsass, memory, mitre, sam, targeting, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-t1003-credential-dumping-with-edr -->

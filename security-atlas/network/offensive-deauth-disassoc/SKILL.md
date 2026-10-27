@@ -1,6 +1,6 @@
 ---
 name: offensive-deauth-disassoc
-description: "Deauthentication disassociation attacks against 802.11."
+description: "Deauthentication and disassociation attacks against 802.11 networks — targeted single-client deauth for handshake capture, broadcast deauth for DoS (with authorization), action-frame attacks bypassing 802.11w (PMF), beacon flooding, mdk4 / aireplay-ng tooling, and rate-limit / PMF-aware operation. Use to coerce client reconnection (handshake capture, evil-twin roaming), as targeted DoS, or to test PMF posture."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [11w, 802, action-frame, against, aireplay-ng, and, attacks, authorization, beacon, broadcast, bypassing, capture]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, deauth, disassoc, 11w, 802, action-frame, against, aireplay-ng, and, attacks, authorization, beacon, broadcast, bypassing, capture]
 ---
 
 <!-- upstream: Claude-Red / offensive-deauth-disassoc -->

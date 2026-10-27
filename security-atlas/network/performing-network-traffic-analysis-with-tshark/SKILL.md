@@ -1,6 +1,6 @@
 ---
 name: performing-network-traffic-analysis-with-tshark
-description: "Automate network traffic analysis tshark Wireshark CLI."
+description: "Automate network traffic analysis using tshark (Wireshark CLI) and pyshark to compute protocol distribution statistics, detect suspicious flows such as port scans and beaconing, extract IOCs (IPs, domains, URLs), and identify DNS tunneling patterns from PCAP files. Use when scripted or repeatable analysis of packet captures is needed rather than interactive inspection."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, and, automate, beaconing, cli, compute, detect, distribution, dns, domains, extract, files]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, network, traffic, analysis, with, tshark, and, automate, beaconing, cli, compute, detect, distribution, dns, domains, extract]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-network-traffic-analysis-with-tshark -->

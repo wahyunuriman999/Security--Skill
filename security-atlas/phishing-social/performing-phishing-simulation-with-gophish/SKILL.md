@@ -1,6 +1,6 @@
 ---
 name: performing-phishing-simulation-with-gophish
-description: "Deploy run authorized phishing awareness campaigns."
+description: "Deploy and run authorized phishing awareness campaigns with GoPhish, covering admin panel setup, SMTP sending profiles, email template and landing page creation, target user groups, and campaign reporting to measure click and credential-submission rates. Use when planning or executing a phishing simulation for employee security-awareness testing or measuring susceptibility to social engineering."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [admin, and, authorized, awareness, campaign, campaigns, click, covering, creation, credential-submission, deploy, email]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, phishing, simulation, with, gophish, admin, and, authorized, awareness, campaign, campaigns, click, covering, creation, credential-submission, deploy]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-phishing-simulation-with-gophish -->

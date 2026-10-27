@@ -1,6 +1,6 @@
 ---
 name: performing-entitlement-review-with-sailpoint-iiq
-description: "Runs entitlement review access certification campaigns."
+description: "'Runs entitlement review and access certification campaigns in SailPoint"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, campaigns, certification, entitlement, performing-entitlement-review-with-sailpoint-iiq, review, runs, sailpoint]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, entitlement, review, with, sailpoint, iiq, access, and, campaigns, certification, runs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-entitlement-review-with-sailpoint-iiq -->

@@ -1,6 +1,6 @@
 ---
 name: executing-red-team-exercise
-description: "Run stealthy MITRE ATT CK-mapped adversary emulation."
+description: "'Run a stealthy, MITRE ATT&CK-mapped adversary emulation against an organization''s"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, against, att, ck-mapped, emulation, executing-red-team-exercise, mitre, organization, run, stealthy]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [executing, red, team, exercise, adversary, against, att, ck-mapped, emulation, mitre, organization, run, stealthy]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / executing-red-team-exercise -->

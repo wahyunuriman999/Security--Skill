@@ -1,6 +1,6 @@
 ---
 name: conducting-internal-network-penetration-test
-description: "Execute internal network penetration test simulating."
+description: "Execute an internal network penetration test simulating an insider threat"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [conducting-internal-network-penetration-test, execute, insider, internal, network, penetration, simulating, test, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, internal, network, penetration, test, execute, insider, simulating, threat]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-internal-network-penetration-test -->

@@ -1,6 +1,6 @@
 ---
 name: analyzing-web-server-logs-for-intrusion
-description: "Parse Apache Nginx access logs detect SQL injection."
+description: "Parse Apache and Nginx access logs to detect SQL injection attempts,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, analyzing-web-server-logs-for-intrusion, and, apache, attempts, detect, injection, logs, nginx, parse, sql]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, web, server, logs, for, intrusion, access, and, apache, attempts, detect, injection, nginx, parse, sql]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-web-server-logs-for-intrusion -->

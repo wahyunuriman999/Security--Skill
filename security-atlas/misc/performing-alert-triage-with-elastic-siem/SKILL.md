@@ -1,6 +1,6 @@
 ---
 name: performing-alert-triage-with-elastic-siem
-description: "Perform systematic alert triage Elastic Security SIEM."
+description: "Perform systematic alert triage in Elastic Security SIEM—classifying,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alert, classifying, elastic, perform, performing-alert-triage-with-elastic-siem, security, siem, systematic, triage]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, alert, triage, with, elastic, siem, classifying, perform, security, systematic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-alert-triage-with-elastic-siem -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-arp-poisoning-in-network-traffic
-description: "Detect Layer 2 ARP poisoning/spoofing deploying ARPWatch."
+description: "Detect Layer 2 ARP poisoning/spoofing by deploying ARPWatch, Dynamic ARP"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [arp, arpwatch, deploying, detect, detecting-arp-poisoning-in-network-traffic, dynamic, layer, poisoning, spoofing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, arp, poisoning, network, traffic, arpwatch, deploying, detect, dynamic, layer, spoofing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-arp-poisoning-in-network-traffic -->

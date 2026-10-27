@@ -1,6 +1,6 @@
 ---
 name: performing-content-security-policy-bypass
-description: "Analyze Content-Security-Policy headers bypass achieve."
+description: "Analyze Content-Security-Policy headers and bypass them to achieve cross-site"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [achieve, analyze, and, bypass, content-security-policy, cross-site, headers, performing-content-security-policy-bypass, them]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, content, security, policy, bypass, achieve, analyze, and, content-security-policy, cross-site, headers, them]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-content-security-policy-bypass -->

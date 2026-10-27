@@ -1,6 +1,6 @@
 ---
 name: implementing-privileged-access-workstation
-description: "Design implement Privileged Access Workstations PAWs."
+description: "Design and implement Privileged Access Workstations (PAWs) using the"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, design, implement, implementing-privileged-access-workstation, paws, privileged, the, using, workstations]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, privileged, access, workstation, and, design, implement, paws, the, using, workstations]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-privileged-access-workstation -->

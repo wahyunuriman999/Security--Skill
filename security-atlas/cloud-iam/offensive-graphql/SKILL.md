@@ -1,6 +1,6 @@
 ---
 name: offensive-graphql
-description: "Offensive methodology attacking GraphQL APIs penetration."
+description: "Offensive methodology for attacking GraphQL APIs during penetration tests and bug bounty engagements. Covers the full attack lifecycle: endpoint discovery, introspection abuse and blind schema reconstruction when introspection is disabled, authentication and authorization bypass through Relay node IDs and nested object traversal, injection via variables and directives, query batching for brute force and OTP bypass, denial of service through depth bombs and alias amplification, WebSocket subscription hijacking, information disclosure through verbose errors and field suggestion oracles, and file"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, and, apis, attack, attacking, authentication, authorization, blind, bounty, bug, bypass, covers]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, graphql, abuse, and, apis, attack, attacking, authentication, authorization, blind, bounty, bug, bypass, covers]
 ---
 
 <!-- upstream: Claude-Red / offensive-graphql -->

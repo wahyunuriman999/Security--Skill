@@ -1,6 +1,6 @@
 ---
 name: offensive-dependency-confusion
-description: "Deep-dive offensive methodology dependency confusion."
+description: "Deep-dive offensive methodology for dependency confusion and namespace attacks across all major package ecosystems. Covers npm scope confusion exploiting the gap between public and private scoped packages and .npmrc misconfigurations where registry mappings fail to pin internal scopes exclusively. Addresses PyPI namespace attacks through --extra-index-url resolution ordering, NuGet feed priority exploitation when multiple package sources are configured without clear directives, Maven and Gradle repository ordering where artifact resolution traverses repositories sequentially, Go module proxy a"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, all, and, attacks, between, confusion, covers, deep-dive, dependency, ecosystems, exclusively, exploiting]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, dependency, confusion, across, all, and, attacks, between, covers, deep-dive, ecosystems, exclusively, exploiting]
 ---
 
 <!-- upstream: Claude-Red / offensive-dependency-confusion -->

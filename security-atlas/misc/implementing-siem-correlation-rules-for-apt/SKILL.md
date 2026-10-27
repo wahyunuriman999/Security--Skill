@@ -1,6 +1,6 @@
 ---
 name: implementing-siem-correlation-rules-for-apt
-description: "Write multi-event correlation rules Splunk SPL Sigma."
+description: "Write multi-event correlation rules in Splunk SPL and Sigma format that"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, correlation, format, implementing-siem-correlation-rules-for-apt, multi-event, rules, sigma, spl, splunk, that, write]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, siem, correlation, rules, for, apt, and, format, multi-event, sigma, spl, splunk, that, write]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-siem-correlation-rules-for-apt -->

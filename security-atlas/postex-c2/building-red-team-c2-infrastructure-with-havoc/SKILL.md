@@ -1,6 +1,6 @@
 ---
 name: building-red-team-c2-infrastructure-with-havoc
-description: "Deploy configure Havoc C2 framework teamserver."
+description: "Deploy and configure the Havoc C2 framework (teamserver, HTTPS/HTTP/SMB"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, building-red-team-c2-infrastructure-with-havoc, configure, deploy, framework, havoc, http, https, smb, teamserver, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, red, team, infrastructure, with, havoc, and, configure, deploy, framework, http, https, smb, teamserver, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-red-team-c2-infrastructure-with-havoc -->

@@ -1,6 +1,6 @@
 ---
 name: performing-asset-criticality-scoring-for-vulns
-description: "Build multi-factor asset criticality scoring model."
+description: "Build a multi-factor asset criticality scoring model—incorporating data"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [asset, build, criticality, data, incorporating, model, multi-factor, performing-asset-criticality-scoring-for-vulns, scoring]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, asset, criticality, scoring, for, vulns, build, data, incorporating, model, multi-factor]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-asset-criticality-scoring-for-vulns -->

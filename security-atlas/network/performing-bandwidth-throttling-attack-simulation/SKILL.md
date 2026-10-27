@@ -1,6 +1,6 @@
 ---
 name: performing-bandwidth-throttling-attack-simulation
-description: "Simulate bandwidth throttling network degradation attacks."
+description: "'Simulate bandwidth throttling and network degradation attacks using tc,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attacks, bandwidth, degradation, network, performing-bandwidth-throttling-attack-simulation, simulate, throttling, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, bandwidth, throttling, attack, simulation, and, attacks, degradation, network, simulate, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-bandwidth-throttling-attack-simulation -->

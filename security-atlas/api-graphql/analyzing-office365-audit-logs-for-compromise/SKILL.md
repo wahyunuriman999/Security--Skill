@@ -1,6 +1,6 @@
 ---
 name: analyzing-office365-audit-logs-for-compromise
-description: "Parse Office 365 Unified Audit Logs Microsoft Graph API."
+description: "Parse Office 365 Unified Audit Logs via Microsoft Graph API to detect"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [365, analyzing-office365-audit-logs-for-compromise, api, audit, detect, graph, logs, microsoft, office, parse, unified, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, office365, audit, logs, for, compromise, 365, api, detect, graph, microsoft, office, parse, unified, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-office365-audit-logs-for-compromise -->

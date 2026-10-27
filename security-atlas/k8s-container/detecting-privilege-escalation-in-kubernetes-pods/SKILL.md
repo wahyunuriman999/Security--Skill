@@ -1,6 +1,6 @@
 ---
 name: detecting-privilege-escalation-in-kubernetes-pods
-description: "Detecting privilege escalation in kubernetes pods."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detecting-privilege-escalation-in-kubernetes-pods]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, privilege, escalation, kubernetes, pods]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-privilege-escalation-in-kubernetes-pods -->

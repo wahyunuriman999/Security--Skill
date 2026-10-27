@@ -1,6 +1,6 @@
 ---
 name: hunting-for-persistence-via-wmi-subscriptions
-description: "Hunts adversary persistence WMI event subscriptions MITRE."
+description: "Hunts for adversary persistence via WMI event subscriptions (MITRE T1546.003)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [003, adversary, event, for, hunting-for-persistence-via-wmi-subscriptions, hunts, mitre, persistence, subscriptions, t1546, via, wmi]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, persistence, via, wmi, subscriptions, 003, adversary, event, hunts, mitre, t1546]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-persistence-via-wmi-subscriptions -->

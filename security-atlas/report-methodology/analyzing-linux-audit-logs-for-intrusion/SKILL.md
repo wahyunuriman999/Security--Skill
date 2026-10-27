@@ -1,6 +1,6 @@
 ---
 name: analyzing-linux-audit-logs-for-intrusion
-description: "Uses Linux Audit framework auditd ausearch aureport."
+description: "'Uses the Linux Audit framework (auditd) with ausearch and aureport utilities"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-linux-audit-logs-for-intrusion, and, audit, auditd, aureport, ausearch, framework, linux, the, uses, utilities, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, linux, audit, logs, for, intrusion, and, auditd, aureport, ausearch, framework, the, uses, utilities, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-linux-audit-logs-for-intrusion -->

@@ -1,6 +1,6 @@
 ---
 name: performing-api-fuzzing-with-restler
-description: "Uses Microsoft RESTler perform stateful REST API fuzzing."
+description: "'Uses Microsoft RESTler to perform stateful REST API fuzzing: compiles"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, compiles, fuzzing, microsoft, perform, performing-api-fuzzing-with-restler, rest, restler, stateful, uses]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, api, fuzzing, with, restler, compiles, microsoft, perform, rest, stateful, uses]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-api-fuzzing-with-restler -->

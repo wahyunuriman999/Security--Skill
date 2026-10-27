@@ -1,6 +1,6 @@
 ---
 name: hunting-for-unusual-network-connections
-description: "Runs hypothesis-driven threat hunt command-and-control."
+description: "Runs a hypothesis-driven threat hunt for command-and-control activity (T1071) by querying SIEM/EDR network telemetry for anomalous outbound traffic, rare destinations, non-standard ports, and unusual connection frequencies from endpoints. Use when hunting for beaconing/C2 traffic, after threat intel flags suspicious infrastructure, or when alerts fire on anomalous connections."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, after, and, anomalous, beaconing, command-and-control, connection, destinations, edr, endpoints, for, frequencies]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, unusual, network, connections, activity, after, and, anomalous, beaconing, command-and-control, connection, destinations, edr, endpoints, frequencies]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-unusual-network-connections -->

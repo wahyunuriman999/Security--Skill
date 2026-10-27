@@ -1,6 +1,6 @@
 ---
 name: offensive-lateral-movement
-description: "Comprehensive lateral movement tradecraft authorized red."
+description: "Comprehensive lateral movement tradecraft for authorized red team engagements covering credential-based movement (pass-the-hash, pass-the-ticket, overpass-the-hash), NTLM relay attacks (ntlmrelayx with PetitPotam, DFSCoerce, PrinterBug coercion), remote execution protocols (WMI, WinRM, DCOM, PsExec and alternatives), RDP session hijacking, and network pivoting through tunneling tools (chisel, ligolo-ng, SSH tunnels, SOCKS proxies). Provides operator-ready command sequences for mimikatz, crackmapexec/netexec, impacket suite, and evil-winrm with emphasis on OPSEC considerations, SMB signing bypa"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attacks, authorized, coercion, comprehensive, covering, credential-based, dcom, dfscoerce, engagements, execution, for, lateral]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, lateral, movement, attacks, authorized, coercion, comprehensive, covering, credential-based, dcom, dfscoerce, engagements, execution, for]
 ---
 
 <!-- upstream: Claude-Red / offensive-lateral-movement -->

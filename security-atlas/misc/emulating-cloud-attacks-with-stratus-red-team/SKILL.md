@@ -1,6 +1,6 @@
 ---
 name: emulating-cloud-attacks-with-stratus-red-team
-description: "Install run Stratus Red Team detonate granular MITRE ATT."
+description: "Install and run Stratus Red Team to detonate granular, MITRE ATT&CK-mapped"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, att, ck-mapped, detonate, emulating-cloud-attacks-with-stratus-red-team, granular, install, mitre, red, run, stratus, team]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [emulating, cloud, attacks, with, stratus, red, team, and, att, ck-mapped, detonate, granular, install, mitre, run]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / emulating-cloud-attacks-with-stratus-red-team -->

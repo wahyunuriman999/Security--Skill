@@ -1,6 +1,6 @@
 ---
 name: performing-ios-app-security-assessment
-description: "Performs comprehensive iOS application security."
+description: "'Performs comprehensive iOS application security assessments using Frida"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, assessments, comprehensive, frida, ios, performing-ios-app-security-assessment, performs, security, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ios, app, security, assessment, application, assessments, comprehensive, frida, performs, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ios-app-security-assessment -->

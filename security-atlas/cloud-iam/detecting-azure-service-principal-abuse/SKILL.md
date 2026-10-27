@@ -1,6 +1,6 @@
 ---
 name: detecting-azure-service-principal-abuse
-description: "Detect Azure service principal abuse Microsoft Entra ID."
+description: "Detect Azure service principal abuse in Microsoft Entra ID using KQL detection"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, azure, detect, detecting-azure-service-principal-abuse, detection, entra, kql, microsoft, principal, service, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, azure, service, principal, abuse, detect, detection, entra, kql, microsoft, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-azure-service-principal-abuse -->

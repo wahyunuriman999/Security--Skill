@@ -1,6 +1,6 @@
 ---
 name: implementing-dragos-platform-for-ot-monitoring
-description: "Deploys configures Dragos Platform sensors detection."
+description: "Deploys and configures Dragos Platform sensors and detection analytics for OT/ICS network monitoring, using industrial protocol parsers and threat-intel packs to detect groups like VOLTZITE, CHERNOVITE, and KAMACITE. Use when standing up OT-specific network detection and response or an OT SOC, or integrating OT monitoring into an enterprise SIEM; not for IT-only or Claroty/Nozomi environments."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analytics, and, chernovite, configures, deploys, detect, detection, dragos, for, groups, ics, implementing-dragos-platform-for-ot-monitoring]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, dragos, platform, for, monitoring, analytics, and, chernovite, configures, deploys, detect, detection, groups, ics]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-dragos-platform-for-ot-monitoring -->

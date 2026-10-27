@@ -1,6 +1,6 @@
 ---
 name: implementing-github-advanced-security-for-code-scanning
-description: "Configures GitHub Advanced Security code scanning CodeQL."
+description: "Configures GitHub Advanced Security (code scanning with CodeQL, secret scanning, dependency review, and Dependabot alerts) to perform automated static analysis and vulnerability detection across repositories at enterprise scale, including custom CodeQL queries and CI workflow integration. Use when setting up or tuning code scanning, rolling out CodeQL across an organization, or shifting SAST left into pull request workflows."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, advanced, alerts, analysis, and, automated, code, codeql, configures, custom, dependabot, dependency]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, github, advanced, security, for, code, scanning, across, alerts, analysis, and, automated, codeql, configures, custom, dependabot]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-github-advanced-security-for-code-scanning -->

@@ -1,6 +1,6 @@
 ---
 name: building-phishing-reporting-button-workflow
-description: "Implement phishing report button Microsoft 365 built-in."
+description: "Implement a phishing report button (Microsoft 365 built-in Report button"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [365, building-phishing-reporting-button-workflow, built-in, button, implement, microsoft, phishing, report]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, phishing, reporting, button, workflow, 365, built-in, implement, microsoft, report]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-phishing-reporting-button-workflow -->

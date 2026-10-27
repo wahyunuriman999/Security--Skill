@@ -1,6 +1,6 @@
 ---
 name: performing-bluetooth-security-assessment
-description: "Assess Bluetooth Low Energy BLE device security Python s."
+description: "Assess Bluetooth Low Energy (BLE) device security using Python's bleak asyncio"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assess, asyncio, ble, bleak, bluetooth, device, energy, low, performing-bluetooth-security-assessment, python, security, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, bluetooth, security, assessment, assess, asyncio, ble, bleak, device, energy, low, python, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-bluetooth-security-assessment -->

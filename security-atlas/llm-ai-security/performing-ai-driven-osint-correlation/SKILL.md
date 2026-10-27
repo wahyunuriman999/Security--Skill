@@ -1,6 +1,6 @@
 ---
 name: performing-ai-driven-osint-correlation
-description: "AI/LLM-based reasoning Sherlock theHarvester SpiderFoot."
+description: "Use AI/LLM-based reasoning with Sherlock, theHarvester, and SpiderFoot"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, llm-based, performing-ai-driven-osint-correlation, reasoning, sherlock, spiderfoot, theharvester, use, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, driven, osint, correlation, and, llm-based, reasoning, sherlock, spiderfoot, theharvester, use, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ai-driven-osint-correlation -->

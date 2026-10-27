@@ -1,6 +1,6 @@
 ---
 name: performing-ioc-enrichment-automation
-description: "Automates Indicator Compromise IOC enrichment."
+description: "'Automates Indicator of Compromise (IOC) enrichment by orchestrating"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automates, compromise, enrichment, indicator, ioc, orchestrating, performing-ioc-enrichment-automation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ioc, enrichment, automation, automates, compromise, indicator, orchestrating]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ioc-enrichment-automation -->

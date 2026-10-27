@@ -1,6 +1,6 @@
 ---
 name: implementing-api-schema-validation-security
-description: "Implements API schema validation OpenAPI Specification."
+description: "Implements API schema validation using OpenAPI Specification and JSON"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, api, implementing-api-schema-validation-security, implements, json, openapi, schema, specification, using, validation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, schema, validation, security, and, implements, json, openapi, specification, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-schema-validation-security -->

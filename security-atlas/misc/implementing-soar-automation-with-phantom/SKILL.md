@@ -1,6 +1,6 @@
 ---
 name: implementing-soar-automation-with-phantom
-description: "Implements Security Orchestration Automation Response."
+description: "'Implements Security Orchestration, Automation, and Response (SOAR) workflows"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, automation, implementing-soar-automation-with-phantom, implements, orchestration, response, security, soar, workflows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, soar, automation, with, phantom, and, implements, orchestration, response, security, workflows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-soar-automation-with-phantom -->

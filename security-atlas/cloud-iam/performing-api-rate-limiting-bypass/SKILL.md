@@ -1,6 +1,6 @@
 ---
 name: performing-api-rate-limiting-bypass
-description: "Tests API rate limiting bypass vulnerabilities Python."
+description: "'Tests API rate limiting for bypass vulnerabilities using Python (requests/aiohttp)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aiohttp, api, bypass, for, limiting, performing-api-rate-limiting-bypass, python, rate, requests, tests, using, vulnerabilities]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, api, rate, limiting, bypass, aiohttp, for, python, requests, tests, using, vulnerabilities]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-api-rate-limiting-bypass -->

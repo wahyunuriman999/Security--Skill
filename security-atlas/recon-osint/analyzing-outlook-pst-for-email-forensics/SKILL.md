@@ -1,6 +1,6 @@
 ---
 name: analyzing-outlook-pst-for-email-forensics
-description: "Parse Microsoft Outlook PST OST files libpff pst-utils."
+description: "Parse Microsoft Outlook PST and OST files using libpff and pst-utils to extract message content, headers, attachments, deleted items, and MAPI metadata, including recovery of items from the Recoverable Items folder. Use when conducting email forensic investigations, legal e-discovery, or incident response that requires reconstructing communication patterns or tracing message routing from Outlook archives."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-outlook-pst-for-email-forensics, and, attachments, conducting, content, deleted, e-discovery, email, extract, files, folder, forensic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, outlook, pst, for, email, forensics, and, attachments, conducting, content, deleted, e-discovery, extract, files, folder, forensic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-outlook-pst-for-email-forensics -->

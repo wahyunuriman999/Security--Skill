@@ -1,6 +1,6 @@
 ---
 name: detecting-exfiltration-over-dns-with-zeek
-description: "Detect DNS-based data exfiltration analyzing Zeek dns.log."
+description: "Detect DNS-based data exfiltration by analyzing Zeek dns.log for high-entropy"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, data, detect, detecting-exfiltration-over-dns-with-zeek, dns, dns-based, exfiltration, for, high-entropy, log, zeek]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, exfiltration, over, dns, with, zeek, analyzing, data, detect, dns-based, for, high-entropy, log]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-exfiltration-over-dns-with-zeek -->

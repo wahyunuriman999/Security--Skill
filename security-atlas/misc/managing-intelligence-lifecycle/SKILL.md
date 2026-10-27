@@ -1,6 +1,6 @@
 ---
 name: managing-intelligence-lifecycle
-description: "Manages end-to-end cyber threat intelligence lifecycle."
+description: "'Manages the end-to-end cyber threat intelligence lifecycle from planning"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cyber, end-to-end, from, intelligence, lifecycle, manages, managing-intelligence-lifecycle, planning, the, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [managing, intelligence, lifecycle, cyber, end-to-end, from, manages, planning, the, threat]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / managing-intelligence-lifecycle -->

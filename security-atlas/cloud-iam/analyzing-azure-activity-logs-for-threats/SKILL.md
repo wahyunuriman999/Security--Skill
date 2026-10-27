@@ -1,6 +1,6 @@
 ---
 name: analyzing-azure-activity-logs-for-threats
-description: "Queries Azure Monitor activity logs sign-in logs."
+description: "'Queries Azure Monitor activity logs and sign-in logs via azure-monitor-query"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, analyzing-azure-activity-logs-for-threats, and, azure, azure-monitor-query, logs, monitor, queries, sign-in, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, azure, activity, logs, for, threats, and, azure-monitor-query, monitor, queries, sign-in, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-azure-activity-logs-for-threats -->

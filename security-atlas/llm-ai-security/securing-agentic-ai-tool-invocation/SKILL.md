@@ -1,6 +1,6 @@
 ---
 name: securing-agentic-ai-tool-invocation
-description: "Implements defense-in-depth controls AI agent s."
+description: "Implements defense-in-depth controls at an AI agent's tool-invocation"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [agent, controls, defense-in-depth, implements, securing-agentic-ai-tool-invocation, tool-invocation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, agentic, tool, invocation, agent, controls, defense-in-depth, implements, tool-invocation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-agentic-ai-tool-invocation -->

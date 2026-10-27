@@ -1,6 +1,6 @@
 ---
 name: tracking-threat-actor-infrastructure
-description: "Discovers maps adversary-controlled infrastructure C2."
+description: "Discovers and maps adversary-controlled infrastructure (C2 servers,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary-controlled, and, discovers, infrastructure, maps, servers, tracking-threat-actor-infrastructure]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [tracking, threat, actor, infrastructure, adversary-controlled, and, discovers, maps, servers]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / tracking-threat-actor-infrastructure -->

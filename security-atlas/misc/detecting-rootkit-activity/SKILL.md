@@ -1,6 +1,6 @@
 ---
 name: detecting-rootkit-activity
-description: "Detects rootkit presence compromised systems identifying."
+description: "'Detects rootkit presence on compromised systems by identifying hidden"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [compromised, detecting-rootkit-activity, detects, hidden, identifying, presence, rootkit, systems]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, rootkit, activity, compromised, detects, hidden, identifying, presence, systems]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-rootkit-activity -->

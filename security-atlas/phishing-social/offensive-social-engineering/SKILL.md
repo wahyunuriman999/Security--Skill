@@ -1,6 +1,6 @@
 ---
 name: offensive-social-engineering
-description: "Social engineering attack techniques beyond email."
+description: "Social engineering attack techniques beyond email phishing for authorized red team and physical penetration testing engagements. Covers pretexting methodology (persona creation, authority and urgency psychological triggers, rapport building), vishing (voice phishing via caller ID spoofing, IVR system exploitation, VoIP infrastructure setup with Twilio/Asterisk), smishing (SMS-based phishing, carrier gateway abuse, short code impersonation), physical social engineering (tailgating and piggybacking, RFID badge cloning with Proxmark3, lock picking and bypass, dumpster diving for sensitive documen"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attack, authority, authorized, beyond, building, caller, covers, creation, email, engagements, engineering]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, social, engineering, and, attack, authority, authorized, beyond, building, caller, covers, creation, email, engagements]
 ---
 
 <!-- upstream: Claude-Red / offensive-social-engineering -->

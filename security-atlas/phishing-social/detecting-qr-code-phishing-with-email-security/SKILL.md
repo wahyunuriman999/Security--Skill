@@ -1,6 +1,6 @@
 ---
 name: detecting-qr-code-phishing-with-email-security
-description: "Detect prevent QR code phishing quishing attacks embed."
+description: "Detect and prevent QR code phishing (quishing) attacks that embed"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attacks, code, detect, detecting-qr-code-phishing-with-email-security, embed, phishing, prevent, quishing, that]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, code, phishing, with, email, security, and, attacks, detect, embed, prevent, quishing, that]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-qr-code-phishing-with-email-security -->

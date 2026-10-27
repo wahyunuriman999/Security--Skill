@@ -1,6 +1,6 @@
 ---
 name: scanning-docker-images-with-trivy
-description: "Scanning docker images with trivy."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [scanning-docker-images-with-trivy]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [scanning, docker, images, with, trivy]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / scanning-docker-images-with-trivy -->

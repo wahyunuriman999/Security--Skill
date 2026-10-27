@@ -1,6 +1,6 @@
 ---
 name: implementing-gcp-binary-authorization
-description: "Implements GCP Binary Authorization end end including."
+description: "Implements GCP Binary Authorization end to end, including creating KMS-backed attestors, Container Analysis notes, deploy-time policies, and signing image attestations, so that only trusted, verified images deploy to GKE and Cloud Run. Use when enforcing container supply-chain integrity or deploy-time attestation checks on GCP."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, and, attestations, attestors, authorization, binary, cloud, container, creating, deploy, deploy-ti, deploy-time]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, gcp, binary, authorization, analysis, and, attestations, attestors, cloud, container, creating, deploy, deploy-ti, deploy-time]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-gcp-binary-authorization -->

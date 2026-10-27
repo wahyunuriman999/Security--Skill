@@ -1,6 +1,9 @@
 ---
 name: web3-triage-report
 description: Bug triage validation system, Immunefi report format, and 20 real paid bounty examples dissected. Use this when validating a finding before submitting, writing an Immunefi report, checking if a bug is actually valid, or studying real examples of paid vulnerabilities.
+version: 1.0.0
+license: MIT
+triggers: [web3, triage, report]
 ---
 
 # TRIAGE, REPORT WRITING & REAL EXAMPLES
@@ -790,4 +793,4 @@ Almost every bug comes from one of three root causes:
 
 ---
 
-→ NEXT: [06-methodology-research.md](06-methodology-research.md)
+→ NEXT: [06-methodology-research.md](../web3-methodology-research/SKILL.md)

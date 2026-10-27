@@ -1,6 +1,6 @@
 ---
 name: hunting-evtx-with-chainsaw
-description: "Run Chainsaw against collected Windows EVTX files hunt."
+description: "Run Chainsaw against collected Windows EVTX files to hunt with the SigmaHQ rule corpus, built-in detection rules, and high-speed keyword/regex search, plus analyze shimcache, SRUM, and event-log gaps, outputting colorized tables, CSV, or JSON. Use during first-response triage for offline, SIEM-free detection over Windows event logs, or to quickly confirm a hunt hypothesis and produce reporting output."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, analyze, and, built-in, chainsaw, collected, colorized, corpus, csv, detection, during, event-log]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, evtx, with, chainsaw, against, analyze, and, built-in, collected, colorized, corpus, csv, detection, during, event-log]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-evtx-with-chainsaw -->

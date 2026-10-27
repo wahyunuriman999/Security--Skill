@@ -1,6 +1,6 @@
 ---
 name: performing-ip-reputation-analysis-with-shodan
-description: "Analyze IP address reputation Shodan API identify open."
+description: "Analyze IP address reputation using the Shodan API to identify open ports,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [address, analyze, api, identify, open, performing-ip-reputation-analysis-with-shodan, ports, reputation, shodan, the, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, reputation, analysis, with, shodan, address, analyze, api, identify, open, ports, the, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ip-reputation-analysis-with-shodan -->

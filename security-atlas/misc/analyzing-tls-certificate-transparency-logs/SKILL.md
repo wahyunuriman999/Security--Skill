@@ -1,6 +1,6 @@
 ---
 name: analyzing-tls-certificate-transparency-logs
-description: "Queries Certificate Transparency logs crt.sh pycrtsh."
+description: "'Queries Certificate Transparency logs via crt.sh and pycrtsh to detect"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-tls-certificate-transparency-logs, and, certificate, crt, detect, logs, pycrtsh, queries, transparency, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, tls, certificate, transparency, logs, and, crt, detect, pycrtsh, queries, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-tls-certificate-transparency-logs -->

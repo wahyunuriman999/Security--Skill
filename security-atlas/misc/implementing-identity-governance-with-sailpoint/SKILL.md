@@ -1,6 +1,6 @@
 ---
 name: implementing-identity-governance-with-sailpoint
-description: "Deploys SailPoint IdentityNow IdentityIQ identity."
+description: "Deploys SailPoint IdentityNow or IdentityIQ for identity governance and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, deploys, for, governance, identity, identityiq, identitynow, implementing-identity-governance-with-sailpoint, sailpoint]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, identity, governance, with, sailpoint, and, deploys, for, identityiq, identitynow]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-identity-governance-with-sailpoint -->

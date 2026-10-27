@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-trust-network-access
-description: "Configures Zero Trust Network Access ZTNA AWS Azure GCP."
+description: "Configures Zero Trust Network Access (ZTNA) in AWS, Azure, and GCP using identity-aware proxies, micro-segmentation, and continuous verification with conditional access policies, replacing VPN-based access with BeyondCorp-style architectures. Use when replacing VPN remote access with identity-based controls, limiting lateral movement via micro-segmentation, or exposing cloud workloads to authenticated users without public internet exposure."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, architectures, aws, azure, beyondcorp-style, conditional, configures, continuous, gcp, identity-aware, identity-based]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, trust, network, access, and, architectures, aws, azure, beyondcorp-style, conditional, configures, continuous, gcp, identity-aware, identity-based]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-trust-network-access -->

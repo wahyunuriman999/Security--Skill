@@ -1,6 +1,6 @@
 ---
 name: implementing-network-access-control-with-cisco-ise
-description: "Deploys Cisco Identity Services Engine ISE RADIUS policy."
+description: "Deploys Cisco Identity Services Engine (ISE) as a RADIUS policy server for 802.1X"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [802, cisco, deploys, engine, for, identity, implementing-network-access-control-with-cisco-ise, ise, policy, radius, server, services]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, access, control, with, cisco, ise, 802, deploys, engine, for, identity, policy, radius, server, services]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-access-control-with-cisco-ise -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-business-email-compromise-with-ai
-description: "Deploy AI NLP-powered detection systems identify business."
+description: "Deploy AI and NLP-powered detection systems to identify business email"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, business, deploy, detecting-business-email-compromise-with-ai, detection, email, identify, nlp-powered, systems]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, business, email, compromise, with, and, deploy, detection, identify, nlp-powered, systems]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-business-email-compromise-with-ai -->

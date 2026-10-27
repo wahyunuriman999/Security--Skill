@@ -1,6 +1,6 @@
 ---
 name: performing-privileged-account-access-review
-description: "Conducts systematic reviews privileged accounts validate."
+description: "Conducts systematic reviews of privileged accounts to validate access"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, accounts, conducts, performing-privileged-account-access-review, privileged, reviews, systematic, validate]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, privileged, account, access, review, accounts, conducts, reviews, systematic, validate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-privileged-account-access-review -->

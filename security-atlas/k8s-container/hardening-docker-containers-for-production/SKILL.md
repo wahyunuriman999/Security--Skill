@@ -1,6 +1,6 @@
 ---
 name: hardening-docker-containers-for-production
-description: "Hardening docker containers for production."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [hardening-docker-containers-for-production]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hardening, docker, containers, for, production]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hardening-docker-containers-for-production -->

@@ -1,6 +1,6 @@
 ---
 name: performing-kubernetes-penetration-testing
-description: "Performing kubernetes penetration testing."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-kubernetes-penetration-testing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, kubernetes, penetration, testing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-kubernetes-penetration-testing -->

@@ -1,6 +1,9 @@
 ---
 name: web3-methodology-research
 description: External research synthesis from Trail of Bits, SlowMist, ConsenSys, Immunefi, and Cyfrin. Use this for advanced audit methodology, Echidna/Medusa fuzzing setup, Slither custom detector writing, attack pattern deep dives, or the 4-phase learning roadmap.
+version: 1.0.0
+license: MIT
+triggers: [web3, methodology, research]
 ---
 
 # METHODOLOGY & RESEARCH SYNTHESIS
@@ -1212,4 +1215,4 @@ grep -rn "function update.*Id\|function modify.*Id" src/ --include="*.sol"
 
 ---
 
-→ NEXT: [07-live-hunt-ern.md](07-live-hunt-ern.md)
+→ NEXT: 07-live-hunt-ern (Ern case study — not included in this repo; see web3-hunt-zksync-era for a completed-hunt template)

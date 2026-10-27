@@ -1,6 +1,6 @@
 ---
 name: analyzing-windows-amcache-artifacts
-description: "Parses Windows Amcache.hve registry hive Eric Zimmerman s."
+description: "'Parses the Windows Amcache.hve registry hive with Eric Zimmerman''s"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [amcache, analyzing-windows-amcache-artifacts, eric, hive, hve, parses, registry, the, windows, with, zimmerman]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, windows, amcache, artifacts, eric, hive, hve, parses, registry, the, with, zimmerman]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-windows-amcache-artifacts -->

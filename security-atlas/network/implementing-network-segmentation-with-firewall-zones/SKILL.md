@@ -1,6 +1,6 @@
 ---
 name: implementing-network-segmentation-with-firewall-zones
-description: "Designs implements network segmentation firewall security."
+description: "Designs and implements network segmentation using firewall security zones, VLANs,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, designs, firewall, implementing-network-segmentation-with-firewall-zones, implements, network, security, segmentation, using, vlans, zones]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, segmentation, with, firewall, zones, and, designs, implements, security, using, vlans]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-segmentation-with-firewall-zones -->

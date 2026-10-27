@@ -1,6 +1,6 @@
 ---
 name: performing-file-carving-with-foremost
-description: "Recovers files disk images unallocated space Foremost s."
+description: "Recovers files from disk images and unallocated space using Foremost's"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, disk, files, foremost, from, images, performing-file-carving-with-foremost, recovers, space, unallocated, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, file, carving, with, foremost, and, disk, files, from, images, recovers, space, unallocated, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-file-carving-with-foremost -->

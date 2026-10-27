@@ -1,6 +1,6 @@
 ---
 name: performing-thick-client-application-penetration-test
-description: "Conduct thick client application penetration test."
+description: "Conduct a thick client application penetration test to identify insecure"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, client, conduct, identify, insecure, penetration, performing-thick-client-application-penetration-test, test, thick]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, thick, client, application, penetration, test, conduct, identify, insecure]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-thick-client-application-penetration-test -->

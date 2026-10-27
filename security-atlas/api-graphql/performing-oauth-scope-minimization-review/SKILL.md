@@ -1,6 +1,6 @@
 ---
 name: performing-oauth-scope-minimization-review
-description: "Performs OAuth 2.0 scope minimization review identify."
+description: "'Performs OAuth 2.0 scope minimization review to identify over-permissioned"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [identify, minimization, oauth, over-permissioned, performing-oauth-scope-minimization-review, performs, review, scope]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, oauth, scope, minimization, review, identify, over-permissioned, performs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-oauth-scope-minimization-review -->

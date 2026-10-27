@@ -1,6 +1,6 @@
 ---
 name: benchmarking-kubernetes-with-kube-bench
-description: "Benchmarking kubernetes with kube bench."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [benchmarking-kubernetes-with-kube-bench]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [benchmarking, kubernetes, with, kube, bench]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / benchmarking-kubernetes-with-kube-bench -->

@@ -1,6 +1,6 @@
 ---
 name: prioritizing-vulnerabilities-with-cvss-scoring
-description: "Common Vulnerability Scoring System CVSS industry."
+description: "The Common Vulnerability Scoring System (CVSS) is the industry standard"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [common, cvss, industry, prioritizing-vulnerabilities-with-cvss-scoring, scoring, standard, system, the, vulnerability]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [prioritizing, vulnerabilities, with, cvss, scoring, common, industry, standard, system, the, vulnerability]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / prioritizing-vulnerabilities-with-cvss-scoring -->

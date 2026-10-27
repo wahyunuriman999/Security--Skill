@@ -1,6 +1,6 @@
 ---
 name: extracting-windows-event-logs-artifacts
-description: "Extract parse analyze Windows Event Logs EVTX Chainsaw."
+description: "Extract, parse, and analyze Windows Event Logs (EVTX) using Chainsaw,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, and, chainsaw, event, evtx, extract, extracting-windows-event-logs-artifacts, logs, parse, using, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [extracting, windows, event, logs, artifacts, analyze, and, chainsaw, evtx, extract, parse, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / extracting-windows-event-logs-artifacts -->

@@ -1,6 +1,6 @@
 ---
 name: building-devsecops-pipeline-with-gitlab-ci
-description: "Configure GitLab CI/CD pipeline embeds SAST Semgrep."
+description: "Configure a GitLab CI/CD pipeline that embeds SAST (Semgrep, SpotBugs, Gosec, Bandit, NodeJsScan), DAST, container scanning, dependency scanning, and secret detection via GitLab's managed security templates. Use when building a shift-left DevSecOps pipeline in GitLab, adding automated vulnerability scanning stages to .gitlab-ci.yml, or triaging scanner findings with GitLab Duo AI before deployment."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adding, and, automated, bandit, building, building-devsecops-pipeline-with-gitlab-ci, configure, container, dast, dependency, detection, devsecops]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, devsecops, pipeline, with, gitlab, adding, and, automated, bandit, configure, container, dast, dependency, detection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-devsecops-pipeline-with-gitlab-ci -->

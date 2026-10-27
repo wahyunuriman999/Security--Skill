@@ -1,6 +1,6 @@
 ---
 name: implementing-iec-62443-security-zones
-description: "Designs security zones conduits industrial control."
+description: "'Designs security zones and conduits for industrial control systems"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, conduits, control, designs, for, implementing-iec-62443-security-zones, industrial, security, systems, zones]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, iec, 62443, security, zones, and, conduits, control, designs, for, industrial, systems]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-iec-62443-security-zones -->

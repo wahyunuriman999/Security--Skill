@@ -1,6 +1,6 @@
 ---
 name: detecting-container-runtime-threats-with-falco
-description: "Detecting container runtime threats with falco."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detecting-container-runtime-threats-with-falco]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, container, runtime, threats, with, falco]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-container-runtime-threats-with-falco -->

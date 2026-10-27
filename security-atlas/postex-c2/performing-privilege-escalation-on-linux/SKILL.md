@@ -1,6 +1,6 @@
 ---
 name: performing-privilege-escalation-on-linux
-description: "Guides manual enumeration automated tooling escalate."
+description: "Guides manual enumeration and automated tooling to escalate from a low-privilege"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, automated, enumeration, escalate, from, guides, low-privilege, manual, performing-privilege-escalation-on-linux, tooling]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, privilege, escalation, linux, and, automated, enumeration, escalate, from, guides, low-privilege, manual, tooling]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-privilege-escalation-on-linux -->

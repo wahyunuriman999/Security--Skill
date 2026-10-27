@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [bug-bounty, recon, vinted, bugcrowd, playbook]
     related_skills: []
+triggers: [vinted, hunt, bug-bounty, recon, bugcrowd, playbook]
 ---
 
 # Vinted Hunt Skill

@@ -1,6 +1,6 @@
 ---
 name: performing-brand-monitoring-for-impersonation
-description: "Monitor brand impersonation attacks domains social media."
+description: "Monitor for brand impersonation attacks across domains, social media,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, attacks, brand, domains, for, impersonation, media, monitor, performing-brand-monitoring-for-impersonation, social]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, brand, monitoring, for, impersonation, across, attacks, domains, media, monitor, social]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-brand-monitoring-for-impersonation -->

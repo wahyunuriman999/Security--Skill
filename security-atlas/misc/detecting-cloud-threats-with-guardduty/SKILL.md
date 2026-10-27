@@ -1,6 +1,6 @@
 ---
 name: detecting-cloud-threats-with-guardduty
-description: "Deploy operationalize Amazon GuardDuty covering."
+description: "'Deploy and operationalize Amazon GuardDuty, covering protection plans"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [amazon, and, covering, deploy, detecting-cloud-threats-with-guardduty, guardduty, operationalize, plans, protection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, cloud, threats, with, guardduty, amazon, and, covering, deploy, operationalize, plans, protection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-cloud-threats-with-guardduty -->

@@ -2,6 +2,9 @@
 name: hunt-oauth-advanced
 description: Advanced OAuth 2.0 / OIDC attacks beyond basics — PAR (Pushed Authorization Requests) attacks, DPoP token bypass, device authorization flow exploitation, Rich Authorization Requests (RAR) manipulation, PKCE downgrade, token binding bypass, dynamic client registration abuse, refresh token rotation race, mTLS certificate-bound token bypass. Use on targets with mature OAuth implementations.
 tags: [oauth, oidc, par, dpop, device-flow, rar, pkce, token-binding, dcr, refresh-token, advanced]
+version: 1.0.0
+license: MIT
+triggers: [hunt, oauth, advanced, oidc, par, dpop, device-flow, rar, pkce, token-binding, dcr, refresh-token]
 ---
 
 # Advanced OAuth 2.0 / OIDC Attacks

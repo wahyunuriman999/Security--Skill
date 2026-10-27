@@ -1,6 +1,6 @@
 ---
 name: performing-red-team-with-covenant
-description: "Conducts red team operations Covenant C2 framework."
+description: "Conducts red team operations using the Covenant C2 framework for authorized"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authorized, conducts, covenant, for, framework, operations, performing-red-team-with-covenant, red, team, the, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, red, team, with, covenant, authorized, conducts, for, framework, operations, the, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-red-team-with-covenant -->

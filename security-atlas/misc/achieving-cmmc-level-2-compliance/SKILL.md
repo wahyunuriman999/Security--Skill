@@ -1,6 +1,6 @@
 ---
 name: achieving-cmmc-level-2-compliance
-description: "Achieving cmmc level 2 compliance."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [achieving-cmmc-level-2-compliance]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [achieving, cmmc, level, compliance]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / achieving-cmmc-level-2-compliance -->

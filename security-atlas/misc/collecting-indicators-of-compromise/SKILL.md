@@ -1,6 +1,6 @@
 ---
 name: collecting-indicators-of-compromise
-description: "Systematically collects categorizes distributes."
+description: "'Systematically collects, categorizes, and distributes indicators of"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, categorizes, collecting-indicators-of-compromise, collects, distributes, indicators, systematically]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [collecting, indicators, compromise, and, categorizes, collects, distributes, systematically]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / collecting-indicators-of-compromise -->

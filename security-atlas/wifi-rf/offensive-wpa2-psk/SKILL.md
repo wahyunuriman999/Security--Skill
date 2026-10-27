@@ -1,6 +1,6 @@
 ---
 name: offensive-wpa2-psk
-description: "WPA/WPA2-PSK attack methodology four-way handshake."
+description: "WPA/WPA2-PSK attack methodology — four-way handshake capture via targeted deauthentication, PMKID attacks (no client required), hcxdumptool / hcxpcapngtool conversion to hashcat hc22000 format, GPU-accelerated cracking with dictionary, mask, and rule-based attacks, vendor default-PSK generators (UPC, Sky, BT, etc.), 802.11r FT key cracking, opportunistic key cache analysis, and signal-level optimization. Use when the in-scope network is WPA/WPA2 Personal — the most common consumer/SMB encryption mode."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attack, attacks, capture, client, conversion, cracking, deauthentication, default-psk, dictionary, format, four-way]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, wpa2, psk, and, attack, attacks, capture, client, conversion, cracking, deauthentication, default-psk, dictionary, format, four-way]
 ---
 
 <!-- upstream: Claude-Red / offensive-wpa2-psk -->

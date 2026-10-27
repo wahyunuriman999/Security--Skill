@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: hackerone_public, github_security_lab, cve_database, portswigger_research
 report_count: 18
+triggers: [hunt, cicd]
 ---
 
 # HUNT-CICD — CI/CD Pipeline Security

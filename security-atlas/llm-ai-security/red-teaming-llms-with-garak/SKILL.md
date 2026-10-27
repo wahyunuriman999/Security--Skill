@@ -1,6 +1,6 @@
 ---
 name: red-teaming-llms-with-garak
-description: "Runs NVIDIA garak probe suites jailbreak prompt injection."
+description: "Runs NVIDIA garak probe suites (jailbreak, prompt injection, data"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [data, garak, injection, jailbreak, nvidia, probe, prompt, red-teaming-llms-with-garak, runs, suites]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [red, teaming, llms, with, garak, data, injection, jailbreak, nvidia, probe, prompt, runs, suites]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / red-teaming-llms-with-garak -->

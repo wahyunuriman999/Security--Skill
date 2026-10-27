@@ -1,6 +1,6 @@
 ---
 name: detecting-pass-the-ticket-attacks
-description: "Detect Kerberos Pass-the-Ticket PtT attacks analyzing."
+description: "Detect Kerberos Pass-the-Ticket (PtT) attacks by analyzing Windows Event IDs 4768, 4769, and 4771 for anomalous ticket usage patterns, with detection queries for Splunk and Elastic SIEM. Use when investigating incidents involving stolen or replayed Kerberos tickets, building detection rules or threat hunting queries for ticket abuse, or validating SOC monitoring coverage for credential-theft attack techniques."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [4768, 4769, 4771, analyzing, and, anomalous, attacks, building, detect, detecting-pass-the-ticket-attacks, detection, elastic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, pass, the, ticket, attacks, 4768, 4769, 4771, analyzing, and, anomalous, building, detect, detection, elastic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-pass-the-ticket-attacks -->

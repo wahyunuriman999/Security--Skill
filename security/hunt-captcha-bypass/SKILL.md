@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: public_research, operator_experience
 report_count: 6
+triggers: [hunt, captcha, bypass]
 ---
 
 ## Autonomous Testing Priority

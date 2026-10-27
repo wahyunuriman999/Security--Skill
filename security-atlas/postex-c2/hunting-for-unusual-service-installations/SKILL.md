@@ -1,6 +1,6 @@
 ---
 name: hunting-for-unusual-service-installations
-description: "Detects suspicious Windows service installations MITRE."
+description: "Detects suspicious Windows service installations (MITRE ATT&CK T1543.003) by parsing System event log Event ID 7045, analyzing service binary paths, and flagging indicators of persistence mechanisms via Sysmon/EDR telemetry. Use when hunting for new-service persistence after a suspected compromise, when Event ID 7045 fires for an unfamiliar service, or during incident response to enumerate service-based persistence on Windows hosts."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [003, 7045, after, analyzing, and, att, binary, compromise, detects, edr, event, flagging]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, unusual, service, installations, 003, 7045, after, analyzing, and, att, binary, compromise, detects, edr, event]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-unusual-service-installations -->

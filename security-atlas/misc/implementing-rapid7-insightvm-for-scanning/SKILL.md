@@ -1,6 +1,6 @@
 ---
 name: implementing-rapid7-insightvm-for-scanning
-description: "Deploy configure Rapid7 InsightVM Security Console Scan."
+description: "Deploy and configure Rapid7 InsightVM Security Console and Scan Engines,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, configure, console, deploy, engines, implementing-rapid7-insightvm-for-scanning, insightvm, rapid7, scan, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, rapid7, insightvm, for, scanning, and, configure, console, deploy, engines, scan, security]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-rapid7-insightvm-for-scanning -->

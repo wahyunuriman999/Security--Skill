@@ -1,6 +1,6 @@
 ---
 name: offensive-active-directory
-description: "Active Directory attack methodology internal network red."
+description: "Active Directory attack methodology for internal network red team engagements. Covers reconnaissance (BloodHound, PowerView, ADExplorer), credential abuse (Kerberoasting, ASREProasting, NTLM relay, LLMNR/NBT-NS poisoning), privilege escalation (ACL abuse, GPO abuse, unconstrained/constrained delegation), lateral movement (Pass-the-Hash, Pass-the-Ticket, Overpass-the-Hash, WMI/WinRM/PsExec), persistence (Golden/Silver/Diamond Tickets, DCSync, DCShadow, AdminSDHolder, Skeleton Key), forest trust attacks, ADCS abuse (ESC1-ESC15), and modern MDI/Defender for Identity evasion. Use when assessing on"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, acl, active, adexplorer, asreproasting, attack, bloodhound, constrained, covers, credential, delegat, directory]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, active, directory, abuse, acl, adexplorer, asreproasting, attack, bloodhound, constrained, covers, credential, delegat]
 ---
 
 <!-- upstream: Claude-Red / offensive-active-directory -->

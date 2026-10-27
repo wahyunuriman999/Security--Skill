@@ -1,6 +1,6 @@
 ---
 name: building-detection-rule-with-splunk-spl
-description: "Build effective detection rules Splunk Search Processing."
+description: "Build effective detection rules using Splunk Search Processing Language"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [build, building-detection-rule-with-splunk-spl, detection, effective, language, processing, rules, search, splunk, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, detection, rule, with, splunk, spl, build, effective, language, processing, rules, search, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-detection-rule-with-splunk-spl -->

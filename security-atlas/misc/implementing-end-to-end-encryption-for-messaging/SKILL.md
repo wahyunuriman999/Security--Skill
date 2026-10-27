@@ -1,6 +1,6 @@
 ---
 name: implementing-end-to-end-encryption-for-messaging
-description: "Implements simplified Signal Protocol-style end-to-end."
+description: "Implements a simplified Signal Protocol-style end-to-end encryption scheme for messaging, covering key exchange, forward secrecy, and the core cryptographic components so no server or intermediary can decrypt messages. Use when designing or building E2EE messaging, or evaluating forward-secrecy and key-management tradeoffs for a messaging system."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, building, can, components, core, covering, cryptographic, decrypt, designing, e2ee, encryption, end-to-end]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, end, encryption, for, messaging, and, building, can, components, core, covering, cryptographic, decrypt, designing, e2ee, end-to-end]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-end-to-end-encryption-for-messaging -->

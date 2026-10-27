@@ -1,6 +1,6 @@
 ---
 name: implementing-security-chaos-engineering
-description: "Implements security chaos engineering experiments."
+description: "'Implements security chaos engineering experiments that deliberately"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [chaos, deliberately, engineering, experiments, implementing-security-chaos-engineering, implements, security, that]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, security, chaos, engineering, deliberately, experiments, implements, that]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-security-chaos-engineering -->

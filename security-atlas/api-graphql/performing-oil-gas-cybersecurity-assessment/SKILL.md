@@ -1,6 +1,6 @@
 ---
 name: performing-oil-gas-cybersecurity-assessment
-description: "Conduct cybersecurity assessments upstream midstream."
+description: "Conduct cybersecurity assessments of upstream, midstream, and downstream oil and gas operations, covering pipeline SCADA, refinery DCS, safety instrumented systems, and remote wellhead RTUs, and evaluate compliance with API 1164, TSA Pipeline Security Directives, and IEC 62443. Use when assessing a refinery, pipeline, or production facility or preparing for TSA/API compliance audits; not for IT-only or purely physical-security assessments."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [1164, 62443, and, api, assessing, assessments, compliance, conduct, covering, cybersecurity, dcs, directives]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, oil, gas, cybersecurity, assessment, 1164, 62443, and, api, assessing, assessments, compliance, conduct, covering, dcs, directives]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-oil-gas-cybersecurity-assessment -->

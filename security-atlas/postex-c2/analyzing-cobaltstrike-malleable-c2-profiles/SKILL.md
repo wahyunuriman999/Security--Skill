@@ -1,6 +1,6 @@
 ---
 name: analyzing-cobaltstrike-malleable-c2-profiles
-description: "Parse analyze Cobalt Strike Malleable C2 profiles."
+description: "Parse and analyze Cobalt Strike Malleable C2 profiles with dissect.cobaltstrike (profiles and beacon-payload configs) and pyMalleableC2 (AST parsing) to extract HTTP/DNS transforms, URIs, headers, sleep/jitter, and injection behavior, then generate network detection signatures. Use when reverse-engineering a captured malleable profile or building detections against Cobalt Strike Beacon traffic."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzing-cobaltstrike-malleable-c2-profiles, and, ast, beacon-payload, behavior, cobalt, cobaltstrike, configs, detection, dissect, dns]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, cobaltstrike, malleable, profiles, analyze, and, ast, beacon-payload, behavior, cobalt, configs, detection, dissect, dns]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-cobaltstrike-malleable-c2-profiles -->

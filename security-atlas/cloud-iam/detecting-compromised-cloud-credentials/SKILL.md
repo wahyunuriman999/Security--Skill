@@ -1,6 +1,6 @@
 ---
 name: detecting-compromised-cloud-credentials
-description: "Detect compromised cloud credentials AWS Azure GCP."
+description: "'Detect compromised cloud credentials across AWS, Azure, and GCP by analyzing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, analyzing, and, aws, azure, cloud, compromised, credentials, detect, detecting-compromised-cloud-credentials, gcp]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, compromised, cloud, credentials, across, analyzing, and, aws, azure, detect, gcp]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-compromised-cloud-credentials -->

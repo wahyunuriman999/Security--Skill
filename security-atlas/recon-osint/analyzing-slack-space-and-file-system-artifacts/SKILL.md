@@ -1,6 +1,6 @@
 ---
 name: analyzing-slack-space-and-file-system-artifacts
-description: "Examine NTFS slack space MFT entries USN Change Journal."
+description: "Examine NTFS slack space, MFT entries, the USN Change Journal, and Alternate Data Streams (ADS) to recover hidden or residual data, reconstruct deleted-file metadata, and reconstruct available file-system change activity from USN records. Use during deep forensic analysis of an NTFS image when standard file recovery is insufficient, such as hunting for data hidden in ADS."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, ads, alternate, analysis, analyzing-slack-space-and-file-system-artifacts, and, available, change, data, deep, deleted-file, during]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, slack, space, and, file, system, artifacts, activity, ads, alternate, analysis, available, change, data, deep, deleted-file]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-slack-space-and-file-system-artifacts -->

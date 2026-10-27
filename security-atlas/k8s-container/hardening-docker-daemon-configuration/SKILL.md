@@ -1,6 +1,6 @@
 ---
 name: hardening-docker-daemon-configuration
-description: "Hardening docker daemon configuration."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [hardening-docker-daemon-configuration]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hardening, docker, daemon, configuration]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hardening-docker-daemon-configuration -->

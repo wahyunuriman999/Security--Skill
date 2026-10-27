@@ -1,6 +1,6 @@
 ---
 name: implementing-nerc-cip-compliance-controls
-description: "Implements NERC CIP controls Bulk Electric System BES."
+description: "'Implements NERC CIP controls for Bulk Electric System (BES) cyber systems: asset"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [asset, bes, bulk, cip, controls, cyber, electric, for, implementing-nerc-cip-compliance-controls, implements, nerc, system]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, nerc, cip, compliance, controls, asset, bes, bulk, cyber, electric, for, implements, system]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-nerc-cip-compliance-controls -->

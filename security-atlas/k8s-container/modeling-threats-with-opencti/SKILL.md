@@ -1,6 +1,6 @@
 ---
 name: modeling-threats-with-opencti
-description: "Deploy OpenCTI Filigran Docker Compose pycti Python."
+description: "Deploy OpenCTI (Filigran) via Docker Compose and use the pycti Python client to model threat actors, intrusion sets, campaigns, and indicators as a STIX 2.1 knowledge graph with relationships (uses, attributed-to, targets). Use when building a centralized threat-intel knowledge base, correlating IOCs from multiple feeds into one adversary graph, or producing STIX bundles for detection engineering."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [actors, and, attributed-to, base, building, campaigns, centralized, client, compose, correlating, deploy, docker]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [modeling, threats, with, opencti, actors, and, attributed-to, base, building, campaigns, centralized, client, compose, correlating, deploy, docker]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / modeling-threats-with-opencti -->

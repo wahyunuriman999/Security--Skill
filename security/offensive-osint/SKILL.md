@@ -131,6 +131,7 @@ triggers:
   - community bug reports
   - prior disclosures
   - bug bounty reference
+license: MIT
 ---
 
 # Offensive OSINT — External Red-Team Arsenal

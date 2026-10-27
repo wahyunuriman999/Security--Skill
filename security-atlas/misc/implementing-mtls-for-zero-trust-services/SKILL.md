@@ -1,6 +1,6 @@
 ---
 name: implementing-mtls-for-zero-trust-services
-description: "Configures mutual TLS mTLS authentication between."
+description: "'Configures mutual TLS (mTLS) authentication between microservices using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authentication, between, configures, implementing-mtls-for-zero-trust-services, microservices, mtls, mutual, tls, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, mtls, for, zero, trust, services, authentication, between, configures, microservices, mutual, tls, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-mtls-for-zero-trust-services -->

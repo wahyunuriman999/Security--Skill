@@ -2,6 +2,9 @@
 name: hunt-waf-bypass
 description: WAF/Bot detection bypass for enterprise targets — Cloudflare Enterprise, Akamai, AWS WAF, Imperva, DataDome, PerimeterX, Kasada. Payload obfuscation, rate-limit evasion, HTTP-level bypass, traffic blending. Use when target has WAF protection blocking your payloads or rate-limiting your scans.
 tags: [waf, bypass, cloudflare, akamai, imperva, datadome, perimeterx, evasion, obfuscation, ratelimit]
+version: 1.0.0
+license: MIT
+triggers: [hunt, waf, bypass, cloudflare, akamai, imperva, datadome, perimeterx, evasion, obfuscation, ratelimit]
 ---
 
 # WAF / Bot Detection Bypass — Elite Hunter Reference

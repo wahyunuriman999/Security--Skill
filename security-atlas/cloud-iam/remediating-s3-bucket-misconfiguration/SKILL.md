@@ -1,6 +1,6 @@
 ---
 name: remediating-s3-bucket-misconfiguration
-description: "Provides step-by-step procedures remediating Amazon S3."
+description: "'Provides step-by-step procedures for remediating Amazon S3 bucket"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [amazon, bucket, for, procedures, provides, remediating, remediating-s3-bucket-misconfiguration, step-by-step]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [remediating, bucket, misconfiguration, amazon, for, procedures, provides, step-by-step]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / remediating-s3-bucket-misconfiguration -->

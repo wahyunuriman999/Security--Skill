@@ -1,6 +1,6 @@
 ---
 name: building-threat-intelligence-platform
-description: "Design deploy Threat Intelligence Platform TIP."
+description: "Design and deploy a Threat Intelligence Platform (TIP) by integrating open-source CTI tools (MISP, OpenCTI, TheHive, Cortex) into a unified system with feed ingestion pipelines, enrichment workflows, STIX/TAXII interoperability, and analyst dashboards. Use when architecting or standing up a centralized CTI platform to collect, analyze, and disseminate threat intelligence across a security team."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyst, and, architecting, building-threat-intelligence-platform, centrali, cortex, cti, dashboards, deploy, design, enrichment, feed]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, threat, intelligence, platform, analyst, and, architecting, centrali, cortex, cti, dashboards, deploy, design, enrichment, feed]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-threat-intelligence-platform -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-alert-fatigue-reduction
-description: "Implements strategies reduce SOC alert fatigue tuning."
+description: "'Implements strategies to reduce SOC alert fatigue by tuning detection"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alert, detection, fatigue, implementing-alert-fatigue-reduction, implements, reduce, soc, strategies, tuning]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, alert, fatigue, reduction, detection, implements, reduce, soc, strategies, tuning]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-alert-fatigue-reduction -->

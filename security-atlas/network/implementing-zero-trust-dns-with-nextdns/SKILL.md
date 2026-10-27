@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-trust-dns-with-nextdns
-description: "Configure NextDNS encrypted DoH/DoT zero trust DNS."
+description: "Configure NextDNS as an encrypted (DoH/DoT) zero trust DNS resolver that blocks malicious, phishing, and cryptojacking domains via real-time threat intelligence, detects DNS rebinding and CNAME cloaking, and enforces organizational DNS policy across endpoints. Use when deploying DNS-layer threat blocking and acceptable-use enforcement, or when extending zero trust controls (including Windows 11 Zero Trust DNS) to the DNS resolution path."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, and, blo, blocks, cloaking, cname, configure, cryptojacking, deploying, detects, dns, dns-layer]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, trust, dns, with, nextdns, across, and, blo, blocks, cloaking, cname, configure, cryptojacking, deploying, detects]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-trust-dns-with-nextdns -->

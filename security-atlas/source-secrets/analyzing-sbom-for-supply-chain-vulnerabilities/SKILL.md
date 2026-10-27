@@ -1,6 +1,6 @@
 ---
 name: analyzing-sbom-for-supply-chain-vulnerabilities
-description: "Parses Software Bill Materials SBOM CycloneDX SPDX JSON."
+description: "'Parses Software Bill of Materials (SBOM) in CycloneDX and SPDX JSON"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-sbom-for-supply-chain-vulnerabilities, and, bill, cyclonedx, json, materials, parses, sbom, software, spdx]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, sbom, for, supply, chain, vulnerabilities, and, bill, cyclonedx, json, materials, parses, software, spdx]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-sbom-for-supply-chain-vulnerabilities -->

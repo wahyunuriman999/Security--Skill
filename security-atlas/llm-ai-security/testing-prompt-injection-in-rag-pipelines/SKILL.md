@@ -1,6 +1,6 @@
 ---
 name: testing-prompt-injection-in-rag-pipelines
-description: "Probes Retrieval-Augmented Generation pipelines indirect."
+description: "Probes Retrieval-Augmented Generation pipelines for indirect prompt injection"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [for, generation, indirect, injection, pipelines, probes, prompt, retrieval-augmented, testing-prompt-injection-in-rag-pipelines]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, prompt, injection, rag, pipelines, for, generation, indirect, probes, retrieval-augmented]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-prompt-injection-in-rag-pipelines -->

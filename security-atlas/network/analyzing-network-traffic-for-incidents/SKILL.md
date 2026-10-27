@@ -1,6 +1,6 @@
 ---
 name: analyzing-network-traffic-for-incidents
-description: "Analyzes network traffic captures flow data identify."
+description: "'Analyzes network traffic captures and flow data to identify adversary activity during security incidents, including"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, adversary, analyzes, analyzing-network-traffic-for-incidents, and, captures, data, during, flow, identify, incidents, including]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, network, traffic, for, incidents, activity, adversary, analyzes, and, captures, data, during, flow, identify, including]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-network-traffic-for-incidents -->

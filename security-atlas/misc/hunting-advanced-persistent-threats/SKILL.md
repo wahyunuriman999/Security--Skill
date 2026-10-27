@@ -1,6 +1,6 @@
 ---
 name: hunting-advanced-persistent-threats
-description: "Proactively hunts Advanced Persistent Threat APT activity."
+description: "'Proactively hunts for Advanced Persistent Threat (APT) activity within"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, advanced, apt, for, hunting-advanced-persistent-threats, hunts, persistent, proactively, threat, within]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, advanced, persistent, threats, activity, apt, for, hunts, proactively, threat, within]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-advanced-persistent-threats -->

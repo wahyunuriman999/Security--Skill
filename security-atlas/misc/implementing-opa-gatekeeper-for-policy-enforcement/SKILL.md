@@ -1,6 +1,6 @@
 ---
 name: implementing-opa-gatekeeper-for-policy-enforcement
-description: "Implementing opa gatekeeper for policy enforcement."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-opa-gatekeeper-for-policy-enforcement]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, opa, gatekeeper, for, policy, enforcement]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-opa-gatekeeper-for-policy-enforcement -->

@@ -1,6 +1,6 @@
 ---
 name: configuring-snort-ids-for-intrusion-detection
-description: "Installs configures tunes Snort 3 monitor network traffic."
+description: "'Installs, configures, and tunes Snort 3 to monitor network traffic"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, configures, configuring-snort-ids-for-intrusion-detection, installs, monitor, network, snort, traffic, tunes]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, snort, ids, for, intrusion, detection, and, configures, installs, monitor, network, traffic, tunes]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-snort-ids-for-intrusion-detection -->

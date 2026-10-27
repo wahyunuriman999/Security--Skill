@@ -1,6 +1,6 @@
 ---
 name: detecting-golden-ticket-attacks-in-kerberos-logs
-description: "Detect Golden Ticket attacks Active Directory Splunk KQL."
+description: "Detect Golden Ticket attacks in Active Directory using Splunk and KQL queries"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, and, attacks, detect, detecting-golden-ticket-attacks-in-kerberos-logs, directory, golden, kql, queries, splunk, ticket, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, golden, ticket, attacks, kerberos, logs, active, and, detect, directory, kql, queries, splunk, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-golden-ticket-attacks-in-kerberos-logs -->

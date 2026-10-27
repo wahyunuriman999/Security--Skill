@@ -1,6 +1,6 @@
 ---
 name: performing-adversary-in-the-middle-phishing-detection
-description: "Detect respond Adversary-in-the-Middle AiTM phishing."
+description: "Detect and respond to Adversary-in-the-Middle (AiTM) phishing attacks"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary-in-the-middle, aitm, and, attacks, detect, performing-adversary-in-the-middle-phishing-detection, phishing, respond]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, adversary, the, middle, phishing, detection, adversary-in-the-middle, aitm, and, attacks, detect, respond]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-adversary-in-the-middle-phishing-detection -->

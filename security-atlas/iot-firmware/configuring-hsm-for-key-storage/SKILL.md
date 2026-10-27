@@ -1,6 +1,6 @@
 ---
 name: configuring-hsm-for-key-storage
-description: "Configures Hardware Security Modules cryptographic key."
+description: "Configures Hardware Security Modules for cryptographic key storage"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configures, configuring-hsm-for-key-storage, cryptographic, for, hardware, key, modules, security, storage]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, hsm, for, key, storage, configures, cryptographic, hardware, modules, security]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-hsm-for-key-storage -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-code-signing-for-artifacts
-description: "Implements code signing build artifacts binaries packages."
+description: "'Implements code signing for build artifacts (binaries, packages, containers)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [artifacts, binaries, build, code, containers, for, implementing-code-signing-for-artifacts, implements, packages, signing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, code, signing, for, artifacts, binaries, build, containers, implements, packages]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-code-signing-for-artifacts -->

@@ -1,6 +1,6 @@
 ---
 name: auditing-aws-s3-bucket-permissions
-description: "Systematically audit AWS S3 bucket permissions identify."
+description: "'Systematically audit AWS S3 bucket permissions to identify publicly"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [audit, auditing-aws-s3-bucket-permissions, aws, bucket, identify, permissions, publicly, systematically]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, aws, bucket, permissions, audit, identify, publicly, systematically]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-aws-s3-bucket-permissions -->

@@ -1,6 +1,6 @@
 ---
 name: testing-oauth2-implementation-flaws
-description: "Tests OAuth 2.0 OpenID Connect implementations."
+description: "Tests OAuth 2.0 and OpenID Connect implementations for authorization code"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, authorization, code, connect, for, implementations, oauth, openid, testing-oauth2-implementation-flaws, tests]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, oauth2, implementation, flaws, and, authorization, code, connect, for, implementations, oauth, openid, tests]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-oauth2-implementation-flaws -->

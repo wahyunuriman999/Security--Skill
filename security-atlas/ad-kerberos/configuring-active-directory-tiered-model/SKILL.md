@@ -1,6 +1,6 @@
 ---
 name: configuring-active-directory-tiered-model
-description: "Implement Microsoft s Enhanced Security Admin Environment."
+description: "Implement Microsoft's Enhanced Security Admin Environment (ESAE) tiered"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [admin, configuring-active-directory-tiered-model, enhanced, environment, esae, implement, microsoft, security, tiered]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, active, directory, tiered, model, admin, enhanced, environment, esae, implement, microsoft, security]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-active-directory-tiered-model -->

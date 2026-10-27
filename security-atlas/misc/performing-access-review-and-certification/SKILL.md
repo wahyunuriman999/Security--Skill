@@ -1,6 +1,6 @@
 ---
 name: performing-access-review-and-certification
-description: "Designs runs access review certification."
+description: "Designs and runs access review and certification campaigns-scoping,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, campaigns-scoping, certification, designs, performing-access-review-and-certification, review, runs]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, access, review, and, certification, campaigns-scoping, designs, runs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-access-review-and-certification -->

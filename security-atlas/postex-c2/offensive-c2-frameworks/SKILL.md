@@ -1,6 +1,6 @@
 ---
 name: offensive-c2-frameworks
-description: "Command Control framework deployment configuration."
+description: "Command and Control framework deployment, configuration, and operational tradecraft for red team engagements. Covers Cobalt Strike (malleable C2 profiles, Beacon types HTTP/HTTPS/DNS/SMB, Beacon Object Files for in-memory execution, sleep and jitter tuning, named pipe pivoting), Sliver (implant generation across mTLS/WireGuard/DNS transport, operator multiplayer mode, armory extensions), Mythic (agent ecosystem with Apollo/Poseidon/Medusa, C2 profile configuration, translation containers), Havoc (Demon agent with sleep obfuscation via Ekko/Zilean, indirect syscalls, dotnet inline execution), M"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, beacon, cobalt, command, configuration, control, covers, deployment, dns, engagements, execution, files]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, frameworks, and, beacon, cobalt, command, configuration, control, covers, deployment, dns, engagements, execution, files]
 ---
 
 <!-- upstream: Claude-Red / offensive-c2-frameworks -->

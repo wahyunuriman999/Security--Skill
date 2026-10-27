@@ -1,6 +1,6 @@
 ---
 name: extracting-credentials-from-memory-dump
-description: "Extracts cached credentials password hashes Kerberos."
+description: "Extracts cached credentials, password hashes, Kerberos tickets, and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cached, credentials, extracting-credentials-from-memory-dump, extracts, hashes, kerberos, password, tickets]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [extracting, credentials, from, memory, dump, and, cached, extracts, hashes, kerberos, password, tickets]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / extracting-credentials-from-memory-dump -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-cloud-waf-rules
-description: "Deploys tunes Web Application Firewall rules AWS WAF."
+description: "'Deploys and tunes Web Application Firewall rules on AWS WAF, Azure WAF,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, application, aws, azure, deploys, firewall, implementing-cloud-waf-rules, rules, tunes, waf, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, cloud, waf, rules, and, application, aws, azure, deploys, firewall, tunes, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-cloud-waf-rules -->

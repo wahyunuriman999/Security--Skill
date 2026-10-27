@@ -1,6 +1,6 @@
 ---
 name: performing-threat-hunting-with-elastic-siem
-description: "Performs proactive threat hunting Elastic Security SIEM."
+description: "'Performs proactive threat hunting in Elastic Security SIEM using KQL/EQL"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [elastic, eql, hunting, kql, performing-threat-hunting-with-elastic-siem, performs, proactive, security, siem, threat, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, threat, hunting, with, elastic, siem, eql, kql, performs, proactive, security, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-threat-hunting-with-elastic-siem -->

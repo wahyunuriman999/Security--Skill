@@ -1,6 +1,6 @@
 ---
 name: offensive-supply-chain
-description: "Comprehensive offensive methodology software supply chain."
+description: "Comprehensive offensive methodology for software supply chain attacks covering the full kill chain from reconnaissance through exploitation. Addresses dependency confusion across npm, PyPI, and NuGet ecosystems where internal registry override allows an attacker to inject malicious packages that shadow private dependencies. Covers typosquatting techniques for popular packages, compromised package injection via maintainer account takeover or social engineering, and build system attacks through Makefile injection, setup.py install hooks, and npm postinstall scripts. Extends into CI/CD artifact t"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, addresses, allows, and, attacker, attacks, chain, comprehensive, confusion, covering, dependency, ecosystems]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, supply, chain, across, addresses, allows, and, attacker, attacks, comprehensive, confusion, covering, dependency, ecosystems]
 ---
 
 <!-- upstream: Claude-Red / offensive-supply-chain -->

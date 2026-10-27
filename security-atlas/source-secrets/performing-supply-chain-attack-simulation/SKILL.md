@@ -1,6 +1,6 @@
 ---
 name: performing-supply-chain-attack-simulation
-description: "Performing supply chain attack simulation."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-supply-chain-attack-simulation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, supply, chain, attack, simulation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-supply-chain-attack-simulation -->

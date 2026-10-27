@@ -1,6 +1,6 @@
 ---
 name: recovering-from-ransomware-attack
-description: "Executes structured ransomware incident recovery."
+description: "'Executes structured ransomware incident recovery following NIST/CISA"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cisa, executes, following, incident, nist, ransomware, recovering-from-ransomware-attack, recovery, structured]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [recovering, from, ransomware, attack, cisa, executes, following, incident, nist, recovery, structured]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / recovering-from-ransomware-attack -->

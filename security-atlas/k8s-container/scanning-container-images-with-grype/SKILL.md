@@ -1,6 +1,6 @@
 ---
 name: scanning-container-images-with-grype
-description: "Scanning container images with grype."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [scanning-container-images-with-grype]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [scanning, container, images, with, grype]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / scanning-container-images-with-grype -->

@@ -1,6 +1,6 @@
 ---
 name: performing-sqlite-database-forensics
-description: "Performs forensic analysis SQLite databases examining."
+description: "Performs forensic analysis of SQLite databases by examining B-tree page"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, b-tree, databases, examining, forensic, page, performing-sqlite-database-forensics, performs, sqlite]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, sqlite, database, forensics, analysis, b-tree, databases, examining, forensic, page, performs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-sqlite-database-forensics -->

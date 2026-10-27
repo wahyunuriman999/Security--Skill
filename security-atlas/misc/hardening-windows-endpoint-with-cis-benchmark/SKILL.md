@@ -1,6 +1,6 @@
 ---
 name: hardening-windows-endpoint-with-cis-benchmark
-description: "Hardens Windows endpoints CIS Center Internet Security."
+description: "'Hardens Windows endpoints using CIS (Center for Internet Security) Benchmark"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [benchmark, center, cis, endpoints, for, hardening-windows-endpoint-with-cis-benchmark, hardens, internet, security, using, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hardening, windows, endpoint, with, cis, benchmark, center, endpoints, for, hardens, internet, security, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hardening-windows-endpoint-with-cis-benchmark -->

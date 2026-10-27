@@ -1,6 +1,6 @@
 ---
 name: analyzing-active-directory-acl-abuse
-description: "Detect dangerous ACL misconfigurations Active Directory."
+description: "Detect dangerous ACL misconfigurations in Active Directory using ldap3"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [acl, active, analyzing-active-directory-acl-abuse, dangerous, detect, directory, ldap3, misconfigurations, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, active, directory, acl, abuse, dangerous, detect, ldap3, misconfigurations, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-active-directory-acl-abuse -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-threat-intelligence-lifecycle-management
-description: "Build full CTI program around six-phase threat."
+description: "Build out a full CTI program around the six-phase threat intelligence"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [around, build, cti, full, implementing-threat-intelligence-lifecycle-management, intelligence, out, program, six-phase, the, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, threat, intelligence, lifecycle, management, around, build, cti, full, out, program, six-phase, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-threat-intelligence-lifecycle-management -->

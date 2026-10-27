@@ -1,6 +1,6 @@
 ---
 name: performing-wireless-network-penetration-test
-description: "Execute wireless network penetration test assess WiFi."
+description: "Execute a wireless network penetration test to assess WiFi security by"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assess, execute, network, penetration, performing-wireless-network-penetration-test, security, test, wifi, wireless]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, wireless, network, penetration, test, assess, execute, security, wifi]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-wireless-network-penetration-test -->

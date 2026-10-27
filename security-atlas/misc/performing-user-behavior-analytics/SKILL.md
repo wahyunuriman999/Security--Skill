@@ -1,6 +1,6 @@
 ---
 name: performing-user-behavior-analytics
-description: "Performs User Entity Behavior Analytics UEBA detect."
+description: "'Performs User and Entity Behavior Analytics (UEBA) to detect anomalous"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analytics, and, anomalous, behavior, detect, entity, performing-user-behavior-analytics, performs, ueba, user]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, user, behavior, analytics, and, anomalous, detect, entity, performs, ueba]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-user-behavior-analytics -->

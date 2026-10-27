@@ -1,6 +1,6 @@
 ---
 name: implementing-gdpr-data-protection-controls
-description: "Implements GDPR EU 2016/679 technical organizational."
+description: "Implements GDPR (EU 2016/679) technical and organizational measures — privacy by design/default, DPIAs, data subject rights management, 72-hour breach notification, and cross-border transfer mechanisms (SCCs, BCRs, adequacy). Use when designing or auditing GDPR controls, building a DPIA, handling data subject access/erasure requests, or assessing cross-border data transfers."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [2016, 679, 72-hour, adequacy, and, auditing, bcrs, breach, building, controls, cross-border, data]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, gdpr, data, protection, controls, 2016, 679, 72-hour, adequacy, and, auditing, bcrs, breach, building, cross-border]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-gdpr-data-protection-controls -->

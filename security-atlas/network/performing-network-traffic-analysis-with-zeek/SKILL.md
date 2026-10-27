@@ -1,6 +1,6 @@
 ---
 name: performing-network-traffic-analysis-with-zeek
-description: "Deploy Zeek formerly Bro passive network security monitor."
+description: "Deploy Zeek (formerly Bro) as a passive network security monitor to generate structured logs of protocol metadata (HTTP, DNS, TLS, SSH, SMTP, FTP, and more), write custom detection scripts, and integrate outputs with SIEM platforms. Use when standing up continuous, high-fidelity network traffic monitoring for threat detection, anomaly identification, or forensic investigation beyond what raw PCAP analysis provides."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, bro, continuous, custom, deploy, detection, dns, formerly, ftp, generate, high-fidelity, http]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, network, traffic, analysis, with, zeek, and, bro, continuous, custom, deploy, detection, dns, formerly, ftp, generate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-network-traffic-analysis-with-zeek -->

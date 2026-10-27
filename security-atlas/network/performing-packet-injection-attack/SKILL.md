@@ -1,6 +1,6 @@
 ---
 name: performing-packet-injection-attack
-description: "Crafts injects custom network packets Scapy hping3."
+description: "'Crafts and injects custom network packets using Scapy, hping3, and Nemesis"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, crafts, custom, hping3, injects, nemesis, network, packets, performing-packet-injection-attack, scapy, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, packet, injection, attack, and, crafts, custom, hping3, injects, nemesis, network, packets, scapy, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-packet-injection-attack -->

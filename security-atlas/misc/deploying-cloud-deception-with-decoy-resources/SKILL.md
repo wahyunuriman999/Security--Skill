@@ -1,6 +1,6 @@
 ---
 name: deploying-cloud-deception-with-decoy-resources
-description: "Deploying cloud deception with decoy resources."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [deploying-cloud-deception-with-decoy-resources]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, cloud, deception, with, decoy, resources]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-cloud-deception-with-decoy-resources -->

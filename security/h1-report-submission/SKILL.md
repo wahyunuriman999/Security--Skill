@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [hackerone, h1, bug-bounty, report, submission, weakness, severity, csrf, oauth]
     related_skills: [report-writing, triage-validation, bug-bounty]
+triggers: [report, submission, hackerone, h1, bug-bounty, weakness, severity, csrf, oauth]
 ---
 
 # HackerOne Report Submission

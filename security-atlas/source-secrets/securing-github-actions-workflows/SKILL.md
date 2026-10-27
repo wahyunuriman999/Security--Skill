@@ -1,6 +1,6 @@
 ---
 name: securing-github-actions-workflows
-description: "Hardens GitHub Actions workflows against supply chain."
+description: "'Hardens GitHub Actions workflows against supply chain attacks, credential"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [actions, against, attacks, chain, credential, github, hardens, securing-github-actions-workflows, supply, workflows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, github, actions, workflows, against, attacks, chain, credential, hardens, supply]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-github-actions-workflows -->

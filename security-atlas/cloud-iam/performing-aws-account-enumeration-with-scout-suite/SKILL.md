@@ -1,6 +1,6 @@
 ---
 name: performing-aws-account-enumeration-with-scout-suite
-description: "Run agentless open-source ScoutSuite tool pip install."
+description: "Run the agentless, open-source ScoutSuite tool (via pip install and the `scout` CLI)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [agentless, and, cli, install, open-source, performing-aws-account-enumeration-with-scout-suite, pip, run, scout, scoutsuite, the, tool]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, aws, account, enumeration, with, scout, suite, agentless, and, cli, install, open-source, pip, run, scoutsuite, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-aws-account-enumeration-with-scout-suite -->

@@ -1,6 +1,6 @@
 ---
 name: generating-and-analyzing-sboms
-description: "Generate CycloneDX SPDX SBOMs container images."
+description: "Generate CycloneDX and SPDX SBOMs from container images and filesystems with Syft, correlate them to CVEs with Grype, and sign/attest them with Cosign. Use when you need a machine-readable dependency inventory for supply-chain risk, want to scan images or SBOMs for known vulnerabilities, or are embedding SBOM generation and vulnerability gating into CI/CD."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, are, attest, container, correlate, cosign, cves, cyclonedx, dependency, embe, filesystems, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [generating, and, analyzing, sboms, are, attest, container, correlate, cosign, cves, cyclonedx, dependency, embe, filesystems, for]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / generating-and-analyzing-sboms -->

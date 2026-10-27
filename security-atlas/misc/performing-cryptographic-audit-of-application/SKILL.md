@@ -1,6 +1,6 @@
 ---
 name: performing-cryptographic-audit-of-application
-description: "Cryptographic audit systematically reviews application s."
+description: "A cryptographic audit systematically reviews an application's use of"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, audit, cryptographic, performing-cryptographic-audit-of-application, reviews, systematically, use]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cryptographic, audit, application, reviews, systematically, use]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cryptographic-audit-of-application -->

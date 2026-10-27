@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: aws-iam-docs, azure-rbac-docs, gcp-iam-docs, hackingthe.cloud, pacu, peirates, prowler, rhinosecuritylabs_research, hackerone_public
 report_count: 6
+triggers: [cloud, iam, deep]
 ---
 
 ## When to use

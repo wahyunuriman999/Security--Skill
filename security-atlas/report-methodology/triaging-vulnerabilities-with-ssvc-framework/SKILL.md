@@ -1,6 +1,6 @@
 ---
 name: triaging-vulnerabilities-with-ssvc-framework
-description: "Triages prioritizes vulnerabilities CISA s."
+description: "Triages and prioritizes vulnerabilities with CISA's Stakeholder-Specific"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cisa, prioritizes, stakeholder-specific, triages, triaging-vulnerabilities-with-ssvc-framework, vulnerabilities, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [triaging, vulnerabilities, with, ssvc, framework, and, cisa, prioritizes, stakeholder-specific, triages]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / triaging-vulnerabilities-with-ssvc-framework -->

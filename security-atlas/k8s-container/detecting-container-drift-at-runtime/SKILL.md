@@ -1,6 +1,6 @@
 ---
 name: detecting-container-drift-at-runtime
-description: "Detecting container drift at runtime."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detecting-container-drift-at-runtime]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, container, drift, runtime]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-container-drift-at-runtime -->

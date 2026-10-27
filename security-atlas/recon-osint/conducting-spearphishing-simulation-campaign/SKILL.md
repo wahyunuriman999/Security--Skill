@@ -1,6 +1,6 @@
 ---
 name: conducting-spearphishing-simulation-campaign
-description: "Run targeted spearphishing simulation initial access."
+description: "Run a targeted spearphishing simulation for initial access by developing OSINT-derived pretexts, building payloads (HTML smuggling, macro docs, ISO/LNK, OneNote, QR codes), standing up look-alike-domain email infrastructure with SPF/DKIM/DMARC via GoPhish, and tracking results. Use in authorized engagements to gain initial access via personalized phishing against specific individuals, distinct from broad campaigns."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, authorized, building, codes, conducting-spearphishing-simulation-campaign, developing, dkim, dmarc, docs, email, eng]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, spearphishing, simulation, campaign, access, and, authorized, building, codes, developing, dkim, dmarc, docs, email, eng]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-spearphishing-simulation-campaign -->

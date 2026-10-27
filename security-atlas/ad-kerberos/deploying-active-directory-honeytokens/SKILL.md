@@ -1,6 +1,6 @@
 ---
 name: deploying-active-directory-honeytokens
-description: "Deploys deception-based honeytokens Active Directory."
+description: "'Deploys deception-based honeytokens in Active Directory including fake"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, deception-based, deploying-active-directory-honeytokens, deploys, directory, fake, honeytokens, including]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, active, directory, honeytokens, deception-based, deploys, fake, including]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-active-directory-honeytokens -->

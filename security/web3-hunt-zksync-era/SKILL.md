@@ -1,6 +1,9 @@
 ---
 name: web3-hunt-zksync-era
 description: ZKsync Era (Immunefi) completed hunt — 0 findings after exhaustive 5-session audit. Use as a DEFENSE STUDY — learn what makes a protocol unhuntable, which patterns block all 10 bug classes, and when to abandon a target. Contains architecture breakdown, 25 tested attack vectors, and pre-dive scoring refinements for large L1 bridge protocols.
+version: 1.0.0
+license: MIT
+triggers: [web3, hunt, zksync, era]
 ---
 
 # LIVE HUNT: ZKsync Era — DEFENSE STUDY
@@ -176,4 +179,4 @@ SOFT KILL: If protocol has OZ/ToB/Cyfrin audit on current version AND codebase >
 
 ---
 
-> NEXT: [08-ai-tools.md](08-ai-tools.md)
+> NEXT: [08-ai-tools.md](../web3-ai-tools/SKILL.md)

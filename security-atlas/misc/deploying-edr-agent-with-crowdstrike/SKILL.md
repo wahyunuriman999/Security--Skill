@@ -1,6 +1,6 @@
 ---
 name: deploying-edr-agent-with-crowdstrike
-description: "Deploys configures CrowdStrike Falcon EDR agents."
+description: "'Deploys and configures CrowdStrike Falcon EDR agents across enterprise"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, agents, and, configures, crowdstrike, deploying-edr-agent-with-crowdstrike, deploys, edr, enterprise, falcon]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, edr, agent, with, crowdstrike, across, agents, and, configures, deploys, enterprise, falcon]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-edr-agent-with-crowdstrike -->

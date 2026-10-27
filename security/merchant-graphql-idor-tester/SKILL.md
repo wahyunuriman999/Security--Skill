@@ -2,6 +2,8 @@
 name: merchant-graphql-idor-tester
 version: 1.0.0
 description: Merchant GraphQL IDOR tester for cross-account testing
+license: MIT
+triggers: [merchant, graphql, idor, tester]
 ---
 
 # Merchant GraphQL IDOR Tester

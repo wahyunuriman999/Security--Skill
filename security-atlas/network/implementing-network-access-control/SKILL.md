@@ -1,6 +1,6 @@
 ---
 name: implementing-network-access-control
-description: "Implements 802.1X port-based network access control."
+description: "'Implements 802.1X port-based network access control using RADIUS authentication,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [802, access, authentication, control, implementing-network-access-control, implements, network, port-based, radius, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, access, control, 802, authentication, implements, port-based, radius, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-access-control -->

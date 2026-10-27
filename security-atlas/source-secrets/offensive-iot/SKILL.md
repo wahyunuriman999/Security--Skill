@@ -1,6 +1,6 @@
 ---
 name: offensive-iot
-description: "IoT and embedded device security testing methodology."
+description: "IoT and embedded device security testing methodology. Covers hardware reconnaissance (UART, JTAG, SWD, SPI flash, I2C EEPROM, eMMC chip-off), firmware acquisition (vendor portals, OTA capture, flash dump, binwalk extraction), firmware analysis (filesystem mounting, binary triage, hardcoded secrets, default credential discovery), bootloader attacks (U-Boot console, secure-boot bypass, fault injection), runtime attacks on embedded Linux/RTOS (busybox CVEs, MTD writes, /dev/mem), wireless protocol attacks (Zigbee, BLE, Z-Wave, LoRaWAN, Thread/Matter, sub-GHz), MQTT/CoAP/Modbus/BACnet/OPC-UA explo"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [acquisition, analysis, and, binary, binwalk, capture, chip-off, covers, device, dump, eeprom, embedded]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, iot, acquisition, analysis, and, binary, binwalk, capture, chip-off, covers, device, dump, eeprom, embedded]
 ---
 
 <!-- upstream: Claude-Red / offensive-iot -->

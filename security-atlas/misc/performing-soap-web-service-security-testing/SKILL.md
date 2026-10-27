@@ -1,6 +1,6 @@
 ---
 name: performing-soap-web-service-security-testing
-description: "Performs security testing SOAP web services analyzing."
+description: "Performs security testing of SOAP web services by analyzing WSDL definitions"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, definitions, performing-soap-web-service-security-testing, performs, security, services, soap, testing, web, wsdl]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, soap, web, service, security, testing, analyzing, definitions, performs, services, wsdl]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-soap-web-service-security-testing -->

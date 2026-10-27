@@ -1,6 +1,6 @@
 ---
 name: implementing-immutable-backup-with-restic
-description: "Implements ransomware-resistant backups restic."
+description: "'Implements ransomware-resistant backups using restic with S3-compatible"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [backups, implementing-immutable-backup-with-restic, implements, ransomware-resistant, restic, s3-compatible, using, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, immutable, backup, with, restic, backups, implements, ransomware-resistant, s3-compatible, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-immutable-backup-with-restic -->

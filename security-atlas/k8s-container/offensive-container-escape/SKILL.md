@@ -1,6 +1,6 @@
 ---
 name: offensive-container-escape
-description: "Container escape breakout techniques targeting Docker."
+description: "Container escape and breakout techniques targeting Docker, containerd, and Podman runtimes. Covers privileged container breakout via host filesystem mount and nsenter, Docker socket abuse through /var/run/docker.sock, Linux capability exploitation including CAP_SYS_ADMIN, CAP_SYS_PTRACE, and CAP_NET_ADMIN, cgroup v1 notify_on_release escape, runc CVEs such as CVE-2019-5736 and CVE-2024-21626 Leaky Vessels, kernel exploits from within containers, and Dockerfile misconfigurations like --privileged and host namespace sharing. Includes enumeration with capsh, amicontained, deepce, CDK, and nsenter"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, admin, and, breakout, cap, capability, container, containerd, covers, docker, escape, exploitation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, container, escape, abuse, admin, and, breakout, cap, capability, containerd, covers, docker, exploitation]
 ---
 
 <!-- upstream: Claude-Red / offensive-container-escape -->

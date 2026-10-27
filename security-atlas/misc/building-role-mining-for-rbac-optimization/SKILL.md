@@ -1,6 +1,6 @@
 ---
 name: building-role-mining-for-rbac-optimization
-description: "Apply bottom-up top-down role mining techniques including."
+description: "Apply bottom-up and top-down role mining techniques, including clustering"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, apply, bottom-up, building-role-mining-for-rbac-optimization, clustering, including, mining, role, techniques, top-down]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, role, mining, for, rbac, optimization, and, apply, bottom-up, clustering, including, techniques, top-down]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-role-mining-for-rbac-optimization -->

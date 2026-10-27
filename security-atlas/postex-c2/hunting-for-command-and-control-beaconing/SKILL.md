@@ -1,6 +1,6 @@
 ---
 name: hunting-for-command-and-control-beaconing
-description: "Detect C2 beaconing patterns network traffic frequency."
+description: "Detect C2 beaconing patterns in network traffic using frequency analysis,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, beaconing, detect, frequency, hunting-for-command-and-control-beaconing, network, patterns, traffic, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, command, and, control, beaconing, analysis, detect, frequency, network, patterns, traffic, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-command-and-control-beaconing -->

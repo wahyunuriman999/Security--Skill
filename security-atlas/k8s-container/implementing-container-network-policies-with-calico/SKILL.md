@@ -1,6 +1,6 @@
 ---
 name: implementing-container-network-policies-with-calico
-description: "Implementing container network policies with calico."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-container-network-policies-with-calico]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, container, network, policies, with, calico]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-container-network-policies-with-calico -->

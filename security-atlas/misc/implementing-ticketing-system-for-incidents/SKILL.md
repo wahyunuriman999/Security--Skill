@@ -1,6 +1,6 @@
 ---
 name: implementing-ticketing-system-for-incidents
-description: "Implements integrated incident ticketing system."
+description: "'Implements an integrated incident ticketing system connecting SIEM alerts"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alerts, connecting, implementing-ticketing-system-for-incidents, implements, incident, integrated, siem, system, ticketing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, ticketing, system, for, incidents, alerts, connecting, implements, incident, integrated, siem]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-ticketing-system-for-incidents -->

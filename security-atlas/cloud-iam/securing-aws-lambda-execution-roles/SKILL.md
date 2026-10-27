@@ -1,6 +1,6 @@
 ---
 name: securing-aws-lambda-execution-roles
-description: "Hardens AWS Lambda execution roles writing."
+description: "'Hardens AWS Lambda execution roles by writing least-privilege IAM policies,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aws, execution, hardens, iam, lambda, least-privilege, policies, roles, securing-aws-lambda-execution-roles, writing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, aws, lambda, execution, roles, hardens, iam, least-privilege, policies, writing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-aws-lambda-execution-roles -->

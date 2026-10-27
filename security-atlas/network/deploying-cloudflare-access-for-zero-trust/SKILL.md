@@ -1,6 +1,6 @@
 ---
 name: deploying-cloudflare-access-for-zero-trust
-description: "Deploys Cloudflare Access Cloudflare Tunnel zero trust."
+description: "Deploys Cloudflare Access with Cloudflare Tunnel for zero trust access to self-hosted apps, configuring identity-aware policies, device posture checks, and WARP client enrollment as a VPN replacement. Use when replacing VPN with Cloudflare One, exposing internal apps without open inbound ports, or securing contractor/third-party access to specific applications."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, apps, checks, client, cloudflare, configuring, deploying-cloudflare-access-for-zero-trust, deploys, device, enrollment, exposing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, cloudflare, access, for, zero, trust, and, apps, checks, client, configuring, deploys, device, enrollment, exposing]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-cloudflare-access-for-zero-trust -->

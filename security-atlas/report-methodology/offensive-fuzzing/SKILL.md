@@ -1,6 +1,6 @@
 ---
 name: offensive-fuzzing
-description: "Practical offensive fuzzing methodology covering target."
+description: "Practical offensive fuzzing methodology covering target identification, fuzzer selection (AFL++, libFuzzer, Honggfuzz, Boofuzz, syzkaller), harness writing, corpus curation, mutation strategies, coverage measurement, and crash triage. Use when setting up or running fuzz campaigns against any target: file parsers, network protocols, kernel drivers, EDR engines, embedded firmware, or language runtimes."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [afl, against, and, any, boofuzz, campaigns, corpus, coverage, covering, crash, curation, fuzz]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, fuzzing, afl, against, and, any, boofuzz, campaigns, corpus, coverage, covering, crash, curation, fuzz]
 ---
 
 <!-- upstream: Claude-Red / offensive-fuzzing -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-passwordless-authentication-with-fido2
-description: "Deploy FIDO2/WebAuthn passwordless authentication."
+description: "Deploy FIDO2/WebAuthn passwordless authentication using security keys"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authentication, deploy, fido2, implementing-passwordless-authentication-with-fido2, keys, passwordless, security, using, webauthn]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, passwordless, authentication, with, fido2, deploy, keys, security, using, webauthn]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-passwordless-authentication-with-fido2 -->

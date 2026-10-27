@@ -1,6 +1,6 @@
 ---
 name: performing-ssl-certificate-lifecycle-management
-description: "Automates full SSL/TLS certificate lifecycle including."
+description: "Automates the full SSL/TLS certificate lifecycle, including generating"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automates, certificate, full, generating, including, lifecycle, performing-ssl-certificate-lifecycle-management, ssl, the, tls]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ssl, certificate, lifecycle, management, automates, full, generating, including, the, tls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ssl-certificate-lifecycle-management -->

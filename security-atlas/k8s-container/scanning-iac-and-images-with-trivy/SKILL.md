@@ -1,6 +1,6 @@
 ---
 name: scanning-iac-and-images-with-trivy
-description: "Scans container images Infrastructure-as-Code Terraform."
+description: "Scans container images, Infrastructure-as-Code (Terraform, CloudFormation,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cloudformation, container, images, infrastructure-as-code, scanning-iac-and-images-with-trivy, scans, terraform]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [scanning, iac, and, images, with, trivy, cloudformation, container, infrastructure-as-code, scans, terraform]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / scanning-iac-and-images-with-trivy -->

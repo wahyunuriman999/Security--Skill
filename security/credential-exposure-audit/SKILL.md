@@ -1,6 +1,9 @@
 ---
 name: credential-exposure-audit
 description: Use when checking if emails, passwords, or cards leaked.
+version: 1.0.0
+license: MIT
+triggers: [credential, exposure, audit]
 ---
 
 # Credential & Financial-Data Exposure Audit

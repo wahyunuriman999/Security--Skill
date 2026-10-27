@@ -1,6 +1,6 @@
 ---
 name: implementing-cloud-trail-log-analysis
-description: "Implementing AWS CloudTrail log analysis security."
+description: "'Implementing AWS CloudTrail log analysis for security monitoring, threat"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, aws, cloudtrail, for, implementing, implementing-cloud-trail-log-analysis, log, monitoring, security, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, cloud, trail, log, analysis, aws, cloudtrail, for, monitoring, security, threat]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-cloud-trail-log-analysis -->

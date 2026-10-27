@@ -1,6 +1,6 @@
 ---
 name: auditing-azure-active-directory-configuration
-description: "Auditing Microsoft Entra ID Azure Active Directory."
+description: "'Auditing Microsoft Entra ID (Azure Active Directory) configuration to"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, auditing, auditing-azure-active-directory-configuration, azure, configuration, directory, entra, microsoft]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, azure, active, directory, configuration, entra, microsoft]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-azure-active-directory-configuration -->

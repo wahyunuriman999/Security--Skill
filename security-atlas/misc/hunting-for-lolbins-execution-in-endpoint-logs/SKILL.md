@@ -1,6 +1,6 @@
 ---
 name: hunting-for-lolbins-execution-in-endpoint-logs
-description: "Hunts LOLBins Living Off Land Binaries abuse mapped MITRE."
+description: "Hunts for LOLBins (Living Off the Land Binaries) abuse, mapped to MITRE"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, binaries, for, hunting-for-lolbins-execution-in-endpoint-logs, hunts, land, living, lolbins, mapped, mitre, off, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, lolbins, execution, endpoint, logs, abuse, binaries, hunts, land, living, mapped, mitre, off, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-lolbins-execution-in-endpoint-logs -->

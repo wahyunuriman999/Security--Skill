@@ -1,6 +1,6 @@
 ---
 name: implementing-aws-security-hub
-description: "Deploy AWS Security Hub centralized CSPM platform backed."
+description: "'Deploy AWS Security Hub as a centralized CSPM platform, backed by AWS"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aws, backed, centralized, cspm, deploy, hub, implementing-aws-security-hub, platform, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, aws, security, hub, backed, centralized, cspm, deploy, platform]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-aws-security-hub -->

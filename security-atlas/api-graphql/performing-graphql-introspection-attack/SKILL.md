@@ -1,6 +1,6 @@
 ---
 name: performing-graphql-introspection-attack
-description: "Performs GraphQL introspection attacks extract full API."
+description: "'Performs GraphQL introspection attacks that extract the full API schema"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, attacks, extract, full, graphql, introspection, performing-graphql-introspection-attack, performs, schema, that, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, graphql, introspection, attack, api, attacks, extract, full, performs, schema, that, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-graphql-introspection-attack -->

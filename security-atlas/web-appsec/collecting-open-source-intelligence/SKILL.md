@@ -1,6 +1,6 @@
 ---
 name: collecting-open-source-intelligence
-description: "Collects synthesizes open-source intelligence OSINT."
+description: "'Collects and synthesizes open-source intelligence (OSINT) about threat"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [about, and, collecting-open-source-intelligence, collects, intelligence, open-source, osint, synthesizes, threat]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [collecting, open, source, intelligence, about, and, collects, open-source, osint, synthesizes, threat]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / collecting-open-source-intelligence -->

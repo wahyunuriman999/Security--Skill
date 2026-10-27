@@ -1,6 +1,6 @@
 ---
 name: implementing-stix-taxii-feed-integration
-description: "Implements STIX 2.1/TAXII 2.1 threat-intelligence feed."
+description: "Implements a STIX 2.1/TAXII 2.1 threat-intelligence feed consumer and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, consumer, feed, implementing-stix-taxii-feed-integration, implements, stix, taxii, threat-intelligence]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, stix, taxii, feed, integration, and, consumer, implements, threat-intelligence]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-stix-taxii-feed-integration -->

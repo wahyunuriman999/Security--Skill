@@ -1,6 +1,6 @@
 ---
 name: hunting-for-dns-based-persistence
-description: "Hunts DNS-based persistence mechanisms DNS hijacking."
+description: "Hunts for DNS-based persistence mechanisms such as DNS hijacking, dangling"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [dangling, dns, dns-based, for, hijacking, hunting-for-dns-based-persistence, hunts, mechanisms, persistence, such]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, dns, based, persistence, dangling, dns-based, hijacking, hunts, mechanisms, such]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-dns-based-persistence -->

@@ -1,6 +1,6 @@
 ---
 name: hunting-for-dcom-lateral-movement
-description: "Hunt DCOM-based lateral movement MITRE ATT CK T1021.003."
+description: "'Hunt for DCOM-based lateral movement (MITRE ATT&CK T1021.003) by detecting"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [003, att, dcom-based, detecting, for, hunt, hunting-for-dcom-lateral-movement, lateral, mitre, movement, t1021]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, dcom, lateral, movement, 003, att, dcom-based, detecting, hunt, mitre, t1021]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-dcom-lateral-movement -->

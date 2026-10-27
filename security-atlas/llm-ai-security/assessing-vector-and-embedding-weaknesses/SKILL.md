@@ -1,6 +1,6 @@
 ---
 name: assessing-vector-and-embedding-weaknesses
-description: "Test RAG vector stores Pinecone Qdrant Weaviate Chroma."
+description: "Test RAG vector stores (Pinecone, Qdrant, Weaviate, Chroma, pgvector,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessing-vector-and-embedding-weaknesses, chroma, pgvector, pinecone, qdrant, rag, stores, test, vector, weaviate]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [assessing, vector, and, embedding, weaknesses, chroma, pgvector, pinecone, qdrant, rag, stores, test, weaviate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / assessing-vector-and-embedding-weaknesses -->

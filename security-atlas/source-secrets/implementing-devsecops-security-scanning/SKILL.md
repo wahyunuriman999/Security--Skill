@@ -1,6 +1,6 @@
 ---
 name: implementing-devsecops-security-scanning
-description: "Integrates SAST DAST SCA CI/CD pipelines Semgrep."
+description: "'Integrates SAST, DAST, and SCA into CI/CD pipelines using Semgrep for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, dast, for, implementing-devsecops-security-scanning, integrates, into, pipelines, sast, sca, semgrep, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, devsecops, security, scanning, and, dast, for, integrates, into, pipelines, sast, sca, semgrep, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-devsecops-security-scanning -->

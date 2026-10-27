@@ -1,6 +1,6 @@
 ---
 name: analyzing-network-flow-data-with-netflow
-description: "Parse NetFlow v9 IPFIX records detect volumetric."
+description: "Parse NetFlow v9 and IPFIX records to detect volumetric anomalies, port"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-network-flow-data-with-netflow, and, anomalies, detect, ipfix, netflow, parse, port, records, volumetric]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, network, flow, data, with, netflow, and, anomalies, detect, ipfix, parse, port, records, volumetric]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-network-flow-data-with-netflow -->

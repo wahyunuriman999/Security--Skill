@@ -1,6 +1,6 @@
 ---
 name: performing-nist-csf-maturity-assessment
-description: "Conduct NIST Cybersecurity Framework CSF 2.0 maturity."
+description: "Conduct a NIST Cybersecurity Framework (CSF) 2.0 maturity assessment across the six core Functions (Govern, Identify, Protect, Detect, Respond, Recover), scoring organizational posture against the four Implementation Tiers (Partial, Risk-Informed, Repeatable, Adaptive) and producing an improvement roadmap. Use when benchmarking an organization's cybersecurity program maturity or preparing a CSF-based gap analysis and remediation plan."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, adaptive, against, and, assessment, conduct, core, csf, cybersecurity, detect, four, framework]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, nist, csf, maturity, assessment, across, adaptive, against, and, conduct, core, cybersecurity, detect, four, framework]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-nist-csf-maturity-assessment -->

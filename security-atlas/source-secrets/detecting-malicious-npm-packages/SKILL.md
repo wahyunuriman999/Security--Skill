@@ -1,6 +1,6 @@
 ---
 name: detecting-malicious-npm-packages
-description: "Triage npm packages lockfiles install-script malware."
+description: "Triage npm packages and lockfiles for install-script malware, credential exfiltration, and worming behavior using GuardDog, manual tarball inspection, and dynamic detonation with network/filesystem monitoring. Use when vetting a new dependency, reviewing a package.json/package-lock.json during code review, checking lockfiles against a supply-chain advisory's known-bad versions, or investigating a host suspected of installing a trojanized package."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, behavior, code, credential, dependency, detecting-malicious-npm-packages, detonation, during, dynamic, exfiltration, filesystem, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, malicious, npm, packages, and, behavior, code, credential, dependency, detonation, during, dynamic, exfiltration, filesystem, for]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-malicious-npm-packages -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-llm-guardrails-for-security
-description: "Implements input/output validation guardrails LLM."
+description: "'Implements input/output validation guardrails for LLM applications using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [applications, for, guardrails, implementing-llm-guardrails-for-security, implements, input, llm, output, using, validation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, llm, guardrails, for, security, applications, implements, input, output, using, validation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-llm-guardrails-for-security -->

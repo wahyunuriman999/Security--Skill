@@ -1,6 +1,6 @@
 ---
 name: analyzing-ios-app-security-with-objection
-description: "Analyzing ios app security with objection."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-ios-app-security-with-objection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, ios, app, security, with, objection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-ios-app-security-with-objection -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-deepfake-audio-in-vishing-attacks
-description: "Detect AI-generated deepfake audio used voice phishing."
+description: "Detect AI-generated deepfake audio used in voice phishing (vishing) by extracting spectral features (MFCC, spectral centroid, spectral contrast, zero-crossing rate) and classifying samples with machine learning models, supporting batch audio analysis, confidence scoring, and forensic reporting. Use for deepfake voice detection, vishing investigations, AI-generated speech analysis, voice cloning detection, or audio authenticity verification."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [ai-generated, analysis, and, audio, batch, centroid, classifying, confidence, contrast, deepfake, detect, detecting-deepfake-audio-in-vishing-attacks]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, deepfake, audio, vishing, attacks, ai-generated, analysis, and, batch, centroid, classifying, confidence, contrast, detect]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-deepfake-audio-in-vishing-attacks -->

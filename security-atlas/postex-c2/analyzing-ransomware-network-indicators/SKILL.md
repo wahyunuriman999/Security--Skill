@@ -1,6 +1,6 @@
 ---
 name: analyzing-ransomware-network-indicators
-description: "Identify ransomware-related network indicators including."
+description: "Identify ransomware-related network indicators, including C2 beaconing patterns, TOR exit node connections, data exfiltration flows, and encryption key exchange, by analyzing Zeek conn.log and NetFlow data. Use when threat hunting for active ransomware network activity or investigating suspected pre-encryption exfiltration during incident response."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, activity, analyzing, analyzing-ransomware-network-indicators, and, beaconing, conn, connections, data, encryption, exchange, exfiltration]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, ransomware, network, indicators, active, activity, and, beaconing, conn, connections, data, encryption, exchange, exfiltration]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-ransomware-network-indicators -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-ddos-mitigation-with-cloudflare
-description: "Configure Cloudflare DDoS protection managed rulesets."
+description: "Configure Cloudflare DDoS protection with managed rulesets, rate limiting,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cloudflare, configure, ddos, implementing-ddos-mitigation-with-cloudflare, limiting, managed, protection, rate, rulesets, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, ddos, mitigation, with, cloudflare, configure, limiting, managed, protection, rate, rulesets]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-ddos-mitigation-with-cloudflare -->

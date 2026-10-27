@@ -1,6 +1,6 @@
 ---
 name: detecting-aws-cloudtrail-anomalies
-description: "Detect unusual API call patterns AWS CloudTrail logs."
+description: "Detect unusual API call patterns in AWS CloudTrail logs using boto3,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, aws, boto3, call, cloudtrail, detect, detecting-aws-cloudtrail-anomalies, logs, patterns, unusual, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, aws, cloudtrail, anomalies, api, boto3, call, detect, logs, patterns, unusual, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-aws-cloudtrail-anomalies -->

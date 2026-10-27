@@ -1,6 +1,6 @@
 ---
 name: detecting-container-escape-attempts
-description: "Detecting container escape attempts."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detecting-container-escape-attempts]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, container, escape, attempts]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-container-escape-attempts -->

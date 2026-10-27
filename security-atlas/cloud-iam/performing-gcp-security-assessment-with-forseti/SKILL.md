@@ -1,6 +1,6 @@
 ---
 name: performing-gcp-security-assessment-with-forseti
-description: "Performing comprehensive security assessments Google."
+description: "'Performing comprehensive security assessments of Google Cloud Platform"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessments, cloud, comprehensive, google, performing, performing-gcp-security-assessment-with-forseti, platform, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, gcp, security, assessment, with, forseti, assessments, cloud, comprehensive, google, platform]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-gcp-security-assessment-with-forseti -->

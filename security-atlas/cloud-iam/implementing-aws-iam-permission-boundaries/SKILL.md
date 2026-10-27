@@ -1,6 +1,6 @@
 ---
 name: implementing-aws-iam-permission-boundaries
-description: "Configures AWS IAM permission boundaries cap maximum."
+description: "Configures AWS IAM permission boundaries that cap the maximum permissions"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aws, boundaries, cap, configures, iam, implementing-aws-iam-permission-boundaries, maximum, permission, permissions, that, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, aws, iam, permission, boundaries, cap, configures, maximum, permissions, that, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-aws-iam-permission-boundaries -->

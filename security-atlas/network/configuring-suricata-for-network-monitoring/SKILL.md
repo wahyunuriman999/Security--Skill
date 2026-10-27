@@ -1,6 +1,6 @@
 ---
 name: configuring-suricata-for-network-monitoring
-description: "Deploys configures Suricata IDS/IPS Emerging Threats."
+description: "'Deploys and configures Suricata IDS/IPS with Emerging Threats rulesets,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, configures, configuring-suricata-for-network-monitoring, deploys, emerging, ids, ips, rulesets, suricata, threats, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, suricata, for, network, monitoring, and, configures, deploys, emerging, ids, ips, rulesets, threats, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-suricata-for-network-monitoring -->

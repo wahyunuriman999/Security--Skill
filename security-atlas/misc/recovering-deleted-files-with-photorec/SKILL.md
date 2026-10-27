@@ -1,6 +1,6 @@
 ---
 name: recovering-deleted-files-with-photorec
-description: "Recovers deleted files disk images storage media PhotoRec."
+description: "Recovers deleted files from disk images and storage media using PhotoRec's"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, deleted, disk, files, from, images, media, photorec, recovering-deleted-files-with-photorec, recovers, storage, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [recovering, deleted, files, with, photorec, and, disk, from, images, media, recovers, storage, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / recovering-deleted-files-with-photorec -->

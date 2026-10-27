@@ -1,6 +1,6 @@
 ---
 name: performing-lateral-movement-with-wmiexec
-description: "Perform lateral movement Windows networks WMI-based."
+description: "Perform lateral movement across Windows networks using WMI-based remote"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, lateral, movement, networks, perform, performing-lateral-movement-with-wmiexec, remote, using, windows, wmi-based]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, lateral, movement, with, wmiexec, across, networks, perform, remote, using, windows, wmi-based]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-lateral-movement-with-wmiexec -->

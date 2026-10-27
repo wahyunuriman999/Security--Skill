@@ -1,6 +1,6 @@
 ---
 name: implementing-network-policies-for-kubernetes
-description: "Implementing network policies for kubernetes."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-network-policies-for-kubernetes]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, policies, for, kubernetes]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-policies-for-kubernetes -->

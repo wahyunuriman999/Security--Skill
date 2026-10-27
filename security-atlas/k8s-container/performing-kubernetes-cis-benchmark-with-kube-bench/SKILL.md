@@ -1,6 +1,6 @@
 ---
 name: performing-kubernetes-cis-benchmark-with-kube-bench
-description: "Performing kubernetes cis benchmark with kube bench."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-kubernetes-cis-benchmark-with-kube-bench]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, kubernetes, cis, benchmark, with, kube, bench]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-kubernetes-cis-benchmark-with-kube-bench -->

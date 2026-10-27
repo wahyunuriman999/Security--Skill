@@ -1,6 +1,6 @@
 ---
 name: implementing-bgp-security-with-rpki
-description: "Implement RPKI-based BGP route origin validation creating."
+description: "Implement RPKI-based BGP route origin validation by creating Route Origin"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [bgp, creating, implement, implementing-bgp-security-with-rpki, origin, route, rpki-based, validation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, bgp, security, with, rpki, creating, implement, origin, route, rpki-based, validation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-bgp-security-with-rpki -->

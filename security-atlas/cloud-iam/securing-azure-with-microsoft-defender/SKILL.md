@@ -1,6 +1,6 @@
 ---
 name: securing-azure-with-microsoft-defender
-description: "Deploys configures Microsoft Defender Cloud CNAPP."
+description: "'Deploys and configures Microsoft Defender for Cloud as a CNAPP for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cloud, cnapp, configures, defender, deploys, for, microsoft, securing-azure-with-microsoft-defender]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, azure, with, microsoft, defender, and, cloud, cnapp, configures, deploys, for]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-azure-with-microsoft-defender -->

@@ -1,6 +1,6 @@
 ---
 name: performing-directory-traversal-testing
-description: "Test web applications path traversal Local/Remote File."
+description: "Test web applications for path traversal and Local/Remote File Inclusion"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, applications, file, for, inclusion, local, path, performing-directory-traversal-testing, remote, test, traversal, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, directory, traversal, testing, and, applications, file, for, inclusion, local, path, remote, test, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-directory-traversal-testing -->

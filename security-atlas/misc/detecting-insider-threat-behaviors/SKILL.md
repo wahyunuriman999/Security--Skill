@@ -1,6 +1,6 @@
 ---
 name: detecting-insider-threat-behaviors
-description: "Detect insider threat behavioral indicators including."
+description: "Detect insider threat behavioral indicators including unusual data access,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, behavioral, data, detect, detecting-insider-threat-behaviors, including, indicators, insider, threat, unusual]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, insider, threat, behaviors, access, behavioral, data, detect, including, indicators, unusual]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-insider-threat-behaviors -->

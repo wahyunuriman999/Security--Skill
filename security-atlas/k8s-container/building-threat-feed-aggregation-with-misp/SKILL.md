@@ -1,6 +1,6 @@
 ---
 name: building-threat-feed-aggregation-with-misp
-description: "Deploy MISP Docker configure feeds sources like abuse.ch."
+description: "Deploy MISP via Docker and configure feeds from sources like abuse.ch, AlienVault OTX, and CIRCL to aggregate, correlate, and distribute threat intelligence, including automated feed synchronization and STIX/TAXII-based integration with Splunk, Elasticsearch, and SOAR platforms. Use when standing up centralized IOC management or wiring multi-source threat feeds into a SIEM."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, aggregate, alienvault, and, automated, building-threat-feed-aggregation-with-misp, circl, configure, correlate, deploy, distribute, docker]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, threat, feed, aggregation, with, misp, abuse, aggregate, alienvault, and, automated, circl, configure, correlate, deploy, distribute]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-threat-feed-aggregation-with-misp -->

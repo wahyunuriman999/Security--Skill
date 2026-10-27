@@ -1,6 +1,6 @@
 ---
 name: performing-false-positive-reduction-in-siem
-description: "Reduces SIEM false positives through systematic rule."
+description: "Reduces SIEM false positives through systematic rule tuning, threshold"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [false, performing-false-positive-reduction-in-siem, positives, reduces, rule, siem, systematic, threshold, through, tuning]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, false, positive, reduction, siem, positives, reduces, rule, systematic, threshold, through, tuning]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-false-positive-reduction-in-siem -->

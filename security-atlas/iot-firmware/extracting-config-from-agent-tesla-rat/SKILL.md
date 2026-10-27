@@ -1,6 +1,6 @@
 ---
 name: extracting-config-from-agent-tesla-rat
-description: "Extracts embedded configuration Agent Tesla RAT samples."
+description: "Extracts embedded configuration from Agent Tesla RAT samples, including"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [agent, configuration, embedded, extracting-config-from-agent-tesla-rat, extracts, from, including, rat, samples, tesla]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [extracting, config, from, agent, tesla, rat, configuration, embedded, extracts, including, samples]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / extracting-config-from-agent-tesla-rat -->

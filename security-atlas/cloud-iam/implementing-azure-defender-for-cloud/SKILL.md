@@ -1,6 +1,6 @@
 ---
 name: implementing-azure-defender-for-cloud
-description: "Enable Microsoft Defender Cloud CSPM + CWPP VMs."
+description: "'Enable Microsoft Defender for Cloud (CSPM + CWPP) across VMs, containers,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, cloud, containers, cspm, cwpp, defender, enable, for, implementing-azure-defender-for-cloud, microsoft, vms]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, azure, defender, for, cloud, across, containers, cspm, cwpp, enable, microsoft, vms]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-azure-defender-for-cloud -->

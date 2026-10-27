@@ -1,6 +1,6 @@
 ---
 name: detecting-network-anomalies-with-zeek
-description: "Deploy configure Zeek formerly Bro passively analyze."
+description: "Deploy and configure Zeek (formerly Bro) to passively analyze network traffic, generate structured connection/DNS/HTTP/SSL/file logs, detect anomalous behavior, and write custom scripts for organization-specific threats. Use for passive monitoring at network choke points, feeding SIEM/threat hunting with protocol metadata, or retrospective log analysis during incident response; not a substitute for inline IDS/IPS or host agents."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, and, anomalous, behavior, bro, choke, configure, connection, custom, deploy, detect, detecting-network-anomalies-with-zeek]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, network, anomalies, with, zeek, analyze, and, anomalous, behavior, bro, choke, configure, connection, custom, deploy, detect]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-network-anomalies-with-zeek -->

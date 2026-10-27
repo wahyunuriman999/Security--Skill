@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-standing-privilege-with-cyberark
-description: "Deploy CyberArk Secure Cloud Access SCA eliminate."
+description: "Deploy CyberArk Secure Cloud Access (SCA) to eliminate standing privileges in AWS, Azure, and GCP by provisioning ephemeral, scoped roles on a just-in-time basis governed by the TEA framework (Time, Entitlements, Approvals). Use when designing or implementing zero standing privilege / just-in-time privileged access models with CyberArk, or when replacing persistent cloud admin roles with time-bound, approval-gated sessions."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, approvals, aws, azure, basis, cloud, cyberark, deploy, designing, eliminate, entitlements]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, standing, privilege, with, cyberark, access, and, approvals, aws, azure, basis, cloud, deploy, designing, eliminate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-standing-privilege-with-cyberark -->

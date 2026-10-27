@@ -1,6 +1,6 @@
 ---
 name: detecting-insider-data-exfiltration-via-dlp
-description: "Detects insider data exfiltration analyzing DLP policy."
+description: "'Detects insider data exfiltration by analyzing DLP policy violations,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, data, detecting-insider-data-exfiltration-via-dlp, detects, dlp, exfiltration, insider, policy, violations]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, insider, data, exfiltration, via, dlp, analyzing, detects, policy, violations]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-insider-data-exfiltration-via-dlp -->

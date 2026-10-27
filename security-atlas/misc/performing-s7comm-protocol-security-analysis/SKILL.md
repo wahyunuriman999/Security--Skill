@@ -1,6 +1,6 @@
 ---
 name: performing-s7comm-protocol-security-analysis
-description: "Perform security analysis Siemens S7comm S7CommPlus."
+description: "'Perform security analysis of Siemens S7comm and S7CommPlus protocols"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, and, perform, performing-s7comm-protocol-security-analysis, protocols, s7comm, s7commplus, security, siemens]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, s7comm, protocol, security, analysis, and, perform, protocols, s7commplus, siemens]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-s7comm-protocol-security-analysis -->

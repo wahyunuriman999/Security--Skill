@@ -1,6 +1,6 @@
 ---
 name: performing-hash-cracking-with-hashcat
-description: "Cracks password hashes Hashcat covering hash-type."
+description: "Cracks password hashes with Hashcat, covering hash-type identification,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [covering, cracks, hash-type, hashcat, hashes, identification, password, performing-hash-cracking-with-hashcat, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, hash, cracking, with, hashcat, covering, cracks, hash-type, hashes, identification, password]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-hash-cracking-with-hashcat -->

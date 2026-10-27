@@ -1,6 +1,6 @@
 ---
 name: analyzing-docker-container-forensics
-description: "Investigate compromised Docker containers analyzing."
+description: "Investigate compromised Docker containers by analyzing images, layers,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, analyzing-docker-container-forensics, compromised, containers, docker, images, investigate, layers]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, docker, container, forensics, compromised, containers, images, investigate, layers]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-docker-container-forensics -->

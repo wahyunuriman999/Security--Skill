@@ -1,6 +1,6 @@
 ---
 name: implementing-network-traffic-analysis-with-arkime
-description: "Queries Arkime formerly Moloch full packet capture API."
+description: "Queries Arkime (formerly Moloch) full packet capture via its API to search sessions,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, arkime, capture, formerly, full, implementing-network-traffic-analysis-with-arkime, its, moloch, packet, queries, search, sessions]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, traffic, analysis, with, arkime, api, capture, formerly, full, its, moloch, packet, queries, search, sessions]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-traffic-analysis-with-arkime -->

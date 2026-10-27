@@ -1,6 +1,6 @@
 ---
 name: analyzing-email-headers-for-phishing-investigation
-description: "Parse analyze email headers Received chain Return-Path."
+description: "Parse and analyze email headers (Received chain, Return-Path, Message-ID)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzing-email-headers-for-phishing-investigation, and, chain, email, headers, message-id, parse, received, return-path]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, email, headers, for, phishing, investigation, analyze, and, chain, message-id, parse, received, return-path]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-email-headers-for-phishing-investigation -->

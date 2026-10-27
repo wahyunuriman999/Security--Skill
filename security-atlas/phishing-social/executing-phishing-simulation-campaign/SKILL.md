@@ -1,6 +1,6 @@
 ---
 name: executing-phishing-simulation-campaign
-description: "Executes authorized phishing simulation campaigns assess."
+description: "'Executes authorized phishing simulation campaigns to assess an organization''s"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assess, authorized, campaigns, executes, executing-phishing-simulation-campaign, organization, phishing, simulation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [executing, phishing, simulation, campaign, assess, authorized, campaigns, executes, organization]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / executing-phishing-simulation-campaign -->

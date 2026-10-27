@@ -1,6 +1,6 @@
 ---
 name: implementing-passwordless-auth-with-microsoft-entra
-description: "Implements passwordless authentication Microsoft Entra ID."
+description: "'Implements passwordless authentication using Microsoft Entra ID with"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authentication, entra, implementing-passwordless-auth-with-microsoft-entra, implements, microsoft, passwordless, using, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, passwordless, auth, with, microsoft, entra, authentication, implements, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-passwordless-auth-with-microsoft-entra -->

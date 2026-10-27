@@ -1,6 +1,6 @@
 ---
 name: bypassing-authentication-with-forced-browsing
-description: "Discovering accessing unprotected pages APIs."
+description: "Discovering and accessing unprotected pages, APIs, and administrative"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [accessing, administrative, and, apis, bypassing-authentication-with-forced-browsing, discovering, pages, unprotected]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [bypassing, authentication, with, forced, browsing, accessing, administrative, and, apis, discovering, pages, unprotected]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / bypassing-authentication-with-forced-browsing -->

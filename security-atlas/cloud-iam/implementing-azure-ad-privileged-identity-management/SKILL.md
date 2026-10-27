@@ -1,6 +1,6 @@
 ---
 name: implementing-azure-ad-privileged-identity-management
-description: "Configure Microsoft Entra Privileged Identity Management."
+description: "Configure Microsoft Entra Privileged Identity Management (PIM) to convert"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [configure, convert, entra, identity, implementing-azure-ad-privileged-identity-management, management, microsoft, pim, privileged]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, azure, privileged, identity, management, configure, convert, entra, microsoft, pim]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-azure-ad-privileged-identity-management -->

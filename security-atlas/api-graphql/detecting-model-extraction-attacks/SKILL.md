@@ -1,6 +1,6 @@
 ---
 name: detecting-model-extraction-attacks
-description: "Detect MITRE ATLAS AML.T0024 attacks model stealing."
+description: "Detect MITRE ATLAS AML.T0024 attacks (model stealing, inversion, membership inference) performed via inference-API abuse, by monitoring per-principal query volume/distribution, rate-limiting and perturbing outputs, and red-teaming your model's extractability. Use for a public or partner inference API needing cloning/inversion/membership-inference detection, or a pre-deployment red-team exercise to measure extraction risk."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, aml, and, atlas, attacks, detect, detecting-model-extraction-attacks, distribution, extractability, for, inference, inference-api]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, model, extraction, attacks, abuse, aml, and, atlas, detect, distribution, extractability, for, inference, inference-api]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-model-extraction-attacks -->

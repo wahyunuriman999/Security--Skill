@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-log-forensics-with-athena
-description: "Uses AWS Athena query CloudTrail VPC Flow Logs S3 access."
+description: "'Uses AWS Athena to query CloudTrail, VPC Flow Logs, S3 access logs,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, athena, aws, cloudtrail, flow, logs, performing-cloud-log-forensics-with-athena, query, uses, vpc]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, log, forensics, with, athena, access, aws, cloudtrail, flow, logs, query, uses, vpc]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-log-forensics-with-athena -->

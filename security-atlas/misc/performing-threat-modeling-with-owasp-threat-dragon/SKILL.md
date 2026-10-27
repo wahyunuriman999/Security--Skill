@@ -1,6 +1,6 @@
 ---
 name: performing-threat-modeling-with-owasp-threat-dragon
-description: "Performing threat modeling with owasp threat dragon."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-threat-modeling-with-owasp-threat-dragon]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, threat, modeling, with, owasp, dragon]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-threat-modeling-with-owasp-threat-dragon -->

@@ -1,6 +1,6 @@
 ---
 name: performing-dns-tunneling-detection
-description: "Detects DNS tunneling computing Shannon entropy DNS query."
+description: "'Detects DNS tunneling by computing Shannon entropy of DNS query names,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [computing, detects, dns, entropy, names, performing-dns-tunneling-detection, query, shannon, tunneling]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, dns, tunneling, detection, computing, detects, entropy, names, query, shannon]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-dns-tunneling-detection -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-saml-sso-with-okta
-description: "Implement SAML 2.0 Single Sign-On Okta Identity Provider."
+description: "Implement SAML 2.0 Single Sign-On using Okta as the Identity Provider,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [identity, implement, implementing-saml-sso-with-okta, okta, provider, saml, sign-on, single, the, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, saml, sso, with, okta, identity, implement, provider, sign-on, single, the, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-saml-sso-with-okta -->

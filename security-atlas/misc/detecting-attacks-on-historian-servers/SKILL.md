@@ -1,6 +1,6 @@
 ---
 name: detecting-attacks-on-historian-servers
-description: "Detect cyber attacks OT historian servers OSIsoft PI."
+description: "'Detect cyber attacks on OT historian servers (OSIsoft PI, Ignition, GE"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attacks, cyber, detect, detecting-attacks-on-historian-servers, historian, ignition, osisoft, servers]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, attacks, historian, servers, cyber, detect, ignition, osisoft]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-attacks-on-historian-servers -->

@@ -1,6 +1,6 @@
 ---
 name: performing-active-directory-compromise-investigation
-description: "Investigate Active Directory compromise analyzing."
+description: "Investigate Active Directory compromise by analyzing authentication logs,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, analyzing, authentication, compromise, directory, investigate, logs, performing-active-directory-compromise-investigation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, active, directory, compromise, investigation, analyzing, authentication, investigate, logs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-active-directory-compromise-investigation -->

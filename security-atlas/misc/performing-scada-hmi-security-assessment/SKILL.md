@@ -1,6 +1,6 @@
 ---
 name: performing-scada-hmi-security-assessment
-description: "Perform security assessments SCADA Human-Machine."
+description: "'Perform security assessments of SCADA Human-Machine Interface (HMI)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessments, hmi, human-machine, interface, perform, performing-scada-hmi-security-assessment, scada, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, scada, hmi, security, assessment, assessments, human-machine, interface, perform]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-scada-hmi-security-assessment -->

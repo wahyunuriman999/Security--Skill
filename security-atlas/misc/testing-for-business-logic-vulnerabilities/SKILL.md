@@ -1,6 +1,6 @@
 ---
 name: testing-for-business-logic-vulnerabilities
-description: "Manually identifies flaws application business logic -."
+description: "Manually identifies flaws in application business logic - price manipulation,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, business, flaws, identifies, logic, manipulation, manually, price, testing-for-business-logic-vulnerabilities]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, business, logic, vulnerabilities, application, flaws, identifies, manipulation, manually, price]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-business-logic-vulnerabilities -->

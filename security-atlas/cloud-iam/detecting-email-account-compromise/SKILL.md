@@ -1,6 +1,6 @@
 ---
 name: detecting-email-account-compromise
-description: "Detect compromised O365 Google Workspace email accounts."
+description: "Detect compromised O365 and Google Workspace email accounts by analyzing Unified Audit Logs and Azure AD sign-in logs for impossible travel, inbox rule creation/deletion (Set-InboxRule, New-InboxRule), external mail forwarding rules, and unusual Microsoft Graph API access or OAuth token use. Use when investigating suspected business email compromise (BEC), account takeover, or mailbox persistence via malicious inbox rules."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, accounts, analyzing, and, api, audit, azure, compromised, creation, deletion, detect, detecting-email-account-compromise]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, email, account, compromise, access, accounts, analyzing, and, api, audit, azure, compromised, creation, deletion, detect]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-email-account-compromise -->

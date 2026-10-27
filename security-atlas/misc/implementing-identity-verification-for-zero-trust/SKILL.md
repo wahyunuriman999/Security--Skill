@@ -1,6 +1,6 @@
 ---
 name: implementing-identity-verification-for-zero-trust
-description: "Implements continuous risk-adaptive identity verification."
+description: "Implements continuous, risk-adaptive identity verification for zero trust"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [continuous, for, identity, implementing-identity-verification-for-zero-trust, implements, risk-adaptive, trust, verification, zero]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, identity, verification, for, zero, trust, continuous, implements, risk-adaptive]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-identity-verification-for-zero-trust -->

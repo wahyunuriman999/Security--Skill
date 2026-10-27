@@ -1,6 +1,6 @@
 ---
 name: performing-open-source-intelligence-gathering
-description: "Open Source Intelligence OSINT gathering first active."
+description: "Open Source Intelligence (OSINT) gathering is the first active phase"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, first, gathering, intelligence, open, osint, performing-open-source-intelligence-gathering, phase, source, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, open, source, intelligence, gathering, active, first, osint, phase, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-open-source-intelligence-gathering -->

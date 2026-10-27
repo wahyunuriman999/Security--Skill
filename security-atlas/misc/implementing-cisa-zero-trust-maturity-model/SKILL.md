@@ -1,6 +1,6 @@
 ---
 name: implementing-cisa-zero-trust-maturity-model
-description: "Assess gap-analyze progressively implement CISA Zero."
+description: "Assess, gap-analyze, and progressively implement the CISA Zero Trust"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, assess, cisa, gap-analyze, implement, implementing-cisa-zero-trust-maturity-model, progressively, the, trust, zero]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, cisa, zero, trust, maturity, model, and, assess, gap-analyze, implement, progressively, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-cisa-zero-trust-maturity-model -->

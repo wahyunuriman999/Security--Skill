@@ -1,6 +1,6 @@
 ---
 name: hunting-credential-stuffing-attacks
-description: "Detects credential stuffing attacks analyzing."
+description: "'Detects credential stuffing attacks by analyzing authentication logs"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, attacks, authentication, credential, detects, hunting-credential-stuffing-attacks, logs, stuffing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, credential, stuffing, attacks, analyzing, authentication, detects, logs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-credential-stuffing-attacks -->

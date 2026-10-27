@@ -1,6 +1,6 @@
 ---
 name: implementing-rbac-hardening-for-kubernetes
-description: "Implementing rbac hardening for kubernetes."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-rbac-hardening-for-kubernetes]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, rbac, hardening, for, kubernetes]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-rbac-hardening-for-kubernetes -->

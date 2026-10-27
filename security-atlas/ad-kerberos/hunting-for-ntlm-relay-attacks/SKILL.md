@@ -1,6 +1,6 @@
 ---
 name: hunting-for-ntlm-relay-attacks
-description: "Detects NTLM relay attacks MITRE T1557.001 analyzing."
+description: "Detects NTLM relay attacks (MITRE T1557.001) by analyzing Windows Event"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [001, analyzing, attacks, detects, event, hunting-for-ntlm-relay-attacks, mitre, ntlm, relay, t1557, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, ntlm, relay, attacks, 001, analyzing, detects, event, mitre, t1557, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-ntlm-relay-attacks -->

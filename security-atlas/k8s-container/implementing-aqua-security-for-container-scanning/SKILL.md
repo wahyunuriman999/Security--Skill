@@ -1,6 +1,6 @@
 ---
 name: implementing-aqua-security-for-container-scanning
-description: "Deploy Aqua Security s Trivy scanner detect."
+description: "Deploy Aqua Security's Trivy scanner to detect vulnerabilities, misconfigurations,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aqua, deploy, detect, implementing-aqua-security-for-container-scanning, misconfigurations, scanner, security, trivy, vulnerabilities]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, aqua, security, for, container, scanning, deploy, detect, misconfigurations, scanner, trivy, vulnerabilities]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-aqua-security-for-container-scanning -->

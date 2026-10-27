@@ -1,6 +1,6 @@
 ---
 name: implementing-aws-security-hub-compliance
-description: "Deploy AWS Security Hub backed AWS Config aggregate."
+description: "'Deploy AWS Security Hub, backed by AWS Config, to aggregate findings"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aggregate, aws, backed, config, deploy, findings, hub, implementing-aws-security-hub-compliance, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, aws, security, hub, compliance, aggregate, backed, config, deploy, findings]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-aws-security-hub-compliance -->

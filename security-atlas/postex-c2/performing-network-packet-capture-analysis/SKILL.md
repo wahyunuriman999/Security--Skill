@@ -1,6 +1,6 @@
 ---
 name: performing-network-packet-capture-analysis
-description: "Perform forensic analysis network packet captures."
+description: "Perform forensic analysis of network packet captures (PCAP/PCAPNG) using Wireshark, tshark, and tcpdump to reconstruct network communications, extract transferred files, identify malicious traffic, and establish evidence of data exfiltration or command-and-control activity. Use when a PCAP file from an incident needs to be examined to prove lateral movement, malware delivery, or unauthorized access."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, analysis, and, captures, command-and-control, communications, data, establish, evidence, exfiltration, extract, file]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, network, packet, capture, analysis, activity, and, captures, command-and-control, communications, data, establish, evidence, exfiltration, extract, file]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-network-packet-capture-analysis -->

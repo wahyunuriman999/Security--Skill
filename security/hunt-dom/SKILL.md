@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: portswigger_research, hackerone_public, github_security_advisories
 report_count: 14
+triggers: [hunt, dom]
 ---
 
 # HUNT-DOM — DOM Clobbering / PostMessage / Service Worker / CSS Exfil

@@ -1,6 +1,6 @@
 ---
 name: implementing-threat-modeling-with-mitre-attack
-description: "Implements threat modeling MITRE ATT CK framework map."
+description: "'Implements threat modeling using the MITRE ATT&CK framework to map adversary"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, att, framework, implementing-threat-modeling-with-mitre-attack, implements, map, mitre, modeling, the, threat, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, threat, modeling, with, mitre, attack, adversary, att, framework, implements, map, the, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-threat-modeling-with-mitre-attack -->

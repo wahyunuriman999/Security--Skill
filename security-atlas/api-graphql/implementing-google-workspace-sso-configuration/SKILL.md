@@ -1,6 +1,6 @@
 ---
 name: implementing-google-workspace-sso-configuration
-description: "Configures SAML 2.0 single sign-on Google Workspace."
+description: "Configures SAML 2.0 single sign-on for Google Workspace against a third-party"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, configures, for, google, implementing-google-workspace-sso-configuration, saml, sign-on, single, third-party, workspace]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, google, workspace, sso, configuration, against, configures, for, saml, sign-on, single, third-party]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-google-workspace-sso-configuration -->

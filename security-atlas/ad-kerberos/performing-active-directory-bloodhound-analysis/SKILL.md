@@ -1,6 +1,6 @@
 ---
 name: performing-active-directory-bloodhound-analysis
-description: "BloodHound SharpHound AzureHound enumerate Active."
+description: "Use BloodHound and SharpHound (or AzureHound) to enumerate Active Directory"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, and, azurehound, bloodhound, directory, enumerate, performing-active-directory-bloodhound-analysis, sharphound, use]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, active, directory, bloodhound, analysis, and, azurehound, enumerate, sharphound, use]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-active-directory-bloodhound-analysis -->

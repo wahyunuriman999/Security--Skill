@@ -1,6 +1,6 @@
 ---
 name: detecting-s3-data-exfiltration-attempts
-description: "Detecting data exfiltration attempts AWS S3 buckets."
+description: "'Detecting data exfiltration attempts from AWS S3 buckets by analyzing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, attempts, aws, buckets, data, detecting, detecting-s3-data-exfiltration-attempts, exfiltration, from]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, data, exfiltration, attempts, analyzing, aws, buckets, from]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-s3-data-exfiltration-attempts -->

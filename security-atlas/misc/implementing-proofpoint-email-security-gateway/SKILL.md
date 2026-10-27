@@ -1,6 +1,6 @@
 ---
 name: implementing-proofpoint-email-security-gateway
-description: "Deploy configure Proofpoint Email Protection secure email."
+description: "Deploy and configure Proofpoint Email Protection as a secure email gateway"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, configure, deploy, email, gateway, implementing-proofpoint-email-security-gateway, proofpoint, protection, secure]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, proofpoint, email, security, gateway, and, configure, deploy, protection, secure]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-proofpoint-email-security-gateway -->

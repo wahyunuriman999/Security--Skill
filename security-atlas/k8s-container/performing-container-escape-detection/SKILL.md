@@ -1,6 +1,6 @@
 ---
 name: performing-container-escape-detection
-description: "Performing container escape detection."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-container-escape-detection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, container, escape, detection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-container-escape-detection -->

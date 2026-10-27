@@ -1,6 +1,6 @@
 ---
 name: detecting-indirect-prompt-injection
-description: "Detect defend against indirect prompt injection hidden."
+description: "Detect and defend against indirect prompt injection hidden in web pages, documents,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, defend, detect, detecting-indirect-prompt-injection, documents, hidden, indirect, injection, pages, prompt, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, indirect, prompt, injection, against, and, defend, detect, documents, hidden, pages, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-indirect-prompt-injection -->

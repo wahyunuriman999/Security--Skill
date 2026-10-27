@@ -1,6 +1,6 @@
 ---
 name: enumerating-cloud-with-cloudfox
-description: "Run CloudFox s read-only Describe/List/Get enumeration."
+description: "Run CloudFox's read-only Describe/List/Get enumeration (all-checks,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [all-checks, cloudfox, describe, enumerating-cloud-with-cloudfox, enumeration, get, list, read-only, run]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [enumerating, cloud, with, cloudfox, all-checks, describe, enumeration, get, list, read-only, run]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / enumerating-cloud-with-cloudfox -->

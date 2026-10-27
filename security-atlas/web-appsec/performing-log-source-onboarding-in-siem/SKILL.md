@@ -1,6 +1,6 @@
 ---
 name: performing-log-source-onboarding-in-siem
-description: "Perform structured log source onboarding SIEM platforms."
+description: "Perform structured log source onboarding into SIEM platforms (Splunk,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [into, log, onboarding, perform, performing-log-source-onboarding-in-siem, platforms, siem, source, splunk, structured]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, log, source, onboarding, siem, into, perform, platforms, splunk, structured]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-log-source-onboarding-in-siem -->

@@ -1,6 +1,6 @@
 ---
 name: performing-purple-team-exercise
-description: "Performs purple team exercises coordinating red team."
+description: "'Performs purple team exercises by coordinating red team adversary emulation"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, coordinating, emulation, exercises, performing-purple-team-exercise, performs, purple, red, team]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, purple, team, exercise, adversary, coordinating, emulation, exercises, performs, red]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-purple-team-exercise -->

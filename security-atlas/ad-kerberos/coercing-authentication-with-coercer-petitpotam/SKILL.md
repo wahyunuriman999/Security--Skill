@@ -1,6 +1,6 @@
 ---
 name: coercing-authentication-with-coercer-petitpotam
-description: "Trigger machine account authentication PetitPotam MS-EFSR."
+description: "Trigger machine account authentication with PetitPotam (MS-EFSR) and Coercer (MS-RPRN, MS-DFSNM, MS-FSRVP, MS-EVEN) via Coercer's scan/coerce/fuzz modes, feeding the coerced NTLM auth into a relay against AD CS Web Enrollment (ESC8), LDAP (RBCD), or SMB. Use in authorized engagements to complete a coercion-relay chain against a Domain Controller, or to validate coercion detections and signing/EPA mitigations."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [account, against, and, auth, authentication, authorized, coerce, coerced, coercer, coercing-authentication-with-coercer-petitpotam, complete, engagements]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [coercing, authentication, with, coercer, petitpotam, account, against, and, auth, authorized, coerce, coerced, complete, engagements]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / coercing-authentication-with-coercer-petitpotam -->

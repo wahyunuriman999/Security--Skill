@@ -1,6 +1,6 @@
 ---
 name: detecting-ransomware-encryption-behavior
-description: "Detects ransomware encryption activity real time entropy."
+description: "'Detects ransomware encryption activity in real time using entropy"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, detecting-ransomware-encryption-behavior, detects, encryption, entropy, ransomware, real, time, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, ransomware, encryption, behavior, activity, detects, entropy, real, time, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-ransomware-encryption-behavior -->

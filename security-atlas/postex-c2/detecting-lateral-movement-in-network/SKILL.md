@@ -1,6 +1,6 @@
 ---
 name: detecting-lateral-movement-in-network
-description: "Identifies lateral movement techniques enterprise."
+description: "'Identifies lateral movement techniques in enterprise networks by analyzing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, detecting-lateral-movement-in-network, enterprise, identifies, lateral, movement, networks, techniques]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, lateral, movement, network, analyzing, enterprise, identifies, networks, techniques]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-lateral-movement-in-network -->

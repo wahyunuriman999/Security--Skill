@@ -1,6 +1,6 @@
 ---
 name: building-c2-redirector-infrastructure
-description: "Build dumb-pipe traffic-filtering C2 redirectors nginx."
+description: "Build dumb-pipe and traffic-filtering C2 redirectors with nginx (proxy_pass) and Apache (mod_rewrite), deriving filter rules from a Malleable C2 profile, layering Let's Encrypt TLS, and applying OPSEC controls like domain fronting and UA/geo filtering. Use when standing up red-team C2 that must survive blue-team triage or ensuring only profile-matching implant traffic reaches the hidden team server."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, apache, applying, build, building-c2-redirector-infrastructure, controls, deriving, domain, dumb-pipe, encrypt, filter, filtering]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, redirector, infrastructure, and, apache, applying, build, controls, deriving, domain, dumb-pipe, encrypt, filter, filtering]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-c2-redirector-infrastructure -->

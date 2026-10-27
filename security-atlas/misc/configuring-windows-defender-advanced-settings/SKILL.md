@@ -1,6 +1,6 @@
 ---
 name: configuring-windows-defender-advanced-settings
-description: "Configures Microsoft Defender Endpoint MDE advanced."
+description: "'Configures Microsoft Defender for Endpoint (MDE) advanced protection"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [advanced, configures, configuring-windows-defender-advanced-settings, defender, endpoint, for, mde, microsoft, protection]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, windows, defender, advanced, settings, configures, endpoint, for, mde, microsoft, protection]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-windows-defender-advanced-settings -->

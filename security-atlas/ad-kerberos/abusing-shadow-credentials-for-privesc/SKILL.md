@@ -1,6 +1,6 @@
 ---
 name: abusing-shadow-credentials-for-privesc
-description: "Take Active Directory accounts writing."
+description: "Take over Active Directory accounts by writing attacker-controlled public keys to msDS-KeyCredentialLink (Shadow Credentials) with pyWhisker, Whisker, or Certipy, then authenticate via PKINIT to recover the target's NT hash without a password reset. Use when BloodHound shows GenericWrite/GenericAll/AddKeyCredentialLink over a target, as a stealthier alternative to ForceChangePassword, during authorized red-team engagements."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abusing-shadow-credentials-for-privesc, accounts, active, attacker-controlled, authenticate, bloodhound, certipy, credentials, directory, genericall, genericwrite, hash]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [abusing, shadow, credentials, for, privesc, accounts, active, attacker-controlled, authenticate, bloodhound, certipy, directory, genericall, genericwrite, hash]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / abusing-shadow-credentials-for-privesc -->

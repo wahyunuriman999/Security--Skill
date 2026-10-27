@@ -1,6 +1,6 @@
 ---
 name: implementing-ransomware-kill-switch-detection
-description: "Analyzes ransomware kill switch mechanisms including."
+description: "'Analyzes ransomware kill switch mechanisms, including mutex-based execution"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, execution, implementing-ransomware-kill-switch-detection, including, kill, mechanisms, mutex-based, ransomware, switch]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, ransomware, kill, switch, detection, analyzes, execution, including, mechanisms, mutex-based]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-ransomware-kill-switch-detection -->

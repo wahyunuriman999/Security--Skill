@@ -1,6 +1,6 @@
 ---
 name: implementing-pci-dss-compliance-controls
-description: "Implements PCI DSS 4.0.1 s 12 requirements 6 control."
+description: "Implements PCI DSS 4.0.1's 12 requirements across 6 control objectives"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, control, dss, implementing-pci-dss-compliance-controls, implements, objectives, pci, requirements]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, pci, dss, compliance, controls, across, control, implements, objectives, requirements]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-pci-dss-compliance-controls -->

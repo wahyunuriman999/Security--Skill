@@ -2,6 +2,9 @@
 name: web3-hunt-foundation
 description: Hunter mindset, recon setup, and target scoring for Web3 bug bounty. Use at the START of any new protocol hunt - scoring targets, setting up environment, understanding architecture.
 Contains: attack/triage mental models, 10-point scorecard (score ≥6 to proceed), crown jewels approach, static analysis setup, recon checklist.
+version: 1.0.0
+license: MIT
+triggers: [web3, hunt, foundation]
 ---
 
 # WEB3 HUNT FOUNDATION
@@ -282,4 +285,4 @@ STAKING / RESTAKING:
 
 ---
 
-→ NEXT: [02-bug-classes.md](02-bug-classes.md)
+→ NEXT: [02-bug-classes.md](../web3-bug-classes/SKILL.md)

@@ -1,6 +1,6 @@
 ---
 name: offensive-cloud
-description: "Cloud security attack methodology covering AWS Azure GCP."
+description: "Cloud security attack methodology covering AWS, Azure, and GCP. Includes credential harvesting (IMDS, ~/.aws, env vars, leaked CI secrets, instance roles), enumeration with cloud-specific tools (pacu, ScoutSuite, Prowler, ROADtools, gcp_enum), privilege escalation paths (IAM PassRole, AssumeRole chains, Lambda/Functions privilege flips, Azure Owner-on-self, GCP serviceAccountTokenCreator), persistence techniques (IAM user/key creation, AAD app registration, GCP svc account key creation, EventBridge/Logic Apps backdoors), data exfiltration (S3/Blob/GCS, snapshot share, RDS/CosmosDB/Cloud SQL ex"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, assumerole, attack, aws, azure, cha, cloud, cloud-specific, covering, credential, enum, enumeration]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, cloud, and, assumerole, attack, aws, azure, cha, cloud-specific, covering, credential, enum, enumeration]
 ---
 
 <!-- upstream: Claude-Red / offensive-cloud -->

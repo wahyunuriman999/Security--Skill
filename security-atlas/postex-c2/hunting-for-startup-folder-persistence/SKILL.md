@@ -1,6 +1,6 @@
 ---
 name: hunting-for-startup-folder-persistence
-description: "Detects T1547.001 startup folder persistence monitoring."
+description: "Detects T1547.001 startup folder persistence by monitoring Windows startup directories for suspicious file creation, cross-referencing Autoruns entries, and running a Python watchdog script for real-time filesystem monitoring. Use when hunting for malware or implants that survive reboot via startup-folder placement, or when validating autoruns/EDR findings against known-good startup baselines."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [001, and, autoruns, creation, cross-referencing, detects, directories, entries, file, filesystem, folder, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, startup, folder, persistence, 001, and, autoruns, creation, cross-referencing, detects, directories, entries, file, filesystem]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-startup-folder-persistence -->

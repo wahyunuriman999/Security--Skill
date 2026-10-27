@@ -1,6 +1,6 @@
 ---
 name: deploying-software-defined-perimeter
-description: "Deploys Software-Defined Perimeter CSA v2.0 specification."
+description: "Deploys a Software-Defined Perimeter per the CSA v2.0 specification, configuring Single Packet Authorization, mutual TLS, and SDP controller/gateway components to enforce zero trust network access. Use when building or hardening zero trust network architecture, implementing SPA-based "invisible" infrastructure that cloaks services from unauthenticated scanning, or meeting compliance requirements for zero trust network access."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, architecture, authorization, building, components, configuring, controller, csa, deploying-software-defined-perimeter, deploys, enforce]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, software, defined, perimeter, access, and, architecture, authorization, building, components, configuring, controller, csa, deploys, enforce]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-software-defined-perimeter -->

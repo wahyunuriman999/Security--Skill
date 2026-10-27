@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: hackerone_public, cve_database, owasp, public_research
 report_count: 5
+triggers: [hunt, file, upload]
 ---
 
 ## 9. FILE UPLOAD

@@ -1,6 +1,6 @@
 ---
 name: performing-soc2-type2-audit-preparation
-description: "Automates SOC 2 Type II audit preparation including gap."
+description: "'Automates SOC 2 Type II audit preparation including gap assessment against"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, assessment, audit, automates, gap, including, performing-soc2-type2-audit-preparation, preparation, soc, type]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, soc2, type2, audit, preparation, against, assessment, automates, gap, including, soc, type]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-soc2-type2-audit-preparation -->

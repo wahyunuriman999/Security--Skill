@@ -4,6 +4,7 @@ description: "Bugcrowd-specific reporting tactics complementing report-writing: 
 version: 1.0.0
 license: MIT
 sources: bugcrowd, community
+triggers: [bugcrowd, reporting]
 ---
 
 # BUGCROWD REPORTING — Program-Specific Tactics

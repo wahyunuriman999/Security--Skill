@@ -1,6 +1,6 @@
 ---
 name: testing-android-intents-for-vulnerabilities
-description: "Tests Android inter-process communication IPC through."
+description: "'Tests Android inter-process communication (IPC) through intents for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [android, communication, for, intents, inter-process, ipc, testing-android-intents-for-vulnerabilities, tests, through]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, android, intents, for, vulnerabilities, communication, inter-process, ipc, tests, through]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-android-intents-for-vulnerabilities -->

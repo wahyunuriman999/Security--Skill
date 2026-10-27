@@ -1,6 +1,6 @@
 ---
 name: testing-jwt-token-security
-description: "Assessing JSON Web Token implementations cryptographic."
+description: "Assessing JSON Web Token implementations for cryptographic weaknesses,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assessing, cryptographic, for, implementations, json, testing-jwt-token-security, token, weaknesses, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, jwt, token, security, assessing, cryptographic, for, implementations, json, weaknesses, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-jwt-token-security -->

@@ -1,6 +1,6 @@
 ---
 name: performing-hardware-security-module-integration
-description: "Integrates Hardware Security Modules HSMs PKCS#11."
+description: "Integrates Hardware Security Modules (HSMs) via the PKCS#11 interface"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [hardware, hsms, integrates, interface, modules, performing-hardware-security-module-integration, pkcs, security, the, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, hardware, security, module, integration, hsms, integrates, interface, modules, pkcs, the, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-hardware-security-module-integration -->

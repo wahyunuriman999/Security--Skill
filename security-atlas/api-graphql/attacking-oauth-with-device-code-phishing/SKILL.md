@@ -1,6 +1,6 @@
 ---
 name: attacking-oauth-with-device-code-phishing
-description: "Run OAuth 2.0 device-code illicit-consent phishing."
+description: "Run OAuth 2.0 device-code and illicit-consent phishing attacks against"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, attacking-oauth-with-device-code-phishing, attacks, device-code, illicit-consent, oauth, phishing, run]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [attacking, oauth, with, device, code, phishing, against, and, attacks, device-code, illicit-consent, run]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / attacking-oauth-with-device-code-phishing -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-living-off-the-land-with-lolbas
-description: "Detect Living Off Land Binaries LOLBins/LOLBAS abuse."
+description: "Detect Living Off the Land Binaries (LOLBins/LOLBAS) abuse including"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, binaries, detect, detecting-living-off-the-land-with-lolbas, including, land, living, lolbas, lolbins, off, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, living, off, the, land, with, lolbas, abuse, binaries, detect, including, lolbins]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-living-off-the-land-with-lolbas -->

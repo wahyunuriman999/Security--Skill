@@ -1,6 +1,6 @@
 ---
 name: performing-service-account-credential-rotation
-description: "Automates credential rotation service accounts Active."
+description: "Automates credential rotation for service accounts across Active Directory,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [accounts, across, active, automates, credential, directory, for, performing-service-account-credential-rotation, rotation, service]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, service, account, credential, rotation, accounts, across, active, automates, directory, for]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-service-account-credential-rotation -->

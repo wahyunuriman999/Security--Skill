@@ -1,6 +1,6 @@
 ---
 name: performing-ransomware-tabletop-exercise
-description: "Plans facilitates tabletop exercises simulating."
+description: "'Plans and facilitates tabletop exercises simulating ransomware incidents,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, exercises, facilitates, incidents, performing-ransomware-tabletop-exercise, plans, ransomware, simulating, tabletop]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ransomware, tabletop, exercise, and, exercises, facilitates, incidents, plans, simulating]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ransomware-tabletop-exercise -->

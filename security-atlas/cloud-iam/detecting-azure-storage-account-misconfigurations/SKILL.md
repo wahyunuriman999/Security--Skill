@@ -1,6 +1,6 @@
 ---
 name: detecting-azure-storage-account-misconfigurations
-description: "Audit Azure Blob ADLS storage accounts public access."
+description: "Audit Azure Blob and ADLS storage accounts for public access exposure, weak"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, accounts, adls, and, audit, azure, blob, detecting-azure-storage-account-misconfigurations, exposure, for, public, storage]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, azure, storage, account, misconfigurations, access, accounts, adls, and, audit, blob, exposure, for, public]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-azure-storage-account-misconfigurations -->

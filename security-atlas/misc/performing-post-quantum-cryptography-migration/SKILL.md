@@ -1,6 +1,6 @@
 ---
 name: performing-post-quantum-cryptography-migration
-description: "Assesses organizational readiness post-quantum."
+description: "'Assesses organizational readiness for post-quantum cryptography migration"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [assesses, cryptography, for, migration, organizational, performing-post-quantum-cryptography-migration, post-quantum, readiness]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, post, quantum, cryptography, migration, assesses, for, organizational, post-quantum, readiness]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-post-quantum-cryptography-migration -->

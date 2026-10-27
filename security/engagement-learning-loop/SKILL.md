@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [bug-bounty, learning, post-engagement, tradecraft]
     related_skills: [triage-validation, redteam-mindset, evidence-hygiene]
+triggers: [engagement, learning, loop, bug-bounty, post-engagement, tradecraft]
 ---
 
 # Engagement Learning Loop

@@ -1,6 +1,6 @@
 ---
 name: testing-for-xss-vulnerabilities
-description: "Tests web applications reflected stored DOM-based."
+description: "Tests web applications for reflected, stored, and DOM-based Cross-Site"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, applications, cross-site, dom-based, for, reflected, stored, testing-for-xss-vulnerabilities, tests, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, xss, vulnerabilities, and, applications, cross-site, dom-based, reflected, stored, tests, web]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-xss-vulnerabilities -->

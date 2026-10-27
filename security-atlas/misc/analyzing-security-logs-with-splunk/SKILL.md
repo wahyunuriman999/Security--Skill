@@ -1,6 +1,6 @@
 ---
 name: analyzing-security-logs-with-splunk
-description: "Leverages Splunk Enterprise Security SPL Search."
+description: "'Leverages Splunk Enterprise Security and SPL (Search Processing Language)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-security-logs-with-splunk, and, enterprise, language, leverages, processing, search, security, spl, splunk]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, security, logs, with, splunk, and, enterprise, language, leverages, processing, search, spl]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-security-logs-with-splunk -->

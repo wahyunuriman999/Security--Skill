@@ -1,6 +1,6 @@
 ---
 name: offensive-wpa3-sae
-description: "WPA3 / SAE Simultaneous Authentication Equals attack."
+description: "WPA3 / SAE (Simultaneous Authentication of Equals) attack methodology — transition-mode (mixed WPA2/WPA3) downgrade, Dragonblood side-channel attacks (CVE-2019-9494, 9495, 13377, 13456), SAE auth flooding for AP CPU exhaustion, Hash-to-Element (H2E) timing analysis, group downgrade, and 6 GHz / Wi-Fi 6E spec implications (PMF mandatory, no transition mode allowed). Use when target advertises WPA3-SAE or WPA3-Personal/Enterprise, or operates in 6 GHz where WPA3 + PMF are required by spec."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [13377, 13456, 9495, analysis, and, attack, attacks, auth, authentication, cpu, cve-2019-9494, downgrade]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, wpa3, sae, 13377, 13456, 9495, analysis, and, attack, attacks, auth, authentication, cpu, cve-2019-9494, downgrade]
 ---
 
 <!-- upstream: Claude-Red / offensive-wpa3-sae -->

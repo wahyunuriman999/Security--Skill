@@ -1,6 +1,6 @@
 ---
 name: performing-second-order-sql-injection
-description: "Detect exploit second-order SQL injection vulnerabilities."
+description: "Detect and exploit second-order SQL injection vulnerabilities where malicious"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, detect, exploit, injection, malicious, performing-second-order-sql-injection, second-order, sql, vulnerabilities, where]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, second, order, sql, injection, and, detect, exploit, malicious, second-order, vulnerabilities, where]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-second-order-sql-injection -->

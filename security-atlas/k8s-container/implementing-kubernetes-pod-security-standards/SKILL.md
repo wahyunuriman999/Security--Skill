@@ -1,6 +1,6 @@
 ---
 name: implementing-kubernetes-pod-security-standards
-description: "Implementing kubernetes pod security standards."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-kubernetes-pod-security-standards]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, kubernetes, pod, security, standards]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-kubernetes-pod-security-standards -->

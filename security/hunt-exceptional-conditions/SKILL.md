@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 report_count: 0
 sources: hackerone_public
+triggers: [hunt, exceptional, conditions]
 ---
 
 # HUNT-EXCEPTIONAL-CONDITIONS — Verbose Errors / Fail-Open (A10:2025)

@@ -1,6 +1,6 @@
 ---
 name: implementing-device-posture-assessment-in-zero-trust
-description: "Implements device posture assessment zero trust access."
+description: "'Implements device posture assessment as a zero trust access control"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, assessment, control, device, implementing-device-posture-assessment-in-zero-trust, implements, posture, trust, zero]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, device, posture, assessment, zero, trust, access, control, implements]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-device-posture-assessment-in-zero-trust -->

@@ -1,6 +1,6 @@
 ---
 name: building-ioc-enrichment-pipeline-with-opencti
-description: "Build automated IOC enrichment pipeline OpenCTI STIX 2.1."
+description: "Build an automated IOC enrichment pipeline on OpenCTI (STIX 2.1 native"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automated, build, building-ioc-enrichment-pipeline-with-opencti, enrichment, ioc, native, opencti, pipeline, stix]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, ioc, enrichment, pipeline, with, opencti, automated, build, native, stix]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-ioc-enrichment-pipeline-with-opencti -->

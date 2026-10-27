@@ -1,6 +1,6 @@
 ---
 name: analyzing-persistence-mechanisms-in-linux
-description: "Scan Linux systems persistence mechanisms including."
+description: "Scan Linux systems for persistence mechanisms including crontab/systemd entries, LD_PRELOAD injection, shell profile modifications (.bashrc, .profile), and SSH authorized_keys backdoors, then correlate findings with auditd logs into an installation timeline. Use during incident response or threat hunting to detect or confirm how an adversary maintained access to a compromised Linux host."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-persistence-mechanisms-in-linux, and, auditd, authorized, backdoors, bashrc, correlate, crontab, during, entries, findings, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, persistence, mechanisms, linux, and, auditd, authorized, backdoors, bashrc, correlate, crontab, during, entries, findings, for]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-persistence-mechanisms-in-linux -->

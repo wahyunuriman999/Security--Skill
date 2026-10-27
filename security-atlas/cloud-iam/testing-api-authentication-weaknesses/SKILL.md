@@ -1,6 +1,6 @@
 ---
 name: testing-api-authentication-weaknesses
-description: "Tests API authentication mechanisms weaknesses including."
+description: "'Tests API authentication mechanisms for weaknesses including broken"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, authentication, broken, for, including, mechanisms, testing-api-authentication-weaknesses, tests, weaknesses]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, api, authentication, weaknesses, broken, for, including, mechanisms, tests]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-api-authentication-weaknesses -->

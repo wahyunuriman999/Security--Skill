@@ -1,6 +1,6 @@
 ---
 name: implementing-patch-management-workflow
-description: "Patch management systematic process identifying testing."
+description: "Patch management is the systematic process of identifying, testing, deploying,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [deploying, identifying, implementing-patch-management-workflow, management, patch, process, systematic, testing, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, patch, management, workflow, deploying, identifying, process, systematic, testing, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-patch-management-workflow -->

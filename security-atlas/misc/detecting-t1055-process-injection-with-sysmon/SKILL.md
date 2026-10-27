@@ -1,6 +1,6 @@
 ---
 name: detecting-t1055-process-injection-with-sysmon
-description: "Detect process injection techniques T1055 - including DLL."
+description: "Detect process injection techniques (T1055) - including DLL injection, process"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [detect, detecting-t1055-process-injection-with-sysmon, dll, including, injection, process, t1055, techniques]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, t1055, process, injection, with, sysmon, detect, dll, including, techniques]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-t1055-process-injection-with-sysmon -->

@@ -1,6 +1,6 @@
 ---
 name: performing-threat-intelligence-sharing-with-misp
-description: "Performing threat intelligence sharing with misp."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-threat-intelligence-sharing-with-misp]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, threat, intelligence, sharing, with, misp]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-threat-intelligence-sharing-with-misp -->

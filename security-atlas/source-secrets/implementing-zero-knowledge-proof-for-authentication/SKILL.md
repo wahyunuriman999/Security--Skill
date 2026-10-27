@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-knowledge-proof-for-authentication
-description: "Implements Schnorr identification protocol simplified."
+description: "Implements the Schnorr identification protocol and a simplified Zero-Knowledge Password Proof (ZKPP) over the discrete logarithm problem, letting a prover authenticate by demonstrating knowledge of a secret without ever revealing it to the server. Use when designing or building password-less or password-secret-free authentication, or when a server must verify a user's credential without learning or storing the underlying secret."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, authenticate, building, demonstrating, designing, discrete, ever, identification, implementing-zero-knowledge-proof-for-authentication, implements, knowledge, letting]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, knowledge, proof, for, authentication, and, authenticate, building, demonstrating, designing, discrete, ever, identification, implements, letting]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-knowledge-proof-for-authentication -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-typosquatting-packages-in-npm-pypi
-description: "Detects typosquatting attacks npm PyPI package registries."
+description: "'Detects typosquatting attacks in npm and PyPI package registries by"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attacks, detecting-typosquatting-packages-in-npm-pypi, detects, npm, package, pypi, registries, typosquatting]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, typosquatting, packages, npm, pypi, and, attacks, detects, package, registries]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-typosquatting-packages-in-npm-pypi -->

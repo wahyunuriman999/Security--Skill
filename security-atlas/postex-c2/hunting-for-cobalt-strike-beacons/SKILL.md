@@ -1,6 +1,6 @@
 ---
 name: hunting-for-cobalt-strike-beacons
-description: "Detect Cobalt Strike beacon command-and-control traffic."
+description: "Detect Cobalt Strike beacon command-and-control traffic using default TLS certificate signatures (serial 8BB00EE), JA3/JA3S/JARM fingerprints, HTTP malleable C2 profile pattern matching, and beacon jitter/interval analysis, built with Zeek network logs, Suricata IDS rules, and Python PCAP analysis. Use when hunting for Cobalt Strike beacon callbacks in network traffic or building detection rules for this C2 framework."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [8bb00ee, analysis, and, beacon, built, certificate, cobalt, command-and-control, default, detect, fingerprints, http]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, cobalt, strike, beacons, 8bb00ee, analysis, and, beacon, built, certificate, command-and-control, default, detect, fingerprints, http]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-cobalt-strike-beacons -->

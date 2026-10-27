@@ -1,6 +1,6 @@
 ---
 name: detecting-aws-guardduty-findings-automation
-description: "Build automated AWS GuardDuty finding response pipelines."
+description: "Build automated AWS GuardDuty finding response pipelines using EventBridge"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automated, aws, build, detecting-aws-guardduty-findings-automation, eventbridge, finding, guardduty, pipelines, response, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, aws, guardduty, findings, automation, automated, build, eventbridge, finding, pipelines, response, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-aws-guardduty-findings-automation -->

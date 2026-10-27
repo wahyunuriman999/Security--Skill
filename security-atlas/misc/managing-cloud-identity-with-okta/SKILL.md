@@ -1,6 +1,6 @@
 ---
 name: managing-cloud-identity-with-okta
-description: "Managing cloud identity with okta."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [managing-cloud-identity-with-okta]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [managing, cloud, identity, with, okta]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / managing-cloud-identity-with-okta -->

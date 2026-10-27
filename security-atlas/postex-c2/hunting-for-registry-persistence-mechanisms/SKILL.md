@@ -1,6 +1,6 @@
 ---
 name: hunting-for-registry-persistence-mechanisms
-description: "Hunts registry-based persistence mechanisms MITRE T1547."
+description: "Hunts for registry-based persistence mechanisms (MITRE T1547) in Windows"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [for, hunting-for-registry-persistence-mechanisms, hunts, mechanisms, mitre, persistence, registry-based, t1547, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, registry, persistence, mechanisms, hunts, mitre, registry-based, t1547, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-registry-persistence-mechanisms -->

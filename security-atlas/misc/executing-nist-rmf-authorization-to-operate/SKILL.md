@@ -1,6 +1,6 @@
 ---
 name: executing-nist-rmf-authorization-to-operate
-description: "Executing nist rmf authorization to operate."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [executing-nist-rmf-authorization-to-operate]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [executing, nist, rmf, authorization, operate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / executing-nist-rmf-authorization-to-operate -->

@@ -1,6 +1,6 @@
 ---
 name: offensive-wifi-recon
-description: "Wi-Fi reconnaissance methodology adapter selection."
+description: "Wi-Fi reconnaissance methodology — adapter selection, monitor mode and packet injection setup, regulatory domain handling, multi-band airspace mapping, hidden SSID discovery, BSSID/ESSID/channel/PMF/encryption fingerprinting, client probe analysis, vendor OUI lookup, war-driving with Kismet/airodump-ng/Wigle, and structured airspace data capture for downstream attacks. Use at the start of any wireless engagement to build the target map before active attacks; covers 2.4 GHz, 5 GHz, and 6 GHz (Wi-Fi 6E) bands and adapter compatibility for each."
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adapter, airodump, airspace, analysis, and, bssid, channel, client, discovery, domain, encryption, essid]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, wifi, recon, adapter, airodump, airspace, analysis, and, bssid, channel, client, discovery, domain, encryption, essid]
 ---
 
 <!-- upstream: Claude-Red / offensive-wifi-recon -->

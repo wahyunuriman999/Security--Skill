@@ -1,6 +1,6 @@
 ---
 name: implementing-delinea-secret-server-for-pam
-description: "Implements Delinea Secret Server privileged access."
+description: "'Implements Delinea Secret Server for privileged access management,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, delinea, for, implementing-delinea-secret-server-for-pam, implements, management, privileged, secret, server]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, delinea, secret, server, for, pam, access, implements, management, privileged]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-delinea-secret-server-for-pam -->

@@ -1,6 +1,6 @@
 ---
 name: analyzing-threat-intelligence-feeds
-description: "Analyzes structured unstructured threat intelligence."
+description: "'Analyzes structured and unstructured threat intelligence feeds to extract"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, analyzing-threat-intelligence-feeds, and, extract, feeds, intelligence, structured, threat, unstructured]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, threat, intelligence, feeds, analyzes, and, extract, structured, unstructured]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-threat-intelligence-feeds -->

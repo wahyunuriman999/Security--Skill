@@ -1,6 +1,6 @@
 ---
 name: detecting-insider-threat-with-ueba
-description: "Implement User Entity Behavior Analytics UEBA."
+description: "Implement User and Entity Behavior Analytics (UEBA) using Elasticsearch/OpenSearch"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analytics, and, behavior, detecting-insider-threat-with-ueba, elasticsearch, entity, implement, opensearch, ueba, user, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, insider, threat, with, ueba, analytics, and, behavior, elasticsearch, entity, implement, opensearch, user, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-insider-threat-with-ueba -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-aws-credential-exposure-with-trufflehog
-description: "Scan source code repositories CI/CD pipelines."
+description: "'Scan source code repositories, CI/CD pipelines, and configuration files"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, code, configuration, detecting-aws-credential-exposure-with-trufflehog, files, pipelines, repositories, scan, source]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, aws, credential, exposure, with, trufflehog, and, code, configuration, files, pipelines, repositories, scan, source]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-aws-credential-exposure-with-trufflehog -->

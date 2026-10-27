@@ -1,6 +1,6 @@
 ---
 name: securing-container-registry-images
-description: "Secures container registry images ECR ACR GCR Docker Hub."
+description: "'Secures container registry images (ECR, ACR, GCR, Docker Hub) by scanning"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [acr, container, docker, ecr, gcr, hub, images, registry, scanning, secures, securing-container-registry-images]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, container, registry, images, acr, docker, ecr, gcr, hub, scanning, secures]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-container-registry-images -->

@@ -1,6 +1,6 @@
 ---
 name: detecting-dns-exfiltration-with-dns-query-analysis
-description: "Detect data exfiltration DNS tunneling tools like iodine."
+description: "Detect data exfiltration via DNS tunneling (tools like iodine, dnscat2, dns2tcp) by analyzing query entropy, subdomain length, query volume to single domains, TXT/CNAME/NULL record abuse, and oversized response payloads using passive DNS monitoring and statistical/ML methods. Use when hunting for covert DNS-based data exfiltration or building a passive DNS anomaly detection capability."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, analyzing, and, cname, data, detect, detecting-dns-exfiltration-with-dns-query-analysis, dns, dns2tcp, dnscat2, domains, entropy]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, dns, exfiltration, with, query, analysis, abuse, analyzing, and, cname, data, detect, dns2tcp, dnscat2, domains, entropy]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-dns-exfiltration-with-dns-query-analysis -->

@@ -1,6 +1,6 @@
 ---
 name: analyzing-powershell-empire-artifacts
-description: "Detect PowerShell Empire post-exploitation framework."
+description: "Detect PowerShell Empire post-exploitation framework artifacts in Windows Script Block Logging (Event ID 4104) and Module Logging (Event ID 4103), including the default launcher string, Base64-encoded WebClient/FromBase64String payloads, known module invocations (Invoke-Mimikatz, Invoke-Kerberoast), and staging URL patterns. Use when hunting for or confirming Empire C2 activity in Windows event logs."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [4103, 4104, analyzing-powershell-empire-artifacts, and, artifacts, base64-encoded, block, default, detect, empire, event, framework]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, powershell, empire, artifacts, 4103, 4104, and, base64-encoded, block, default, detect, event, framework]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-powershell-empire-artifacts -->

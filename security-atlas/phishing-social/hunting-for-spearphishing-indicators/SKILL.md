@@ -1,6 +1,6 @@
 ---
 name: hunting-for-spearphishing-indicators
-description: "Hunt spearphishing campaign indicators email logs."
+description: "Hunt for spearphishing campaign indicators across email logs, endpoint"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, campaign, email, endpoint, for, hunt, hunting-for-spearphishing-indicators, indicators, logs, spearphishing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, spearphishing, indicators, across, campaign, email, endpoint, hunt, logs]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-spearphishing-indicators -->

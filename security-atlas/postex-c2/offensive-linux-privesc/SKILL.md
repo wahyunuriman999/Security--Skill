@@ -1,6 +1,6 @@
 ---
 name: offensive-linux-privesc
-description: "Comprehensive Linux privilege escalation methodology."
+description: "Comprehensive Linux privilege escalation methodology for offensive security engagements. Covers the full attack surface from a low-privilege shell to root: SUID/SGID binary abuse via GTFOBins, Linux capabilities exploitation (cap_setuid, cap_dac_override, cap_dac_read_search), sudo misconfigurations including NOPASSWD rules and Baron Samedit (CVE-2021-3156), cron job abuse through writable scripts, PATH hijacking, and wildcard injection with tar/rsync/chown. Includes writable /etc/passwd attacks, NFS no_root_squash exploitation, kernel exploits (DirtyPipe CVE-2022-0847, DirtyCow CVE-2016-5195,"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, attack, binary, cap, capabilities, comprehensive, covers, dac, engagements, escalation, exploitation, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, linux, privesc, abuse, attack, binary, cap, capabilities, comprehensive, covers, dac, engagements, escalation, exploitation, for]
 ---
 
 <!-- upstream: Claude-Red / offensive-linux-privesc -->

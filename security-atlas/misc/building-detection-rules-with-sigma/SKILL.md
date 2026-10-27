@@ -1,6 +1,6 @@
 ---
 name: building-detection-rules-with-sigma
-description: "Builds vendor-agnostic detection rules Sigma rule format."
+description: "'Builds vendor-agnostic detection rules using the Sigma rule format for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [building-detection-rules-with-sigma, builds, detection, for, format, rule, rules, sigma, the, using, vendor-agnostic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, detection, rules, with, sigma, builds, for, format, rule, the, using, vendor-agnostic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-detection-rules-with-sigma -->

@@ -1,6 +1,6 @@
 ---
 name: testing-mobile-api-authentication
-description: "Tests authentication authorization mechanisms mobile."
+description: "'Tests authentication and authorization mechanisms in mobile application"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, application, authentication, authorization, mechanisms, mobile, testing-mobile-api-authentication, tests]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, mobile, api, authentication, and, application, authorization, mechanisms, tests]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-mobile-api-authentication -->

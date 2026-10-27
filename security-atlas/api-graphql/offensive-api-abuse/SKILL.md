@@ -1,6 +1,6 @@
 ---
 name: offensive-api-abuse
-description: "Advanced API exploitation methodology focused business."
+description: "Advanced API exploitation methodology focused on business logic abuse and sophisticated attack patterns that bypass traditional security controls. Covers business logic bypass through API call chaining and workflow manipulation. Addresses GraphQL-specific attacks including batching for credential brute-force, query depth exploitation, and introspection abuse. Includes pagination exploitation for data exfiltration, webhook hijacking for SSRF and data interception, and resource exhaustion through algorithmic complexity attacks. Covers race conditions in API transactions using parallel request te"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, addresses, advanced, and, api, attack, attacks, batching, business, bypass, call, chaining]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, api, abuse, addresses, advanced, and, attack, attacks, batching, business, bypass, call, chaining]
 ---
 
 <!-- upstream: Claude-Red / offensive-api-abuse -->

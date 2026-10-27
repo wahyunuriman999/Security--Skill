@@ -1,6 +1,6 @@
 ---
 name: detecting-broken-object-property-level-authorization
-description: "Detect test OWASP API3 2023 Broken Object Property Level."
+description: "Detect and test for OWASP API3:2023 Broken Object Property Level Authorization"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [2023, and, api3, authorization, broken, detect, detecting-broken-object-property-level-authorization, for, level, object, owasp, property]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, broken, object, property, level, authorization, 2023, and, api3, detect, for, owasp]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-broken-object-property-level-authorization -->

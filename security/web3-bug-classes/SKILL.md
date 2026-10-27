@@ -1,6 +1,9 @@
 ---
 name: web3-bug-classes
 description: Complete reference for all 10 DeFi smart contract bug classes. Use this when hunting for specific vulnerability types, need attack patterns for accounting desync, access control, incomplete path, off-by-one, oracle manipulation, ERC4626 vaults, reentrancy, flash loans, signature replay, or proxy/upgrade bugs.
+version: 1.0.0
+license: MIT
+triggers: [web3, bug, classes]
 ---
 
 # BUG CLASSES — DeFi Smart Contract Vulnerabilities
@@ -1119,4 +1122,4 @@ grep -rn "slot\|__gap\|ERC1967Storage" contracts/
 
 ---
 
-→ NEXT: [03-grep-arsenal.md](03-grep-arsenal.md)
+→ NEXT: [03-grep-arsenal.md](../web3-grep-arsenal/SKILL.md)

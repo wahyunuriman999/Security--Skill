@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-native-threat-hunting-with-aws-detective
-description: "Investigate AWS security incidents Amazon Detective s."
+description: "Investigate AWS security incidents using Amazon Detective's behavior graphs,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [amazon, aws, behavior, detective, graphs, incidents, investigate, performing-cloud-native-threat-hunting-with-aws-detective, security, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, native, threat, hunting, with, aws, detective, amazon, behavior, graphs, incidents, investigate, security, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-native-threat-hunting-with-aws-detective -->

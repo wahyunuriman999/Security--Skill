@@ -1,6 +1,6 @@
 ---
 name: performing-cloud-forensics-with-aws-cloudtrail
-description: "Investigate AWS account compromise querying CloudTrail."
+description: "Investigate AWS account compromise by querying CloudTrail with boto3's LookupEvents"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [account, aws, boto3, cloudtrail, compromise, investigate, lookupevents, performing-cloud-forensics-with-aws-cloudtrail, querying, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, cloud, forensics, with, aws, cloudtrail, account, boto3, compromise, investigate, lookupevents, querying]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-cloud-forensics-with-aws-cloudtrail -->

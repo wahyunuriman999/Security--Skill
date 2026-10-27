@@ -1,6 +1,6 @@
 ---
 name: detecting-anomalies-in-industrial-control-systems
-description: "Deploys anomaly detection OT/ICS environments machine."
+description: "Deploys anomaly detection for OT/ICS environments using machine learning on OT network baselines, physics-based process models, and Modbus/DNP3/OPC UA traffic analysis to flag deviations, rogue devices, and mismatches against historian data. Use for continuous OT monitoring, baselining deterministic SCADA polling, or investigating alerts from Nozomi Guardian/Dragos needing deeper protocol analysis."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, analysis, and, anomaly, baselines, baselining, continuous, data, deploys, detecting-anomalies-in-industrial-control-systems, detection, deterministic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, anomalies, industrial, control, systems, against, analysis, and, anomaly, baselines, baselining, continuous, data, deploys, detection, deterministic]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-anomalies-in-industrial-control-systems -->

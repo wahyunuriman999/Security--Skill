@@ -1,6 +1,6 @@
 ---
 name: performing-graphql-security-assessment
-description: "Assessing GraphQL API endpoints introspection leaks."
+description: "Assessing GraphQL API endpoints for introspection leaks, injection attacks,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, assessing, attacks, endpoints, for, graphql, injection, introspection, leaks, performing-graphql-security-assessment]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, graphql, security, assessment, api, assessing, attacks, endpoints, for, injection, introspection, leaks]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-graphql-security-assessment -->

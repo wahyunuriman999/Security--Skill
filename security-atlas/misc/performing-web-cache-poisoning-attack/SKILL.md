@@ -1,6 +1,6 @@
 ---
 name: performing-web-cache-poisoning-attack
-description: "Exploiting web cache mechanisms serve malicious content."
+description: "Exploiting web cache mechanisms to serve malicious content to other users"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [cache, content, exploiting, malicious, mechanisms, other, performing-web-cache-poisoning-attack, serve, users, web]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, web, cache, poisoning, attack, content, exploiting, malicious, mechanisms, other, serve, users]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-web-cache-poisoning-attack -->

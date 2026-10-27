@@ -1,6 +1,6 @@
 ---
 name: hunting-for-webshell-activity
-description: "Runs hypothesis-driven threat hunt web shell deployment."
+description: "Runs a hypothesis-driven threat hunt for web shell deployment (T1505.003) on internet-facing servers by analyzing file creation in web directories, suspicious child-process spawning from web server processes, and anomalous HTTP request patterns. Use when hunting for web shells after a public-facing app compromise, when EDR/SIEM alerts fire on webserver process anomalies, or during incident response on internet-facing infrastructure."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [003, after, analyzing, and, anomalous, child-process, creation, deployment, directories, file, for, from]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, webshell, activity, 003, after, analyzing, and, anomalous, child-process, creation, deployment, directories, file, from]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-webshell-activity -->

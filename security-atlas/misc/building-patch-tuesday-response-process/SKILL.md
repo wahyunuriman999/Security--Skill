@@ -1,6 +1,6 @@
 ---
 name: building-patch-tuesday-response-process
-description: "Establish repeatable operational process triaging testing."
+description: "Establish a repeatable operational process for triaging, testing, and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, building-patch-tuesday-response-process, establish, for, operational, process, repeatable, testing, triaging]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, patch, tuesday, response, process, and, establish, for, operational, repeatable, testing, triaging]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-patch-tuesday-response-process -->

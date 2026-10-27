@@ -1,6 +1,6 @@
 ---
 name: securing-remote-access-to-ot-environment
-description: "Designs configures secure remote access OT/ICS."
+description: "'Designs and configures secure remote access to OT/ICS environments for"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, and, configures, designs, environments, for, ics, remote, secure, securing-remote-access-to-ot-environment]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, remote, access, environment, and, configures, designs, environments, for, ics, secure]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-remote-access-to-ot-environment -->

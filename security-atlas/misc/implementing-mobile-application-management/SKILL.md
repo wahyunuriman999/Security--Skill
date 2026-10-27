@@ -1,6 +1,6 @@
 ---
 name: implementing-mobile-application-management
-description: "Implements Mobile Application Management MAM policies."
+description: "'Implements Mobile Application Management (MAM) policies to protect enterprise"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [application, enterprise, implementing-mobile-application-management, implements, mam, management, mobile, policies, protect]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, mobile, application, management, enterprise, implements, mam, policies, protect]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-mobile-application-management -->

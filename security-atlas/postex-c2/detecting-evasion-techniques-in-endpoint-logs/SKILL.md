@@ -1,6 +1,6 @@
 ---
 name: detecting-evasion-techniques-in-endpoint-logs
-description: "Detects defense evasion techniques used adversaries."
+description: "'Detects defense evasion techniques used by adversaries in endpoint logs"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversaries, defense, detecting-evasion-techniques-in-endpoint-logs, detects, endpoint, evasion, logs, techniques, used]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, evasion, techniques, endpoint, logs, adversaries, defense, detects, used]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-evasion-techniques-in-endpoint-logs -->

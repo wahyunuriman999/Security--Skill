@@ -1,6 +1,6 @@
 ---
 name: implementing-api-security-posture-management
-description: "Implements API Security Posture Management API-SPM."
+description: "Implements API Security Posture Management (API-SPM) to continuously"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, api-spm, continuously, implementing-api-security-posture-management, implements, management, posture, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, api, security, posture, management, api-spm, continuously, implements]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-api-security-posture-management -->

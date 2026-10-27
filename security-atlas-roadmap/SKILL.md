@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [roadmap, router, security-atlas, skill-index, routing]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [security, atlas, roadmap, router, security-atlas, skill-index, routing]
 ---
 # Security Atlas Roadmap — Instant Routing
 

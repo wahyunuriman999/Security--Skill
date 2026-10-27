@@ -1,6 +1,6 @@
 ---
 name: performing-iot-security-assessment
-description: "Performs comprehensive security assessments IoT devices."
+description: "'Performs comprehensive security assessments of IoT devices and their"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, assessments, comprehensive, devices, iot, performing-iot-security-assessment, performs, security, their]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, iot, security, assessment, and, assessments, comprehensive, devices, performs, their]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-iot-security-assessment -->

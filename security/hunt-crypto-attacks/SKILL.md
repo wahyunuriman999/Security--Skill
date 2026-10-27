@@ -2,6 +2,9 @@
 name: hunt-crypto-attacks
 description: Applied cryptographic attacks for bug bounty — padding oracle, CBC bit-flip, ECB block reorder, hash length extension, weak PRNG token prediction, JWT alg confusion, ECDSA nonce reuse, RSA PKCS#1 v1.5. Use when target uses custom crypto, predictable tokens, or weak session management.
 tags: [crypto, padding-oracle, cbc, ecb, hash-extension, prng, jwt, ecdsa, rsa, token-prediction]
+version: 1.0.0
+license: MIT
+triggers: [hunt, crypto, attacks, padding-oracle, cbc, ecb, hash-extension, prng, jwt, ecdsa, rsa, token-prediction]
 ---
 
 # Applied Cryptographic Attacks — Bug Bounty Reference

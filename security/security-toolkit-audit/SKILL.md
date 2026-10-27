@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [security, tooling, skill-maintenance, verification, tradecraft]
     related_skills: [hermes-agent-skill-authoring, engagement-learning-loop]
+triggers: [security, toolkit, audit, tooling, skill-maintenance, verification, tradecraft]
 ---
 
 # Security Toolkit Audit

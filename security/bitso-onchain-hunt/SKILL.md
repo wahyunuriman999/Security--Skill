@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [bug-bounty, bitso, nvio, onchain-cc, privy, keycloak]
     related_skills: [bounty-hunt-pipeline, hunt-auth-bypass, hunt-idor]
+triggers: [bitso, onchain, hunt, bug-bounty, nvio, onchain-cc, privy, keycloak]
 ---
 
 ## When to Use

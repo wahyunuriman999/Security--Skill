@@ -1,6 +1,6 @@
 ---
 name: auditing-kubernetes-rbac-privilege-escalation
-description: "Auditing kubernetes rbac privilege escalation."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [auditing-kubernetes-rbac-privilege-escalation]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [auditing, kubernetes, rbac, privilege, escalation]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / auditing-kubernetes-rbac-privilege-escalation -->

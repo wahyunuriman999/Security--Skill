@@ -1,6 +1,6 @@
 ---
 name: automating-ioc-enrichment
-description: "Automates enrichment raw indicators compromise."
+description: "'Automates the enrichment of raw indicators of compromise with multi-source"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automates, automating-ioc-enrichment, compromise, enrichment, indicators, multi-source, raw, the, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [automating, ioc, enrichment, automates, compromise, indicators, multi-source, raw, the, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / automating-ioc-enrichment -->

@@ -1,6 +1,6 @@
 ---
 name: bb-local-toolkit
-description: "Local-tooling companion bug-bounty orchestrator carries."
+description: "Local-tooling companion to the bug-bounty orchestrator — carries the SAME complete bug-bounty workflow, but reach for THIS variant when you also need to resolve where tools, wordlists, and clones are installed on the local machine (jhaddix, SecLists, trufflehog, ffuf, dalfox, ghauri); for pure orchestration/routing use the bug-bounty skill. Workflow it covers — recon (subdomain enumeration, asset discovery, fingerprinting, HackerOne scope, source code audit), pre-hunt learning (disclosed reports, tech stack research, mind maps, threat modeling), vulnerability hunting (IDOR, SSRF, XSS, auth byp"
 version: 1.0.0
 author: Claude-BugHunter (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [also, and, are, bb-local-toolkit, bug-bounty, but, carries, clones, companion, complete, dalfox, ffuf]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [local, toolkit, also, and, are, bug-bounty, but, carries, clones, companion, complete, dalfox, ffuf]
 ---
 
 <!-- upstream: Claude-BugHunter / bb-local-toolkit -->

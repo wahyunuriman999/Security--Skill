@@ -1,6 +1,6 @@
 ---
 name: implementing-zero-trust-with-hashicorp-boundary
-description: "Installs configures HashiCorp Boundary default-deny."
+description: "Installs and configures HashiCorp Boundary as a default-deny, identity-aware proxy for infrastructure access, including controller/worker setup, Vault-backed credential brokering, session recording, and OIDC/LDAP auth across an org/project scope hierarchy. Use when replacing VPN or direct network access with just-in-time, credential-less Boundary sessions, or standing up Boundary controllers and workers."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, across, and, auth, boundary, brokering, configures, controller, credential, default-deny, direct, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, zero, trust, with, hashicorp, boundary, access, across, and, auth, brokering, configures, controller, credential, default-deny, direct]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-zero-trust-with-hashicorp-boundary -->

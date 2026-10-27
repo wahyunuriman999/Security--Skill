@@ -1,6 +1,6 @@
 ---
 name: testing-for-xss-vulnerabilities-with-burpsuite
-description: "Identifying validating cross-site scripting."
+description: "Identifying and validating cross-site scripting vulnerabilities using"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, cross-site, identifying, scripting, testing-for-xss-vulnerabilities-with-burpsuite, using, validating, vulnerabilities]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, xss, vulnerabilities, with, burpsuite, and, cross-site, identifying, scripting, using, validating]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-xss-vulnerabilities-with-burpsuite -->

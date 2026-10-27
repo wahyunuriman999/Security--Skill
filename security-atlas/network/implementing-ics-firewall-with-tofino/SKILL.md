@@ -1,6 +1,6 @@
 ---
 name: implementing-ics-firewall-with-tofino
-description: "Deploys configures Tofino industrial firewalls."
+description: "'Deploys and configures Tofino industrial firewalls (Belden/Hirschmann)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, belden, configures, deploys, firewalls, hirschmann, implementing-ics-firewall-with-tofino, industrial, tofino]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, ics, firewall, with, tofino, and, belden, configures, deploys, firewalls, hirschmann, industrial]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-ics-firewall-with-tofino -->

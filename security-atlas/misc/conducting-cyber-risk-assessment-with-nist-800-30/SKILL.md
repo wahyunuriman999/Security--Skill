@@ -1,6 +1,6 @@
 ---
 name: conducting-cyber-risk-assessment-with-nist-800-30
-description: "Conducting cyber risk assessment with nist 800 30."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [conducting-cyber-risk-assessment-with-nist-800-30]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, cyber, risk, assessment, with, nist, 800]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-cyber-risk-assessment-with-nist-800-30 -->

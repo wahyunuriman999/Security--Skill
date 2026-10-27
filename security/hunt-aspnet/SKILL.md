@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: github, authorized-engagement
 report_count: 1
+triggers: [hunt, aspnet]
 ---
 
 ## Crown Jewel Targets

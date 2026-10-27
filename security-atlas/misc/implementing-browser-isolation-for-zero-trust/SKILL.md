@@ -1,6 +1,6 @@
 ---
 name: implementing-browser-isolation-for-zero-trust
-description: "Deploys remote browser isolation RBI core component Zero."
+description: "'Deploys remote browser isolation (RBI) as a core component of a Zero"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [browser, component, core, deploys, implementing-browser-isolation-for-zero-trust, isolation, rbi, remote, zero]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, browser, isolation, for, zero, trust, component, core, deploys, rbi, remote]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-browser-isolation-for-zero-trust -->

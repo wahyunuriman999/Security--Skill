@@ -1,6 +1,6 @@
 ---
 name: conducting-social-engineering-penetration-test
-description: "Design execute social engineering penetration test."
+description: "Design and execute a social engineering penetration test combining OSINT-driven target profiling with phishing, vishing, smishing, and physical pretexting campaigns using tools like GoPhish, the Social Engineer Toolkit (SET), and Evilginx to measure human security resilience. Use when scoping or running an authorized human-attack-surface test and reporting results to identify security awareness training gaps."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, campaigns, combining, conducting-social-engineering-penetration-test, design, engineer, engineering, evilginx, execute, gophish, human, like]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, social, engineering, penetration, test, and, campaigns, combining, design, engineer, evilginx, execute, gophish, human, like]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-social-engineering-penetration-test -->

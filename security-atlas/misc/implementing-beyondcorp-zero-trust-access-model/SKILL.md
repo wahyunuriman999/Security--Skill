@@ -1,6 +1,6 @@
 ---
 name: implementing-beyondcorp-zero-trust-access-model
-description: "Implement Google s BeyondCorp zero trust access model."
+description: "'Implement Google''s BeyondCorp zero trust access model using Cloud"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, beyondcorp, cloud, google, implement, implementing-beyondcorp-zero-trust-access-model, model, trust, using, zero]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, beyondcorp, zero, trust, access, model, cloud, google, implement, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-beyondcorp-zero-trust-access-model -->

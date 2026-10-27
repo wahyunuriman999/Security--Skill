@@ -1,6 +1,6 @@
 ---
 name: analyzing-windows-event-logs-in-splunk
-description: "Analyzes Windows Security System Sysmon event logs Splunk."
+description: "'Analyzes Windows Security, System, and Sysmon event logs in Splunk to"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, analyzing-windows-event-logs-in-splunk, and, event, logs, security, splunk, sysmon, system, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, windows, event, logs, splunk, analyzes, and, security, sysmon, system]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-windows-event-logs-in-splunk -->

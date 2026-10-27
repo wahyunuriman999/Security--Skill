@@ -1,6 +1,6 @@
 ---
 name: performing-power-grid-cybersecurity-assessment
-description: "Conduct cybersecurity assessments power grid."
+description: "Conduct cybersecurity assessments of power grid infrastructure spanning generation, transmission substations, distribution, and EMS control centers, covering NERC CIP compliance verification, IEC 61850 (GOOSE/MMS) substation protocol analysis, and synchrophasor (PMU) network security against threats like Industroyer/CrashOverride. Use for periodic NERC CIP assessments, substation automation or EMS/SCADA security reviews, or regional entity compliance audits; not for non-BES systems or generic OT assessments without power grid specifics."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [61850, against, analysis, and, assessments, centers, cip, compliance, conduct, control, covering, cybersecurity]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, power, grid, cybersecurity, assessment, 61850, against, analysis, and, assessments, centers, cip, compliance, conduct, control, covering]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-power-grid-cybersecurity-assessment -->

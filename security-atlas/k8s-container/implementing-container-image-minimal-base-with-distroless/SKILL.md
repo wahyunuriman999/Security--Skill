@@ -1,6 +1,6 @@
 ---
 name: implementing-container-image-minimal-base-with-distroless
-description: "Implementing container image minimal base with distroless."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-container-image-minimal-base-with-distroless]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, container, image, minimal, base, with, distroless]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-container-image-minimal-base-with-distroless -->

@@ -1,6 +1,6 @@
 ---
 name: analyzing-windows-lnk-files-for-artifacts
-description: "Parse Windows LNK shortcut files extract target paths MAC."
+description: "Parse Windows LNK shortcut files to extract target paths, MAC timestamps,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-windows-lnk-files-for-artifacts, extract, files, lnk, mac, parse, paths, shortcut, target, timestamps, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, windows, lnk, files, for, artifacts, extract, mac, parse, paths, shortcut, target, timestamps]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-windows-lnk-files-for-artifacts -->

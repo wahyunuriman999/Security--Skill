@@ -1,6 +1,6 @@
 ---
 name: hunting-for-registry-run-key-persistence
-description: "Detect MITRE ATT CK T1547.001 registry Run key."
+description: "Detect MITRE ATT&CK T1547.001 registry Run key persistence by analyzing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [001, analyzing, att, detect, hunting-for-registry-run-key-persistence, key, mitre, persistence, registry, run, t1547]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, registry, run, key, persistence, 001, analyzing, att, detect, mitre, t1547]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-registry-run-key-persistence -->

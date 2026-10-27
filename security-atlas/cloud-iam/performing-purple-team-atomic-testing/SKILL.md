@@ -1,6 +1,6 @@
 ---
 name: performing-purple-team-atomic-testing
-description: "Executes Atomic Red Team tests mapped MITRE ATT CK."
+description: "'Executes Atomic Red Team tests mapped to MITRE ATT&CK via Invoke-AtomicRedTeam"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [atomic, att, executes, invoke-atomicredteam, mapped, mitre, performing-purple-team-atomic-testing, red, team, tests, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, purple, team, atomic, testing, att, executes, invoke-atomicredteam, mapped, mitre, red, tests, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-purple-team-atomic-testing -->

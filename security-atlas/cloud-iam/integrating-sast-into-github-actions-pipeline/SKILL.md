@@ -1,6 +1,6 @@
 ---
 name: integrating-sast-into-github-actions-pipeline
-description: "Integrates CodeQL Semgrep SAST scanning GitHub Actions."
+description: "Integrates CodeQL and Semgrep SAST scanning into GitHub Actions, covering scans on pull requests/pushes, rule tuning to cut false positives, SARIF upload to GitHub Advanced Security, and merge-blocking quality gates for high-severity findings. Use when adding automated code vulnerability detection to CI, enforcing consistent SAST org-wide, or producing SOC 2/PCI DSS/NIST SSDF compliance evidence."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [actions, adding, advanced, and, automated, code, codeql, covering, cut, detection, false, findings]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [integrating, sast, into, github, actions, pipeline, adding, advanced, and, automated, code, codeql, covering, cut, detection, false]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / integrating-sast-into-github-actions-pipeline -->

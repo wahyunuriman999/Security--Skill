@@ -1,6 +1,6 @@
 ---
 name: building-ioc-defanging-and-sharing-pipeline
-description: "Build automated pipeline ingests raw IOCs URLs IPs."
+description: "Build an automated pipeline that ingests raw IOCs (URLs, IPs, domains,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automated, build, building-ioc-defanging-and-sharing-pipeline, domains, ingests, iocs, ips, pipeline, raw, that, urls]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, ioc, defanging, and, sharing, pipeline, automated, build, domains, ingests, iocs, ips, raw, that, urls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-ioc-defanging-and-sharing-pipeline -->

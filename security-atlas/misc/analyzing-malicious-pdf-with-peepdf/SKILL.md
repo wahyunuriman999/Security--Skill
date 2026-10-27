@@ -1,6 +1,6 @@
 ---
 name: analyzing-malicious-pdf-with-peepdf
-description: "Perform static analysis malicious PDF documents peepdf."
+description: "Perform static analysis of malicious PDF documents using peepdf, pdfid,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analysis, analyzing-malicious-pdf-with-peepdf, documents, malicious, pdf, pdfid, peepdf, perform, static, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, malicious, pdf, with, peepdf, analysis, documents, pdfid, perform, static, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-malicious-pdf-with-peepdf -->

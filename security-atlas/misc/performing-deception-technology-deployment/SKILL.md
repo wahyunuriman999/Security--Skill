@@ -1,6 +1,6 @@
 ---
 name: performing-deception-technology-deployment
-description: "Deploys deception technology including honeypots."
+description: "'Deploys deception technology including honeypots, honeytokens, and decoy"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, deception, decoy, deploys, honeypots, honeytokens, including, performing-deception-technology-deployment, technology]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, deception, technology, deployment, and, decoy, deploys, honeypots, honeytokens, including]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-deception-technology-deployment -->

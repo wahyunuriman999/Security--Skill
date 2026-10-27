@@ -1,6 +1,6 @@
 ---
 name: analyzing-typosquatting-domains-with-dnstwist
-description: "Generate domain permutations dnstwist check DNS."
+description: "Generate domain permutations with dnstwist and check DNS resolution"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing-typosquatting-domains-with-dnstwist, and, check, dns, dnstwist, domain, generate, permutations, resolution, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, typosquatting, domains, with, dnstwist, and, check, dns, domain, generate, permutations, resolution]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-typosquatting-domains-with-dnstwist -->

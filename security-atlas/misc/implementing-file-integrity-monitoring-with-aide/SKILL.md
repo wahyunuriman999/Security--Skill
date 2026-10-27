@@ -1,6 +1,6 @@
 ---
 name: implementing-file-integrity-monitoring-with-aide
-description: "Configures AIDE Advanced Intrusion Detection Environment."
+description: "Configures AIDE (Advanced Intrusion Detection Environment) for file integrity monitoring on Linux, covering baseline database creation, scheduled integrity checks via cron, change detection, and alerting on unauthorized modifications. Use when setting up host-based file integrity monitoring, detecting unauthorized file changes, or meeting compliance requirements for FIM on Linux systems."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [advanced, aide, alerting, and, baseline, change, checks, configures, covering, creation, cron, database]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, file, integrity, monitoring, with, aide, advanced, alerting, and, baseline, change, checks, configures, covering, creation, cron]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-file-integrity-monitoring-with-aide -->

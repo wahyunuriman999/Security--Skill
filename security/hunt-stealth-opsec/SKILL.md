@@ -2,6 +2,9 @@
 name: hunt-stealth-opsec
 description: Hunting OPSEC for high-security targets — avoid triggering WAF/IDS/SOC alerts, traffic blending, request timing, tool fingerprint removal, safe enumeration techniques, evidence collection without detection, responsible disclosure timing. Use when target has active monitoring, bug bounty with SLA disclosure, or when previous probes got you blocked/noticed.
 tags: [opsec, stealth, waf-evasion, ids, soc, traffic-blending, fingerprint, responsible-disclosure, timing]
+version: 1.0.0
+license: MIT
+triggers: [hunt, stealth, opsec, waf-evasion, ids, soc, traffic-blending, fingerprint, responsible-disclosure, timing]
 ---
 
 # Hunting OPSEC — Stay Invisible on High-Security Targets

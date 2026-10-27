@@ -1,6 +1,6 @@
 ---
 name: detecting-dll-sideloading-attacks
-description: "Detect DLL side-loading search-order hijacking MITRE."
+description: "Detect DLL side-loading and search-order hijacking (MITRE T1574) where adversaries plant malicious DLLs for legitimate signed applications to load, by analyzing Sysmon Event ID 7 DLL-load events, checking signatures/hashes against known-good versions, and flagging path anomalies with EDR tools like CrowdStrike, MDE, or SentinelOne. Use when investigating EDR alerts on unsigned DLLs, hunting for APT persistence via trojanized applications, or triaging incidents involving DLL hijacking."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversaries, against, analyzing, and, anomalies, applications, checking, detect, detecting-dll-sideloading-attacks, dll, dll-load, dlls]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, dll, sideloading, attacks, adversaries, against, analyzing, and, anomalies, applications, checking, detect, dll-load, dlls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-dll-sideloading-attacks -->

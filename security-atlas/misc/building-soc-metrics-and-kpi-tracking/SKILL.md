@@ -1,6 +1,6 @@
 ---
 name: building-soc-metrics-and-kpi-tracking
-description: "Builds SOC performance metrics KPI tracking dashboards."
+description: "'Builds SOC performance metrics and KPI tracking dashboards measuring"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, building-soc-metrics-and-kpi-tracking, builds, dashboards, kpi, measuring, metrics, performance, soc, tracking]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, soc, metrics, and, kpi, tracking, builds, dashboards, measuring, performance]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-soc-metrics-and-kpi-tracking -->

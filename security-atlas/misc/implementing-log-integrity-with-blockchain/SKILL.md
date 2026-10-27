@@ -1,6 +1,6 @@
 ---
 name: implementing-log-integrity-with-blockchain
-description: "Implementing log integrity with blockchain."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-log-integrity-with-blockchain]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, log, integrity, with, blockchain]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-log-integrity-with-blockchain -->

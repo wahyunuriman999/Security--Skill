@@ -1,6 +1,6 @@
 ---
 name: securing-kubernetes-on-cloud
-description: "Hardens managed Kubernetes clusters EKS AKS GKE."
+description: "'Hardens managed Kubernetes clusters on EKS, AKS, and GKE by implementing"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aks, and, clusters, eks, gke, hardens, implementing, kubernetes, managed, securing-kubernetes-on-cloud]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [securing, kubernetes, cloud, aks, and, clusters, eks, gke, hardens, implementing, managed]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / securing-kubernetes-on-cloud -->

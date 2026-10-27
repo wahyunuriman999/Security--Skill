@@ -1,6 +1,6 @@
 ---
 name: implementing-attack-path-analysis-with-xm-cyber
-description: "Deploys XM Cyber s continuous exposure management."
+description: "Deploys XM Cyber's continuous exposure management platform to build"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [build, continuous, cyber, deploys, exposure, implementing-attack-path-analysis-with-xm-cyber, management, platform]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, attack, path, analysis, with, cyber, build, continuous, deploys, exposure, management, platform]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-attack-path-analysis-with-xm-cyber -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-network-traffic-baselining
-description: "Builds network traffic baselines NetFlow/IPFIX CSV JSON."
+description: "Builds network traffic baselines from NetFlow/IPFIX CSV or JSON exports using Python"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [baselines, builds, csv, exports, from, implementing-network-traffic-baselining, ipfix, json, netflow, network, python, traffic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, network, traffic, baselining, baselines, builds, csv, exports, from, ipfix, json, netflow, python]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-network-traffic-baselining -->

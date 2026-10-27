@@ -1,6 +1,6 @@
 ---
 name: implementing-runtime-security-with-tetragon
-description: "Implementing runtime security with tetragon."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [implementing-runtime-security-with-tetragon]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, runtime, security, with, tetragon]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-runtime-security-with-tetragon -->

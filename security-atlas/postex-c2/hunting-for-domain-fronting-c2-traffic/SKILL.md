@@ -1,6 +1,6 @@
 ---
 name: hunting-for-domain-fronting-c2-traffic
-description: "Detects domain fronting C2 traffic analyzing."
+description: "Detects domain fronting C2 traffic by analyzing SNI-vs-HTTP-Host-header"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, detects, domain, fronting, hunting-for-domain-fronting-c2-traffic, sni-vs-http-host-header, traffic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, domain, fronting, traffic, analyzing, detects, sni-vs-http-host-header]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-domain-fronting-c2-traffic -->

@@ -1,6 +1,6 @@
 ---
 name: escaping-containers-to-host
-description: "Escaping containers to host."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [escaping-containers-to-host]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [escaping, containers, host]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / escaping-containers-to-host -->

@@ -5,6 +5,7 @@ version: 1.0.0
 license: MIT
 sources: github, hackerone_public, portswigger_research, binarysecurity_research
 report_count: 34
+triggers: [hunt, ssrf]
 ---
 
 ## Crown Jewel Targets

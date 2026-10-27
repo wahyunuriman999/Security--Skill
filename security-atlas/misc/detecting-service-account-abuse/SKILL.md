@@ -1,6 +1,6 @@
 ---
 name: detecting-service-account-abuse
-description: "Detect abuse service accounts hunting anomalous."
+description: "Detect abuse of service accounts by hunting for anomalous interactive"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, accounts, anomalous, detect, detecting-service-account-abuse, for, hunting, interactive, service]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, service, account, abuse, accounts, anomalous, detect, for, hunting, interactive]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-service-account-abuse -->

@@ -1,6 +1,6 @@
 ---
 name: triaging-security-incident-with-ir-playbook
-description: "Classifies prioritizes security incidents structured IR."
+description: "Classifies and prioritizes security incidents using structured IR"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, classifies, incidents, prioritizes, security, structured, triaging-security-incident-with-ir-playbook, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [triaging, security, incident, with, playbook, and, classifies, incidents, prioritizes, structured, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / triaging-security-incident-with-ir-playbook -->

@@ -1,6 +1,6 @@
 ---
 name: hunting-for-suspicious-scheduled-tasks
-description: "Hunts adversary persistence execution Windows scheduled."
+description: "Hunts for adversary persistence and execution via Windows scheduled tasks (T1053.005) by analyzing Security Event ID 4698 task-creation events, suspicious task properties, and unusual execution patterns from schtasks.exe/at.exe. Use after detecting schtasks or at.exe in process creation logs, during incident response to enumerate persistence on compromised hosts, or when Event ID 4698 fires for an unusual task."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [005, 4698, adversary, after, analyzing, and, creation, detecting, during, event, events, exe]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, suspicious, scheduled, tasks, 005, 4698, adversary, after, analyzing, and, creation, detecting, during, event, events]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-suspicious-scheduled-tasks -->

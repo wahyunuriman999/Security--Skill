@@ -1,6 +1,6 @@
 ---
 name: implementing-anti-ransomware-group-policy
-description: "Configures Windows Group Policy Objects block ransomware."
+description: "'Configures Windows Group Policy Objects to block ransomware execution"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [block, configures, execution, group, implementing-anti-ransomware-group-policy, objects, policy, ransomware, windows]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, anti, ransomware, group, policy, block, configures, execution, objects, windows]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-anti-ransomware-group-policy -->

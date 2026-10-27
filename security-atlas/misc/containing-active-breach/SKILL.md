@@ -1,6 +1,6 @@
 ---
 name: containing-active-breach
-description: "Executes containment strategies stop active adversary."
+description: "'Executes containment strategies to stop active adversary operations"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [active, adversary, containing-active-breach, containment, executes, operations, stop, strategies]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [containing, active, breach, adversary, containment, executes, operations, stop, strategies]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / containing-active-breach -->

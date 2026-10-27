@@ -1,6 +1,6 @@
 ---
 name: analyzing-windows-registry-for-artifacts
-description: "Extract analyze Windows Registry hives tools like."
+description: "Extract and analyze Windows Registry hives with tools like RegRipper"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzing-windows-registry-for-artifacts, and, extract, hives, like, registry, regripper, tools, windows, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, windows, registry, for, artifacts, analyze, and, extract, hives, like, regripper, tools, with]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-windows-registry-for-artifacts -->

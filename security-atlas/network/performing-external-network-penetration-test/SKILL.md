@@ -1,6 +1,6 @@
 ---
 name: performing-external-network-penetration-test
-description: "Conduct comprehensive external network penetration test."
+description: "Conduct a comprehensive external network penetration test to identify"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [comprehensive, conduct, external, identify, network, penetration, performing-external-network-penetration-test, test]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, external, network, penetration, test, comprehensive, conduct, identify]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-external-network-penetration-test -->

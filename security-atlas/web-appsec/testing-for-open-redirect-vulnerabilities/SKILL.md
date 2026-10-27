@@ -1,6 +1,6 @@
 ---
 name: testing-for-open-redirect-vulnerabilities
-description: "Identifies exploits open redirect vulnerabilities."
+description: "Identifies and exploits open redirect vulnerabilities by analyzing URL"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzing, and, exploits, identifies, open, redirect, testing-for-open-redirect-vulnerabilities, url, vulnerabilities]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, open, redirect, vulnerabilities, analyzing, and, exploits, identifies, url]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-open-redirect-vulnerabilities -->

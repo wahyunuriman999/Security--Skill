@@ -1,6 +1,6 @@
 ---
 name: performing-vlan-hopping-attack
-description: "Performing vlan hopping attack."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-vlan-hopping-attack]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, vlan, hopping, attack]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-vlan-hopping-attack -->

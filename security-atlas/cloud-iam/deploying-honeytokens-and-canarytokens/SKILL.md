@@ -1,6 +1,6 @@
 ---
 name: deploying-honeytokens-and-canarytokens
-description: "Plants Canarytokens-based decoy artifacts honey."
+description: "Plants Canarytokens-based decoy artifacts (honey credentials, DNS tokens, web-bug URLs, AWS keys, documents, kubeconfigs) using Thinkst's open-source Canarytokens project and alerts via email or webhook when a token is touched. Use for high-fidelity intrusion detection in low-telemetry areas like file shares or credential stores, or to catch credential dumping and data-theft staging."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alerts, and, areas, artifacts, aws, canarytokens, canarytokens-based, credentials, decoy, deploying-honeytokens-and-canarytokens, detection, dns]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, honeytokens, and, canarytokens, alerts, areas, artifacts, aws, canarytokens-based, credentials, decoy, detection, dns]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-honeytokens-and-canarytokens -->

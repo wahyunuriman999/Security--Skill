@@ -4,6 +4,7 @@ description: "Evidence-capture and PoC-redaction discipline for bug-bounty submi
 version: 1.0.0
 license: MIT
 sources: community, operator_experience
+triggers: [evidence, hygiene]
 ---
 
 # EVIDENCE HYGIENE — PoC Capture & Redaction Discipline

@@ -1,6 +1,6 @@
 ---
 name: deploying-decoy-files-for-ransomware-detection
-description: "Deploys canary files honeytokens file systems detect."
+description: "'Deploys canary files (honeytokens) across file systems to detect ransomware"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, canary, deploying-decoy-files-for-ransomware-detection, deploys, detect, file, files, honeytokens, ransomware, systems]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [deploying, decoy, files, for, ransomware, detection, across, canary, deploys, detect, file, honeytokens, systems]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / deploying-decoy-files-for-ransomware-detection -->

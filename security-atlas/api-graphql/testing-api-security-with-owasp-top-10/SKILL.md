@@ -1,6 +1,6 @@
 ---
 name: testing-api-security-with-owasp-top-10
-description: "Systematically assesses REST GraphQL gRPC API endpoints."
+description: "Systematically assesses REST, GraphQL, and gRPC API endpoints against the OWASP"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [against, and, api, assesses, endpoints, graphql, grpc, owasp, rest, systematically, testing-api-security-with-owasp-top-10, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, api, security, with, owasp, top, against, and, assesses, endpoints, graphql, grpc, rest, systematically, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-api-security-with-owasp-top-10 -->

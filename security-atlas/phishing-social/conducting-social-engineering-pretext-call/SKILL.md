@@ -1,6 +1,6 @@
 ---
 name: conducting-social-engineering-pretext-call
-description: "Plan execute authorized vishing voice phishing pretext."
+description: "Plan and execute authorized vishing (voice phishing) pretext calls to"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, authorized, calls, conducting-social-engineering-pretext-call, execute, phishing, plan, pretext, vishing, voice]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [conducting, social, engineering, pretext, call, and, authorized, calls, execute, phishing, plan, vishing, voice]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / conducting-social-engineering-pretext-call -->

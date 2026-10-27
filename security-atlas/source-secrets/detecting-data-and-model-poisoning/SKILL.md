@@ -1,6 +1,6 @@
 ---
 name: detecting-data-and-model-poisoning
-description: "Identify poisoned training data backdoored ML models."
+description: "Identify poisoned training data and backdoored ML models across the pipeline using IBM's Adversarial Robustness Toolbox (activation clustering, spectral signatures, trigger reconstruction), Cleanlab for label-quality issues, and supply-chain checks like weight-hash verification and safetensors enforcement. Use before training or deploying on third-party/user-contributed data or downloaded checkpoints, during ML supply-chain reviews, or when investigating model misbehavior tied to specific inputs (suspected backdoor trigger)."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, activation, adversarial, and, backdoored, checks, cleanlab, clustering, data, detecting-data-and-model-poisoning, enfor, for]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [detecting, data, and, model, poisoning, across, activation, adversarial, backdoored, checks, cleanlab, clustering, enfor, for]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / detecting-data-and-model-poisoning -->

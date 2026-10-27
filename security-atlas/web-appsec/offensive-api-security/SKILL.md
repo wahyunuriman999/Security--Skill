@@ -1,6 +1,6 @@
 ---
 name: offensive-api-security
-description: "Comprehensive API security testing methodology covering."
+description: "Comprehensive API security testing methodology covering REST, gRPC, and WebSocket attack surfaces. Addresses the full OWASP API Security Top 10 2023 including BOLA/IDOR, broken authentication, excessive data exposure, rate limiting bypass, BFLA, mass assignment, SSRF, and security misconfiguration. Includes REST-specific attacks such as HTTP verb tampering, content-type switching, and parameter pollution. Covers gRPC exploitation through protobuf interception, reflection API enumeration, and metadata injection. Addresses WebSocket vulnerabilities including origin bypass, message injection, and"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [2023, addresses, and, api, assignment, attack, authentication, bfla, bola, broken, bypass, comprehensive]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, api, security, 2023, addresses, and, assignment, attack, authentication, bfla, bola, broken, bypass, comprehensive]
 ---
 
 <!-- upstream: Claude-Red / offensive-api-security -->

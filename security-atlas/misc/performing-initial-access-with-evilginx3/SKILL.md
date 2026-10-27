@@ -1,6 +1,6 @@
 ---
 name: performing-initial-access-with-evilginx3
-description: "Perform authorized initial access EvilGinx3."
+description: "Perform authorized initial access using EvilGinx3 adversary-in-the-middle"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [access, adversary-in-the-middle, authorized, evilginx3, initial, perform, performing-initial-access-with-evilginx3, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, initial, access, with, evilginx3, adversary-in-the-middle, authorized, perform, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-initial-access-with-evilginx3 -->

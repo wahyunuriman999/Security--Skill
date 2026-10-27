@@ -1,6 +1,6 @@
 ---
 name: analyzing-dns-logs-for-exfiltration
-description: "Analyzes DNS query logs detect data exfiltration DNS."
+description: "'Analyzes DNS query logs to detect data exfiltration via DNS tunneling,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyzes, analyzing-dns-logs-for-exfiltration, data, detect, dns, exfiltration, logs, query, tunneling, via]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, dns, logs, for, exfiltration, analyzes, data, detect, query, tunneling, via]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-dns-logs-for-exfiltration -->

@@ -1,6 +1,6 @@
 ---
 name: implementing-soar-playbook-for-phishing
-description: "Automates phishing incident response calling Splunk SOAR."
+description: "Automates phishing incident response by calling the Splunk SOAR (Phantom)"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [automates, calling, implementing-soar-playbook-for-phishing, incident, phantom, phishing, response, soar, splunk, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, soar, playbook, for, phishing, automates, calling, incident, phantom, response, splunk, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-soar-playbook-for-phishing -->

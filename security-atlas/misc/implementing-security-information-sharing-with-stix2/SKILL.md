@@ -1,6 +1,6 @@
 ---
 name: implementing-security-information-sharing-with-stix2
-description: "Create validate share STIX 2.1 threat intelligence."
+description: "'Create, validate, and share STIX 2.1 threat intelligence objects (indicators,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, create, implementing-security-information-sharing-with-stix2, indicators, intelligence, objects, share, stix, threat, validate]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, security, information, sharing, with, stix2, and, create, indicators, intelligence, objects, share, stix, threat, validate]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-security-information-sharing-with-stix2 -->

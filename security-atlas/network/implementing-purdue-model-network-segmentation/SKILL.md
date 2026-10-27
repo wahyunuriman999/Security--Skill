@@ -1,6 +1,6 @@
 ---
 name: implementing-purdue-model-network-segmentation
-description: "Implement network segmentation based Purdue Enterprise."
+description: "'Implement network segmentation based on the Purdue Enterprise Reference"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [based, enterprise, implement, implementing-purdue-model-network-segmentation, network, purdue, reference, segmentation, the]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, purdue, model, network, segmentation, based, enterprise, implement, reference, the]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-purdue-model-network-segmentation -->

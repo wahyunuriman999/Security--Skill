@@ -1,6 +1,6 @@
 ---
 name: implementing-aws-config-rules-for-compliance
-description: "Implements AWS Config managed custom rules continuous."
+description: "'Implements AWS Config managed and custom rules for continuous compliance"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, aws, compliance, config, continuous, custom, for, implementing-aws-config-rules-for-compliance, implements, managed, rules]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, aws, config, rules, for, compliance, and, continuous, custom, implements, managed]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-aws-config-rules-for-compliance -->

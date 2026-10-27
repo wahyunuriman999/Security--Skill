@@ -1,6 +1,9 @@
 ---
 name: security-arsenal
 description: Security payloads, bypass tables, wordlists, gf pattern names, always-rejected bug list, conditionally-valid-with-chain table, temp email creation scripts, XXE/deserialization/host header injection payloads. Use when you need specific payloads for XSS/SSRF/SQLi/XXE/NoSQLi/command injection/SSTI/IDOR/path-traversal/HTTP smuggling/WebSocket/MFA bypass, bypass techniques, temp email setup for multi-account testing, or to check if a finding is submittable. Also use when asked about what NOT to submit.
+version: 1.0.0
+license: MIT
+triggers: [security, arsenal]
 ---
 
 # SECURITY ARSENAL

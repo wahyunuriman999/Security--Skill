@@ -1,6 +1,6 @@
 ---
 name: triaging-security-alerts-in-splunk
-description: "Triages security alerts Splunk Enterprise Security."
+description: "'Triages security alerts in Splunk Enterprise Security by classifying"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [alerts, classifying, enterprise, security, splunk, triages, triaging-security-alerts-in-splunk]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [triaging, security, alerts, splunk, classifying, enterprise, triages]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / triaging-security-alerts-in-splunk -->

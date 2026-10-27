@@ -1,6 +1,6 @@
 ---
 name: analyzing-cobalt-strike-beacon-configuration
-description: "Extract analyze Cobalt Strike beacon configuration PE."
+description: "Extract and analyze Cobalt Strike beacon configuration from PE files"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [analyze, analyzing-cobalt-strike-beacon-configuration, and, beacon, cobalt, configuration, extract, files, from, strike]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [analyzing, cobalt, strike, beacon, configuration, analyze, and, extract, files, from]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / analyzing-cobalt-strike-beacon-configuration -->

@@ -1,6 +1,6 @@
 ---
 name: configuring-multi-factor-authentication-with-duo
-description: "Deploys Cisco Duo multi-factor authentication enterprise."
+description: "Deploys Cisco Duo multi-factor authentication across enterprise applications,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [across, applications, authentication, cisco, configuring-multi-factor-authentication-with-duo, deploys, duo, enterprise, multi-factor]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, multi, factor, authentication, with, duo, across, applications, cisco, deploys, enterprise, multi-factor]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-multi-factor-authentication-with-duo -->

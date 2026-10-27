@@ -1,6 +1,6 @@
 ---
 name: implementing-honeytokens-for-breach-detection
-description: "Deploys canary tokens honeytokens fake AWS credentials."
+description: "'Deploys canary tokens and honeytokens (fake AWS credentials, DNS canaries,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, aws, canaries, canary, credentials, deploys, dns, fake, honeytokens, implementing-honeytokens-for-breach-detection, tokens]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, honeytokens, for, breach, detection, and, aws, canaries, canary, credentials, deploys, dns, fake, tokens]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-honeytokens-for-breach-detection -->

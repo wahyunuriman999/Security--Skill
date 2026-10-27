@@ -1,6 +1,6 @@
 ---
 name: performing-soc-tabletop-exercise
-description: "Performs tabletop exercises SOC teams simulating security."
+description: "'Performs tabletop exercises for SOC teams simulating security incidents"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [exercises, for, incidents, performing-soc-tabletop-exercise, performs, security, simulating, soc, tabletop, teams]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, soc, tabletop, exercise, exercises, for, incidents, performs, security, simulating, teams]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-soc-tabletop-exercise -->

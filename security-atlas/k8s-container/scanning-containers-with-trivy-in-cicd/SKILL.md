@@ -1,6 +1,6 @@
 ---
 name: scanning-containers-with-trivy-in-cicd
-description: "Integrates Aqua Security s Trivy scanner CI/CD pipelines."
+description: "'Integrates Aqua Security''s Trivy scanner into CI/CD pipelines to detect"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [aqua, detect, integrates, into, pipelines, scanner, scanning-containers-with-trivy-in-cicd, security, trivy]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [scanning, containers, with, trivy, cicd, aqua, detect, integrates, into, pipelines, scanner, security]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / scanning-containers-with-trivy-in-cicd -->

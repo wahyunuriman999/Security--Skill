@@ -1,6 +1,6 @@
 ---
 name: performing-ssl-stripping-attack
-description: "Performing ssl stripping attack."
+description: ">-"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [performing-ssl-stripping-attack]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [performing, ssl, stripping, attack]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / performing-ssl-stripping-attack -->

@@ -1,6 +1,6 @@
 ---
 name: configuring-oauth2-authorization-flow
-description: "Configures secure OAuth 2.0 authorization flows including."
+description: "Configures secure OAuth 2.0 authorization flows, including Authorization"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [authorization, configures, configuring-oauth2-authorization-flow, flows, including, oauth, secure]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [configuring, oauth2, authorization, flow, configures, flows, including, oauth, secure]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / configuring-oauth2-authorization-flow -->

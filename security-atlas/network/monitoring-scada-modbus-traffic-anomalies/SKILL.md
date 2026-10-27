@@ -1,6 +1,6 @@
 ---
 name: monitoring-scada-modbus-traffic-anomalies
-description: "Monitors Modbus TCP traffic SCADA ICS networks detect."
+description: "'Monitors Modbus TCP traffic on SCADA and ICS networks to detect anomalous"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, anomalous, detect, ics, modbus, monitoring-scada-modbus-traffic-anomalies, monitors, networks, scada, tcp, traffic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [monitoring, scada, modbus, traffic, anomalies, and, anomalous, detect, ics, monitors, networks, tcp]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / monitoring-scada-modbus-traffic-anomalies -->

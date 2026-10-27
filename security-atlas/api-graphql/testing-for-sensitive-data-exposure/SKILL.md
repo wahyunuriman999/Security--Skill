@@ -1,6 +1,6 @@
 ---
 name: testing-for-sensitive-data-exposure
-description: "Identifying sensitive data exposure vulnerabilities."
+description: "Identifying sensitive data exposure vulnerabilities including API key"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [api, data, exposure, identifying, including, key, sensitive, testing-for-sensitive-data-exposure, vulnerabilities]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, sensitive, data, exposure, api, identifying, including, key, vulnerabilities]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-sensitive-data-exposure -->

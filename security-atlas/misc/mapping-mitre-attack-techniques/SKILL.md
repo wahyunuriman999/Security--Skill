@@ -1,6 +1,6 @@
 ---
 name: mapping-mitre-attack-techniques
-description: "Maps observed adversary behaviors security alerts."
+description: "'Maps observed adversary behaviors, security alerts, and detection rules"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, alerts, and, behaviors, detection, mapping-mitre-attack-techniques, maps, observed, rules, security]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [mapping, mitre, attack, techniques, adversary, alerts, and, behaviors, detection, maps, observed, rules, security]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / mapping-mitre-attack-techniques -->

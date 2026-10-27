@@ -1,6 +1,6 @@
 ---
 name: offensive-mobile
-description: "Mobile Android + iOS application penetration testing."
+description: "Mobile (Android + iOS) application penetration testing methodology. Covers static analysis (apktool/jadx for Android, class-dump/Hopper/IDA for iOS), dynamic instrumentation with Frida and Objection, SSL pinning bypass strategies, root/jailbreak detection bypass, deep-link / URL-scheme abuse, exported component attacks (Android activities, services, providers, receivers; iOS XPC, URL schemes, universal links), insecure data storage (SharedPrefs, KeyStore misuse, NSUserDefaults, Keychain ACL bypass), IPC / Intent redirection, WebView vulnerabilities (JavaScriptInterface, file:// access), Fireba"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, analysis, and, android, apktool, application, bypass, class-dump, covers, deep-link, detection, dynamic]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, mobile, abuse, analysis, and, android, apktool, application, bypass, class-dump, covers, deep-link, detection, dynamic]
 ---
 
 <!-- upstream: Claude-Red / offensive-mobile -->

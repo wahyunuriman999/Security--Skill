@@ -1,6 +1,6 @@
 ---
 name: implementing-email-sandboxing-with-proofpoint
-description: "Email sandboxing detonates suspicious attachments URLs."
+description: "Email sandboxing detonates suspicious attachments and URLs in isolated"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attachments, detonates, email, implementing-email-sandboxing-with-proofpoint, isolated, sandboxing, suspicious, urls]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, email, sandboxing, with, proofpoint, and, attachments, detonates, isolated, suspicious, urls]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-email-sandboxing-with-proofpoint -->

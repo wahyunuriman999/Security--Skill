@@ -1,6 +1,6 @@
 ---
 name: testing-for-xxe-injection-vulnerabilities
-description: "Discovering exploiting XML External Entity injection."
+description: "Discovering and exploiting XML External Entity injection vulnerabilities"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, discovering, entity, exploiting, external, injection, testing-for-xxe-injection-vulnerabilities, vulnerabilities, xml]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [testing, for, xxe, injection, vulnerabilities, and, discovering, entity, exploiting, external, xml]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / testing-for-xxe-injection-vulnerabilities -->

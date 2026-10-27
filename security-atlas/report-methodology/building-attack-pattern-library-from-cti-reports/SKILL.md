@@ -1,6 +1,6 @@
 ---
 name: building-attack-pattern-library-from-cti-reports
-description: "Parse cyber threat intelligence reports Mandiant."
+description: "Parse cyber threat intelligence reports (Mandiant, CrowdStrike, Talos, Microsoft) with stix2, mitreattack-python, and spaCy to extract adversary behaviors, map them to MITRE ATT&CK technique IDs, and build a searchable STIX 2.1 attack-pattern library with detection templates. Use when cataloging attack patterns from CTI reports for threat-informed detection engineering, or generating Sigma/YARA templates from documented behaviors."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [adversary, and, att, attack-pattern, behaviors, build, building-attack-pattern-library-from-cti-reports, cataloging, crowdstrike, cyber, detection, extract]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [building, attack, pattern, library, from, cti, reports, adversary, and, att, attack-pattern, behaviors, build, cataloging, crowdstrike, cyber]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / building-attack-pattern-library-from-cti-reports -->

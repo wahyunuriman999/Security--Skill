@@ -1,6 +1,6 @@
 ---
 name: implementing-attack-surface-management
-description: "Implements external attack surface management EASM Shodan."
+description: "'Implements external attack surface management (EASM) using Shodan, Censys,"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [attack, censys, easm, external, implementing-attack-surface-management, implements, management, shodan, surface, using]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [implementing, attack, surface, management, censys, easm, external, implements, shodan, using]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / implementing-attack-surface-management -->

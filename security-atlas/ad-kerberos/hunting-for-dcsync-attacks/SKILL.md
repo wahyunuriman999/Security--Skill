@@ -1,6 +1,6 @@
 ---
 name: hunting-for-dcsync-attacks
-description: "Detect DCSync attacks MITRE ATT CK T1003.006 analyzing."
+description: "Detect DCSync attacks (MITRE ATT&CK T1003.006) by analyzing Windows Event ID 4662 (AccessMask 0x100) for DS-Replication-Get-Changes and DS-Replication-Get-Changes-All requests issued by non-domain-controller accounts. Use when hunting for DCSync credential theft, after detecting Mimikatz-class tooling, or during incident response and purple-team exercises involving Active Directory replication abuse."
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [006, 0x100, 4662, accessmask, accounts, after, analyzing, and, att, attacks, credential, dcsync]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, dcsync, attacks, 006, 0x100, 4662, accessmask, accounts, after, analyzing, and, att, credential]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-dcsync-attacks -->

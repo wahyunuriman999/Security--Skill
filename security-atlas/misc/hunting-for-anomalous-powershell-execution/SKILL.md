@@ -1,6 +1,6 @@
 ---
 name: hunting-for-anomalous-powershell-execution
-description: "Hunt malicious PowerShell activity analyzing Script Block."
+description: "'Hunt for malicious PowerShell activity by analyzing Script Block Logging"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [activity, analyzing, block, for, hunt, hunting-for-anomalous-powershell-execution, logging, malicious, powershell, script]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [hunting, for, anomalous, powershell, execution, activity, analyzing, block, hunt, logging, malicious, script]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / hunting-for-anomalous-powershell-execution -->

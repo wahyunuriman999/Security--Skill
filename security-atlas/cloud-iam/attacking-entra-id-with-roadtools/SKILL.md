@@ -1,6 +1,6 @@
 ---
 name: attacking-entra-id-with-roadtools
-description: "Enumerate Microsoft Entra ID Azure AD tenants ROADrecon."
+description: "Enumerate Microsoft Entra ID (Azure AD) tenants with ROADrecon and"
 version: 1.0.0
 author: Anthropic-Cybersecurity-Skills (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [and, attacking-entra-id-with-roadtools, azure, entra, enumerate, microsoft, roadrecon, tenants, with]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [attacking, entra, with, roadtools, and, azure, enumerate, microsoft, roadrecon, tenants]
 ---
 
 <!-- upstream: Anthropic-Cybersecurity-Skills / attacking-entra-id-with-roadtools -->

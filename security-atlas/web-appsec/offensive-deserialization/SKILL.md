@@ -1,6 +1,6 @@
 ---
 name: offensive-deserialization
-description: "Insecure deserialization exploitation Java PHP .NET."
+description: "Insecure deserialization exploitation across Java, PHP, .NET, Python, Node.js, and Ruby. Covers gadget chain construction with ysoserial/phpggc/ysoserial.net, ObjectInputStream and BinaryFormatter sink identification, pickle __reduce__ RCE, phar:// wrapper abuse, Jackson polymorphic typing, Json.NET TypeNameHandling, ViewState tampering, node-serialize IIFE injection, Ruby Marshal.load and YAML.load gadgets, framework-specific chains for Spring/Hibernate/Laravel/Symfony, modern attack surfaces including Kubernetes admission webhooks and message queue consumers, WAF bypass through encoding laye"
 version: 1.0.0
 author: Claude-Red (upstream) + mort install
 license: MIT
@@ -9,6 +9,7 @@ metadata:
   hermes:
     tags: [abuse, across, and, binaryformatter, chain, construction, covers, deserialization, exploitation, gadget, identification, insecure]
     related_skills: [pentest-ref-corpus, github-topic-crawl]
+triggers: [offensive, deserialization, abuse, across, and, binaryformatter, chain, construction, covers, exploitation, gadget, identification, insecure]
 ---
 
 <!-- upstream: Claude-Red / offensive-deserialization -->
