@@ -11,10 +11,11 @@
 - `apex/core/capabilities.py`: default-deny registry; unknown, disabled, prohibited, and network capabilities are denied.
 - `apex/core/audit.py`: local JSONL audit ledger with sequence numbers, SHA-256 hash chain, verification, and sensitive-key redaction.
 - `apex/core/findings.py`: immutable finding model and guarded lifecycle; confirmation requires evidence references, severity, impact, and confidence.
+- `apex/core/store.py`: SQLite schema v1 for engagement manifests, finding records, transition events, and evidence metadata; parameterized SQL, foreign keys, transactional transitions, and local database file permissions.
 - `apex/tests/test_runtime_boundary.py`: CI guard against network and legacy-tool imports in the APEX runtime.
 - `apex/cli.py`: local manifest validation and URL authorization commands.
 - `apex/examples/engagement.example.json`: illustrative manifest using reserved example domains.
-- `apex/tests/`: deterministic unit tests for scope, budget, capability, audit, finding lifecycle, and runtime boundary behavior.
+- `apex/tests/`: deterministic unit tests for scope, budget, capability, audit, finding lifecycle, SQLite persistence, and runtime boundary behavior.
 - CI now runs APEX unit tests in addition to the repository's static checks.
 
 ## Current safety properties
