@@ -386,7 +386,7 @@ class SQLiteStore:
                 or parsed_storage_ref.username is not None or parsed_storage_ref.password is not None
                 or parsed_storage_ref.query or parsed_storage_ref.fragment):
             raise StoreError("storage_ref_must_be_a_local_non_sensitive_reference")
-        if any(ch in media_type or ch in source for ch in "\\r\\n"):
+        if any(ch in media_type or ch in source for ch in (chr(10), chr(13))):
             raise StoreError("evidence metadata must not contain line breaks")
         if not isinstance(redacted, bool):
             raise StoreError("redacted must be a boolean")
