@@ -1,9 +1,11 @@
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 
 from apex.core.findings import Finding, FindingStateError, FindingStatus
 from apex.core.scope import EngagementManifest
+from apex.core.observations import Observation
 from apex.core.store import SQLiteStore, StoreError
 
 
@@ -176,6 +178,46 @@ class TestSQLiteStore(unittest.TestCase):
         with self.assertRaisesRegex(Exception, "finding_events_are_immutable"):
             with self.store._connection() as db:
                 db.execute("UPDATE finding_events SET reason='rewritten' WHERE finding_id='APEX-EV-3'")
+
+    def test_observation_persists_and_verifies_canonical_details_hash(self):
+        self.store.save_engagement(sample_manifest())
+        observation = Observation(
+            observation_id="OBS-1", engagement_id="eng-store-1",
+            observation_type="manual_review", target_ref="asset://example.test",
+            summary="Observed response header metadata",
+            actor="analyst", details={"status_code": 200, "headers": {"content-type": "text/plain"}},
+            captured_at=datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
+        )
+        digest = self.store.add_observation(observation)
+        restored = self.store.get_observation("OBS-1")
+        self.assertEqual(digest, restored.details_sha256)
+        self.assertEqual(restored.details, observation.details)
+        self.assertEqual(len(self.store.list_observations("eng-store-1")), 1)
+
+    def test_observation_records_are_append_only(self):
+        self.store.save_engagement(sample_manifest())
+        observation = Observation(
+            observation_id="OBS-2", engagement_id="eng-store-1",
+            observation_type="note", target_ref="asset://example.test",
+            summary="A local note", actor="analyst", details={"note": "reviewed"},
+            captured_at=datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
+        )
+        self.store.add_observation(observation)
+        with self.assertRaisesRegex(Exception, "observations_are_immutable"):
+            with self.store._connection() as db:
+                db.execute("UPDATE observations SET summary='rewritten' WHERE observation_id='OBS-2'")
+        with self.assertRaisesRegex(Exception, "observations_are_immutable"):
+            with self.store._connection() as db:
+                db.execute("DELETE FROM observations WHERE observation_id='OBS-2'")
+
+    def test_observation_rejects_non_finite_json(self):
+        with self.assertRaisesRegex(ValueError, "finite JSON"):
+            Observation(
+                observation_id="OBS-3", engagement_id="eng-store-1",
+                observation_type="note", target_ref="asset://example.test",
+                summary="Invalid data", actor="analyst", details={"score": float("nan")},
+                captured_at=datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
+            )
 
 
 if __name__ == "__main__":
