@@ -45,7 +45,7 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- The baseline workflow has been committed, but no Actions run is visible yet; therefore no CI pass is claimed.
+- The baseline workflow passed on commit `e6658263781fda03443ea61a10b692c36215a786` (run [#5](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391343731)). Skill/routing validation, Python bytecode compilation, JavaScript syntax, and shell syntax all passed. This is static validation only; unit tests and active-tool safety tests were not run.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
