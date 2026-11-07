@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "engagement_id": "replace-with-your-engagement-id",
+  "program_name": "replace-with-authorized-program",
+  "authorization": {
+    "authorized": true,
+    "reference": "https://example.com/security"
+  },
+  "issued_at": "2026-11-01T00:00:00Z",
+  "expires_at": "2026-12-01T00:00:00Z",
+  "assets": [
+    {
+      "host": "example.com",
+      "schemes": ["https"],
+      "ports": [443]
+    },
+    {
+      "host": "*.example.net",
+      "schemes": ["https"],
+      "ports": [443]
+    }
+  ],
+  "request_budget": {
+    "max_total_requests": 100,
+    "max_requests_per_host": 25
+  }
+}
