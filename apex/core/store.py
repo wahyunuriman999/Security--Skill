@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import contextlib
 import os
 import re
 import sqlite3
@@ -38,9 +39,21 @@ class SQLiteStore:
         connection.execute("PRAGMA busy_timeout = 5000")
         return connection
 
+    @contextlib.contextmanager
+    def _connection(self):
+        db = self._connect()
+        try:
+            yield db
+            db.commit()
+        except Exception:
+            db.rollback()
+            raise
+        finally:
+            db.close()
+
     def initialize(self) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        with self._connect() as db:
+        with self._connection() as db:
             version = db.execute("PRAGMA user_version").fetchone()[0]
             if version > _SCHEMA_VERSION:
                 raise StoreError(f"database schema {version} is newer than supported {_SCHEMA_VERSION}")
@@ -202,7 +215,7 @@ class SQLiteStore:
         self, *, evidence_id: str, finding_id: str, sha256: str, media_type: str,
         byte_size: int, storage_ref: str, source: str, redacted: bool,
     ) -> str:
-        if not _SHA256.fullmatch(sha256):
+        if not isinstance(sha256, str) or not _SHA256.fullmatch(sha256):
             raise StoreError("evidence sha256 must be 64 lowercase hexadecimal characters")
         if not isinstance(byte_size, int) or isinstance(byte_size, bool) or byte_size < 0:
             raise StoreError("evidence byte_size must be a non-negative integer")
