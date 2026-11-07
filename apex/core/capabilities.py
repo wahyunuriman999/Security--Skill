@@ -33,6 +33,7 @@ class Capability:
 _DEFAULT_CAPABILITIES = (
     Capability("manifest.validate", "Validate a local engagement manifest", RiskLevel.LOW),
     Capability("scope.authorize", "Check a URL against a local scope manifest", RiskLevel.LOW),
+    Capability("gateway.prepare", "Prepare a request descriptor and reserve local budget without sending traffic", RiskLevel.LOW),
     Capability("audit.append", "Append a local hash-chained audit event", RiskLevel.LOW),
     Capability("knowledge.read", "Read existing knowledge files without executing them", RiskLevel.LOW),
 )
