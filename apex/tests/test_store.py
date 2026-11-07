@@ -392,6 +392,19 @@ class TestSQLiteStore(unittest.TestCase):
         self.assertIn("status", columns)
         self.assertIsNotNone(event_table)
 
+    def test_failed_schema_migration_rolls_back_atomically(self):
+        with self.store._connection() as db:
+            db.execute("PRAGMA user_version = 3")
+        with self.assertRaises(Exception):
+            self.store.initialize()
+        with self.store._connection() as db:
+            version = db.execute("PRAGMA user_version").fetchone()[0]
+            trigger = db.execute(
+                "SELECT name FROM sqlite_master WHERE type='trigger' AND name='observations_no_update'"
+            ).fetchone()
+        self.assertEqual(version, 3)
+        self.assertIsNone(trigger)
+
 
 if __name__ == "__main__":
     unittest.main()
