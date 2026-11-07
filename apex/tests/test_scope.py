@@ -82,6 +82,15 @@ class TestScopeAuthorization(unittest.TestCase):
         d = authorize_url(self.policy, "https://example.com:8443/", now=NOW)
         self.assertFalse(d.allowed)
 
+    def test_zero_port_rejected(self):
+        d = authorize_url(self.policy, "https://example.com:0/", now=NOW)
+        self.assertFalse(d.allowed)
+
+    def test_unspecified_ports_default_to_scheme_port(self):
+        policy = manifest(assets=[{"host": "example.org", "schemes": ["https"]}])
+        self.assertTrue(authorize_url(policy, "https://example.org/", now=NOW).allowed)
+        self.assertFalse(authorize_url(policy, "https://example.org:8443/", now=NOW).allowed)
+
     def test_url_credentials_rejected(self):
         d = authorize_url(self.policy, "https://user:pass@example.com/", now=NOW)
         self.assertFalse(d.allowed)
