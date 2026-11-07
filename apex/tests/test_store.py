@@ -1,5 +1,6 @@
 import tempfile
 import unittest
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -156,6 +157,27 @@ class TestSQLiteStore(unittest.TestCase):
         with self.assertRaisesRegex(StoreError, "per_host_request_budget_exhausted"):
             self.store.reserve_request(policy, request_id="budget-2",
                                        url="https://example.test/two")
+
+    def test_concurrent_reservations_cannot_exceed_budget(self):
+        policy = sample_manifest(request_budget={
+            "max_total_requests": 1, "max_requests_per_host": 1,
+        })
+        self.store.save_engagement(policy)
+
+        def reserve(index):
+            try:
+                self.store.reserve_request(
+                    policy, request_id=f"concurrent-{index}",
+                    url=f"https://example.test/{index}",
+                )
+                return "reserved"
+            except StoreError as exc:
+                return str(exc)
+
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            results = list(pool.map(reserve, (1, 2)))
+        self.assertEqual(results.count("reserved"), 1)
+        self.assertEqual(results.count("per_host_request_budget_exhausted"), 1)
 
     def test_request_reservation_requires_exact_persisted_manifest(self):
         original = sample_manifest()
