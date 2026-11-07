@@ -140,6 +140,43 @@ class TestSQLiteStore(unittest.TestCase):
             self.store.reserve_request(changed, request_id="mismatch",
                                        url="https://other.example.test/")
 
+    def test_observed_finding_requires_evidence_attached_to_same_finding(self):
+        self.store.save_engagement(sample_manifest())
+        self.store.create_finding("eng-store-1", Finding("APEX-EV-1", "Title", "Summary"))
+        self.store.transition_finding("APEX-EV-1", FindingStatus.LEAD,
+                                      actor="analyst", reason="Triage")
+        self.store.transition_finding("APEX-EV-1", FindingStatus.TESTABLE,
+                                      actor="analyst", reason="Test plan")
+        with self.assertRaisesRegex(StoreError, "evidence_reference_not_attached"):
+            self.store.transition_finding(
+                "APEX-EV-1", FindingStatus.OBSERVED, actor="analyst",
+                reason="Fake evidence reference",
+                evidence_refs=("evidence://sha256/" + "a" * 64,),
+            )
+        self.assertEqual(self.store.get_finding("APEX-EV-1").status, FindingStatus.TESTABLE)
+
+    def test_evidence_metadata_is_append_only(self):
+        self.store.save_engagement(sample_manifest())
+        self.store.create_finding("eng-store-1", Finding("APEX-EV-2", "Title", "Summary"))
+        self.store.add_evidence_metadata(
+            evidence_id="EV-IMM-1", finding_id="APEX-EV-2", sha256="c" * 64,
+            media_type="text/plain", byte_size=5, storage_ref="local://evidence/1",
+            source="fixture", redacted=True,
+        )
+        with self.assertRaisesRegex(Exception, "evidence_metadata_is_immutable"):
+            with self.store._connection() as db:
+                db.execute("UPDATE evidence_metadata SET source='changed' WHERE evidence_id='EV-IMM-1'")
+        with self.assertRaisesRegex(Exception, "evidence_metadata_is_immutable"):
+            with self.store._connection() as db:
+                db.execute("DELETE FROM evidence_metadata WHERE evidence_id='EV-IMM-1'")
+
+    def test_finding_event_history_is_append_only(self):
+        self.store.save_engagement(sample_manifest())
+        self.store.create_finding("eng-store-1", Finding("APEX-EV-3", "Title", "Summary"))
+        with self.assertRaisesRegex(Exception, "finding_events_are_immutable"):
+            with self.store._connection() as db:
+                db.execute("UPDATE finding_events SET reason='rewritten' WHERE finding_id='APEX-EV-3'")
+
 
 if __name__ == "__main__":
     unittest.main()
