@@ -165,3 +165,10 @@ A preliminary inventory of Python, JavaScript, and shell scripts under `security
 A concrete review item is `security/fizz/scripts/fizz_sync.js`: it constructs a shell command string from path/options and invokes `execSync`. This requires conversion to an argument-array process invocation plus path validation before automated use. The local OSINT dashboard also warns that non-loopback binding exposes filesystem scanning/query APIs; loopback-only must remain the default and non-loopback deployment requires authentication and request protections.
 
 The inventory is preliminary, not a complete line-by-line audit. No tests or scripts have been executed. Dependency provenance and reproducible install manifests remain unresolved. Phase 0 remains OPEN.
+
+
+## 12. Baseline CI execution evidence
+
+The corrected offline baseline workflow completed successfully on commit `e6658263781fda03443ea61a10b692c36215a786`. It passed the existing skill/routing validator, Python compileall, JavaScript syntax checks, and shell syntax checks. See [BASELINE_CI_EVIDENCE.md](BASELINE_CI_EVIDENCE.md).
+
+This closes the initial static baseline check only. The existing unit suite, dependency provenance, full manual executable review, and runtime authorization controls remain outstanding. Phase 0 remains OPEN.
