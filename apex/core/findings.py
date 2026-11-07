@@ -109,6 +109,10 @@ class Finding:
         merged_impact = self.impact if impact is None else impact
         merged_confidence = self.confidence if confidence is None else confidence
 
+        if merged_impact is not None and (
+            not isinstance(merged_impact, str) or not merged_impact.strip()
+        ):
+            raise FindingStateError("impact must be a non-empty string")
         if target in {FindingStatus.OBSERVED, FindingStatus.VALIDATING, FindingStatus.CONFIRMED}:
             if not merged_evidence:
                 raise FindingStateError(f"{target.value.lower()}_requires_evidence")
