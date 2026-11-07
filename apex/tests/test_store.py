@@ -33,6 +33,16 @@ class TestSQLiteStore(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
+    def add_verified_evidence(self, *, evidence_id, finding_id, data, redacted=True):
+        objects = LocalEvidenceStore(Path(self.tmp.name) / "objects")
+        stored = objects.put(data, redacted=True)
+        return self.store.add_evidence_metadata(
+            evidence_id=evidence_id, finding_id=finding_id,
+            sha256=stored.sha256, media_type="text/plain",
+            byte_size=stored.byte_size, storage_ref=stored.storage_ref,
+            source="test-fixture", redacted=redacted, object_store=objects,
+        )
+
     def test_save_engagement_and_create_finding(self):
         digest = self.store.save_engagement(sample_manifest())
         self.assertEqual(len(digest), 64)
@@ -49,6 +59,7 @@ class TestSQLiteStore(unittest.TestCase):
             evidence_id="EV-OBJECT-1", finding_id="APEX-OBJECT-1",
             sha256=stored.sha256, media_type="text/plain", byte_size=stored.byte_size,
             storage_ref=stored.storage_ref, source="local-evidence-store", redacted=True,
+            object_store=objects,
         )
         self.assertTrue(objects.verify(stored.sha256))
         self.assertIn(stored.sha256, evidence_ref)
@@ -60,10 +71,8 @@ class TestSQLiteStore(unittest.TestCase):
                                       actor="analyst", reason="Initial triage")
         self.store.transition_finding("APEX-STORE-2", FindingStatus.TESTABLE,
                                       actor="analyst", reason="Reproduction hypothesis")
-        evidence_ref = self.store.add_evidence_metadata(
-            evidence_id="EV-1", finding_id="APEX-STORE-2",
-            sha256="a" * 64, media_type="text/plain", byte_size=128,
-            storage_ref="local://evidence/EV-1", source="manual-capture", redacted=True,
+        evidence_ref = self.add_verified_evidence(
+            evidence_id="EV-1", finding_id="APEX-STORE-2", data=b"redacted finding evidence",
         )
         finding = self.store.get_finding("APEX-STORE-2")
         self.assertIn(evidence_ref, finding.evidence_refs)
@@ -211,10 +220,9 @@ class TestSQLiteStore(unittest.TestCase):
                                       actor="analyst", reason="Triage")
         self.store.transition_finding("APEX-EV-4", FindingStatus.TESTABLE,
                                       actor="analyst", reason="Test plan")
-        evidence_ref = self.store.add_evidence_metadata(
+        evidence_ref = self.add_verified_evidence(
             evidence_id="EV-UNREDACTED", finding_id="APEX-EV-4",
-            sha256="d" * 64, media_type="text/plain", byte_size=12,
-            storage_ref="local://evidence/EV-UNREDACTED", source="fixture", redacted=False,
+            data=b"redacted bytes but metadata not attested", redacted=False,
         )
         with self.assertRaisesRegex(StoreError, "evidence_must_be_redacted"):
             self.store.transition_finding(
@@ -225,10 +233,8 @@ class TestSQLiteStore(unittest.TestCase):
     def test_evidence_metadata_is_append_only(self):
         self.store.save_engagement(sample_manifest())
         self.store.create_finding("eng-store-1", Finding("APEX-EV-2", "Title", "Summary"))
-        self.store.add_evidence_metadata(
-            evidence_id="EV-IMM-1", finding_id="APEX-EV-2", sha256="c" * 64,
-            media_type="text/plain", byte_size=5, storage_ref="local://evidence/1",
-            source="fixture", redacted=True,
+        self.add_verified_evidence(
+            evidence_id="EV-IMM-1", finding_id="APEX-EV-2", data=b"immutable",
         )
         with self.assertRaisesRegex(Exception, "evidence_metadata_is_immutable"):
             with self.store._connection() as db:
