@@ -4,7 +4,7 @@
 **Canonical corpus:** `routing.json` + the existing 1,001 `SKILL.md` files
 **Preservation rule:** no skill is deleted, renamed, rewritten, imported as Python, or executed.
 
-## Verified in CI\n\nLatest CI run [#33](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42395917717) loaded the actual repository and asserted **1,001 indexed skills**, with deterministic retrieval results. The same run passed all 113 APEX unit tests.\n\n## Implemented
+## Verified in CI\n\nLatest CI run [#34](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42396466247) loaded the actual repository and asserted **1,001 indexed skills**. The 21-query retrieval benchmark passed with hit@1=1.000, hit@5=1.000, and MRR=1.000. The same run passed all 114 APEX unit tests.\n\n## Implemented
 
 - `apex/knowledge/registry.py` loads the existing routing manifest with duplicate-key and invalid-constant rejection.
 - Every skill name, path, domain, description, trigger list, and line-count metadata is type-checked.
@@ -29,7 +29,7 @@ The registry does not:
 ## Remaining work
 
 1. Run the full registry against the actual 1,001-entry repository in CI and record the exact indexed count.
-2. Add benchmark fixtures for retrieval relevance, tie-breaking, and ambiguous queries.
+2. Expand benchmark fixtures beyond the initial 21-query baseline, especially ambiguous and multilingual queries; current benchmark is a baseline, not proof of universal retrieval quality.
 3. Add provenance/version snapshots so skill content changes can be detected and reviewed.
 4. Add a policy-aware skill adapter that presents selected content to an agent without granting tool permissions.
 5. Review all high-risk skill instructions before any tool adapter can invoke them.
