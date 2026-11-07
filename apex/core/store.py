@@ -318,7 +318,9 @@ class SQLiteStore:
             if per_host >= manifest.max_requests_per_host:
                 raise StoreError("per_host_request_budget_exhausted")
             db.execute(
-                "INSERT INTO request_reservations VALUES (?, ?, ?, ?, ?)",
+                """INSERT INTO request_reservations
+                   (request_id, engagement_id, host, url_sha256, reserved_at)
+                   VALUES (?, ?, ?, ?, ?)""",
                 (request_id, manifest.engagement_id, host, url_digest, self._now()),
             )
         return ReservationResult(decision, request_id, False)
