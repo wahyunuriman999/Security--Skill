@@ -55,6 +55,20 @@ class TestAuditLedger(unittest.TestCase):
             with self.assertRaises(ValueError):
                 ledger.append("bad", {"value": object()})
 
+    def test_non_finite_numbers_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger = AuditLedger(Path(tmp) / "events.jsonl")
+            with self.assertRaises(ValueError):
+                ledger.append("bad", {"score": float("nan")})
+            with self.assertRaises(ValueError):
+                ledger.append("bad", {"score": float("inf")})
+
+    def test_non_string_object_keys_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger = AuditLedger(Path(tmp) / "events.jsonl")
+            with self.assertRaisesRegex(ValueError, "keys must be strings"):
+                ledger.append("bad", {1: "ambiguous"})
+
 
 if __name__ == "__main__":
     unittest.main()
