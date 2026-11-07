@@ -53,7 +53,7 @@ At the latest comparison recorded for this checkpoint:
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
-- A local scope policy module, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite schema v4 for engagements/findings/observations/evidence metadata/durable reservations, append-only DB triggers, transport-free request gateway, CLI, runtime import-boundary test, and 72 deterministic tests now exist. There is still no network transport, DNS/IP rebinding defense, OS sandbox, raw evidence object store, adapters, or autonomous runtime.
+- A local scope policy module, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite schema v4 for engagements/findings/observations/evidence metadata/durable reservations, append-only DB triggers, transport-free request gateway, CLI, runtime import-boundary test, and 72 deterministic tests now exist. There is still no network transport, DNS/IP rebinding defense, OS sandbox, agent adapters, or autonomous runtime. Local raw evidence storage now exists but relies on caller-attested redaction and a trusted local filesystem.
 - No active target testing has been performed.
 - No release artifact exists.
 
