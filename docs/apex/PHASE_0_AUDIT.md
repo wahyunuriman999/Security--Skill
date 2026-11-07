@@ -156,3 +156,12 @@ A separate file-level static review of all nine files under `tools/` is recorded
 Key finding: the existing tool directory is not a safe default execution surface. It contains C2 polling, shell execution, file read/write, persistence checks, WAF/SIEM flooding, payload mutation, traffic disguise, and WAF bypass selection. These tools are not to be registered as APEX agent capabilities by default. The review does not delete or modify them.
 
 The repository tree also contains executable Python, JavaScript, and shell files under `security/`. Their static review, dependency provenance, and isolated test execution remain outstanding. Therefore this addendum does not close Phase 0 and does not authorize Phase 1.
+
+
+## 11. Executable script inventory addendum
+
+A preliminary inventory of Python, JavaScript, and shell scripts under `security/` is recorded in [EXECUTABLE_SCRIPT_INVENTORY.md](EXECUTABLE_SCRIPT_INVENTORY.md). The inventory identifies active network tools, local subprocess wrappers, file generators, local dashboards, sensitive-data workflows, and third-party service integrations.
+
+A concrete review item is `security/fizz/scripts/fizz_sync.js`: it constructs a shell command string from path/options and invokes `execSync`. This requires conversion to an argument-array process invocation plus path validation before automated use. The local OSINT dashboard also warns that non-loopback binding exposes filesystem scanning/query APIs; loopback-only must remain the default and non-loopback deployment requires authentication and request protections.
+
+The inventory is preliminary, not a complete line-by-line audit. No tests or scripts have been executed. Dependency provenance and reproducible install manifests remain unresolved. Phase 0 remains OPEN.
