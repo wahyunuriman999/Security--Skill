@@ -46,6 +46,21 @@ class TestFindingLifecycle(unittest.TestCase):
             parked.transition(FindingStatus.LEAD, actor="analyst",
                               reason="Reopen", now=NOW)
 
+    def test_invalid_severity_and_impact_types_rejected(self):
+        with self.assertRaisesRegex(FindingStateError, "invalid severity"):
+            Finding("APEX-005", "Test", "Summary", severity=["critical"])
+        with self.assertRaisesRegex(FindingStateError, "impact must be"):
+            Finding("APEX-006", "Test", "Summary", impact=123)
+        with self.assertRaisesRegex(FindingStateError, "impact must be"):
+            Finding("APEX-007", "Test", "Summary", impact="   ")
+
+    def test_non_datetime_transition_timestamp_rejected(self):
+        finding = Finding("APEX-008", "Test", "Summary")
+        with self.assertRaisesRegex(FindingStateError, "must be a datetime"):
+            finding.transition(
+                FindingStatus.LEAD, actor="analyst", reason="Triage", now="2026-11-07",
+            )
+
     def test_confirmed_requires_confidence(self):
         finding = Finding("APEX-004", "Test", "Summary")
         finding, _ = finding.transition(FindingStatus.LEAD, actor="a", reason="triage", now=NOW)
