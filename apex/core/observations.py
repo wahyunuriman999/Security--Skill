@@ -12,6 +12,23 @@ class ObservationError(ValueError):
     pass
 
 
+def _validate_json_shape(value: Any, depth: int = 0) -> None:
+    if depth > 32:
+        raise ObservationError("details nesting exceeds 32 levels")
+    if isinstance(value, dict):
+        if any(not isinstance(key, str) for key in value):
+            raise ObservationError("details object keys must be strings")
+        for item in value.values():
+            _validate_json_shape(item, depth + 1)
+    elif isinstance(value, list):
+        for item in value:
+            _validate_json_shape(item, depth + 1)
+    elif value is None or type(value) in {str, int, bool, float}:
+        return
+    else:
+        raise ObservationError(f"unsupported details value type: {type(value).__name__}")
+
+
 @dataclass(frozen=True, init=False)
 class Observation:
     observation_id: str
@@ -37,6 +54,7 @@ class Observation:
                 raise ObservationError(f"{name} is required")
         if not isinstance(details, dict):
             raise ObservationError("details must be a JSON object")
+        _validate_json_shape(details)
         if not isinstance(captured_at, datetime):
             raise ObservationError("captured_at must be a datetime")
         if captured_at.tzinfo is None or captured_at.utcoffset() is None:
