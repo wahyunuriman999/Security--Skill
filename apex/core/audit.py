@@ -28,6 +28,19 @@ class AuditIntegrityError(ValueError):
     """Raised when an audit file is malformed or its hash chain is broken."""
 
 
+def _unique_pairs(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate JSON key: {key}")
+        result[key] = value
+    return result
+
+
+def _reject_json_constant(value: str) -> None:
+    raise ValueError(f"invalid JSON constant: {value}")
+
+
 def _canonical(value: Any) -> bytes:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False).encode("utf-8")
 
@@ -80,6 +93,8 @@ class AuditLedger:
                 raise ValueError("audit event exceeds 64 KiB")
             self.path.parent.mkdir(parents=True, exist_ok=True)
             flags = os.O_WRONLY | os.O_CREAT | os.O_APPEND
+            if hasattr(os, "O_NOFOLLOW"):
+                flags |= os.O_NOFOLLOW
             fd = os.open(self.path, flags, 0o600)
             try:
                 with os.fdopen(fd, "ab", closefd=True) as stream:
@@ -102,7 +117,15 @@ class AuditLedger:
                 for line_number, raw in enumerate(stream, start=1):
                     if not raw.endswith(b"\n") or len(raw) > _MAX_EVENT_BYTES:
                         raise AuditIntegrityError(f"invalid or oversized record at line {line_number}")
-                    record = json.loads(raw)
+                    try:
+                        record = json.loads(
+                            raw, object_pairs_hook=_unique_pairs,
+                            parse_constant=_reject_json_constant,
+                        )
+                    except (json.JSONDecodeError, ValueError) as exc:
+                        raise AuditIntegrityError(
+                            f"invalid JSON at line {line_number}: {exc}"
+                        ) from exc
                     if not isinstance(record, dict):
                         raise AuditIntegrityError(f"record {line_number} is not an object")
                     digest = record.pop("hash", None)
