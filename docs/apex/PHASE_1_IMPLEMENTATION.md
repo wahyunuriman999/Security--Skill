@@ -11,7 +11,8 @@
 - `apex/core/capabilities.py`: default-deny registry; unknown, disabled, prohibited, and network capabilities are denied.
 - `apex/core/audit.py`: local JSONL audit ledger with sequence numbers, SHA-256 hash chain, verification, and sensitive-key redaction.
 - `apex/core/findings.py`: immutable finding model and guarded lifecycle; confirmation requires evidence references, severity, impact, and confidence.
-- `apex/core/store.py`: SQLite schema v3 with migrations from v1/v2; persisted engagement manifests, finding records, immutable event history/evidence metadata, durable request reservations, idempotency, and transaction-serialized budget enforcement.
+- `apex/core/store.py`: SQLite schema v4 with migrations from v1/v2/v3; persisted engagement manifests, finding records, immutable observation records, append-only event history/evidence metadata, durable request reservations, idempotency, and transaction-serialized budget enforcement.
+- `apex/core/observations.py`: immutable, validated observation model with finite-JSON and size bounds.
 - `apex/tests/test_runtime_boundary.py`: CI guard against network and legacy-tool imports in the APEX runtime.
 - `apex/cli.py`: local manifest validation and URL authorization commands.
 - `apex/examples/engagement.example.json`: illustrative manifest using reserved example domains.
@@ -41,7 +42,7 @@
 ## Required next work
 
 1. Add stronger canonicalization/property tests and migration fixtures.
-2. Add immutable observation records and a controlled raw evidence storage design.
+2. Add a controlled raw evidence object store with content-addressed integrity verification and retention policy.
 3. Add reservation reconciliation, expiry, cancellation, and concurrency stress tests.
 4. Implement a request gateway interface with no default transport; every redirect destination must be independently authorized and reserved.
 5. Add independent review and benchmark fixtures. No active transport until separately approved.
