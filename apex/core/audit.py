@@ -45,16 +45,18 @@ def _canonical(value: Any) -> bytes:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False).encode("utf-8")
 
 
-def _redact(value: Any) -> Any:
+def _redact(value: Any, depth: int = 0) -> Any:
+    if depth > 32:
+        raise ValueError("audit payload nesting exceeds 32 levels")
     if isinstance(value, dict):
         if any(not isinstance(key, str) for key in value):
             raise ValueError("audit payload object keys must be strings")
         return {
-            key: "[REDACTED]" if _SENSITIVE_KEY.search(key) else _redact(item)
+            key: "[REDACTED]" if _SENSITIVE_KEY.search(key) else _redact(item, depth + 1)
             for key, item in value.items()
         }
     if isinstance(value, list):
-        return [_redact(item) for item in value]
+        return [_redact(item, depth + 1) for item in value]
     if isinstance(value, (str, int, float, bool)) or value is None:
         return value
     raise ValueError(f"unsupported audit payload type: {type(value).__name__}")
