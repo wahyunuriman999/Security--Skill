@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime, timezone
 
 from apex.core.scope import (
-    EngagementManifest, RequestBudget, ScopePolicyError, authorize_url, normalize_host,
+    EngagementManifest, RequestBudget, ScopePolicyError, authorize_url, authorize_and_reserve, normalize_host,
 )
 
 
@@ -141,6 +141,23 @@ class TestRequestBudget(unittest.TestCase):
         with self.assertRaisesRegex(ScopePolicyError, "total"):
             budget.consume("other.example.net")
         self.assertEqual(budget.usage["total"], 3)
+
+    def test_scope_gate_reserves_only_authorized_requests(self):
+        policy = manifest()
+        budget = RequestBudget(policy)
+        denied = authorize_and_reserve(policy, budget, "https://outside.test/", now=NOW)
+        self.assertFalse(denied.allowed)
+        self.assertEqual(budget.usage["total"], 0)
+        allowed = authorize_and_reserve(policy, budget, "https://example.com/", now=NOW)
+        self.assertTrue(allowed.allowed)
+        self.assertEqual(budget.usage["total"], 1)
+
+    def test_scope_gate_fails_when_budget_is_exhausted(self):
+        policy = manifest(request_budget={"max_total_requests": 1, "max_requests_per_host": 1})
+        budget = RequestBudget(policy)
+        authorize_and_reserve(policy, budget, "https://example.com/", now=NOW)
+        with self.assertRaisesRegex(ScopePolicyError, "total_request_budget_exhausted"):
+            authorize_and_reserve(policy, budget, "https://api.example.net/", now=NOW)
 
 
 if __name__ == "__main__":
