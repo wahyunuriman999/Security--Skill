@@ -49,6 +49,26 @@ class TestAuditLedger(unittest.TestCase):
             with self.assertRaises(AuditIntegrityError):
                 AuditLedger(path).verify()
 
+    def test_duplicate_json_keys_in_audit_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "events.jsonl"
+            AuditLedger(path).append("finding.created", {"finding_id": "F-1"})
+            raw = path.read_text(encoding="utf-8")
+            raw = raw.replace('"event_type":"finding.created"',
+                              '"event_type":"finding.created","event_type":"finding.created"')
+            path.write_text(raw, encoding="utf-8")
+            with self.assertRaisesRegex(AuditIntegrityError, "duplicate JSON key"):
+                AuditLedger(path).verify()
+
+    def test_non_finite_json_in_audit_file_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "events.jsonl"
+            AuditLedger(path).append("finding.created", {"finding_id": "F-1"})
+            raw = path.read_text(encoding="utf-8").replace('"finding_id":"F-1"', '"finding_id":NaN')
+            path.write_text(raw, encoding="utf-8")
+            with self.assertRaisesRegex(AuditIntegrityError, "invalid JSON constant"):
+                AuditLedger(path).verify()
+
     def test_payload_must_be_json_safe(self):
         with tempfile.TemporaryDirectory() as tmp:
             ledger = AuditLedger(Path(tmp) / "events.jsonl")
