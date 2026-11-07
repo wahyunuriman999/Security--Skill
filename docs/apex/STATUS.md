@@ -9,7 +9,7 @@
 
 **Phase 0 — Deep Repository Audit: CLOSED WITH BOUNDED SCOPE**  
 **Phase 1 — Canonical Core & Baseline Repair: IN PROGRESS (offline core)**  
-**Phase 2 — Knowledge Registry: IN PROGRESS (read-only track)**
+**Phase 2 — Knowledge Registry: IN PROGRESS (read-only track; retrieval benchmark passing)**
 
 Phase 0 exit is bounded to an isolated, standard-library-only APEX core. The legacy skill corpus and legacy executables remain preserved but are not exposed as runtime capabilities. See [PHASE_0_EXIT_DECISION.md](PHASE_0_EXIT_DECISION.md).
 
@@ -20,8 +20,8 @@ Phase 0 has a bounded exit decision. Phase 1's local-only core and Phase 2's rea
 At the latest comparison recorded for this checkpoint:
 
 - `main` base SHA: `9a7f090bcba13bf02cb253dca88e2b4850f32416`
-- Working branch: 144 commits ahead, 0 behind.
-- Changed paths: 40 added files (25 APEX core/test/knowledge files, 14 audit/design/status documents, and 1 CI workflow).
+- Working branch: 155 commits ahead, 0 behind.
+- Changed paths: 42 added files (27 APEX core/test/knowledge files, 14 audit/design/status documents, and 1 CI workflow).
 - No existing tracked files are modified or deleted; the original corpus and legacy tools are preserved.
 - No existing skill file or existing executable source file was modified.
 - `main` was not modified.
@@ -50,7 +50,7 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Latest verified CI run [#33](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42395917717) passed with **113 deterministic APEX tests in 0.535 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
+- Latest verified CI run [#34](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42396466247) passed with **114 deterministic APEX tests in 0.570 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
