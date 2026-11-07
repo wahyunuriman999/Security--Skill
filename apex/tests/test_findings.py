@@ -61,6 +61,21 @@ class TestFindingLifecycle(unittest.TestCase):
                 FindingStatus.LEAD, actor="analyst", reason="Triage", now="2026-11-07",
             )
 
+    def test_confirmed_transition_rejects_non_string_impact(self):
+        finding = Finding("APEX-009", "Test", "Summary")
+        finding, _ = finding.transition(FindingStatus.LEAD, actor="a", reason="triage", now=NOW)
+        finding, _ = finding.transition(FindingStatus.TESTABLE, actor="a", reason="testable", now=NOW)
+        finding, _ = finding.transition(
+            FindingStatus.OBSERVED, actor="a", reason="observed",
+            evidence_refs=("evidence://1",), now=NOW,
+        )
+        finding, _ = finding.transition(FindingStatus.VALIDATING, actor="a", reason="validate", now=NOW)
+        with self.assertRaisesRegex(FindingStateError, "impact must be a non-empty string"):
+            finding.transition(
+                FindingStatus.CONFIRMED, actor="a", reason="confirm",
+                severity="high", impact=123, confidence=0.9, now=NOW,
+            )
+
     def test_confirmed_requires_confidence(self):
         finding = Finding("APEX-004", "Test", "Summary")
         finding, _ = finding.transition(FindingStatus.LEAD, actor="a", reason="triage", now=NOW)
