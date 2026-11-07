@@ -246,7 +246,7 @@ class SQLiteStore:
         if finding.status is not FindingStatus.IDEA:
             raise StoreError("new findings must begin in IDEA state")
         now = self._now()
-        with self._connect() as db:
+        with self._connection() as db:
             db.execute(
                 """INSERT INTO findings
                    (finding_id, engagement_id, title, summary, status, evidence_refs_json,
@@ -264,7 +264,7 @@ class SQLiteStore:
             )
 
     def get_finding(self, finding_id: str) -> Finding:
-        with self._connect() as db:
+        with self._connection() as db:
             row = db.execute("SELECT * FROM findings WHERE finding_id = ?", (finding_id,)).fetchone()
         if row is None:
             raise StoreError("finding_not_found")
@@ -280,7 +280,7 @@ class SQLiteStore:
         evidence_refs: tuple[str, ...] | None = None, severity: str | None = None,
         impact: str | None = None, confidence: float | None = None,
     ) -> Finding:
-        with self._connect() as db:
+        with self._connection() as db:
             db.execute("BEGIN IMMEDIATE")
             row = db.execute("SELECT * FROM findings WHERE finding_id = ?", (finding_id,)).fetchone()
             if row is None:
@@ -324,7 +324,7 @@ class SQLiteStore:
         if not isinstance(redacted, bool):
             raise StoreError("redacted must be a boolean")
         evidence_ref = f"evidence://sha256/{sha256}"
-        with self._connect() as db:
+        with self._connection() as db:
             db.execute("BEGIN IMMEDIATE")
             row = db.execute("SELECT evidence_refs_json FROM findings WHERE finding_id = ?",
                              (finding_id,)).fetchone()
@@ -346,7 +346,7 @@ class SQLiteStore:
         return evidence_ref
 
     def list_finding_events(self, finding_id: str) -> list[dict[str, Any]]:
-        with self._connect() as db:
+        with self._connection() as db:
             rows = db.execute(
                 """SELECT from_status, to_status, actor, reason, event_at
                    FROM finding_events WHERE finding_id=? ORDER BY event_id""",
