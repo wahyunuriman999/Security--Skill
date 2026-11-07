@@ -39,7 +39,9 @@ def normalize_host(value: str) -> str:
     """Return a canonical lower-case IDNA hostname or compressed IP literal."""
     if not isinstance(value, str) or not value or value != value.strip():
         raise ScopePolicyError("host must be a non-empty trimmed string")
-    host = value.rstrip(".")
+    if value.endswith(".."):
+        raise ScopePolicyError("host has more than one trailing dot")
+    host = value[:-1] if value.endswith(".") else value
     if not host or "%" in host or any(ch in host for ch in "/\\@?#"):
         raise ScopePolicyError("host contains forbidden characters")
     try:
@@ -120,6 +122,13 @@ class EngagementManifest:
             if "*" in raw_host and not wildcard:
                 raise ScopePolicyError(f"assets[{index}].host has invalid wildcard")
             host = normalize_host(raw_host[2:] if wildcard else raw_host)
+            if wildcard:
+                try:
+                    ipaddress.ip_address(host)
+                except ValueError:
+                    pass
+                else:
+                    raise ScopePolicyError(f"assets[{index}] cannot wildcard an IP literal")
             raw_schemes = raw.get("schemes", ["https"])
             if not isinstance(raw_schemes, list) or not raw_schemes:
                 raise ScopePolicyError(f"assets[{index}].schemes must be a non-empty array")
@@ -207,6 +216,8 @@ def authorize_url(
             return AuthorizationDecision(False, "unsupported_or_relative_url", manifest.engagement_id)
         if parsed.username is not None or parsed.password is not None:
             return AuthorizationDecision(False, "url_credentials_forbidden", manifest.engagement_id)
+        if parsed.netloc.endswith(":") or parsed.netloc.endswith("]:"):
+            return AuthorizationDecision(False, "malformed_url", manifest.engagement_id)
         if parsed.fragment:
             return AuthorizationDecision(False, "url_fragment_forbidden", manifest.engagement_id)
         raw_host = parsed.hostname
