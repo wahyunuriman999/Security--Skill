@@ -102,6 +102,13 @@ class TestRequestGateway(unittest.TestCase):
                 request_id="req-relative", allow_redirects=True,
             )
 
+    def test_non_string_redirect_location_is_denied(self):
+        with self.assertRaisesRegex(GatewayDenied, "invalid_redirect_location"):
+            self.gateway.prepare_redirect(
+                self.policy, response_status=302, location=None,
+                request_id="req-none", allow_redirects=True,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
