@@ -254,6 +254,9 @@ class TestSQLiteStore(unittest.TestCase):
             db.execute("DROP TRIGGER evidence_metadata_no_delete")
             db.execute("DROP TRIGGER finding_events_no_update")
             db.execute("DROP TRIGGER finding_events_no_delete")
+            db.execute("DROP TRIGGER observations_no_update")
+            db.execute("DROP TRIGGER observations_no_delete")
+            db.execute("DROP TABLE observations")
             db.execute("PRAGMA user_version = 2")
         self.store.initialize()
         with self.store._connection() as db:
