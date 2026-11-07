@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "top_k": 5,
+  "minimum_hit_at_5": 0.90,
+  "minimum_mrr": 0.75,
+  "cases": [
+    {"query": "cross site scripting", "expected": ["hunt-xss"]},
+    {"query": "sql injection", "expected": ["hunt-sqli"]},
+    {"query": "server side request forgery", "expected": ["hunt-ssrf"]},
+    {"query": "insecure direct object reference", "expected": ["hunt-idor"]},
+    {"query": "oauth security", "expected": ["hunt-oauth", "hunt-oauth-advanced"]},
+    {"query": "jwt vulnerabilities", "expected": ["hunt-jwt-crypto"]},
+    {"query": "graphql security", "expected": ["hunt-graphql", "hunt-fintech-graphql"]},
+    {"query": "cors misconfiguration", "expected": ["hunt-cors"]},
+    {"query": "cross site request forgery", "expected": ["hunt-csrf"]},
+    {"query": "server side template injection", "expected": ["hunt-ssti"]},
+    {"query": "xml external entity", "expected": ["hunt-xxe"]},
+    {"query": "bug bounty workflow", "expected": ["bug-bounty"]},
+    {"query": "web vulnerability triage", "expected": ["performing-web-application-vulnerability-triage"]},
+    {"query": "security report writing", "expected": ["report-writing"]},
+    {"query": "smart contract audit", "expected": ["smart-contract-audit"]},
+    {"query": "cloud iam", "expected": ["cloud-iam-deep"]},
+    {"query": "kerberos", "expected": ["detecting-golden-ticket-attacks-in-kerberos-logs"]},
+    {"query": "malware analysis", "expected": ["performing-dynamic-analysis-with-any-run"]},
+    {"query": "digital forensics", "expected": ["performing-endpoint-forensics-investigation"]},
+    {"query": "kubernetes rbac", "expected": ["auditing-kubernetes-cluster-rbac"]},
+    {"query": "llm security", "expected": ["implementing-llm-guardrails-for-security"]}
+  ]
+}
