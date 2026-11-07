@@ -37,6 +37,9 @@ jobs:
       - name: Validate skill corpus and routing manifest
         run: python scripts/validate.py
 
+      - name: Validate APEX read-only knowledge registry against full corpus
+        run: python -m apex.cli knowledge-search "bug bounty" --root . --limit 5
+
       - name: Compile all Python sources
         run: python -m compileall -q scripts security tools apex
 
