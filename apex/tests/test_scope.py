@@ -52,6 +52,17 @@ class TestManifestValidation(unittest.TestCase):
     def test_normalizes_idna(self):
         self.assertEqual(normalize_host("BÜCHER.example"), "xn--bcher-kva.example")
 
+    def test_single_trailing_dot_is_normalized(self):
+        self.assertEqual(normalize_host("example.com."), "example.com")
+
+    def test_multiple_trailing_dots_rejected(self):
+        with self.assertRaises(ScopePolicyError):
+            normalize_host("example.com..")
+
+    def test_wildcard_ip_literal_rejected(self):
+        with self.assertRaises(ScopePolicyError):
+            manifest(assets=[{"host": "*.127.0.0.1"}])
+
 
 class TestScopeAuthorization(unittest.TestCase):
     def setUp(self):
@@ -95,6 +106,16 @@ class TestScopeAuthorization(unittest.TestCase):
         d = authorize_url(self.policy, "https://user:pass@example.com/", now=NOW)
         self.assertFalse(d.allowed)
         self.assertEqual(d.reason, "url_credentials_forbidden")
+
+    def test_empty_explicit_port_rejected(self):
+        d = authorize_url(self.policy, "https://example.com:/", now=NOW)
+        self.assertFalse(d.allowed)
+        self.assertEqual(d.reason, "malformed_url")
+
+    def test_fragment_rejected(self):
+        d = authorize_url(self.policy, "https://example.com/#section", now=NOW)
+        self.assertFalse(d.allowed)
+        self.assertEqual(d.reason, "url_fragment_forbidden")
 
     def test_malformed_url_rejected(self):
         self.assertFalse(authorize_url(self.policy, "https://exa mple.com", now=NOW).allowed)
