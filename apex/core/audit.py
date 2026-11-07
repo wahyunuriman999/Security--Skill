@@ -29,13 +29,15 @@ class AuditIntegrityError(ValueError):
 
 
 def _canonical(value: Any) -> bytes:
-    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False).encode("utf-8")
 
 
 def _redact(value: Any) -> Any:
     if isinstance(value, dict):
+        if any(not isinstance(key, str) for key in value):
+            raise ValueError("audit payload object keys must be strings")
         return {
-            str(key): "[REDACTED]" if _SENSITIVE_KEY.search(str(key)) else _redact(item)
+            key: "[REDACTED]" if _SENSITIVE_KEY.search(key) else _redact(item)
             for key, item in value.items()
         }
     if isinstance(value, list):
@@ -86,6 +88,8 @@ class AuditLedger:
                     os.fsync(stream.fileno())
             except Exception:
                 raise
+            if os.name == "posix":
+                os.chmod(self.path, 0o600)
             return record
 
     def verify(self) -> list[dict[str, Any]]:
