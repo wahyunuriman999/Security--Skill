@@ -17,6 +17,20 @@ _ALLOWED_ROOTS = frozenset({"security", "security-atlas", "security-atlas-roadma
 _NAME = re.compile(r"^[a-z0-9][a-z0-9-]{0,127}$")
 _TOKEN = re.compile(r"[a-z0-9]+")
 
+_QUERY_SYNONYMS = {
+    "cross site scripting": "xss",
+    "sql injection": "sqli",
+    "server side request forgery": "ssrf",
+    "insecure direct object reference": "idor",
+    "oauth security": "oauth",
+    "jwt vulnerabilities": "jwt",
+    "graphql security": "graphql",
+    "cors misconfiguration": "cors",
+    "cross site request forgery": "csrf",
+    "server side template injection": "ssti",
+    "xml external entity": "xxe",
+}
+
 
 class KnowledgeRegistryError(ValueError):
     pass
@@ -185,6 +199,8 @@ class KnowledgeRegistry:
             raise KnowledgeRegistryError("search_limit_must_be_1_to_100")
         normalized = query.strip().lower()
         tokens = set(_TOKEN.findall(normalized))
+        alias = _QUERY_SYNONYMS.get(normalized)
+        alias_tokens = set(_TOKEN.findall(alias)) if alias else set()
         if not tokens:
             return []
         hits = []
@@ -213,6 +229,15 @@ class KnowledgeRegistry:
                     score += 5
                 if token in description_tokens:
                     score += 2
+            for token in alias_tokens:
+                if token in name_tokens:
+                    score += 100
+                if token in trigger_tokens:
+                    score += 80
+                if token in description_tokens:
+                    score += 10
+            if alias_tokens and record.domain == "security/hunt":
+                score += 50
             if score:
                 hits.append(SearchHit(record, score))
         hits.sort(key=lambda hit: (-hit.score, hit.record.name))
