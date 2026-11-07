@@ -19,7 +19,7 @@ Phase 0 has a bounded exit decision. Phase 1 core modules now exist on this bran
 At the latest comparison recorded for this checkpoint:
 
 - `main` base SHA: `9a7f090bcba13bf02cb253dca88e2b4850f32416`
-- Working branch: 99 commits ahead, 0 behind.
+- Working branch: 105 commits ahead, 0 behind.
 - Changed paths: 36 added files (22 APEX core/test files, 13 audit/design/status documents, and 1 CI workflow).
 - No existing tracked files are modified or deleted; the original corpus and legacy tools are preserved.
 - No existing skill file or existing executable source file was modified.
@@ -49,11 +49,11 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Latest verified CI run [#25](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42394169451) passed with **83 deterministic APEX tests in 0.899 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
+- Latest verified CI run [#26](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42394479256) passed with **86 deterministic APEX tests in 1.611 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
-- A local scope policy module, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite schema v4 for engagements/findings/observations/evidence metadata/durable reservations, append-only DB triggers, transport-free request gateway, CLI, runtime import-boundary test, and 72 deterministic tests now exist. There is still no network transport, DNS/IP rebinding defense, OS sandbox, agent adapters, or autonomous runtime. Local raw evidence storage now exists but relies on caller-attested redaction and a trusted local filesystem.
+- A local scope policy module, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite schema v5 for engagements/findings/observations/evidence metadata/durable reservations and request lifecycle events, append-only DB triggers, transport-free request gateway, CLI, runtime import-boundary test, and 72 deterministic tests now exist. There is still no network transport, DNS/IP rebinding defense, OS sandbox, agent adapters, or autonomous runtime. Local raw evidence storage now exists but relies on caller-attested redaction and a trusted local filesystem.
 - No active target testing has been performed.
 - No release artifact exists.
 
@@ -70,10 +70,11 @@ At the latest comparison recorded for this checkpoint:
 - [x] Evidence-gated finding lifecycle; persisted evidence references must belong to the same finding.
 - [x] Append-only database triggers for evidence metadata and finding event history.
 - [x] Durable request budget reservation and idempotency.
+- [x] Request lifecycle states RESERVED → CANCELLED or DISPATCHED → COMPLETED/FAILED; dispatch claim is single-use, state events are append-only, and cancelled reservations do not refund budget.
 - [x] Immutable observation model and persisted append-only observation records.
 - [x] Local content-addressed evidence objects with redaction attestation, bounded size, immutable writes, and SHA-256 verification on read.
 - [ ] Retention policy, backup/recovery, and independent raw-evidence integrity review.
-- [ ] Reservation expiry/reconciliation and explicit cancellation semantics (reservations are deliberately not refunded; conservative budget consumption remains).
+- [ ] Reservation expiry/reconciliation for stale DISPATCHED requests; cancellation is implemented for unclaimed requests and deliberately does not refund budget.
 - [x] Transport-free request gateway policy; GET/HEAD only, redirects disabled by default, explicit per-destination authorization and durable reservation.
 - [ ] DNS/IP rebinding-resistant destination pinning design and tests before any transport exists.
 - [ ] Independent code review, concurrency tests, migration tests, and security tests.
