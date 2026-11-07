@@ -147,3 +147,12 @@ This checkpoint is based on GitHub tree/blob retrieval and static source inspect
 ## 9. Current Phase 0 decision
 
 **Phase 0 remains OPEN.** APEX-010, APEX-011, and APEX-012 are release blockers for any autonomous active-testing release. No Phase 1 implementation is authorized by this audit addendum.
+
+
+## 10. Executable tool safety review addendum
+
+A separate file-level static review of all nine files under `tools/` is recorded in [EXECUTABLE_TOOL_SAFETY_REVIEW.md](EXECUTABLE_TOOL_SAFETY_REVIEW.md).
+
+Key finding: the existing tool directory is not a safe default execution surface. It contains C2 polling, shell execution, file read/write, persistence checks, WAF/SIEM flooding, payload mutation, traffic disguise, and WAF bypass selection. These tools are not to be registered as APEX agent capabilities by default. The review does not delete or modify them.
+
+The repository tree also contains executable Python, JavaScript, and shell files under `security/`. Their static review, dependency provenance, and isolated test execution remain outstanding. Therefore this addendum does not close Phase 0 and does not authorize Phase 1.
