@@ -394,6 +394,8 @@ class TestSQLiteStore(unittest.TestCase):
 
     def test_failed_schema_migration_rolls_back_atomically(self):
         with self.store._connection() as db:
+            db.execute("DROP TRIGGER observations_no_update")
+            db.execute("DROP TRIGGER observations_no_delete")
             db.execute("PRAGMA user_version = 3")
         with self.assertRaises(Exception):
             self.store.initialize()
