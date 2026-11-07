@@ -20,6 +20,7 @@ from typing import Any
 
 from apex.core.findings import Finding, FindingStatus
 from apex.core.observations import Observation
+from apex.core.evidence_store import LocalEvidenceStore, EvidenceObjectError
 from apex.core.scope import (AuthorizationDecision, EngagementManifest, authorize_url, normalize_host)
 
 
@@ -374,6 +375,7 @@ class SQLiteStore:
     def add_evidence_metadata(
         self, *, evidence_id: str, finding_id: str, sha256: str, media_type: str,
         byte_size: int, storage_ref: str, source: str, redacted: bool,
+        object_store: LocalEvidenceStore | None = None,
     ) -> str:
         if not isinstance(sha256, str) or not _SHA256.fullmatch(sha256):
             raise StoreError("evidence sha256 must be 64 lowercase hexadecimal characters")
@@ -390,6 +392,16 @@ class SQLiteStore:
             raise StoreError("evidence metadata must not contain line breaks")
         if not isinstance(redacted, bool):
             raise StoreError("redacted must be a boolean")
+        if storage_ref != f"local://sha256/{sha256}":
+            raise StoreError("storage_ref_must_match_content_address")
+        if not isinstance(object_store, LocalEvidenceStore):
+            raise StoreError("verified_local_evidence_store_required")
+        try:
+            verified_bytes = object_store.get(sha256)
+        except EvidenceObjectError as exc:
+            raise StoreError("evidence_object_missing_or_integrity_failure") from exc
+        if len(verified_bytes) != byte_size:
+            raise StoreError("evidence_object_size_mismatch")
         evidence_ref = f"evidence://sha256/{sha256}"
         with self._connection() as db:
             db.execute("BEGIN IMMEDIATE")
