@@ -12,7 +12,9 @@ APEX is an authorized security-research workspace. The initial core is deliberat
 - URL credentials and fragments rejected.
 - Per-engagement and per-host in-memory request budget primitive.
 - Default-deny capability registry; network, unknown, disabled, and prohibited capabilities are denied.
-- Local JSONL audit ledger with sequence numbers, SHA-256 hash chaining, integrity verification, and sensitive-key redaction.
+- Local JSONL audit ledger with sequence numbers, SHA-256 hash chaining, integrity verification, strict finite-JSON canonicalization, and sensitive-key redaction.
+- SQLite schema v4 for persisted engagements, finding lifecycle events, immutable observations, evidence metadata, and durable idempotent request-budget reservations.
+- Append-only database triggers for observation records, evidence metadata, and finding event history; evidence must be local-reference-only and redacted before it can support an observed/confirmed finding.
 - Evidence-gated finding lifecycle with explicit legal transitions and confirmation requirements.
 - CLI for local manifest validation and URL authorization.
 - Deterministic unit tests; no outbound network calls.
@@ -49,4 +51,4 @@ The example manifest is illustrative only. Replace it with a program's actual wr
 
 ## Current limitations
 
-This is a policy primitive, not yet a complete execution gateway. Budget persistence, redirect handling, DNS/IP rebinding defenses, request signing, durable finding/evidence storage, concurrency scheduling, and process isolation are not implemented. The audit ledger is local and hash-chained, but it is not tamper-proof and does not provide multi-process locking. Do not connect an active scanner until those controls exist and have independent tests.
+This is a policy primitive, not yet a complete execution gateway. Redirect handling, DNS/IP rebinding defenses, request signing, raw evidence object storage, reservation cancellation/reconciliation, concurrency stress validation, and process isolation are not implemented. The audit ledger is local and hash-chained, but it is not tamper-proof and does not provide multi-process locking. Do not connect an active scanner until those controls exist and have independent tests.
