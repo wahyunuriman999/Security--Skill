@@ -320,6 +320,21 @@ class TestSQLiteStore(unittest.TestCase):
         self.assertEqual(restored.details, observation.details)
         self.assertEqual(len(self.store.list_observations("eng-store-1")), 1)
 
+    def test_observation_payload_is_deeply_immutable(self):
+        details = {"nested": {"values": [1, 2]}}
+        observation = Observation(
+            observation_id="OBS-IMM", engagement_id="eng-store-1",
+            observation_type="note", target_ref="asset://example.test",
+            summary="Immutable payload", actor="analyst", details=details,
+            captured_at=datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
+        )
+        original_hash = observation.details_sha256
+        details["nested"]["values"].append(3)
+        exposed = observation.details
+        exposed["nested"]["values"].append(4)
+        self.assertEqual(observation.details, {"nested": {"values": [1, 2]}})
+        self.assertEqual(observation.details_sha256, original_hash)
+
     def test_observation_records_are_append_only(self):
         self.store.save_engagement(sample_manifest())
         observation = Observation(
