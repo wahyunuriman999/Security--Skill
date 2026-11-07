@@ -11,6 +11,8 @@ APEX is an authorized security-research workspace. The initial core is deliberat
 - Scheme and port allowlists; omitted ports mean standard scheme ports only.
 - URL credentials and fragments rejected.
 - Per-engagement and per-host in-memory request budget primitive.
+- Default-deny capability registry; network, unknown, disabled, and prohibited capabilities are denied.
+- Local JSONL audit ledger with sequence numbers, SHA-256 hash chaining, integrity verification, and sensitive-key redaction.
 - CLI for local manifest validation and URL authorization.
 - Deterministic unit tests; no outbound network calls.
 
@@ -46,4 +48,4 @@ The example manifest is illustrative only. Replace it with a program's actual wr
 
 ## Current limitations
 
-This is a policy primitive, not yet a complete execution gateway. Budget persistence, redirect handling, DNS/IP rebinding defenses, request signing, audit-chain storage, concurrency scheduling, and process isolation are not implemented. Do not connect an active scanner until those controls exist and have independent tests.
+This is a policy primitive, not yet a complete execution gateway. Budget persistence, redirect handling, DNS/IP rebinding defenses, request signing, durable finding/evidence storage, concurrency scheduling, and process isolation are not implemented. The audit ledger is local and hash-chained, but it is not tamper-proof and does not provide multi-process locking. Do not connect an active scanner until those controls exist and have independent tests.
