@@ -59,14 +59,23 @@ class Finding:
     confidence: float | None = None
 
     def __post_init__(self) -> None:
-        if not self.finding_id.strip() or not self.title.strip() or not self.summary.strip():
-            raise FindingStateError("finding_id, title, and summary are required")
+        for field_name, value in (("finding_id", self.finding_id),
+                                  ("title", self.title), ("summary", self.summary)):
+            if not isinstance(value, str) or not value.strip():
+                raise FindingStateError(f"{field_name} is required")
+        if not isinstance(self.status, FindingStatus):
+            raise FindingStateError("status must be a FindingStatus")
         if self.severity is not None and self.severity not in _SEVERITIES:
             raise FindingStateError("invalid severity")
-        if self.confidence is not None and not 0.0 <= self.confidence <= 1.0:
-            raise FindingStateError("confidence must be between 0 and 1")
-        if any(not ref.strip() for ref in self.evidence_refs):
-            raise FindingStateError("evidence references must be non-empty")
+        if self.confidence is not None:
+            if isinstance(self.confidence, bool) or not isinstance(self.confidence, (int, float)):
+                raise FindingStateError("confidence must be numeric")
+            if not 0.0 <= self.confidence <= 1.0:
+                raise FindingStateError("confidence must be between 0 and 1")
+        if not isinstance(self.evidence_refs, tuple) or any(
+            not isinstance(ref, str) or not ref.strip() for ref in self.evidence_refs
+        ):
+            raise FindingStateError("evidence references must be non-empty strings in a tuple")
 
     def transition(
         self,
@@ -80,6 +89,10 @@ class Finding:
         confidence: float | None = None,
         now: datetime | None = None,
     ) -> tuple["Finding", "FindingTransition"]:
+        if not isinstance(target, FindingStatus):
+            raise FindingStateError("target must be a FindingStatus")
+        if not isinstance(actor, str) or not isinstance(reason, str):
+            raise FindingStateError("actor and transition reason must be strings")
         if target not in _ALLOWED_TRANSITIONS[self.status]:
             raise FindingStateError(f"transition_not_allowed:{self.status.value}->{target.value}")
         if not actor.strip() or not reason.strip():
