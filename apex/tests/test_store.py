@@ -43,6 +43,17 @@ class TestSQLiteStore(unittest.TestCase):
             source="test-fixture", redacted=redacted, object_store=objects,
         )
 
+    def test_store_initializes_file_backed_database_on_construction(self):
+        path = Path(self.tmp.name) / "new-store" / "apex.db"
+        created = SQLiteStore(path)
+        self.assertTrue(path.exists())
+        with created._connection() as db:
+            self.assertEqual(db.execute("PRAGMA user_version").fetchone()[0], 5)
+
+    def test_in_memory_database_rejected_for_durable_budget_semantics(self):
+        with self.assertRaisesRegex(StoreError, "file-backed database"):
+            SQLiteStore(":memory:")
+
     def test_save_engagement_and_create_finding(self):
         digest = self.store.save_engagement(sample_manifest())
         self.assertEqual(len(digest), 64)
