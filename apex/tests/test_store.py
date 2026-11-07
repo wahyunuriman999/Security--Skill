@@ -132,6 +132,16 @@ class TestSQLiteStore(unittest.TestCase):
                 source="test", redacted=True,
             )
 
+    def test_request_identifier_rejects_whitespace_and_control_characters(self):
+        policy = sample_manifest()
+        self.store.save_engagement(policy)
+        for invalid in ("bad key", "bad\\nkey", "bad/key", " "):
+            with self.subTest(request_id=repr(invalid)):
+                with self.assertRaisesRegex(StoreError, "safe ASCII"):
+                    self.store.reserve_request(
+                        policy, request_id=invalid, url="https://example.test/",
+                    )
+
     def test_scope_checked_request_reservation_and_idempotency(self):
         policy = sample_manifest()
         self.store.save_engagement(policy)
