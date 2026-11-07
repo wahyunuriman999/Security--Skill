@@ -317,11 +317,18 @@ class SQLiteStore:
                 raise StoreError("total_request_budget_exhausted")
             if per_host >= manifest.max_requests_per_host:
                 raise StoreError("per_host_request_budget_exhausted")
+            reserved_at = self._now()
             db.execute(
                 """INSERT INTO request_reservations
                    (request_id, engagement_id, host, url_sha256, reserved_at)
                    VALUES (?, ?, ?, ?, ?)""",
-                (request_id, manifest.engagement_id, host, url_digest, self._now()),
+                (request_id, manifest.engagement_id, host, url_digest, reserved_at),
+            )
+            db.execute(
+                """INSERT INTO request_events
+                   (request_id, from_status, to_status, actor, reason, event_at)
+                   VALUES (?, NULL, 'RESERVED', 'gateway', 'request_budget_reserved', ?)""",
+                (request_id, reserved_at),
             )
         return ReservationResult(decision, request_id, False)
 
