@@ -7,7 +7,7 @@ from apex.core.scope import EngagementManifest
 from apex.core.store import SQLiteStore, StoreError
 
 
-def sample_manifest():
+def sample_manifest(*, assets=None, request_budget=None):
     return EngagementManifest.from_dict({
         "schema_version": 1,
         "engagement_id": "eng-store-1",
@@ -15,8 +15,8 @@ def sample_manifest():
         "authorization": {"authorized": True, "reference": "https://example.test/policy"},
         "issued_at": "2026-11-01T00:00:00Z",
         "expires_at": "2026-12-01T00:00:00Z",
-        "assets": [{"host": "example.test", "schemes": ["https"], "ports": [443]}],
-        "request_budget": {"max_total_requests": 10, "max_requests_per_host": 5},
+        "assets": assets or [{"host": "example.test", "schemes": ["https"], "ports": [443]}],
+        "request_budget": request_budget or {"max_total_requests": 10, "max_requests_per_host": 5},
     })
 
 
@@ -94,6 +94,51 @@ class TestSQLiteStore(unittest.TestCase):
                 media_type="text/plain", byte_size=True, storage_ref="local://x",
                 source="test", redacted=True,
             )
+
+    def test_scope_checked_request_reservation_and_idempotency(self):
+        policy = sample_manifest()
+        self.store.save_engagement(policy)
+        denied = self.store.reserve_request(policy, request_id="r-0",
+                                            url="https://outside.test/")
+        self.assertFalse(denied.decision.allowed)
+        self.assertIsNone(denied.request_id)
+        first = self.store.reserve_request(policy, request_id="r-1",
+                                           url="https://example.test/path")
+        self.assertTrue(first.decision.allowed)
+        self.assertFalse(first.replayed)
+        replay = self.store.reserve_request(policy, request_id="r-1",
+                                            url="https://example.test/path")
+        self.assertTrue(replay.replayed)
+
+    def test_idempotency_key_cannot_be_reused_for_another_url(self):
+        policy = sample_manifest()
+        self.store.save_engagement(policy)
+        self.store.reserve_request(policy, request_id="same-key",
+                                   url="https://example.test/one")
+        with self.assertRaisesRegex(StoreError, "idempotency_key_conflict"):
+            self.store.reserve_request(policy, request_id="same-key",
+                                       url="https://example.test/two")
+
+    def test_request_budget_is_persistent_and_enforced(self):
+        policy = sample_manifest(request_budget={
+            "max_total_requests": 2, "max_requests_per_host": 1,
+        })
+        self.store.save_engagement(policy)
+        self.store.reserve_request(policy, request_id="budget-1",
+                                   url="https://example.test/one")
+        with self.assertRaisesRegex(StoreError, "per_host_request_budget_exhausted"):
+            self.store.reserve_request(policy, request_id="budget-2",
+                                       url="https://example.test/two")
+
+    def test_request_reservation_requires_exact_persisted_manifest(self):
+        original = sample_manifest()
+        self.store.save_engagement(original)
+        changed = sample_manifest(assets=[
+            {"host": "other.example.test", "schemes": ["https"], "ports": [443]},
+        ])
+        with self.assertRaisesRegex(StoreError, "manifest_does_not_match"):
+            self.store.reserve_request(changed, request_id="mismatch",
+                                       url="https://other.example.test/")
 
 
 if __name__ == "__main__":
