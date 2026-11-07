@@ -209,7 +209,7 @@ def authorize_url(
         return AuthorizationDecision(False, "engagement_expired", manifest.engagement_id)
     if not isinstance(url, str) or not url:
         return AuthorizationDecision(False, "invalid_url", manifest.engagement_id)
-    if any(ord(char) <= 32 or ord(char) == 127 for char in url) or "\\\\" in url:
+    if any(ord(char) <= 32 or ord(char) == 127 for char in url) or chr(92) in url:
         return AuthorizationDecision(False, "malformed_url", manifest.engagement_id)
     if "#" in url:
         return AuthorizationDecision(False, "url_fragment_forbidden", manifest.engagement_id)
