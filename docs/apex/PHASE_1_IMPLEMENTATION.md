@@ -13,12 +13,12 @@
 - `apex/core/findings.py`: immutable finding model and guarded lifecycle; confirmation requires evidence references, severity, impact, and confidence.
 - `apex/core/store.py`: SQLite schema v4 with migrations from v1/v2/v3; persisted engagement manifests, finding records, immutable observation records, append-only event history/evidence metadata, durable request reservations, idempotency, and transaction-serialized budget enforcement.
 - `apex/core/observations.py`: immutable, validated observation model with finite-JSON and size bounds.
-- `apex/core/evidence_store.py`: local content-addressed evidence storage; requires caller-attested redaction, applies a configurable size cap, uses immutable atomic writes, and verifies SHA-256 on every read.
+- `apex/core/evidence_store.py`: local content-addressed evidence storage; requires caller-attested redaction, applies a configurable size cap, uses immutable atomic writes, and verifies SHA-256 on every read. SQLite metadata registration verifies the object and size before linking it to a finding.
 - `apex/core/gateway.py`: transport-free request preparation; GET/HEAD only, durable budget reservation, redirects disabled by default, and explicit per-destination authorization when redirects are manually enabled.
 - `apex/tests/test_runtime_boundary.py`: CI guard against network and legacy-tool imports in the APEX runtime.
 - `apex/cli.py`: local manifest validation and URL authorization commands.
 - `apex/examples/engagement.example.json`: illustrative manifest using reserved example domains.
-- `apex/tests/`: 72 deterministic unit tests covering scope, budgets, capability, audit, finding lifecycle, SQLite persistence/migrations, evidence linkage, append-only history, gateway policy, and runtime boundaries. Latest gateway CI run [#22](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42393498719) passed; subsequent documentation/capability changes are being revalidated.
+- `apex/tests/`: 83 deterministic unit tests covering scope, budgets, capability, audit, finding lifecycle, SQLite persistence/migrations, evidence linkage, append-only history, gateway policy, and runtime boundaries. Latest CI run [#25](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42394169451) passed with the object store, evidence registration, concurrent budget test, and hardened runtime-boundary tests.
 - CI now runs APEX unit tests in addition to the repository's static checks.
 
 ## Current safety properties
@@ -44,7 +44,7 @@
 ## Required next work
 
 1. Add stronger canonicalization/property tests and migration fixtures.
-2. Add a controlled raw evidence object store with content-addressed integrity verification and retention policy.
+2. Add backup/retention controls and independent review for the local content-addressed evidence store.
 3. Add reservation reconciliation, expiry, cancellation, and concurrency stress tests.
 4. Add DNS/IP rebinding-resistant destination pinning design and tests before any transport exists.
 5. Add independent review and benchmark fixtures. No active transport until separately approved.
