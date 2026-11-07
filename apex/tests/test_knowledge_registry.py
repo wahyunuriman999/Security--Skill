@@ -114,6 +114,27 @@ class TestKnowledgeRegistry(unittest.TestCase):
         self.assertEqual(payload["trust"], "untrusted_instruction_data")
         self.assertIn("# XSS", payload["content"])
 
+    def test_cli_knowledge_benchmark_reports_metrics(self):
+        cases_path = self.root / "cases.json"
+        cases_path.write_text(json.dumps({
+            "schema_version": 1,
+            "top_k": 5,
+            "minimum_hit_at_5": 1.0,
+            "minimum_mrr": 1.0,
+            "cases": [{"query": "hunt-xss", "expected": ["hunt-xss"]}],
+        }), encoding="utf-8")
+        output = io.StringIO()
+        with redirect_stdout(output):
+            result = cli_main([
+                "knowledge-benchmark", "--root", str(self.root),
+                "--cases", str(cases_path),
+            ])
+        self.assertEqual(result, 0)
+        payload = json.loads(output.getvalue())
+        self.assertEqual(payload["total"], 1)
+        self.assertEqual(payload["hit_at_5"], 1.0)
+        self.assertTrue(payload["passed"])
+
 
 if __name__ == "__main__":
     unittest.main()
