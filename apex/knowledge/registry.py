@@ -192,7 +192,10 @@ class KnowledgeRegistry:
             name_text = record.name.replace("-", " ")
             name_tokens = set(_TOKEN.findall(name_text))
             domain_tokens = set(_TOKEN.findall(record.domain))
-            trigger_tokens = set(record.triggers)
+            trigger_tokens = {
+                token for trigger in record.triggers
+                for token in _TOKEN.findall(trigger.lower())
+            }
             description_tokens = set(_TOKEN.findall(record.description.lower()))
             score = 0
             if normalized == record.name:
@@ -219,8 +222,9 @@ class KnowledgeRegistry:
         record = self.get(name)
         path = self._resolve_skill_path(record.path)
         try:
-            content = path.read_text(encoding="utf-8")
+            raw = path.read_bytes()
+            content = raw.decode("utf-8")
         except (OSError, UnicodeDecodeError) as exc:
             raise KnowledgeRegistryError(f"cannot_read_skill:{name}") from exc
-        digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
+        digest = hashlib.sha256(raw).hexdigest()
         return SkillDocument(record=record, content=content, sha256=digest)
