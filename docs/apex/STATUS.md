@@ -12,7 +12,7 @@
 
 Phase 0 exit is bounded to an isolated, standard-library-only APEX core. The legacy skill corpus and legacy executables remain preserved but are not exposed as runtime capabilities. See [PHASE_0_EXIT_DECISION.md](PHASE_0_EXIT_DECISION.md).
 
-No implementation phase is marked complete. The current branch contains audit/design artifacts and an offline CI workflow definition; it does not yet contain the APEX runtime.
+Phase 0 has a bounded exit decision. Phase 1 core modules now exist on this branch; Phase 1 is not complete and no active target testing is authorized.
 
 ## Verified branch delta
 
@@ -52,7 +52,7 @@ At the latest comparison recorded for this checkpoint:
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
-- A local scope policy module, in-memory request budget, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite engagement/finding/evidence-metadata store, CLI, runtime import-boundary test, and 48 deterministic tests now exist. There is still no network gateway, OS sandbox, persistent engagement/evidence store, adapters, or autonomous runtime.
+- A local scope policy module, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite persistence for engagement/finding/evidence metadata, durable request reservations with idempotency, append-only evidence/event triggers, CLI, runtime import-boundary test, and 55 deterministic tests now exist. There is still no network gateway, redirect/DNS rebinding defense, OS sandbox, raw evidence object store, adapters, or autonomous runtime.
 - No active target testing has been performed.
 - No release artifact exists.
 
@@ -65,12 +65,14 @@ At the latest comparison recorded for this checkpoint:
 - [x] Deterministic baseline and core tests pass in CI.
 
 ## Phase 1 exit blockers
-- [x] Initial SQLite persistence for engagements, findings, transition events, and evidence metadata.
-- [x] Evidence-gated finding lifecycle and terminal states.
-- [ ] Immutable observation model and complete evidence integrity pipeline.
-- [ ] Durable request budgets, cancellation, and idempotency.
+- [x] SQLite persistence for engagements, findings, transition events, evidence metadata, and request reservations.
+- [x] Evidence-gated finding lifecycle; persisted evidence references must belong to the same finding.
+- [x] Append-only database triggers for evidence metadata and finding event history.
+- [x] Durable request budget reservation and idempotency.
+- [ ] Immutable observation model and complete raw evidence integrity pipeline.
+- [ ] Reservation expiry/reconciliation and explicit cancellation semantics.
 - [ ] Redirect-safe request gateway design and tests (still no active transport until reviewed).
-- [ ] Independent code review, concurrency tests, and security tests.
+- [ ] Independent code review, concurrency tests, migration tests, and security tests.
 
 ## Phase transition rule
 
