@@ -14,6 +14,7 @@ APEX is an authorized security-research workspace. The initial core is deliberat
 - Default-deny capability registry; network, unknown, disabled, and prohibited capabilities are denied.
 - Local JSONL audit ledger with sequence numbers, SHA-256 hash chaining, integrity verification, strict finite-JSON canonicalization, and sensitive-key redaction.
 - SQLite schema v4 for persisted engagements, finding lifecycle events, immutable observations, evidence metadata, and durable idempotent request-budget reservations.
+- Local content-addressed evidence object store with redaction attestation, size bounds, atomic immutable writes, and SHA-256 verification on reads.
 - Append-only database triggers for observation records, evidence metadata, and finding event history; evidence must be local-reference-only and redacted before it can support an observed/confirmed finding.
 - Evidence-gated finding lifecycle with explicit legal transitions and confirmation requirements.
 - CLI for local manifest validation and URL authorization.
