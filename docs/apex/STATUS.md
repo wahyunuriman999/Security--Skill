@@ -1,6 +1,6 @@
 # APEX Project Status
 
-**Updated:** 2026-11-07
+**Updated:** 2026-11-07 (latest verified checkpoint)
 **Canonical repository:** `wahyunuriman999/Security--Skill`
 **Working branch:** `apex/phase-0-audit-2026-11-07`
 **Target:** Phase 6 — Benchmark & Release
@@ -19,8 +19,9 @@ Phase 0 has a bounded exit decision. Phase 1 core modules now exist on this bran
 At the latest comparison recorded for this checkpoint:
 
 - `main` base SHA: `9a7f090bcba13bf02cb253dca88e2b4850f32416`
-- Working branch: 13 commits ahead, 0 behind.
-- Changed paths: 10 added files (9 APEX audit/design documents and 1 CI workflow).
+- Working branch: 62 commits ahead, 0 behind.
+- Changed paths: 31 added files (18 APEX core/test files, 12 audit/design/status documents, and 1 CI workflow).
+- No existing tracked files are modified or deleted; the original corpus and legacy tools are preserved.
 - No existing skill file or existing executable source file was modified.
 - `main` was not modified.
 
@@ -48,7 +49,7 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Baseline workflow passed on run [#5](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391343731); later APEX core runs [#11](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391915151) also passed. The latest run [#14](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42392269389) passed with 48 deterministic APEX tests, skill/routing validation, Python compilation, JavaScript syntax, and shell syntax. Legacy active tools and their historical test suite remain unexecuted.
+- Latest CI run [#19](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42392728802) passed with **55 deterministic APEX tests in 1.049 seconds**, skill/routing validation, Python compilation, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
