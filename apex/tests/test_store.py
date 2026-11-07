@@ -371,6 +371,21 @@ class TestSQLiteStore(unittest.TestCase):
                 captured_at=datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
             )
 
+    def test_observation_rejects_non_string_keys_and_deep_nesting(self):
+        common = {
+            "observation_id": "OBS-STRICT", "engagement_id": "eng-store-1",
+            "observation_type": "note", "target_ref": "asset://example.test",
+            "summary": "Strict data", "actor": "analyst",
+            "captured_at": datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
+        }
+        with self.assertRaisesRegex(ValueError, "keys must be strings"):
+            Observation(**common, details={1: "ambiguous"})
+        deeply_nested = {"value": "leaf"}
+        for _ in range(34):
+            deeply_nested = {"nested": deeply_nested}
+        with self.assertRaisesRegex(ValueError, "nesting exceeds"):
+            Observation(**common, details=deeply_nested)
+
     def test_schema_v4_migrates_to_v5_request_lifecycle(self):
         with self.store._connection() as db:
             for trigger in (
