@@ -69,7 +69,12 @@ class RequestGateway:
             raise GatewayDenied("response_is_not_a_redirect")
         if allow_redirects is not True:
             raise GatewayDenied("redirects_disabled")
-        parsed = urlsplit(location)
+        if not isinstance(location, str) or not location:
+            raise GatewayDenied("invalid_redirect_location")
+        try:
+            parsed = urlsplit(location)
+        except ValueError as exc:
+            raise GatewayDenied("invalid_redirect_location") from exc
         if not parsed.scheme or not parsed.netloc:
             raise GatewayDenied("absolute_redirect_url_required")
         return self.prepare(
