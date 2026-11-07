@@ -19,10 +19,11 @@ from pathlib import Path
 from typing import Any
 
 from apex.core.findings import Finding, FindingStatus
+from apex.core.observations import Observation
 from apex.core.scope import (AuthorizationDecision, EngagementManifest, authorize_url, normalize_host)
 
 
-_SCHEMA_VERSION = 3
+_SCHEMA_VERSION = 4
 _SHA256 = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -154,6 +155,30 @@ class SQLiteStore:
                     PRAGMA user_version = 3;
                 """)
                 version = 3
+            if version == 3:
+                db.executescript("""
+                    CREATE TABLE observations (
+                        observation_id TEXT PRIMARY KEY,
+                        engagement_id TEXT NOT NULL REFERENCES engagements(engagement_id),
+                        observation_type TEXT NOT NULL,
+                        target_ref TEXT NOT NULL,
+                        summary TEXT NOT NULL,
+                        actor TEXT NOT NULL,
+                        details_json TEXT NOT NULL,
+                        details_sha256 TEXT NOT NULL,
+                        captured_at TEXT NOT NULL
+                    );
+                    CREATE INDEX idx_observations_engagement
+                        ON observations(engagement_id, captured_at);
+                    CREATE TRIGGER observations_no_update
+                    BEFORE UPDATE ON observations
+                    BEGIN SELECT RAISE(ABORT, 'observations_are_immutable'); END;
+                    CREATE TRIGGER observations_no_delete
+                    BEFORE DELETE ON observations
+                    BEGIN SELECT RAISE(ABORT, 'observations_are_immutable'); END;
+                    PRAGMA user_version = 4;
+                """)
+                version = 4
         if os.name == "posix" and self.path.exists():
             self.path.chmod(0o600)
 
@@ -377,6 +402,54 @@ class SQLiteStore:
                 db.execute("UPDATE findings SET evidence_refs_json=?, updated_at=? WHERE finding_id=?",
                            (json.dumps(refs), self._now(), finding_id))
         return evidence_ref
+
+    def add_observation(self, observation: Observation) -> str:
+        if not isinstance(observation, Observation):
+            raise StoreError("observation must be an Observation instance")
+        details_json = json.dumps(
+            observation.details, sort_keys=True, separators=(",", ":"),
+            ensure_ascii=False, allow_nan=False,
+        )
+        captured = observation.captured_at_utc.isoformat().replace("+00:00", "Z")
+        with self._connection() as db:
+            db.execute(
+                """INSERT INTO observations
+                   (observation_id, engagement_id, observation_type, target_ref,
+                    summary, actor, details_json, details_sha256, captured_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (observation.observation_id, observation.engagement_id,
+                 observation.observation_type, observation.target_ref,
+                 observation.summary, observation.actor, details_json,
+                 observation.details_sha256, captured),
+            )
+        return observation.details_sha256
+
+    def get_observation(self, observation_id: str) -> Observation:
+        with self._connection() as db:
+            row = db.execute(
+                "SELECT * FROM observations WHERE observation_id=?", (observation_id,)
+            ).fetchone()
+        if row is None:
+            raise StoreError("observation_not_found")
+        details = json.loads(row["details_json"])
+        digest = hashlib.sha256(row["details_json"].encode("utf-8")).hexdigest()
+        if digest != row["details_sha256"]:
+            raise StoreError("observation_integrity_check_failed")
+        timestamp = datetime.fromisoformat(row["captured_at"].replace("Z", "+00:00"))
+        return Observation(
+            observation_id=row["observation_id"], engagement_id=row["engagement_id"],
+            observation_type=row["observation_type"], target_ref=row["target_ref"],
+            summary=row["summary"], actor=row["actor"], details=details,
+            captured_at=timestamp,
+        )
+
+    def list_observations(self, engagement_id: str) -> list[Observation]:
+        with self._connection() as db:
+            rows = db.execute(
+                "SELECT observation_id FROM observations WHERE engagement_id=? ORDER BY captured_at, observation_id",
+                (engagement_id,),
+            ).fetchall()
+        return [self.get_observation(row["observation_id"]) for row in rows]
 
     def list_finding_events(self, finding_id: str) -> list[dict[str, Any]]:
         with self._connection() as db:
