@@ -26,6 +26,7 @@ from apex.core.scope import (AuthorizationDecision, EngagementManifest, authoriz
 
 _SCHEMA_VERSION = 5
 _SHA256 = re.compile(r"^[0-9a-f]{64}$")
+_REQUEST_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$")
 
 
 class StoreError(RuntimeError):
@@ -273,8 +274,8 @@ class SQLiteStore:
         a request_id for the same URL is idempotent; reusing it for another URL
         is rejected.
         """
-        if not isinstance(request_id, str) or not request_id.strip() or len(request_id) > 128:
-            raise StoreError("request_id must be a non-empty string of at most 128 characters")
+        if not isinstance(request_id, str) or not _REQUEST_ID.fullmatch(request_id):
+            raise StoreError("request_id must be 1-128 safe ASCII identifier characters")
         decision = authorize_url(manifest, url, now=now)
         if not decision.allowed:
             return ReservationResult(decision, None, False)
