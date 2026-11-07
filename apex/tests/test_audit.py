@@ -89,6 +89,15 @@ class TestAuditLedger(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "keys must be strings"):
                 ledger.append("bad", {1: "ambiguous"})
 
+    def test_excessive_audit_payload_nesting_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger = AuditLedger(Path(tmp) / "events.jsonl")
+            nested = {"value": "leaf"}
+            for _ in range(34):
+                nested = {"nested": nested}
+            with self.assertRaisesRegex(ValueError, "nesting exceeds"):
+                ledger.append("bad", nested)
+
 
 if __name__ == "__main__":
     unittest.main()
