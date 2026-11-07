@@ -74,6 +74,7 @@ class SQLiteStore:
                 raise StoreError(f"database schema {version} is newer than supported {_SCHEMA_VERSION}")
             if version == 0:
                 db.executescript("""
+                    BEGIN IMMEDIATE;
                     CREATE TABLE engagements (
                         engagement_id TEXT PRIMARY KEY,
                         program_name TEXT NOT NULL,
@@ -127,10 +128,12 @@ class SQLiteStore:
                     CREATE INDEX idx_request_reservations_engagement
                         ON request_reservations(engagement_id, host);
                     PRAGMA user_version = 2;
+                    COMMIT;
                 """)
                 version = 2
             elif version == 1:
                 db.executescript("""
+                    BEGIN IMMEDIATE;
                     CREATE TABLE request_reservations (
                         request_id TEXT PRIMARY KEY,
                         engagement_id TEXT NOT NULL REFERENCES engagements(engagement_id),
@@ -141,10 +144,12 @@ class SQLiteStore:
                     CREATE INDEX idx_request_reservations_engagement
                         ON request_reservations(engagement_id, host);
                     PRAGMA user_version = 2;
+                    COMMIT;
                 """)
                 version = 2
             if version == 2:
                 db.executescript("""
+                    BEGIN IMMEDIATE;
                     CREATE TRIGGER evidence_metadata_no_update
                     BEFORE UPDATE ON evidence_metadata
                     BEGIN SELECT RAISE(ABORT, 'evidence_metadata_is_immutable'); END;
@@ -158,10 +163,12 @@ class SQLiteStore:
                     BEFORE DELETE ON finding_events
                     BEGIN SELECT RAISE(ABORT, 'finding_events_are_immutable'); END;
                     PRAGMA user_version = 3;
+                    COMMIT;
                 """)
                 version = 3
             if version == 3:
                 db.executescript("""
+                    BEGIN IMMEDIATE;
                     CREATE TABLE observations (
                         observation_id TEXT PRIMARY KEY,
                         engagement_id TEXT NOT NULL REFERENCES engagements(engagement_id),
@@ -182,10 +189,12 @@ class SQLiteStore:
                     BEFORE DELETE ON observations
                     BEGIN SELECT RAISE(ABORT, 'observations_are_immutable'); END;
                     PRAGMA user_version = 4;
+                    COMMIT;
                 """)
                 version = 4
             if version == 4:
                 db.executescript("""
+                    BEGIN IMMEDIATE;
                     ALTER TABLE request_reservations
                         ADD COLUMN status TEXT NOT NULL DEFAULT 'RESERVED'
                         CHECK(status IN ('RESERVED', 'CANCELLED', 'DISPATCHED', 'COMPLETED', 'FAILED'));
@@ -218,6 +227,7 @@ class SQLiteStore:
                     BEFORE DELETE ON request_events
                     BEGIN SELECT RAISE(ABORT, 'request_events_are_immutable'); END;
                     PRAGMA user_version = 5;
+                    COMMIT;
                 """)
                 version = 5
         if os.name == "posix" and self.path.exists():
