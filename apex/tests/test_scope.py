@@ -117,6 +117,17 @@ class TestScopeAuthorization(unittest.TestCase):
         self.assertFalse(d.allowed)
         self.assertEqual(d.reason, "url_fragment_forbidden")
 
+    def test_empty_fragment_marker_rejected(self):
+        d = authorize_url(self.policy, "https://example.com/#", now=NOW)
+        self.assertFalse(d.allowed)
+        self.assertEqual(d.reason, "url_fragment_forbidden")
+
+    def test_control_characters_and_backslashes_rejected(self):
+        for target in (" https://example.com/", "https://example.com/\\\\path",
+                       "https://example.com/\\nheader"):
+            with self.subTest(target=repr(target)):
+                self.assertFalse(authorize_url(self.policy, target, now=NOW).allowed)
+
     def test_malformed_url_rejected(self):
         self.assertFalse(authorize_url(self.policy, "https://exa mple.com", now=NOW).allowed)
 
