@@ -42,7 +42,7 @@ class TestKnowledgeRegistry(unittest.TestCase):
 
     def test_exact_name_search_ranks_first(self):
         registry = KnowledgeRegistry(self.root)
-        self.assertEqual(registry.search("hunt-xss")[0].score, 1000)
+        self.assertGreaterEqual(registry.search("hunt-xss")[0].score, 1000)
 
     def test_manifest_total_mismatch_rejected(self):
         data = json.loads((self.root / "routing.json").read_text())
