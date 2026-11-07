@@ -24,7 +24,7 @@ from apex.core.evidence_store import LocalEvidenceStore, EvidenceObjectError
 from apex.core.scope import (AuthorizationDecision, EngagementManifest, authorize_url, normalize_host)
 
 
-_SCHEMA_VERSION = 4
+_SCHEMA_VERSION = 5
 _SHA256 = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -180,6 +180,42 @@ class SQLiteStore:
                     PRAGMA user_version = 4;
                 """)
                 version = 4
+            if version == 4:
+                db.executescript("""
+                    ALTER TABLE request_reservations
+                        ADD COLUMN status TEXT NOT NULL DEFAULT 'RESERVED'
+                        CHECK(status IN ('RESERVED', 'CANCELLED', 'DISPATCHED', 'COMPLETED', 'FAILED'));
+                    CREATE TABLE request_events (
+                        event_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        request_id TEXT NOT NULL REFERENCES request_reservations(request_id),
+                        from_status TEXT,
+                        to_status TEXT NOT NULL,
+                        actor TEXT NOT NULL,
+                        reason TEXT NOT NULL,
+                        event_at TEXT NOT NULL
+                    );
+                    INSERT INTO request_events
+                        (request_id, from_status, to_status, actor, reason, event_at)
+                    SELECT request_id, NULL, 'RESERVED', 'system', 'reservation_migrated', reserved_at
+                    FROM request_reservations;
+                    CREATE INDEX idx_request_events_request
+                        ON request_events(request_id, event_id);
+                    CREATE TRIGGER request_reservations_identity_immutable
+                    BEFORE UPDATE OF request_id, engagement_id, host, url_sha256, reserved_at
+                    ON request_reservations
+                    BEGIN SELECT RAISE(ABORT, 'request_reservation_identity_is_immutable'); END;
+                    CREATE TRIGGER request_reservations_no_delete
+                    BEFORE DELETE ON request_reservations
+                    BEGIN SELECT RAISE(ABORT, 'request_reservations_are_immutable'); END;
+                    CREATE TRIGGER request_events_no_update
+                    BEFORE UPDATE ON request_events
+                    BEGIN SELECT RAISE(ABORT, 'request_events_are_immutable'); END;
+                    CREATE TRIGGER request_events_no_delete
+                    BEFORE DELETE ON request_events
+                    BEGIN SELECT RAISE(ABORT, 'request_events_are_immutable'); END;
+                    PRAGMA user_version = 5;
+                """)
+                version = 5
         if os.name == "posix" and self.path.exists():
             self.path.chmod(0o600)
 
@@ -286,6 +322,58 @@ class SQLiteStore:
                 (request_id, manifest.engagement_id, host, url_digest, self._now()),
             )
         return ReservationResult(decision, request_id, False)
+
+    def _transition_request(
+        self, request_id: str, expected: str, target: str, *, actor: str, reason: str,
+    ) -> None:
+        if not isinstance(request_id, str) or not request_id.strip():
+            raise StoreError("request_id_required")
+        if not isinstance(actor, str) or not actor.strip() or not isinstance(reason, str) or not reason.strip():
+            raise StoreError("request_transition_actor_and_reason_required")
+        timestamp = self._now()
+        with self._connection() as db:
+            db.execute("BEGIN IMMEDIATE")
+            row = db.execute(
+                "SELECT status FROM request_reservations WHERE request_id=?", (request_id,)
+            ).fetchone()
+            if row is None:
+                raise StoreError("request_reservation_not_found")
+            if row["status"] != expected:
+                raise StoreError(f"request_transition_not_allowed:{row['status']}->{target}")
+            db.execute(
+                "UPDATE request_reservations SET status=? WHERE request_id=?",
+                (target, request_id),
+            )
+            db.execute(
+                """INSERT INTO request_events
+                   (request_id, from_status, to_status, actor, reason, event_at)
+                   VALUES (?, ?, ?, ?, ?, ?)""",
+                (request_id, expected, target, actor.strip(), reason.strip(), timestamp),
+            )
+
+    def cancel_request(self, request_id: str, *, actor: str, reason: str) -> None:
+        """Cancel an unclaimed request. Its reserved budget is intentionally not refunded."""
+        self._transition_request(request_id, "RESERVED", "CANCELLED", actor=actor, reason=reason)
+
+    def claim_request(self, request_id: str, *, actor: str, reason: str) -> None:
+        """Atomically claim a reservation once before a future transport dispatch."""
+        self._transition_request(request_id, "RESERVED", "DISPATCHED", actor=actor, reason=reason)
+
+    def finish_request(
+        self, request_id: str, *, outcome: str, actor: str, reason: str,
+    ) -> None:
+        if outcome not in {"COMPLETED", "FAILED"}:
+            raise StoreError("request_outcome_must_be_COMPLETED_or_FAILED")
+        self._transition_request(request_id, "DISPATCHED", outcome, actor=actor, reason=reason)
+
+    def list_request_events(self, request_id: str) -> list[dict[str, Any]]:
+        with self._connection() as db:
+            rows = db.execute(
+                """SELECT from_status, to_status, actor, reason, event_at
+                   FROM request_events WHERE request_id=? ORDER BY event_id""",
+                (request_id,),
+            ).fetchall()
+        return [dict(row) for row in rows]
 
     def create_finding(self, engagement_id: str, finding: Finding) -> None:
         if finding.status is not FindingStatus.IDEA:
