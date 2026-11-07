@@ -19,8 +19,8 @@ Phase 0 has a bounded exit decision. Phase 1 core modules now exist on this bran
 At the latest comparison recorded for this checkpoint:
 
 - `main` base SHA: `9a7f090bcba13bf02cb253dca88e2b4850f32416`
-- Working branch: 85 commits ahead, 0 behind.
-- Changed paths: 34 added files (20 APEX core/test files, 13 audit/design/status documents, and 1 CI workflow).
+- Working branch: 99 commits ahead, 0 behind.
+- Changed paths: 36 added files (22 APEX core/test files, 13 audit/design/status documents, and 1 CI workflow).
 - No existing tracked files are modified or deleted; the original corpus and legacy tools are preserved.
 - No existing skill file or existing executable source file was modified.
 - `main` was not modified.
@@ -49,7 +49,7 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Latest verified CI run [#23](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42393603578) passed with **72 deterministic APEX tests in 0.686 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
+- Latest verified CI run [#25](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42394169451) passed with **83 deterministic APEX tests in 0.899 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
@@ -71,8 +71,9 @@ At the latest comparison recorded for this checkpoint:
 - [x] Append-only database triggers for evidence metadata and finding event history.
 - [x] Durable request budget reservation and idempotency.
 - [x] Immutable observation model and persisted append-only observation records.
-- [ ] Complete raw evidence object integrity pipeline and retention policy.
-- [ ] Reservation expiry/reconciliation and explicit cancellation semantics.
+- [x] Local content-addressed evidence objects with redaction attestation, bounded size, immutable writes, and SHA-256 verification on read.
+- [ ] Retention policy, backup/recovery, and independent raw-evidence integrity review.
+- [ ] Reservation expiry/reconciliation and explicit cancellation semantics (reservations are deliberately not refunded; conservative budget consumption remains).
 - [x] Transport-free request gateway policy; GET/HEAD only, redirects disabled by default, explicit per-destination authorization and durable reservation.
 - [ ] DNS/IP rebinding-resistant destination pinning design and tests before any transport exists.
 - [ ] Independent code review, concurrency tests, migration tests, and security tests.
