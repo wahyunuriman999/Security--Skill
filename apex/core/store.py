@@ -348,11 +348,13 @@ class SQLiteStore:
                     if not _SHA256.fullmatch(digest):
                         raise StoreError("invalid_evidence_reference")
                     stored = db.execute(
-                        "SELECT 1 FROM evidence_metadata WHERE finding_id=? AND sha256=?",
+                        "SELECT redacted FROM evidence_metadata WHERE finding_id=? AND sha256=?",
                         (finding_id, digest),
                     ).fetchone()
                     if stored is None:
                         raise StoreError("evidence_reference_not_attached_to_finding")
+                    if stored["redacted"] != 1:
+                        raise StoreError("evidence_must_be_redacted_before_finding_use")
             timestamp = event.timestamp.isoformat().replace("+00:00", "Z")
             db.execute(
                 """UPDATE findings SET status=?, evidence_refs_json=?, severity=?, impact=?,
@@ -379,6 +381,13 @@ class SQLiteStore:
             raise StoreError("evidence byte_size must be a non-negative integer")
         if not all(isinstance(v, str) and v.strip() for v in (evidence_id, media_type, storage_ref, source)):
             raise StoreError("evidence metadata fields must be non-empty strings")
+        parsed_storage_ref = urlsplit(storage_ref)
+        if (parsed_storage_ref.scheme != "local" or not parsed_storage_ref.netloc
+                or parsed_storage_ref.username is not None or parsed_storage_ref.password is not None
+                or parsed_storage_ref.query or parsed_storage_ref.fragment):
+            raise StoreError("storage_ref_must_be_a_local_non_sensitive_reference")
+        if any(ch in media_type or ch in source for ch in "\\r\\n"):
+            raise StoreError("evidence metadata must not contain line breaks")
         if not isinstance(redacted, bool):
             raise StoreError("redacted must be a boolean")
         evidence_ref = f"evidence://sha256/{sha256}"
