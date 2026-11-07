@@ -11,7 +11,7 @@
 - `apex/core/capabilities.py`: default-deny registry; unknown, disabled, prohibited, and network capabilities are denied.
 - `apex/core/audit.py`: local JSONL audit ledger with sequence numbers, SHA-256 hash chain, verification, and sensitive-key redaction.
 - `apex/core/findings.py`: immutable finding model and guarded lifecycle; confirmation requires evidence references, severity, impact, and confidence.
-- `apex/core/store.py`: SQLite schema v5 with migrations from v1/v2/v3; persisted engagement manifests, finding records, immutable observation records, append-only event history/evidence metadata, durable request reservations, idempotency, transaction-serialized budget enforcement, and append-only request lifecycle events.
+- `apex/core/store.py`: SQLite schema v5 with atomic migrations from v1/v2/v3/v4; persisted engagement manifests, finding records, immutable observation records, append-only event history/evidence metadata, durable request reservations, idempotency, transaction-serialized budget enforcement, and append-only request lifecycle events.
 - `apex/core/observations.py`: immutable, validated observation model with finite-JSON and size bounds.
 - `apex/core/evidence_store.py`: local content-addressed evidence storage; requires caller-attested redaction, applies a configurable size cap, uses immutable atomic writes, and verifies SHA-256 on every read. SQLite metadata registration verifies the object and size before linking it to a finding.
 - `apex/core/gateway.py`: transport-free request preparation; GET/HEAD only, durable budget reservation, redirects disabled by default, and explicit per-destination authorization when redirects are manually enabled.
