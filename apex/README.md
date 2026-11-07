@@ -1,0 +1,49 @@
+# APEX Core
+
+APEX is an authorized security-research workspace. The initial core is deliberately local-only and dependency-free.
+
+## Current implementation
+
+- Strict JSON engagement manifest parser.
+- Explicit authorization flag and validity window.
+- Exact-host and strict subdomain-wildcard matching.
+- IDNA hostname normalization and IP literal normalization.
+- Scheme and port allowlists; omitted ports mean standard scheme ports only.
+- URL credentials and fragments rejected.
+- Per-engagement and per-host in-memory request budget primitive.
+- CLI for local manifest validation and URL authorization.
+- Deterministic unit tests; no outbound network calls.
+
+## Safety boundary
+
+The current version does not contain an HTTP client, DNS resolver, scanner, subprocess runner, or legacy-tool adapter. It cannot send requests. The authorization function must be called for every URL, including every redirect target, when a future gateway is implemented.
+
+Legacy files under `tools/` and `security/` are not imported or invoked. The knowledge corpus remains unchanged and is not treated as executable authorization.
+
+## Quick start
+
+From the repository root:
+
+```powershell
+python -m apex.cli validate-manifest apex/examples/engagement.example.json
+python -m apex.cli authorize-url apex/examples/engagement.example.json https://example.com/
+python -m unittest discover -s apex/tests -v
+```
+
+The example manifest is illustrative only. Replace it with a program's actual written scope and authorization reference before any future authorized testing. The example domain is not an authorization to test any real system.
+
+## Manifest rules
+
+- `schema_version` must be `1`.
+- `authorization.authorized` must be the literal boolean `true`.
+- `authorization.reference` must identify the written program scope/approval.
+- `issued_at` and `expires_at` must be timezone-aware ISO-8601 timestamps.
+- `assets` must contain at least one exact hostname or `*.example.com` wildcard.
+- Wildcards match subdomains only, never the apex domain.
+- Supported schemes are HTTP and HTTPS. Default scheme is HTTPS.
+- If `ports` is omitted, only 443 for HTTPS or 80 for HTTP is permitted.
+- Request budgets are mandatory and bounded.
+
+## Current limitations
+
+This is a policy primitive, not yet a complete execution gateway. Budget persistence, redirect handling, DNS/IP rebinding defenses, request signing, audit-chain storage, concurrency scheduling, and process isolation are not implemented. Do not connect an active scanner until those controls exist and have independent tests.
