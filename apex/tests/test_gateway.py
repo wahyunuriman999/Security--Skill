@@ -50,6 +50,17 @@ class TestRequestGateway(unittest.TestCase):
                         method=method, url="https://example.test/",
                     )
 
+    def test_replayed_request_id_cannot_be_prepared_for_second_dispatch(self):
+        self.gateway.prepare(
+            self.policy, request_id="req-once", method="GET",
+            url="https://example.test/once",
+        )
+        with self.assertRaisesRegex(GatewayDenied, "request_id_already_reserved"):
+            self.gateway.prepare(
+                self.policy, request_id="req-once", method="GET",
+                url="https://example.test/once",
+            )
+
     def test_out_of_scope_target_is_denied(self):
         with self.assertRaisesRegex(GatewayDenied, "target_not_in_scope"):
             self.gateway.prepare(
