@@ -261,3 +261,24 @@ class RequestBudget:
     def usage(self) -> dict[str, Any]:
         with self._lock:
             return {"total": self._total, "per_host": dict(self._per_host)}
+
+
+def authorize_and_reserve(
+    manifest: EngagementManifest,
+    budget: RequestBudget,
+    url: str,
+    *,
+    now: datetime | None = None,
+) -> AuthorizationDecision:
+    """Authorize a URL and reserve one request budget unit before any future send.
+
+    A caller must treat a successful return as permission to proceed only through
+    a separately reviewed gateway. This function itself never performs I/O.
+    """
+    decision = authorize_url(manifest, url, now=now)
+    if not decision.allowed:
+        return decision
+    parsed = urlsplit(url)
+    host = normalize_host(parsed.hostname or "")
+    budget.consume(host)
+    return decision
