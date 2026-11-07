@@ -87,6 +87,17 @@ class TestSQLiteStore(unittest.TestCase):
                 source="test", redacted=True,
             )
 
+    def test_remote_evidence_storage_reference_rejected(self):
+        self.store.save_engagement(sample_manifest())
+        self.store.create_finding("eng-store-1", Finding("APEX-STORE-7", "Title", "Summary"))
+        with self.assertRaisesRegex(StoreError, "storage_ref_must_be_local"):
+            self.store.add_evidence_metadata(
+                evidence_id="EV-REMOTE", finding_id="APEX-STORE-7", sha256="e" * 64,
+                media_type="text/plain", byte_size=1,
+                storage_ref="https://collector.invalid/evidence",
+                source="test", redacted=True,
+            )
+
     def test_boolean_size_rejected(self):
         self.store.save_engagement(sample_manifest())
         self.store.create_finding("eng-store-1", Finding("APEX-STORE-6", "Title", "Summary"))
@@ -156,6 +167,24 @@ class TestSQLiteStore(unittest.TestCase):
                 evidence_refs=("evidence://sha256/" + "a" * 64,),
             )
         self.assertEqual(self.store.get_finding("APEX-EV-1").status, FindingStatus.TESTABLE)
+
+    def test_unredacted_evidence_cannot_advance_finding_to_observed(self):
+        self.store.save_engagement(sample_manifest())
+        self.store.create_finding("eng-store-1", Finding("APEX-EV-4", "Title", "Summary"))
+        self.store.transition_finding("APEX-EV-4", FindingStatus.LEAD,
+                                      actor="analyst", reason="Triage")
+        self.store.transition_finding("APEX-EV-4", FindingStatus.TESTABLE,
+                                      actor="analyst", reason="Test plan")
+        evidence_ref = self.store.add_evidence_metadata(
+            evidence_id="EV-UNREDACTED", finding_id="APEX-EV-4",
+            sha256="d" * 64, media_type="text/plain", byte_size=12,
+            storage_ref="local://evidence/EV-UNREDACTED", source="fixture", redacted=False,
+        )
+        with self.assertRaisesRegex(StoreError, "evidence_must_be_redacted"):
+            self.store.transition_finding(
+                "APEX-EV-4", FindingStatus.OBSERVED, actor="analyst",
+                reason="Unredacted evidence must not be used", evidence_refs=(evidence_ref,),
+            )
 
     def test_evidence_metadata_is_append_only(self):
         self.store.save_engagement(sample_manifest())
