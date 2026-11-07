@@ -94,3 +94,56 @@ This checkpoint is based on GitHub tree/blob retrieval and static source inspect
 - Identify broken links, stale references, invalid frontmatter, and manifest drift.
 - Freeze architecture, contracts, safety model, and migration plan.
 - Obtain a reviewed Phase 0 completion report before implementation begins.
+
+
+## 7. Focused static code review addendum (2026-11-07)
+
+### APEX-010 — TLS verification disabled in BountyForge HTTP execution
+**Evidence:** `tools/hunt.py`, lines 132 and 176, builds curl commands with `-sk`. The `-k` option disables certificate verification in both ordinary and observation request paths.
+**Risk:** TLS peer identity is not verified; observation and evidence integrity can be undermined.
+**Required remediation:** verified TLS by default; explicit CA bundle support; no insecure flag in normal mode.
+**Disposition:** release blocker.
+
+### APEX-011 — No mandatory pre-request scope gate demonstrated
+**Evidence:** `tools/hunt.py`, lines 793-880, accepts a target, loads recon hosts, and executes quick checks, IDOR checks, and optional active injection. This entrypoint does not visibly require a validated engagement manifest or centralized authorization before requests.
+**Related evidence:** `tools/agent_isolation.py`, lines 294-327, checks scope on finding records after they exist. Its explicit scope check uses substring membership (`d in str(endpoint)`) rather than canonical hostname boundary matching.
+**Risk:** post-hoc review is not equivalent to preventing an unauthorized request. Substring matching can misclassify hosts.
+**Required remediation:** enforce authorization before every outbound request and redirect; canonicalize IDNA hostnames, ports, schemes, and IP literals; apply explicit allow/deny rules. Missing, malformed, expired, or ambiguous scope must fail closed.
+**Disposition:** release blocker.
+
+### APEX-012 — Agent isolation is not a complete runtime sandbox
+**Evidence:** `tools/agent_isolation.py`, lines 212-228 and 294-371, loads scope data and evaluates finding records, HTTP methods, payload fields, and agent permission metadata.
+**Risk:** checking a report object after execution cannot stop an agent or subprocess from issuing a prohibited network request. Permission labels do not provide OS/network isolation.
+**Required remediation:** separate policy decision, request authorization, and runtime sandboxing. Every outbound request must pass through a controlled gateway; tool processes need least privilege and bounded filesystem/network capabilities.
+**Disposition:** release blocker for autonomous active testing.
+
+### APEX-013 — Evasion-oriented OPSEC is coupled to the normal hunt path
+**Evidence:** `tools/hunt.py`, lines 814-817 initializes `OpsecRotator` unless `--no-opsec` is supplied. `tools/opsec.py`, lines 121-210, 215-256, and 279-293 implements User-Agent/header rotation, timing jitter, Tor proxy support, and TLS fingerprint variation.
+**Risk:** these features can obscure test attribution and conflict with program rules or coordinated disclosure requirements.
+**Required remediation:** exclude these capabilities from APEX's default workflow. Prefer stable identification, explicit request budgets, policy-compliant backoff, and transparent source attribution.
+**Disposition:** excluded from default APEX workflow.
+
+### APEX-014 — Existing Security--Skill validator is useful but incomplete
+**Evidence:** `scripts/validate.py`, lines 20-66 checks frontmatter fields, duplicate names, directory-name agreement, relative Markdown links, routing names, and total count.
+**Coverage gaps:** it does not verify every manifest path exists and points to the expected file; validate trigger quality or domain taxonomy; parse frontmatter with a YAML parser; validate non-Markdown assets; or test routing decisions against fixtures.
+**Required remediation:** retain this validator as a baseline, then add deterministic checks for manifest path equality, frontmatter schema, reference graph, taxonomy, routing fixtures, and generated-index reproducibility.
+**Disposition:** Phase 1 prerequisite.
+
+### APEX-015 — Test and CI evidence is limited
+**Evidence:** BountyForge has `tests/test_leads.py` and `tests/test_observation.py`; Security--Skill has `tools/tests/test_rat_tools.py`. No root-level CI workflow was found in either repository. BountyForge contains a nested Pashov version-bump workflow at `skills/pashov/.github/workflows/version-bump.yml`, not repository-wide validation.
+**Risk:** visible automated tests do not cover the full execution pipeline, scope authorization, tool safety, agent compatibility, or end-to-end workflows.
+**Required remediation:** root-level CI with isolated temporary state, deterministic unit/integration fixtures, static analysis, dependency checks, and explicit no-network defaults. Never run live-target tests in CI.
+**Disposition:** Phase 1 prerequisite.
+
+## 8. Audit corrections and precision notes
+
+- Exact blob files: 1,482 for Security--Skill and 543 for BountyForge. Recursive tree entries: 2,602 and 660 respectively (blobs plus directory entries).
+- Skill entrypoints: 1,001 for Security--Skill and 30 for BountyForge (one root `SKILL.md` plus 29 nested skill files).
+- Neither repository has a root license file or GitHub root license metadata. BountyForge has nested license files at `skills/pashov/LICENSE` and `skills/web3/LICENSE`; these do not license the whole repository.
+- Neither repository has a root-level `.github/workflows/` CI workflow. BountyForge does contain a nested Pashov version-bump workflow.
+- The 392 exact blob matches are byte-identical content, not proof of license compatibility or permission to redistribute.
+- Static review is not runtime verification. No test pass is claimed.
+
+## 9. Current Phase 0 decision
+
+**Phase 0 remains OPEN.** APEX-010, APEX-011, and APEX-012 are release blockers for any autonomous active-testing release. No Phase 1 implementation is authorized by this audit addendum.
