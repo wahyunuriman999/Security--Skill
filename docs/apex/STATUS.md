@@ -19,7 +19,7 @@ Phase 0 has a bounded exit decision. Phase 1 core modules now exist on this bran
 At the latest comparison recorded for this checkpoint:
 
 - `main` base SHA: `9a7f090bcba13bf02cb253dca88e2b4850f32416`
-- Working branch: 105 commits ahead, 0 behind.
+- Working branch: 131 commits ahead, 0 behind.
 - Changed paths: 36 added files (22 APEX core/test files, 13 audit/design/status documents, and 1 CI workflow).
 - No existing tracked files are modified or deleted; the original corpus and legacy tools are preserved.
 - No existing skill file or existing executable source file was modified.
@@ -49,7 +49,7 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Latest verified CI run [#26](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42394479256) passed with **86 deterministic APEX tests in 1.611 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
+- Latest verified CI run [#30](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42395343595) passed with **103 deterministic APEX tests in 0.537 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
@@ -75,6 +75,7 @@ At the latest comparison recorded for this checkpoint:
 - [x] Local content-addressed evidence objects with redaction attestation, bounded size, immutable writes, and SHA-256 verification on read.
 - [ ] Retention policy, backup/recovery, and independent raw-evidence integrity review.
 - [ ] Reservation expiry/reconciliation for stale DISPATCHED requests; cancellation is implemented for unclaimed requests and deliberately does not refund budget.
+- [x] SQLite migrations run atomically and migration rollback behavior is tested.
 - [x] Transport-free request gateway policy; GET/HEAD only, redirects disabled by default, explicit per-destination authorization and durable reservation.
 - [ ] DNS/IP rebinding-resistant destination pinning design and tests before any transport exists.
 - [ ] Independent code review, concurrency tests, migration tests, and security tests.
