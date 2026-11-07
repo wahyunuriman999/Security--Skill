@@ -48,11 +48,11 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Baseline workflow passed on run [#5](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391343731); later APEX core runs [#11](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391915151) also passed. The latest run includes 37 deterministic APEX tests, skill/routing validation, Python compilation, JavaScript syntax, and shell syntax. Legacy active tools and their historical test suite remain unexecuted.
+- Baseline workflow passed on run [#5](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391343731); later APEX core runs [#11](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391915151) also passed. The latest run [#14](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42392269389) passed with 48 deterministic APEX tests, skill/routing validation, Python compilation, JavaScript syntax, and shell syntax. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
-- A local scope policy module, in-memory request budget, default-deny capability registry, local hash-chained audit ledger, CLI, and 37 deterministic tests now exist. There is still no network gateway, OS sandbox, persistent engagement/evidence store, adapters, or autonomous runtime.
+- A local scope policy module, in-memory request budget, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite engagement/finding/evidence-metadata store, CLI, runtime import-boundary test, and 48 deterministic tests now exist. There is still no network gateway, OS sandbox, persistent engagement/evidence store, adapters, or autonomous runtime.
 - No active target testing has been performed.
 - No release artifact exists.
 
@@ -65,11 +65,12 @@ At the latest comparison recorded for this checkpoint:
 - [x] Deterministic baseline and core tests pass in CI.
 
 ## Phase 1 exit blockers
-- [ ] Complete persistent engagement and event storage.
-- [ ] Complete immutable observation/finding/evidence models.
-- [ ] Complete durable budgets, cancellation, and idempotency.
-- [ ] Complete redirect-safe request gateway design and tests (still no active transport until reviewed).
-- [ ] Complete independent code review and security tests.
+- [x] Initial SQLite persistence for engagements, findings, transition events, and evidence metadata.
+- [x] Evidence-gated finding lifecycle and terminal states.
+- [ ] Immutable observation model and complete evidence integrity pipeline.
+- [ ] Durable request budgets, cancellation, and idempotency.
+- [ ] Redirect-safe request gateway design and tests (still no active transport until reviewed).
+- [ ] Independent code review, concurrency tests, and security tests.
 
 ## Phase transition rule
 
