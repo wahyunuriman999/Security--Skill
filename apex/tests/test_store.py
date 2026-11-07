@@ -198,6 +198,51 @@ class TestSQLiteStore(unittest.TestCase):
             self.store.reserve_request(changed, request_id="mismatch",
                                        url="https://other.example.test/")
 
+    def test_cancelled_request_keeps_budget_consumed(self):
+        policy = sample_manifest(request_budget={
+            "max_total_requests": 1, "max_requests_per_host": 1,
+        })
+        self.store.save_engagement(policy)
+        self.store.reserve_request(policy, request_id="cancel-1",
+                                   url="https://example.test/cancel")
+        self.store.cancel_request("cancel-1", actor="analyst", reason="Cancelled before dispatch")
+        with self.assertRaisesRegex(StoreError, "total_request_budget_exhausted"):
+            self.store.reserve_request(policy, request_id="cancel-2",
+                                       url="https://example.test/another")
+        self.assertEqual(
+            [event["to_status"] for event in self.store.list_request_events("cancel-1")],
+            ["RESERVED", "CANCELLED"],
+        )
+
+    def test_request_can_be_claimed_and_finished_only_once(self):
+        policy = sample_manifest()
+        self.store.save_engagement(policy)
+        self.store.reserve_request(policy, request_id="claim-1",
+                                   url="https://example.test/claim")
+        self.store.claim_request("claim-1", actor="gateway", reason="Dispatch claim")
+        with self.assertRaisesRegex(StoreError, "request_transition_not_allowed"):
+            self.store.claim_request("claim-1", actor="gateway", reason="Duplicate claim")
+        self.store.finish_request(
+            "claim-1", outcome="COMPLETED", actor="gateway", reason="Response captured",
+        )
+        with self.assertRaisesRegex(StoreError, "request_transition_not_allowed"):
+            self.store.finish_request(
+                "claim-1", outcome="FAILED", actor="gateway", reason="Second finish",
+            )
+        self.assertEqual(
+            [event["to_status"] for event in self.store.list_request_events("claim-1")],
+            ["RESERVED", "DISPATCHED", "COMPLETED"],
+        )
+
+    def test_cancelled_request_cannot_be_claimed(self):
+        policy = sample_manifest()
+        self.store.save_engagement(policy)
+        self.store.reserve_request(policy, request_id="cancel-claim",
+                                   url="https://example.test/cancel")
+        self.store.cancel_request("cancel-claim", actor="analyst", reason="No longer needed")
+        with self.assertRaisesRegex(StoreError, "request_transition_not_allowed"):
+            self.store.claim_request("cancel-claim", actor="gateway", reason="Try dispatch")
+
     def test_observed_finding_requires_evidence_attached_to_same_finding(self):
         self.store.save_engagement(sample_manifest())
         self.store.create_finding("eng-store-1", Finding("APEX-EV-1", "Title", "Summary"))
@@ -290,24 +335,26 @@ class TestSQLiteStore(unittest.TestCase):
                 captured_at=datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
             )
 
-    def test_schema_v2_migrates_to_v4(self):
+    def test_schema_v4_migrates_to_v5_request_lifecycle(self):
         with self.store._connection() as db:
-            db.execute("DROP TRIGGER evidence_metadata_no_update")
-            db.execute("DROP TRIGGER evidence_metadata_no_delete")
-            db.execute("DROP TRIGGER finding_events_no_update")
-            db.execute("DROP TRIGGER finding_events_no_delete")
-            db.execute("DROP TRIGGER observations_no_update")
-            db.execute("DROP TRIGGER observations_no_delete")
-            db.execute("DROP TABLE observations")
-            db.execute("PRAGMA user_version = 2")
+            for trigger in (
+                "request_reservations_identity_immutable", "request_reservations_no_delete",
+                "request_events_no_update", "request_events_no_delete",
+            ):
+                db.execute(f"DROP TRIGGER {trigger}")
+            db.execute("DROP TABLE request_events")
+            db.execute("ALTER TABLE request_reservations DROP COLUMN status")
+            db.execute("PRAGMA user_version = 4")
         self.store.initialize()
         with self.store._connection() as db:
             version = db.execute("PRAGMA user_version").fetchone()[0]
-            observation_table = db.execute(
-                "SELECT name FROM sqlite_master WHERE type='table' AND name='observations'"
+            columns = {row["name"] for row in db.execute("PRAGMA table_info(request_reservations)")}
+            event_table = db.execute(
+                "SELECT name FROM sqlite_master WHERE type='table' AND name='request_events'"
             ).fetchone()
-        self.assertEqual(version, 4)
-        self.assertIsNotNone(observation_table)
+        self.assertEqual(version, 5)
+        self.assertIn("status", columns)
+        self.assertIsNotNone(event_table)
 
 
 if __name__ == "__main__":
