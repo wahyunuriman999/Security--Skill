@@ -7,7 +7,10 @@
 
 ## Current phase
 
-**Phase 0 — Deep Repository Audit: OPEN**
+**Phase 0 — Deep Repository Audit: CLOSED WITH BOUNDED SCOPE**  
+**Phase 1 — Canonical Core & Baseline Repair: IN PROGRESS**
+
+Phase 0 exit is bounded to an isolated, standard-library-only APEX core. The legacy skill corpus and legacy executables remain preserved but are not exposed as runtime capabilities. See [PHASE_0_EXIT_DECISION.md](PHASE_0_EXIT_DECISION.md).
 
 No implementation phase is marked complete. The current branch contains audit/design artifacts and an offline CI workflow definition; it does not yet contain the APEX runtime.
 
@@ -45,24 +48,29 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- The baseline workflow passed on commit `e6658263781fda03443ea61a10b692c36215a786` (run [#5](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391343731)). Skill/routing validation, Python bytecode compilation, JavaScript syntax, and shell syntax all passed. This is static validation only; unit tests and active-tool safety tests were not run.
+- Baseline workflow passed on run [#5](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391343731); later APEX core runs [#11](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42391915151) also passed. The latest run includes 37 deterministic APEX tests, skill/routing validation, Python compilation, JavaScript syntax, and shell syntax. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
-- Scope gateway, execution sandbox, capability registry, ledger, evidence model, adapters, and runtime do not exist yet.
+- A local scope policy module, in-memory request budget, default-deny capability registry, local hash-chained audit ledger, CLI, and 37 deterministic tests now exist. There is still no network gateway, OS sandbox, persistent engagement/evidence store, adapters, or autonomous runtime.
 - No active target testing has been performed.
 - No release artifact exists.
 
-## Phase 0 exit blockers
+## Phase 0 residual risks (contained, not certified safe)
 
-- [ ] Complete manual review of executable scripts and tool invocation contracts.
-- [ ] Establish dependency provenance and reproducible environment.
-- [ ] Run baseline validation, tests, and syntax checks in a controlled environment.
-- [ ] Record failures and baseline outputs.
-- [ ] Finalize scope manifest and canonical host matching policy.
-- [ ] Approve capability allowlist and deny-by-default execution design.
-- [ ] Close all Phase 0 exit criteria with evidence.
+- [ ] Full manual review of every legacy skill instruction and executable remains incomplete.
+- [ ] Legacy tool dependency provenance and historical test suite remain unresolved.
+- [x] Legacy tools excluded from APEX capability registry by default.
+- [x] APEX initial runtime has no network client and uses standard-library-only modules.
+- [x] Deterministic baseline and core tests pass in CI.
+
+## Phase 1 exit blockers
+- [ ] Complete persistent engagement and event storage.
+- [ ] Complete immutable observation/finding/evidence models.
+- [ ] Complete durable budgets, cancellation, and idempotency.
+- [ ] Complete redirect-safe request gateway design and tests (still no active transport until reviewed).
+- [ ] Complete independent code review and security tests.
 
 ## Phase transition rule
 
-Phase 1 may begin only after Phase 0 exit criteria are satisfied and a Phase 0 completion report is recorded. A release is not considered complete until every required quality gate has test evidence and the release candidate has passed independent review.
+Phase 1 has begun under the bounded Phase 0 exit decision. Active testing remains prohibited until the request gateway, runtime isolation, and release gates are independently verified. A release is not considered complete until every required quality gate has test evidence and the release candidate has passed independent review.
