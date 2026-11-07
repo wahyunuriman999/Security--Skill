@@ -13,6 +13,7 @@
 - `apex/core/findings.py`: immutable finding model and guarded lifecycle; confirmation requires evidence references, severity, impact, and confidence.
 - `apex/core/store.py`: SQLite schema v4 with migrations from v1/v2/v3; persisted engagement manifests, finding records, immutable observation records, append-only event history/evidence metadata, durable request reservations, idempotency, and transaction-serialized budget enforcement.
 - `apex/core/observations.py`: immutable, validated observation model with finite-JSON and size bounds.
+- `apex/core/evidence_store.py`: local content-addressed evidence storage; requires caller-attested redaction, applies a configurable size cap, uses immutable atomic writes, and verifies SHA-256 on every read.
 - `apex/core/gateway.py`: transport-free request preparation; GET/HEAD only, durable budget reservation, redirects disabled by default, and explicit per-destination authorization when redirects are manually enabled.
 - `apex/tests/test_runtime_boundary.py`: CI guard against network and legacy-tool imports in the APEX runtime.
 - `apex/cli.py`: local manifest validation and URL authorization commands.
@@ -35,7 +36,7 @@
 - Durable reservations are persisted, but cancellation/expiry/reconciliation semantics and multi-process stress tests are not complete.
 - The audit ledger is hash-chained but not tamper-proof; multi-process locking and external immutable storage are not implemented.
 - Redirects are disabled by default. A manually supplied absolute redirect destination must be independently authorized and reserve a new budget unit. There is no automatic redirect handling or DNS/IP rebinding defense.
-- Engagement/finding/evidence metadata, immutable observations, and finding transitions persist in SQLite. Raw evidence bytes still require a separate controlled object store.
+- Engagement/finding/evidence metadata, immutable observations, and finding transitions persist in SQLite. Raw evidence bytes are stored locally by content hash; the storage root must be owned by the APEX user and redaction is caller-attested, not automatically detected.
 - Capability registry is an allowlist descriptor, not an operating-system sandbox.
 - Manifest approval reference is a user-supplied string; external proof validation is not automated.
 - No runtime plugin/agent adapter system exists yet.
