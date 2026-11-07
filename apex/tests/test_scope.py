@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import tempfile
 import unittest
+from pathlib import Path
 from datetime import datetime, timezone
 
 from apex.core.scope import (
@@ -32,6 +34,24 @@ def manifest(**overrides):
 class TestManifestValidation(unittest.TestCase):
     def test_valid_manifest(self):
         self.assertEqual(manifest().engagement_id, "eng-test-001")
+
+    def test_boolean_schema_version_rejected(self):
+        with self.assertRaises(ScopePolicyError):
+            manifest(schema_version=True)
+
+    def test_duplicate_json_keys_rejected_on_load(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "duplicate.json"
+            path.write_text('{"schema_version":1,"schema_version":1}', encoding="utf-8")
+            with self.assertRaisesRegex(ScopePolicyError, "duplicate_manifest_key"):
+                EngagementManifest.load(path)
+
+    def test_non_finite_json_constants_rejected_on_load(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "nan.json"
+            path.write_text('{"schema_version":NaN}', encoding="utf-8")
+            with self.assertRaisesRegex(ScopePolicyError, "invalid_json_constant"):
+                EngagementManifest.load(path)
 
     def test_requires_explicit_authorization(self):
         with self.assertRaises(ScopePolicyError):
@@ -127,6 +147,12 @@ class TestScopeAuthorization(unittest.TestCase):
                        "https://example.com/\\nheader"):
             with self.subTest(target=repr(target)):
                 self.assertFalse(authorize_url(self.policy, target, now=NOW).allowed)
+
+    def test_overlong_and_surrogate_urls_rejected(self):
+        long_url = "https://example.com/" + ("a" * 8200)
+        self.assertEqual(authorize_url(self.policy, long_url, now=NOW).reason, "url_too_long")
+        surrogate_url = "https://example.com/" + chr(0xD800)
+        self.assertEqual(authorize_url(self.policy, surrogate_url, now=NOW).reason, "malformed_url")
 
     def test_malformed_url_rejected(self):
         self.assertFalse(authorize_url(self.policy, "https://exa mple.com", now=NOW).allowed)
