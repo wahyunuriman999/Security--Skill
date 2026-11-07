@@ -19,6 +19,19 @@ class ScopePolicyError(ValueError):
     """Raised when a manifest or target cannot be safely authorized."""
 
 
+def _unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ScopePolicyError(f"duplicate_manifest_key:{key}")
+        result[key] = value
+    return result
+
+
+def _reject_json_constant(value: str) -> None:
+    raise ScopePolicyError(f"invalid_json_constant:{value}")
+
+
 _DOMAIN_LABEL = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$")
 _ALLOWED_SCHEMES = frozenset({"http", "https"})
 
@@ -94,8 +107,8 @@ class EngagementManifest:
     def from_dict(cls, data: dict[str, Any]) -> "EngagementManifest":
         if not isinstance(data, dict):
             raise ScopePolicyError("manifest root must be an object")
-        if data.get("schema_version") != 1:
-            raise ScopePolicyError("schema_version must equal 1")
+        if type(data.get("schema_version")) is not int or data.get("schema_version") != 1:
+            raise ScopePolicyError("schema_version must be integer 1")
 
         engagement_id = _required_text(data, "engagement_id")
         program_name = _required_text(data, "program_name")
@@ -172,8 +185,12 @@ class EngagementManifest:
     @classmethod
     def load(cls, path: str | Path) -> "EngagementManifest":
         try:
-            data = json.loads(Path(path).read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError) as exc:
+            data = json.loads(
+                Path(path).read_text(encoding="utf-8"),
+                object_pairs_hook=_unique_object,
+                parse_constant=_reject_json_constant,
+            )
+        except (OSError, json.JSONDecodeError, UnicodeDecodeError) as exc:
             raise ScopePolicyError(f"cannot read manifest: {exc}") from exc
         return cls.from_dict(data)
 
@@ -209,7 +226,10 @@ def authorize_url(
         return AuthorizationDecision(False, "engagement_expired", manifest.engagement_id)
     if not isinstance(url, str) or not url:
         return AuthorizationDecision(False, "invalid_url", manifest.engagement_id)
-    if any(ord(char) <= 32 or ord(char) == 127 for char in url) or chr(92) in url:
+    if len(url) > 8192:
+        return AuthorizationDecision(False, "url_too_long", manifest.engagement_id)
+    if any(ord(char) <= 32 or ord(char) == 127 or 0xD800 <= ord(char) <= 0xDFFF
+           for char in url) or chr(92) in url:
         return AuthorizationDecision(False, "malformed_url", manifest.engagement_id)
     if "#" in url:
         return AuthorizationDecision(False, "url_fragment_forbidden", manifest.engagement_id)
