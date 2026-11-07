@@ -248,6 +248,22 @@ class TestSQLiteStore(unittest.TestCase):
                 captured_at=datetime(2026, 11, 7, 12, 0, tzinfo=timezone.utc),
             )
 
+    def test_schema_v2_migrates_to_v4(self):
+        with self.store._connection() as db:
+            db.execute("DROP TRIGGER evidence_metadata_no_update")
+            db.execute("DROP TRIGGER evidence_metadata_no_delete")
+            db.execute("DROP TRIGGER finding_events_no_update")
+            db.execute("DROP TRIGGER finding_events_no_delete")
+            db.execute("PRAGMA user_version = 2")
+        self.store.initialize()
+        with self.store._connection() as db:
+            version = db.execute("PRAGMA user_version").fetchone()[0]
+            observation_table = db.execute(
+                "SELECT name FROM sqlite_master WHERE type='table' AND name='observations'"
+            ).fetchone()
+        self.assertEqual(version, 4)
+        self.assertIsNotNone(observation_table)
+
 
 if __name__ == "__main__":
     unittest.main()
