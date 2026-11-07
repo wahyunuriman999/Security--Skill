@@ -1,6 +1,6 @@
 # APEX Project Status
 
-**Updated:** 2026-11-07 (latest verified checkpoint)
+**Updated:** 2026-11-07 (verified after Phase 1 gateway checkpoint)
 **Canonical repository:** `wahyunuriman999/Security--Skill`
 **Working branch:** `apex/phase-0-audit-2026-11-07`
 **Target:** Phase 6 — Benchmark & Release
@@ -19,8 +19,8 @@ Phase 0 has a bounded exit decision. Phase 1 core modules now exist on this bran
 At the latest comparison recorded for this checkpoint:
 
 - `main` base SHA: `9a7f090bcba13bf02cb253dca88e2b4850f32416`
-- Working branch: 62 commits ahead, 0 behind.
-- Changed paths: 31 added files (18 APEX core/test files, 12 audit/design/status documents, and 1 CI workflow).
+- Working branch: 85 commits ahead, 0 behind.
+- Changed paths: 34 added files (20 APEX core/test files, 13 audit/design/status documents, and 1 CI workflow).
 - No existing tracked files are modified or deleted; the original corpus and legacy tools are preserved.
 - No existing skill file or existing executable source file was modified.
 - `main` was not modified.
@@ -49,11 +49,11 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Latest CI run [#19](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42392728802) passed with **55 deterministic APEX tests in 1.049 seconds**, skill/routing validation, Python compilation, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
+- Latest verified CI run [#23](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42393603578) passed with **72 deterministic APEX tests in 0.686 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
-- A local scope policy module, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite persistence for engagement/finding/evidence metadata, durable request reservations with idempotency, append-only evidence/event triggers, CLI, runtime import-boundary test, and 55 deterministic tests now exist. There is still no network gateway, redirect/DNS rebinding defense, OS sandbox, raw evidence object store, adapters, or autonomous runtime.
+- A local scope policy module, default-deny capability registry, local hash-chained audit ledger, evidence-gated finding state machine, SQLite schema v4 for engagements/findings/observations/evidence metadata/durable reservations, append-only DB triggers, transport-free request gateway, CLI, runtime import-boundary test, and 72 deterministic tests now exist. There is still no network transport, DNS/IP rebinding defense, OS sandbox, raw evidence object store, adapters, or autonomous runtime.
 - No active target testing has been performed.
 - No release artifact exists.
 
@@ -70,9 +70,11 @@ At the latest comparison recorded for this checkpoint:
 - [x] Evidence-gated finding lifecycle; persisted evidence references must belong to the same finding.
 - [x] Append-only database triggers for evidence metadata and finding event history.
 - [x] Durable request budget reservation and idempotency.
-- [ ] Immutable observation model and complete raw evidence integrity pipeline.
+- [x] Immutable observation model and persisted append-only observation records.
+- [ ] Complete raw evidence object integrity pipeline and retention policy.
 - [ ] Reservation expiry/reconciliation and explicit cancellation semantics.
-- [ ] Redirect-safe request gateway design and tests (still no active transport until reviewed).
+- [x] Transport-free request gateway policy; GET/HEAD only, redirects disabled by default, explicit per-destination authorization and durable reservation.
+- [ ] DNS/IP rebinding-resistant destination pinning design and tests before any transport exists.
 - [ ] Independent code review, concurrency tests, migration tests, and security tests.
 
 ## Phase transition rule
