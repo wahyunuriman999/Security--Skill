@@ -38,7 +38,7 @@ jobs:
         run: python scripts/validate.py
 
       - name: Compile all Python sources
-        run: python -m compileall -q scripts security tools
+        run: python -m compileall -q scripts security tools apex
 
       - name: Run deterministic APEX unit tests
         run: python -m unittest discover -s apex/tests -v
