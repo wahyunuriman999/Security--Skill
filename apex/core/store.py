@@ -12,20 +12,29 @@ import contextlib
 import os
 import re
 import sqlite3
+from dataclasses import dataclass
+from urllib.parse import urlsplit
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from apex.core.findings import Finding, FindingStatus
-from apex.core.scope import EngagementManifest
+from apex.core.scope import (AuthorizationDecision, EngagementManifest, authorize_url, normalize_host)
 
 
-_SCHEMA_VERSION = 1
+_SCHEMA_VERSION = 2
 _SHA256 = re.compile(r"^[0-9a-f]{64}$")
 
 
 class StoreError(RuntimeError):
     pass
+
+
+@dataclass(frozen=True)
+class ReservationResult:
+    decision: AuthorizationDecision
+    request_id: str | None
+    replayed: bool
 
 
 class SQLiteStore:
@@ -102,7 +111,29 @@ class SQLiteStore:
                     );
                     CREATE INDEX idx_findings_engagement ON findings(engagement_id);
                     CREATE INDEX idx_finding_events_finding ON finding_events(finding_id, event_id);
-                    PRAGMA user_version = 1;
+                    CREATE TABLE request_reservations (
+                        request_id TEXT PRIMARY KEY,
+                        engagement_id TEXT NOT NULL REFERENCES engagements(engagement_id),
+                        host TEXT NOT NULL,
+                        url_sha256 TEXT NOT NULL,
+                        reserved_at TEXT NOT NULL
+                    );
+                    CREATE INDEX idx_request_reservations_engagement
+                        ON request_reservations(engagement_id, host);
+                    PRAGMA user_version = 2;
+                """)
+            elif version == 1:
+                db.executescript("""
+                    CREATE TABLE request_reservations (
+                        request_id TEXT PRIMARY KEY,
+                        engagement_id TEXT NOT NULL REFERENCES engagements(engagement_id),
+                        host TEXT NOT NULL,
+                        url_sha256 TEXT NOT NULL,
+                        reserved_at TEXT NOT NULL
+                    );
+                    CREATE INDEX idx_request_reservations_engagement
+                        ON request_reservations(engagement_id, host);
+                    PRAGMA user_version = 2;
                 """)
         if os.name == "posix" and self.path.exists():
             self.path.chmod(0o600)
@@ -111,9 +142,9 @@ class SQLiteStore:
     def _now() -> str:
         return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    def save_engagement(self, manifest: EngagementManifest) -> str:
-        self.initialize()
-        data: dict[str, Any] = {
+    @staticmethod
+    def _manifest_document(manifest: EngagementManifest) -> dict[str, Any]:
+        return {
             "schema_version": 1,
             "engagement_id": manifest.engagement_id,
             "program_name": manifest.program_name,
@@ -133,14 +164,83 @@ class SQLiteStore:
                 "max_requests_per_host": manifest.max_requests_per_host,
             },
         }
+
+    @classmethod
+    def _manifest_digest(cls, manifest: EngagementManifest) -> str:
+        canonical = json.dumps(cls._manifest_document(manifest), sort_keys=True, separators=(",", ":"))
+        return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+    def save_engagement(self, manifest: EngagementManifest) -> str:
+        self.initialize()
+        data = self._manifest_document(manifest)
         canonical = json.dumps(data, sort_keys=True, separators=(",", ":"))
         digest = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
-        with self._connect() as db:
+        with self._connection() as db:
             db.execute(
                 "INSERT INTO engagements VALUES (?, ?, ?, ?, ?)",
                 (manifest.engagement_id, manifest.program_name, canonical, digest, self._now()),
             )
         return digest
+
+    def reserve_request(
+        self, manifest: EngagementManifest, *, request_id: str, url: str,
+        now: datetime | None = None,
+    ) -> "ReservationResult":
+        """Authorize and durably reserve a request budget unit; never sends traffic.
+
+        Call once per outbound URL, including each redirect destination. Reusing
+        a request_id for the same URL is idempotent; reusing it for another URL
+        is rejected.
+        """
+        if not isinstance(request_id, str) or not request_id.strip() or len(request_id) > 128:
+            raise StoreError("request_id must be a non-empty string of at most 128 characters")
+        decision = authorize_url(manifest, url, now=now)
+        if not decision.allowed:
+            return ReservationResult(decision, None, False)
+        parsed = urlsplit(url)
+        host = normalize_host(parsed.hostname or "")
+        url_digest = hashlib.sha256(url.encode("utf-8")).hexdigest()
+        expected_manifest_digest = self._manifest_digest(manifest)
+
+        with self._connection() as db:
+            db.execute("BEGIN IMMEDIATE")
+            saved = db.execute(
+                "SELECT manifest_sha256 FROM engagements WHERE engagement_id = ?",
+                (manifest.engagement_id,),
+            ).fetchone()
+            if saved is None:
+                raise StoreError("engagement_not_persisted")
+            if saved["manifest_sha256"] != expected_manifest_digest:
+                raise StoreError("manifest_does_not_match_persisted_authorization")
+
+            existing = db.execute(
+                "SELECT engagement_id, host, url_sha256 FROM request_reservations WHERE request_id = ?",
+                (request_id,),
+            ).fetchone()
+            if existing is not None:
+                if (existing["engagement_id"], existing["host"], existing["url_sha256"]) != (
+                    manifest.engagement_id, host, url_digest
+                ):
+                    raise StoreError("idempotency_key_conflict")
+                return ReservationResult(decision, request_id, True)
+
+            total = db.execute(
+                "SELECT COUNT(*) FROM request_reservations WHERE engagement_id = ?",
+                (manifest.engagement_id,),
+            ).fetchone()[0]
+            per_host = db.execute(
+                "SELECT COUNT(*) FROM request_reservations WHERE engagement_id = ? AND host = ?",
+                (manifest.engagement_id, host),
+            ).fetchone()[0]
+            if total >= manifest.max_total_requests:
+                raise StoreError("total_request_budget_exhausted")
+            if per_host >= manifest.max_requests_per_host:
+                raise StoreError("per_host_request_budget_exhausted")
+            db.execute(
+                "INSERT INTO request_reservations VALUES (?, ?, ?, ?, ?)",
+                (request_id, manifest.engagement_id, host, url_digest, self._now()),
+            )
+        return ReservationResult(decision, request_id, False)
 
     def create_finding(self, engagement_id: str, finding: Finding) -> None:
         if finding.status is not FindingStatus.IDEA:
