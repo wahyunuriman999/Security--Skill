@@ -4,7 +4,7 @@
 **Canonical corpus:** `routing.json` + the existing 1,001 `SKILL.md` files
 **Preservation rule:** no skill is deleted, renamed, rewritten, imported as Python, or executed.
 
-## Implemented
+## Verified in CI\n\nLatest CI run [#33](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42395917717) loaded the actual repository and asserted **1,001 indexed skills**, with deterministic retrieval results. The same run passed all 113 APEX unit tests.\n\n## Implemented
 
 - `apex/knowledge/registry.py` loads the existing routing manifest with duplicate-key and invalid-constant rejection.
 - Every skill name, path, domain, description, trigger list, and line-count metadata is type-checked.
