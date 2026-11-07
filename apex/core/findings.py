@@ -65,8 +65,14 @@ class Finding:
                 raise FindingStateError(f"{field_name} is required")
         if not isinstance(self.status, FindingStatus):
             raise FindingStateError("status must be a FindingStatus")
-        if self.severity is not None and self.severity not in _SEVERITIES:
+        if self.severity is not None and (
+            not isinstance(self.severity, str) or self.severity not in _SEVERITIES
+        ):
             raise FindingStateError("invalid severity")
+        if self.impact is not None and (
+            not isinstance(self.impact, str) or not self.impact.strip()
+        ):
+            raise FindingStateError("impact must be a non-empty string when supplied")
         if self.confidence is not None:
             if isinstance(self.confidence, bool) or not isinstance(self.confidence, (int, float)):
                 raise FindingStateError("confidence must be numeric")
@@ -113,6 +119,8 @@ class Finding:
                 raise FindingStateError("confirmed_requires_confidence")
 
         timestamp = now or datetime.now(timezone.utc)
+        if not isinstance(timestamp, datetime):
+            raise FindingStateError("transition timestamp must be a datetime")
         if timestamp.tzinfo is None or timestamp.utcoffset() is None:
             raise FindingStateError("transition timestamp must be timezone-aware")
         updated = replace(
