@@ -7,8 +7,6 @@
 
 ## Current phase
 
-<badge>Not applicable in source documentation</badge>
-
 **Phase 0 — Deep Repository Audit: OPEN**
 
 No implementation phase is marked complete. The current branch contains audit/design artifacts and an offline CI workflow definition; it does not yet contain the APEX runtime.
