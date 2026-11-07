@@ -26,6 +26,17 @@ The current version does not contain an HTTP client, DNS resolver, scanner, subp
 
 Legacy files under `tools/` and `security/` are not imported or invoked. The knowledge corpus remains unchanged and is not treated as executable authorization.
 
+## Knowledge registry
+
+Search the preserved 1,001-skill corpus without executing any skill:
+
+```powershell
+python -m apex.cli knowledge-search "bug bounty" --root . --limit 10
+python -m apex.cli knowledge-show bug-bounty --root .
+```
+
+Returned skill text is untrusted instruction data. It must not bypass APEX scope, capability, approval, or audit controls.
+
 ## Quick start
 
 From the repository root:
