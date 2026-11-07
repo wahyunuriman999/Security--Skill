@@ -1,10 +1,13 @@
 import json
 import os
+import io
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 
 from apex.knowledge.registry import KnowledgeRegistry, KnowledgeRegistryError
+from apex.cli import main as cli_main
 
 
 class TestKnowledgeRegistry(unittest.TestCase):
@@ -93,6 +96,23 @@ class TestKnowledgeRegistry(unittest.TestCase):
             registry.search(" ")
         with self.assertRaisesRegex(KnowledgeRegistryError, "search_limit"):
             registry.search("xss", limit=0)
+
+    def test_cli_knowledge_search_returns_json_results(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            result = cli_main(["knowledge-search", "xss", "--root", str(self.root)])
+        self.assertEqual(result, 0)
+        payload = json.loads(output.getvalue())
+        self.assertEqual(payload[0]["name"], "hunt-xss")
+
+    def test_cli_knowledge_show_marks_content_untrusted(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            result = cli_main(["knowledge-show", "hunt-xss", "--root", str(self.root)])
+        self.assertEqual(result, 0)
+        payload = json.loads(output.getvalue())
+        self.assertEqual(payload["trust"], "untrusted_instruction_data")
+        self.assertIn("# XSS", payload["content"])
 
 
 if __name__ == "__main__":
