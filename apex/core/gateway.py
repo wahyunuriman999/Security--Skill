@@ -49,6 +49,8 @@ class RequestGateway:
         )
         if not reservation.decision.allowed:
             raise GatewayDenied(reservation.decision.reason)
+        if reservation.replayed:
+            raise GatewayDenied("request_id_already_reserved_no_replay")
         return PreparedRequest(
             request_id=request_id,
             engagement_id=manifest.engagement_id,
