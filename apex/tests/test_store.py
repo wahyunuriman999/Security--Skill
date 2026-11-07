@@ -90,7 +90,7 @@ class TestSQLiteStore(unittest.TestCase):
     def test_remote_evidence_storage_reference_rejected(self):
         self.store.save_engagement(sample_manifest())
         self.store.create_finding("eng-store-1", Finding("APEX-STORE-7", "Title", "Summary"))
-        with self.assertRaisesRegex(StoreError, "storage_ref_must_be_local"):
+        with self.assertRaisesRegex(StoreError, "storage_ref_must_be_a_local_non_sensitive_reference"):
             self.store.add_evidence_metadata(
                 evidence_id="EV-REMOTE", finding_id="APEX-STORE-7", sha256="e" * 64,
                 media_type="text/plain", byte_size=1,
