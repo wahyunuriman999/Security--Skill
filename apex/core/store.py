@@ -42,7 +42,10 @@ class ReservationResult:
 
 class SQLiteStore:
     def __init__(self, path: str | Path):
+        if str(path) == ":memory:":
+            raise StoreError("SQLiteStore requires a file-backed database for durable budgets")
         self.path = Path(path)
+        self.initialize()
 
     def _connect(self) -> sqlite3.Connection:
         connection = sqlite3.connect(self.path, timeout=5.0)
