@@ -13,6 +13,7 @@ APEX is an authorized security-research workspace. The initial core is deliberat
 - Per-engagement and per-host in-memory request budget primitive.
 - Default-deny capability registry; network, unknown, disabled, and prohibited capabilities are denied.
 - Local JSONL audit ledger with sequence numbers, SHA-256 hash chaining, integrity verification, and sensitive-key redaction.
+- Evidence-gated finding lifecycle with explicit legal transitions and confirmation requirements.
 - CLI for local manifest validation and URL authorization.
 - Deterministic unit tests; no outbound network calls.
 
