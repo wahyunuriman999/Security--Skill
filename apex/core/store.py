@@ -314,6 +314,20 @@ class SQLiteStore:
                 target, actor=actor, reason=reason, evidence_refs=evidence_refs,
                 severity=severity, impact=impact, confidence=confidence,
             )
+            if target in {FindingStatus.OBSERVED, FindingStatus.VALIDATING, FindingStatus.CONFIRMED}:
+                for evidence_ref in updated.evidence_refs:
+                    prefix = "evidence://sha256/"
+                    if not evidence_ref.startswith(prefix):
+                        raise StoreError("invalid_evidence_reference")
+                    digest = evidence_ref[len(prefix):]
+                    if not _SHA256.fullmatch(digest):
+                        raise StoreError("invalid_evidence_reference")
+                    stored = db.execute(
+                        "SELECT 1 FROM evidence_metadata WHERE finding_id=? AND sha256=?",
+                        (finding_id, digest),
+                    ).fetchone()
+                    if stored is None:
+                        raise StoreError("evidence_reference_not_attached_to_finding")
             timestamp = event.timestamp.isoformat().replace("+00:00", "Z")
             db.execute(
                 """UPDATE findings SET status=?, evidence_refs_json=?, severity=?, impact=?,
