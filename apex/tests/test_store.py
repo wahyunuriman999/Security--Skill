@@ -6,6 +6,7 @@ from pathlib import Path
 from apex.core.findings import Finding, FindingStateError, FindingStatus
 from apex.core.scope import EngagementManifest
 from apex.core.observations import Observation
+from apex.core.evidence_store import LocalEvidenceStore
 from apex.core.store import SQLiteStore, StoreError
 
 
@@ -37,6 +38,19 @@ class TestSQLiteStore(unittest.TestCase):
         self.store.create_finding("eng-store-1", Finding("APEX-STORE-1", "Title", "Summary"))
         finding = self.store.get_finding("APEX-STORE-1")
         self.assertEqual(finding.status, FindingStatus.IDEA)
+
+    def test_evidence_object_can_be_registered_as_finding_metadata(self):
+        self.store.save_engagement(sample_manifest())
+        self.store.create_finding("eng-store-1", Finding("APEX-OBJECT-1", "Title", "Summary"))
+        objects = LocalEvidenceStore(Path(self.tmp.name) / "evidence")
+        stored = objects.put(b"redacted screenshot metadata", redacted=True)
+        evidence_ref = self.store.add_evidence_metadata(
+            evidence_id="EV-OBJECT-1", finding_id="APEX-OBJECT-1",
+            sha256=stored.sha256, media_type="text/plain", byte_size=stored.byte_size,
+            storage_ref=stored.storage_ref, source="local-evidence-store", redacted=True,
+        )
+        self.assertTrue(objects.verify(stored.sha256))
+        self.assertIn(stored.sha256, evidence_ref)
 
     def test_evidence_metadata_and_finding_transition(self):
         self.store.save_engagement(sample_manifest())
