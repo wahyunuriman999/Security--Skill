@@ -22,7 +22,7 @@ from apex.core.findings import Finding, FindingStatus
 from apex.core.scope import (AuthorizationDecision, EngagementManifest, authorize_url, normalize_host)
 
 
-_SCHEMA_VERSION = 2
+_SCHEMA_VERSION = 3
 _SHA256 = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -122,6 +122,7 @@ class SQLiteStore:
                         ON request_reservations(engagement_id, host);
                     PRAGMA user_version = 2;
                 """)
+                version = 2
             elif version == 1:
                 db.executescript("""
                     CREATE TABLE request_reservations (
@@ -135,6 +136,24 @@ class SQLiteStore:
                         ON request_reservations(engagement_id, host);
                     PRAGMA user_version = 2;
                 """)
+                version = 2
+            if version == 2:
+                db.executescript("""
+                    CREATE TRIGGER evidence_metadata_no_update
+                    BEFORE UPDATE ON evidence_metadata
+                    BEGIN SELECT RAISE(ABORT, 'evidence_metadata_is_immutable'); END;
+                    CREATE TRIGGER evidence_metadata_no_delete
+                    BEFORE DELETE ON evidence_metadata
+                    BEGIN SELECT RAISE(ABORT, 'evidence_metadata_is_immutable'); END;
+                    CREATE TRIGGER finding_events_no_update
+                    BEFORE UPDATE ON finding_events
+                    BEGIN SELECT RAISE(ABORT, 'finding_events_are_immutable'); END;
+                    CREATE TRIGGER finding_events_no_delete
+                    BEFORE DELETE ON finding_events
+                    BEGIN SELECT RAISE(ABORT, 'finding_events_are_immutable'); END;
+                    PRAGMA user_version = 3;
+                """)
+                version = 3
         if os.name == "posix" and self.path.exists():
             self.path.chmod(0o600)
 
