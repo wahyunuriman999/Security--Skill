@@ -70,11 +70,11 @@ class AssetRule:
             host.endswith("." + self.host) and host != self.host
             if self.wildcard else host == self.host
         )
-        return (
-            host_match
-            and scheme in self.schemes
-            and (self.ports is None or port in self.ports)
-        )
+        if self.ports is None:
+            port_match = port == (443 if scheme == "https" else 80)
+        else:
+            port_match = port in self.ports
+        return host_match and scheme in self.schemes and port_match
 
 
 @dataclass(frozen=True)
@@ -213,7 +213,10 @@ def authorize_url(
         if not raw_host:
             return AuthorizationDecision(False, "missing_host", manifest.engagement_id)
         host = normalize_host(raw_host)
-        port = parsed.port or (443 if scheme == "https" else 80)
+        explicit_port = parsed.port
+        port = explicit_port if explicit_port is not None else (443 if scheme == "https" else 80)
+        if not 1 <= port <= 65535:
+            return AuthorizationDecision(False, "invalid_port", manifest.engagement_id)
     except (ValueError, ScopePolicyError):
         return AuthorizationDecision(False, "malformed_url", manifest.engagement_id)
 
