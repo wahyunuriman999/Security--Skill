@@ -13,15 +13,16 @@
 - `apex/core/findings.py`: immutable finding model and guarded lifecycle; confirmation requires evidence references, severity, impact, and confidence.
 - `apex/core/store.py`: SQLite schema v4 with migrations from v1/v2/v3; persisted engagement manifests, finding records, immutable observation records, append-only event history/evidence metadata, durable request reservations, idempotency, and transaction-serialized budget enforcement.
 - `apex/core/observations.py`: immutable, validated observation model with finite-JSON and size bounds.
+- `apex/core/gateway.py`: transport-free request preparation; GET/HEAD only, durable budget reservation, redirects disabled by default, and explicit per-destination authorization when redirects are manually enabled.
 - `apex/tests/test_runtime_boundary.py`: CI guard against network and legacy-tool imports in the APEX runtime.
 - `apex/cli.py`: local manifest validation and URL authorization commands.
 - `apex/examples/engagement.example.json`: illustrative manifest using reserved example domains.
-- `apex/tests/`: 55 deterministic unit tests covering scope, budgets, capability, audit, finding lifecycle, SQLite persistence/migrations, evidence linkage, append-only history, and runtime boundaries. Latest CI run [#19](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42392728802) passed.
+- `apex/tests/`: 72 deterministic unit tests covering scope, budgets, capability, audit, finding lifecycle, SQLite persistence/migrations, evidence linkage, append-only history, gateway policy, and runtime boundaries. Latest gateway CI run [#22](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42393498719) passed; subsequent documentation/capability changes are being revalidated.
 - CI now runs APEX unit tests in addition to the repository's static checks.
 
 ## Current safety properties
 
-- No APEX HTTP client, DNS resolver, subprocess runner, or active scanner exists.
+- No APEX HTTP client, DNS resolver, subprocess runner, or active scanner exists; the gateway only prepares local request descriptors and reserves budget.
 - No legacy tool is imported or invoked.
 - Scope authorization is local and deterministic.
 - Wildcards do not match the apex domain.
@@ -33,8 +34,8 @@
 
 - Durable reservations are persisted, but cancellation/expiry/reconciliation semantics and multi-process stress tests are not complete.
 - The audit ledger is hash-chained but not tamper-proof; multi-process locking and external immutable storage are not implemented.
-- No redirect handling or DNS/IP rebinding defense exists because there is no network gateway yet.
-- Engagement/finding/evidence metadata and finding transitions persist in SQLite. There is no separate immutable observation model or raw evidence object store yet.
+- Redirects are disabled by default. A manually supplied absolute redirect destination must be independently authorized and reserve a new budget unit. There is no automatic redirect handling or DNS/IP rebinding defense.
+- Engagement/finding/evidence metadata, immutable observations, and finding transitions persist in SQLite. Raw evidence bytes still require a separate controlled object store.
 - Capability registry is an allowlist descriptor, not an operating-system sandbox.
 - Manifest approval reference is a user-supplied string; external proof validation is not automated.
 - No runtime plugin/agent adapter system exists yet.
@@ -44,7 +45,7 @@
 1. Add stronger canonicalization/property tests and migration fixtures.
 2. Add a controlled raw evidence object store with content-addressed integrity verification and retention policy.
 3. Add reservation reconciliation, expiry, cancellation, and concurrency stress tests.
-4. Implement a request gateway interface with no default transport; every redirect destination must be independently authorized and reserved.
+4. Add DNS/IP rebinding-resistant destination pinning design and tests before any transport exists.
 5. Add independent review and benchmark fixtures. No active transport until separately approved.
 
 ## Exit rule
