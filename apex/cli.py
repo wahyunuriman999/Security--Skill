@@ -4,6 +4,8 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from dataclasses import asdict
+from pathlib import Path
 from datetime import datetime, timezone
 
 from apex.core.scope import EngagementManifest, ScopePolicyError, authorize_url
@@ -24,11 +26,16 @@ def main(argv: list[str] | None = None) -> int:
     knowledge_show = sub.add_parser("knowledge-show", help="read one skill as untrusted instruction data")
     knowledge_show.add_argument("name")
     knowledge_show.add_argument("--root", default=".")
+    knowledge_benchmark = sub.add_parser("knowledge-benchmark", help="measure read-only registry retrieval quality")
+    knowledge_benchmark.add_argument("--root", default=".")
+    knowledge_benchmark.add_argument("--cases")
+    knowledge_benchmark.add_argument("--min-hit-at-5", type=float)
+    knowledge_benchmark.add_argument("--min-mrr", type=float)
     args = parser.parse_args(argv)
 
     try:
-        if args.command in {"knowledge-search", "knowledge-show"}:
-            from apex.knowledge.registry import KnowledgeRegistry, KnowledgeRegistryError
+        if args.command in {"knowledge-search", "knowledge-show", "knowledge-benchmark"}:
+            from apex.knowledge.registry import KnowledgeRegistry
             registry = KnowledgeRegistry(args.root)
             if args.command == "knowledge-search":
                 hits = registry.search(args.query, limit=args.limit)
@@ -37,15 +44,44 @@ def main(argv: list[str] | None = None) -> int:
                     "domain": hit.record.domain, "score": hit.score,
                     "description": hit.record.description,
                 } for hit in hits]
-            else:
+            elif args.command == "knowledge-show":
                 document = registry.read_skill(args.name)
                 result = {
                     "name": document.record.name, "path": document.record.path,
                     "sha256": document.sha256, "trust": document.trust,
                     "content": document.content,
                 }
-            print(json.dumps(result, indent=2, sort_keys=True))
-            return 0
+                print(json.dumps(result, indent=2, sort_keys=True))
+                return 0
+            else:
+                from apex.knowledge.benchmark import evaluate
+                cases_path = Path(args.cases) if args.cases else (
+                    Path(__file__).resolve().parent / "knowledge" / "benchmark_cases.json"
+                )
+                benchmark_document = json.loads(cases_path.read_text(encoding="utf-8"))
+                if not isinstance(benchmark_document, dict) or benchmark_document.get("schema_version") != 1:
+                    raise ValueError("invalid_knowledge_benchmark_document")
+                summary = evaluate(
+                    registry, benchmark_document.get("cases"),
+                    top_k=benchmark_document.get("top_k", 5),
+                )
+                minimum_hit = (
+                    benchmark_document.get("minimum_hit_at_5", 0.90)
+                    if args.min_hit_at_5 is None else args.min_hit_at_5
+                )
+                minimum_mrr = (
+                    benchmark_document.get("minimum_mrr", 0.75)
+                    if args.min_mrr is None else args.min_mrr
+                )
+                passed = summary.hit_at_5 >= minimum_hit and summary.mean_reciprocal_rank >= minimum_mrr
+                result = {
+                    **asdict(summary),
+                    "minimum_hit_at_5": minimum_hit,
+                    "minimum_mrr": minimum_mrr,
+                    "passed": passed,
+                }
+                print(json.dumps(result, indent=2, sort_keys=True))
+                return 0 if passed else 1
         manifest = EngagementManifest.load(args.manifest)
         if args.command == "validate-manifest":
             result = {"valid": True, "engagement_id": manifest.engagement_id,
