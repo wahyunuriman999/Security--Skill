@@ -41,6 +41,9 @@ jobs:
         run: |
           python -c "from apex.knowledge.registry import KnowledgeRegistry; r=KnowledgeRegistry('.'); h=r.search('bug bounty', limit=5); print(f'indexed_skills={r.count}; top_hits={[x.record.name for x in h]}'); assert r.count == 1001 and h"
 
+      - name: Benchmark APEX knowledge retrieval quality
+        run: python -m apex.cli knowledge-benchmark --root .
+
       - name: Compile all Python sources
         run: python -m compileall -q scripts security tools apex
 
