@@ -51,4 +51,4 @@ The example manifest is illustrative only. Replace it with a program's actual wr
 
 ## Current limitations
 
-This is a policy primitive, not yet a complete execution gateway. Redirect handling, DNS/IP rebinding defenses, request signing, raw evidence object storage, reservation cancellation/reconciliation, concurrency stress validation, and process isolation are not implemented. The audit ledger is local and hash-chained, but it is not tamper-proof and does not provide multi-process locking. Do not connect an active scanner until those controls exist and have independent tests.
+This is a policy primitive, not yet an active execution gateway. Redirect handling, DNS/IP rebinding defenses, request signing, raw evidence object storage, reservation cancellation/reconciliation, concurrency stress validation, and process isolation are not implemented. The audit ledger is local and hash-chained, but it is not tamper-proof and does not provide multi-process locking. Do not connect an active scanner until those controls exist and have independent tests.
