@@ -44,6 +44,8 @@ def main(argv: list[str] | None = None) -> int:
                     "domain": hit.record.domain, "score": hit.score,
                     "description": hit.record.description,
                 } for hit in hits]
+                print(json.dumps(result, indent=2, sort_keys=True))
+                return 0
             elif args.command == "knowledge-show":
                 document = registry.read_skill(args.name)
                 result = {
