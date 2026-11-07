@@ -8,19 +8,20 @@
 ## Current phase
 
 **Phase 0 — Deep Repository Audit: CLOSED WITH BOUNDED SCOPE**  
-**Phase 1 — Canonical Core & Baseline Repair: IN PROGRESS**
+**Phase 1 — Canonical Core & Baseline Repair: IN PROGRESS (offline core)**  
+**Phase 2 — Knowledge Registry: IN PROGRESS (read-only track)**
 
 Phase 0 exit is bounded to an isolated, standard-library-only APEX core. The legacy skill corpus and legacy executables remain preserved but are not exposed as runtime capabilities. See [PHASE_0_EXIT_DECISION.md](PHASE_0_EXIT_DECISION.md).
 
-Phase 0 has a bounded exit decision. Phase 1 core modules now exist on this branch; Phase 1 is not complete and no active target testing is authorized.
+Phase 0 has a bounded exit decision. Phase 1's local-only core and Phase 2's read-only knowledge registry are under development on this branch. Neither phase authorizes active target testing.
 
 ## Verified branch delta
 
 At the latest comparison recorded for this checkpoint:
 
 - `main` base SHA: `9a7f090bcba13bf02cb253dca88e2b4850f32416`
-- Working branch: 131 commits ahead, 0 behind.
-- Changed paths: 36 added files (22 APEX core/test files, 13 audit/design/status documents, and 1 CI workflow).
+- Working branch: 144 commits ahead, 0 behind.
+- Changed paths: 40 added files (25 APEX core/test/knowledge files, 14 audit/design/status documents, and 1 CI workflow).
 - No existing tracked files are modified or deleted; the original corpus and legacy tools are preserved.
 - No existing skill file or existing executable source file was modified.
 - `main` was not modified.
@@ -49,7 +50,7 @@ At the latest comparison recorded for this checkpoint:
 
 ## What is not yet verified
 
-- Latest verified CI run [#30](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42395343595) passed with **103 deterministic APEX tests in 0.537 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
+- Latest verified CI run [#33](https://github.com/wahyunuriman999/Security--Skill/actions/runs/42395917717) passed with **113 deterministic APEX tests in 0.535 seconds**, skill/routing validation, Python compilation including APEX, JavaScript syntax, shell syntax, and the no-network-test guard. Legacy active tools and their historical test suite remain unexecuted.
 - Existing Python unit tests have not been executed.
 - The full line-by-line review of every executable and every skill invocation contract is incomplete.
 - Dependency versions, lockfiles, checksums, licenses, and transitive provenance are not fully inventoried.
@@ -59,7 +60,7 @@ At the latest comparison recorded for this checkpoint:
 
 ## Phase 0 residual risks (contained, not certified safe)
 
-- [ ] Full manual review of every legacy skill instruction and executable remains incomplete.
+- [ ] Full manual review of every legacy skill instruction and executable remains incomplete; registry content is explicitly untrusted data.
 - [ ] Legacy tool dependency provenance and historical test suite remain unresolved.
 - [x] Legacy tools excluded from APEX capability registry by default.
 - [x] APEX initial runtime has no network client and uses standard-library-only modules.
@@ -78,7 +79,8 @@ At the latest comparison recorded for this checkpoint:
 - [x] SQLite migrations run atomically and migration rollback behavior is tested.
 - [x] Transport-free request gateway policy; GET/HEAD only, redirects disabled by default, explicit per-destination authorization and durable reservation.
 - [ ] DNS/IP rebinding-resistant destination pinning design and tests before any transport exists.
-- [ ] Independent code review, concurrency tests, migration tests, and security tests.
+- [x] Deterministic concurrency, migration, strict-input, and security-boundary tests pass in CI.
+- [ ] Independent code review and broader multi-process stress/security tests.
 
 ## Phase transition rule
 
