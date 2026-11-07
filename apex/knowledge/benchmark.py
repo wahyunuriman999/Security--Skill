@@ -35,8 +35,8 @@ def evaluate(
         raise KnowledgeRegistryError("benchmark_requires_knowledge_registry")
     if not isinstance(cases, list) or not cases:
         raise KnowledgeRegistryError("benchmark_cases_must_be_non_empty_array")
-    if type(top_k) is not int or not 1 <= top_k <= 20:
-        raise KnowledgeRegistryError("benchmark_top_k_must_be_1_to_20")
+    if type(top_k) is not int or top_k != 5:
+        raise KnowledgeRegistryError("benchmark_top_k_must_equal_5")
 
     results: list[BenchmarkCaseResult] = []
     hit_one = 0
