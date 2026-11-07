@@ -160,7 +160,7 @@ class TestSQLiteStore(unittest.TestCase):
 
     def test_concurrent_reservations_cannot_exceed_budget(self):
         policy = sample_manifest(request_budget={
-            "max_total_requests": 1, "max_requests_per_host": 1,
+            "max_total_requests": 2, "max_requests_per_host": 1,
         })
         self.store.save_engagement(policy)
 
